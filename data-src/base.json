@@ -1,0 +1,8265 @@
+[
+ {
+  "iso2": "AF",
+  "iso3": "AFG",
+  "ccn3": "004",
+  "status": "un",
+  "name": {
+   "de": "Afghanistan",
+   "en": "Afghanistan",
+   "es": "Afganistán",
+   "officialDe": "Islamische Republik Afghanistan"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Südasien",
+  "capitalHint": [
+   "Kabul"
+  ],
+  "capitalCoords": {
+   "lat": 34.5186,
+   "lng": 69.1813
+  },
+  "center": [
+   33,
+   65
+  ],
+  "area": 652230,
+  "landlocked": true,
+  "borders": [
+   "IR",
+   "PK",
+   "TM",
+   "UZ",
+   "TJ",
+   "CN"
+  ],
+  "population": {
+   "value": 38041754,
+   "year": 2019
+  },
+  "languagesHint": {
+   "prs": "Dari",
+   "pus": "Pashto",
+   "tuk": "Turkmen"
+  }
+ },
+ {
+  "iso2": "EG",
+  "iso3": "EGY",
+  "ccn3": "818",
+  "status": "un",
+  "name": {
+   "de": "Ägypten",
+   "en": "Egypt",
+   "es": "Egipto",
+   "officialDe": "Arabische Republik Ägypten"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Nordafrika",
+  "capitalHint": [
+   "Cairo"
+  ],
+  "capitalCoords": {
+   "lat": 30.0519,
+   "lng": 31.248
+  },
+  "center": [
+   27,
+   30
+  ],
+  "area": 1002450,
+  "landlocked": false,
+  "borders": [
+   "IL",
+   "LY",
+   "PS",
+   "SD"
+  ],
+  "population": {
+   "value": 100388073,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic"
+  }
+ },
+ {
+  "iso2": "AL",
+  "iso3": "ALB",
+  "ccn3": "008",
+  "status": "un",
+  "name": {
+   "de": "Albanien",
+   "en": "Albania",
+   "es": "Albania",
+   "officialDe": "Republik Albanien"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Südosteuropa",
+  "capitalHint": [
+   "Tirana"
+  ],
+  "capitalCoords": {
+   "lat": 41.3275,
+   "lng": 19.8189
+  },
+  "center": [
+   41,
+   20
+  ],
+  "area": 28748,
+  "landlocked": false,
+  "borders": [
+   "ME",
+   "GR",
+   "MK",
+   "XK"
+  ],
+  "population": {
+   "value": 2854191,
+   "year": 2019
+  },
+  "languagesHint": {
+   "sqi": "Albanian"
+  }
+ },
+ {
+  "iso2": "DZ",
+  "iso3": "DZA",
+  "ccn3": "012",
+  "status": "un",
+  "name": {
+   "de": "Algerien",
+   "en": "Algeria",
+   "es": "Argelia",
+   "officialDe": "Demokratische Volksrepublik Algerien"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Nordafrika",
+  "capitalHint": [
+   "Algiers"
+  ],
+  "capitalCoords": {
+   "lat": 36.765,
+   "lng": 3.0486
+  },
+  "center": [
+   28,
+   3
+  ],
+  "area": 2381741,
+  "landlocked": false,
+  "borders": [
+   "TN",
+   "LY",
+   "NE",
+   "EH",
+   "MR",
+   "ML",
+   "MA"
+  ],
+  "population": {
+   "value": 43053054,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic"
+  }
+ },
+ {
+  "iso2": "AD",
+  "iso3": "AND",
+  "ccn3": "020",
+  "status": "un",
+  "name": {
+   "de": "Andorra",
+   "en": "Andorra",
+   "es": "Andorra",
+   "officialDe": "Fürstentum Andorra"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Südeuropa",
+  "capitalHint": [
+   "Andorra la Vella"
+  ],
+  "capitalCoords": {
+   "lat": 42.5,
+   "lng": 1.5165
+  },
+  "center": [
+   42.5,
+   1.5
+  ],
+  "area": 468,
+  "landlocked": true,
+  "borders": [
+   "FR",
+   "ES"
+  ],
+  "population": {
+   "value": 77142,
+   "year": 2019
+  },
+  "languagesHint": {
+   "cat": "Catalan"
+  }
+ },
+ {
+  "iso2": "AO",
+  "iso3": "AGO",
+  "ccn3": "024",
+  "status": "un",
+  "name": {
+   "de": "Angola",
+   "en": "Angola",
+   "es": "Angola",
+   "officialDe": "Republik Angola"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Zentralafrika",
+  "capitalHint": [
+   "Luanda"
+  ],
+  "capitalCoords": {
+   "lat": -8.8363,
+   "lng": 13.2325
+  },
+  "center": [
+   -12.5,
+   18.5
+  ],
+  "area": 1246700,
+  "landlocked": false,
+  "borders": [
+   "CG",
+   "CD",
+   "ZM",
+   "NA"
+  ],
+  "population": {
+   "value": 31825295,
+   "year": 2019
+  },
+  "languagesHint": {
+   "por": "Portuguese"
+  }
+ },
+ {
+  "iso2": "AG",
+  "iso3": "ATG",
+  "ccn3": "028",
+  "status": "un",
+  "name": {
+   "de": "Antigua und Barbuda",
+   "en": "Antigua and Barbuda",
+   "es": "Antigua y Barbuda",
+   "officialDe": "Antigua und Barbuda"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Karibik",
+  "capitalHint": [
+   "Saint John's"
+  ],
+  "capitalCoords": {
+   "lat": 17.118,
+   "lng": -61.85
+  },
+  "center": [
+   17.05,
+   -61.8
+  ],
+  "area": 442,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 97118,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "GQ",
+  "iso3": "GNQ",
+  "ccn3": "226",
+  "status": "un",
+  "name": {
+   "de": "Äquatorialguinea",
+   "en": "Equatorial Guinea",
+   "es": "Guinea Ecuatorial",
+   "officialDe": "Republik Äquatorialguinea"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Zentralafrika",
+  "capitalHint": [
+   "Malabo"
+  ],
+  "capitalCoords": {
+   "lat": 3.75,
+   "lng": 8.7833
+  },
+  "center": [
+   2,
+   10
+  ],
+  "area": 28051,
+  "landlocked": false,
+  "borders": [
+   "CM",
+   "GA"
+  ],
+  "population": {
+   "value": 1355986,
+   "year": 2019
+  },
+  "languagesHint": {
+   "fra": "French",
+   "por": "Portuguese",
+   "spa": "Spanish"
+  }
+ },
+ {
+  "iso2": "AR",
+  "iso3": "ARG",
+  "ccn3": "032",
+  "status": "un",
+  "name": {
+   "de": "Argentinien",
+   "en": "Argentina",
+   "es": "Argentina",
+   "officialDe": "Argentinische Republik"
+  },
+  "continents": [
+   "south-america"
+  ],
+  "subregion": "Südamerika",
+  "capitalHint": [
+   "Buenos Aires"
+  ],
+  "capitalCoords": {
+   "lat": -34.6006,
+   "lng": -58.3995
+  },
+  "center": [
+   -34,
+   -64
+  ],
+  "area": 2780400,
+  "landlocked": false,
+  "borders": [
+   "BO",
+   "BR",
+   "CL",
+   "PY",
+   "UY"
+  ],
+  "population": {
+   "value": 44938712,
+   "year": 2019
+  },
+  "languagesHint": {
+   "grn": "Guaraní",
+   "spa": "Spanish"
+  }
+ },
+ {
+  "iso2": "AM",
+  "iso3": "ARM",
+  "ccn3": "051",
+  "status": "un",
+  "name": {
+   "de": "Armenien",
+   "en": "Armenia",
+   "es": "Armenia",
+   "officialDe": "Republik Armenien"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Westasien",
+  "capitalHint": [
+   "Yerevan"
+  ],
+  "capitalCoords": {
+   "lat": 40.1831,
+   "lng": 44.5116
+  },
+  "center": [
+   40,
+   45
+  ],
+  "area": 29743,
+  "landlocked": true,
+  "borders": [
+   "AZ",
+   "GE",
+   "IR",
+   "TR"
+  ],
+  "population": {
+   "value": 2957731,
+   "year": 2019
+  },
+  "languagesHint": {
+   "hye": "Armenian"
+  }
+ },
+ {
+  "iso2": "AZ",
+  "iso3": "AZE",
+  "ccn3": "031",
+  "status": "un",
+  "name": {
+   "de": "Aserbaidschan",
+   "en": "Azerbaijan",
+   "es": "Azerbaiyán",
+   "officialDe": "Republik Aserbaidschan"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Westasien",
+  "capitalHint": [
+   "Baku"
+  ],
+  "capitalCoords": {
+   "lat": 40.3972,
+   "lng": 49.8603
+  },
+  "center": [
+   40.5,
+   47.5
+  ],
+  "area": 86600,
+  "landlocked": true,
+  "borders": [
+   "AM",
+   "GE",
+   "IR",
+   "RU",
+   "TR"
+  ],
+  "population": {
+   "value": 10023318,
+   "year": 2019
+  },
+  "languagesHint": {
+   "aze": "Azerbaijani",
+   "rus": "Russian"
+  }
+ },
+ {
+  "iso2": "ET",
+  "iso3": "ETH",
+  "ccn3": "231",
+  "status": "un",
+  "name": {
+   "de": "Äthiopien",
+   "en": "Ethiopia",
+   "es": "Etiopía",
+   "officialDe": "Demokratische Bundesrepublik Äthiopien"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Ostafrika",
+  "capitalHint": [
+   "Addis Ababa"
+  ],
+  "capitalCoords": {
+   "lat": 9.0353,
+   "lng": 38.6981
+  },
+  "center": [
+   8,
+   38
+  ],
+  "area": 1104300,
+  "landlocked": true,
+  "borders": [
+   "DJ",
+   "ER",
+   "KE",
+   "SO",
+   "SS",
+   "SD"
+  ],
+  "population": {
+   "value": 112078730,
+   "year": 2019
+  },
+  "languagesHint": {
+   "amh": "Amharic"
+  }
+ },
+ {
+  "iso2": "AU",
+  "iso3": "AUS",
+  "ccn3": "036",
+  "status": "un",
+  "name": {
+   "de": "Australien",
+   "en": "Australia",
+   "es": "Australia",
+   "officialDe": "Commonwealth Australien"
+  },
+  "continents": [
+   "oceania"
+  ],
+  "subregion": "Australien & Neuseeland",
+  "capitalHint": [
+   "Canberra"
+  ],
+  "capitalCoords": {
+   "lat": -35.283,
+   "lng": 149.129
+  },
+  "center": [
+   -27,
+   133
+  ],
+  "area": 7692024,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 25364307,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "BS",
+  "iso3": "BHS",
+  "ccn3": "044",
+  "status": "un",
+  "name": {
+   "de": "Bahamas",
+   "en": "Bahamas",
+   "es": "Bahamas",
+   "officialDe": "Commonwealth der Bahamas"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Karibik",
+  "capitalHint": [
+   "Nassau"
+  ],
+  "capitalCoords": {
+   "lat": 25.0834,
+   "lng": -77.35
+  },
+  "center": [
+   24.25,
+   -76
+  ],
+  "area": 13943,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 389482,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "BH",
+  "iso3": "BHR",
+  "ccn3": "048",
+  "status": "un",
+  "name": {
+   "de": "Bahrain",
+   "en": "Bahrain",
+   "es": "Bahrein",
+   "officialDe": "Königreich Bahrain"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Westasien",
+  "capitalHint": [
+   "Manama"
+  ],
+  "capitalCoords": {
+   "lat": 26.2361,
+   "lng": 50.5831
+  },
+  "center": [
+   26,
+   50.55
+  ],
+  "area": 765,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 1641172,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic"
+  }
+ },
+ {
+  "iso2": "BD",
+  "iso3": "BGD",
+  "ccn3": "050",
+  "status": "un",
+  "name": {
+   "de": "Bangladesch",
+   "en": "Bangladesh",
+   "es": "Bangladesh",
+   "officialDe": "Volksrepublik Bangladesch"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Südasien",
+  "capitalHint": [
+   "Dhaka"
+  ],
+  "capitalCoords": {
+   "lat": 23.725,
+   "lng": 90.4066
+  },
+  "center": [
+   24,
+   90
+  ],
+  "area": 147570,
+  "landlocked": false,
+  "borders": [
+   "MM",
+   "IN"
+  ],
+  "population": {
+   "value": 163046161,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ben": "Bengali"
+  }
+ },
+ {
+  "iso2": "BB",
+  "iso3": "BRB",
+  "ccn3": "052",
+  "status": "un",
+  "name": {
+   "de": "Barbados",
+   "en": "Barbados",
+   "es": "Barbados",
+   "officialDe": "Barbados"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Karibik",
+  "capitalHint": [
+   "Bridgetown"
+  ],
+  "capitalCoords": {
+   "lat": 13.102,
+   "lng": -59.6165
+  },
+  "center": [
+   13.16666666,
+   -59.53333333
+  ],
+  "area": 430,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 287025,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "BY",
+  "iso3": "BLR",
+  "ccn3": "112",
+  "status": "un",
+  "name": {
+   "de": "Belarus",
+   "en": "Belarus",
+   "es": "Bielorrusia",
+   "officialDe": "Republik Belarus"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Osteuropa",
+  "capitalHint": [
+   "Minsk"
+  ],
+  "capitalCoords": {
+   "lat": 53.9019,
+   "lng": 27.5647
+  },
+  "center": [
+   53,
+   28
+  ],
+  "area": 207600,
+  "landlocked": true,
+  "borders": [
+   "LV",
+   "LT",
+   "PL",
+   "RU",
+   "UA"
+  ],
+  "population": {
+   "value": 9466856,
+   "year": 2019
+  },
+  "languagesHint": {
+   "bel": "Belarusian",
+   "rus": "Russian"
+  }
+ },
+ {
+  "iso2": "BE",
+  "iso3": "BEL",
+  "ccn3": "056",
+  "status": "un",
+  "name": {
+   "de": "Belgien",
+   "en": "Belgium",
+   "es": "Bélgica",
+   "officialDe": "Königreich Belgien"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Westeuropa",
+  "capitalHint": [
+   "Brussels"
+  ],
+  "capitalCoords": {
+   "lat": 50.8353,
+   "lng": 4.3314
+  },
+  "center": [
+   50.83333333,
+   4
+  ],
+  "area": 30528,
+  "landlocked": false,
+  "borders": [
+   "FR",
+   "DE",
+   "LU",
+   "NL"
+  ],
+  "population": {
+   "value": 11484055,
+   "year": 2019
+  },
+  "languagesHint": {
+   "deu": "German",
+   "fra": "French",
+   "nld": "Dutch"
+  }
+ },
+ {
+  "iso2": "BZ",
+  "iso3": "BLZ",
+  "ccn3": "084",
+  "status": "un",
+  "name": {
+   "de": "Belize",
+   "en": "Belize",
+   "es": "Belice",
+   "officialDe": "Belize"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Mittelamerika",
+  "capitalHint": [
+   "Belmopan"
+  ],
+  "capitalCoords": {
+   "lat": 17.252,
+   "lng": -88.7671
+  },
+  "center": [
+   17.25,
+   -88.75
+  ],
+  "area": 22966,
+  "landlocked": false,
+  "borders": [
+   "GT",
+   "MX"
+  ],
+  "population": {
+   "value": 390353,
+   "year": 2019
+  },
+  "languagesHint": {
+   "bjz": "Belizean Creole",
+   "eng": "English",
+   "spa": "Spanish"
+  }
+ },
+ {
+  "iso2": "BJ",
+  "iso3": "BEN",
+  "ccn3": "204",
+  "status": "un",
+  "name": {
+   "de": "Benin",
+   "en": "Benin",
+   "es": "Benín",
+   "officialDe": "Republik Benin"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Westafrika",
+  "capitalHint": [
+   "Porto-Novo"
+  ],
+  "capitalCoords": {
+   "lat": 6.4833,
+   "lng": 2.6166
+  },
+  "center": [
+   9.5,
+   2.25
+  ],
+  "area": 112622,
+  "landlocked": false,
+  "borders": [
+   "BF",
+   "NE",
+   "NG",
+   "TG"
+  ],
+  "population": {
+   "value": 11801151,
+   "year": 2019
+  },
+  "languagesHint": {
+   "fra": "French"
+  }
+ },
+ {
+  "iso2": "BT",
+  "iso3": "BTN",
+  "ccn3": "064",
+  "status": "un",
+  "name": {
+   "de": "Bhutan",
+   "en": "Bhutan",
+   "es": "Bután",
+   "officialDe": "Königreich Bhutan"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Südasien",
+  "capitalHint": [
+   "Thimphu"
+  ],
+  "capitalCoords": {
+   "lat": 27.473,
+   "lng": 89.639
+  },
+  "center": [
+   27.5,
+   90.5
+  ],
+  "area": 38394,
+  "landlocked": true,
+  "borders": [
+   "CN",
+   "IN"
+  ],
+  "population": {
+   "value": 763092,
+   "year": 2019
+  },
+  "languagesHint": {
+   "dzo": "Dzongkha"
+  }
+ },
+ {
+  "iso2": "BO",
+  "iso3": "BOL",
+  "ccn3": "068",
+  "status": "un",
+  "name": {
+   "de": "Bolivien",
+   "en": "Bolivia",
+   "es": "Bolivia",
+   "officialDe": "Plurinationaler Staat Bolivien"
+  },
+  "continents": [
+   "south-america"
+  ],
+  "subregion": "Südamerika",
+  "capitalHint": [
+   "Sucre"
+  ],
+  "capitalCoords": {
+   "lat": -19.041,
+   "lng": -65.2595
+  },
+  "center": [
+   -17,
+   -65
+  ],
+  "area": 1098581,
+  "landlocked": true,
+  "borders": [
+   "AR",
+   "BR",
+   "CL",
+   "PY",
+   "PE"
+  ],
+  "population": {
+   "value": 11513100,
+   "year": 2019
+  },
+  "languagesHint": {
+   "aym": "Aymara",
+   "grn": "Guaraní",
+   "que": "Quechua",
+   "spa": "Spanish"
+  }
+ },
+ {
+  "iso2": "BA",
+  "iso3": "BIH",
+  "ccn3": "070",
+  "status": "un",
+  "name": {
+   "de": "Bosnien und Herzegowina",
+   "en": "Bosnia and Herzegovina",
+   "es": "Bosnia y Herzegovina",
+   "officialDe": "Bosnien und Herzegowina"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Südosteuropa",
+  "capitalHint": [
+   "Sarajevo"
+  ],
+  "capitalCoords": {
+   "lat": 43.85,
+   "lng": 18.383
+  },
+  "center": [
+   44,
+   18
+  ],
+  "area": 51209,
+  "landlocked": false,
+  "borders": [
+   "HR",
+   "ME",
+   "RS"
+  ],
+  "population": {
+   "value": 3301000,
+   "year": 2019
+  },
+  "languagesHint": {
+   "bos": "Bosnian",
+   "hrv": "Croatian",
+   "srp": "Serbian"
+  }
+ },
+ {
+  "iso2": "BW",
+  "iso3": "BWA",
+  "ccn3": "072",
+  "status": "un",
+  "name": {
+   "de": "Botswana",
+   "en": "Botswana",
+   "es": "Botswana",
+   "officialDe": "Republik Botsuana"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Südliches Afrika",
+  "capitalHint": [
+   "Gaborone"
+  ],
+  "capitalCoords": {
+   "lat": -24.6463,
+   "lng": 25.9119
+  },
+  "center": [
+   -22,
+   24
+  ],
+  "area": 582000,
+  "landlocked": true,
+  "borders": [
+   "NA",
+   "ZA",
+   "ZM",
+   "ZW"
+  ],
+  "population": {
+   "value": 2303697,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "tsn": "Tswana"
+  }
+ },
+ {
+  "iso2": "BR",
+  "iso3": "BRA",
+  "ccn3": "076",
+  "status": "un",
+  "name": {
+   "de": "Brasilien",
+   "en": "Brazil",
+   "es": "Brasil",
+   "officialDe": "Föderative Republik Brasilien"
+  },
+  "continents": [
+   "south-america"
+  ],
+  "subregion": "Südamerika",
+  "capitalHint": [
+   "Brasília"
+  ],
+  "capitalCoords": {
+   "lat": -15.7814,
+   "lng": -47.918
+  },
+  "center": [
+   -10,
+   -55
+  ],
+  "area": 8515767,
+  "landlocked": false,
+  "borders": [
+   "AR",
+   "BO",
+   "CO",
+   "GF",
+   "GY",
+   "PY",
+   "PE",
+   "SR",
+   "UY",
+   "VE"
+  ],
+  "population": {
+   "value": 211049527,
+   "year": 2019
+  },
+  "languagesHint": {
+   "por": "Portuguese"
+  }
+ },
+ {
+  "iso2": "BN",
+  "iso3": "BRN",
+  "ccn3": "096",
+  "status": "un",
+  "name": {
+   "de": "Brunei",
+   "en": "Brunei",
+   "es": "Brunei",
+   "officialDe": "Sultanat Brunei Darussalam"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Südostasien",
+  "capitalHint": [
+   "Bandar Seri Begawan"
+  ],
+  "capitalCoords": {
+   "lat": 4.8833,
+   "lng": 114.9333
+  },
+  "center": [
+   4.5,
+   114.66666666
+  ],
+  "area": 5765,
+  "landlocked": false,
+  "borders": [
+   "MY"
+  ],
+  "population": {
+   "value": 433285,
+   "year": 2019
+  },
+  "languagesHint": {
+   "msa": "Malay"
+  }
+ },
+ {
+  "iso2": "BG",
+  "iso3": "BGR",
+  "ccn3": "100",
+  "status": "un",
+  "name": {
+   "de": "Bulgarien",
+   "en": "Bulgaria",
+   "es": "Bulgaria",
+   "officialDe": "Republik Bulgarien"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Südosteuropa",
+  "capitalHint": [
+   "Sofia"
+  ],
+  "capitalCoords": {
+   "lat": 42.6853,
+   "lng": 23.3147
+  },
+  "center": [
+   43,
+   25
+  ],
+  "area": 110879,
+  "landlocked": false,
+  "borders": [
+   "GR",
+   "MK",
+   "RO",
+   "RS",
+   "TR"
+  ],
+  "population": {
+   "value": 6975761,
+   "year": 2019
+  },
+  "languagesHint": {
+   "bul": "Bulgarian"
+  }
+ },
+ {
+  "iso2": "BF",
+  "iso3": "BFA",
+  "ccn3": "854",
+  "status": "un",
+  "name": {
+   "de": "Burkina Faso",
+   "en": "Burkina Faso",
+   "es": "Burkina Faso",
+   "officialDe": "Burkina Faso"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Westafrika",
+  "capitalHint": [
+   "Ouagadougou"
+  ],
+  "capitalCoords": {
+   "lat": 12.3723,
+   "lng": -1.5267
+  },
+  "center": [
+   13,
+   -2
+  ],
+  "area": 272967,
+  "landlocked": true,
+  "borders": [
+   "BJ",
+   "CI",
+   "GH",
+   "ML",
+   "NE",
+   "TG"
+  ],
+  "population": {
+   "value": 20321378,
+   "year": 2019
+  },
+  "languagesHint": {
+   "fra": "French"
+  }
+ },
+ {
+  "iso2": "BI",
+  "iso3": "BDI",
+  "ccn3": "108",
+  "status": "un",
+  "name": {
+   "de": "Burundi",
+   "en": "Burundi",
+   "es": "Burundi",
+   "officialDe": "Republik Burundi"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Ostafrika",
+  "capitalHint": [
+   "Gitega"
+  ],
+  "capitalCoords": {
+   "lat": -3.4271,
+   "lng": 29.9246
+  },
+  "center": [
+   -3.5,
+   30
+  ],
+  "area": 27834,
+  "landlocked": true,
+  "borders": [
+   "CD",
+   "RW",
+   "TZ"
+  ],
+  "population": {
+   "value": 11530580,
+   "year": 2019
+  },
+  "languagesHint": {
+   "fra": "French",
+   "run": "Kirundi"
+  }
+ },
+ {
+  "iso2": "CL",
+  "iso3": "CHL",
+  "ccn3": "152",
+  "status": "un",
+  "name": {
+   "de": "Chile",
+   "en": "Chile",
+   "es": "Chile",
+   "officialDe": "Republik Chile"
+  },
+  "continents": [
+   "south-america"
+  ],
+  "subregion": "Südamerika",
+  "capitalHint": [
+   "Santiago"
+  ],
+  "capitalCoords": {
+   "lat": -33.4481,
+   "lng": -70.669
+  },
+  "center": [
+   -30,
+   -71
+  ],
+  "area": 756102,
+  "landlocked": false,
+  "borders": [
+   "AR",
+   "BO",
+   "PE"
+  ],
+  "population": {
+   "value": 18952038,
+   "year": 2019
+  },
+  "languagesHint": {
+   "spa": "Spanish"
+  }
+ },
+ {
+  "iso2": "CN",
+  "iso3": "CHN",
+  "ccn3": "156",
+  "status": "un",
+  "name": {
+   "de": "China",
+   "en": "China",
+   "es": "China",
+   "officialDe": "Volksrepublik China"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Ostasien",
+  "capitalHint": [
+   "Beijing"
+  ],
+  "capitalCoords": {
+   "lat": 39.9308,
+   "lng": 116.3863
+  },
+  "center": [
+   35,
+   105
+  ],
+  "area": 9706961,
+  "landlocked": false,
+  "borders": [
+   "AF",
+   "BT",
+   "MM",
+   "HK",
+   "IN",
+   "KZ",
+   "NP",
+   "KP",
+   "KG",
+   "LA",
+   "MO",
+   "MN",
+   "PK",
+   "RU",
+   "TJ",
+   "VN"
+  ],
+  "population": {
+   "value": 1397715000,
+   "year": 2019
+  },
+  "languagesHint": {
+   "zho": "Chinese"
+  }
+ },
+ {
+  "iso2": "CR",
+  "iso3": "CRI",
+  "ccn3": "188",
+  "status": "un",
+  "name": {
+   "de": "Costa Rica",
+   "en": "Costa Rica",
+   "es": "Costa Rica",
+   "officialDe": "Republik Costa Rica"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Mittelamerika",
+  "capitalHint": [
+   "San José"
+  ],
+  "capitalCoords": {
+   "lat": 9.937,
+   "lng": -84.086
+  },
+  "center": [
+   10,
+   -84
+  ],
+  "area": 51100,
+  "landlocked": false,
+  "borders": [
+   "NI",
+   "PA"
+  ],
+  "population": {
+   "value": 5047561,
+   "year": 2019
+  },
+  "languagesHint": {
+   "spa": "Spanish"
+  }
+ },
+ {
+  "iso2": "CI",
+  "iso3": "CIV",
+  "ccn3": "384",
+  "status": "un",
+  "name": {
+   "de": "Côte d'Ivoire",
+   "en": "Ivory Coast",
+   "es": "Costa de Marfil",
+   "officialDe": "Republik Côte d'Ivoire"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Westafrika",
+  "capitalHint": [
+   "Yamoussoukro"
+  ],
+  "capitalCoords": {
+   "lat": 6.8184,
+   "lng": -5.2755
+  },
+  "center": [
+   8,
+   -5
+  ],
+  "area": 322463,
+  "landlocked": false,
+  "borders": [
+   "BF",
+   "GH",
+   "GN",
+   "LR",
+   "ML"
+  ],
+  "population": {
+   "value": 25716544,
+   "year": 2019
+  },
+  "languagesHint": {
+   "fra": "French"
+  }
+ },
+ {
+  "iso2": "DK",
+  "iso3": "DNK",
+  "ccn3": "208",
+  "status": "un",
+  "name": {
+   "de": "Dänemark",
+   "en": "Denmark",
+   "es": "Dinamarca",
+   "officialDe": "Königreich Dänemark"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Nordeuropa",
+  "capitalHint": [
+   "Copenhagen"
+  ],
+  "capitalCoords": {
+   "lat": 55.6805,
+   "lng": 12.5615
+  },
+  "center": [
+   56,
+   10
+  ],
+  "area": 43094,
+  "landlocked": false,
+  "borders": [
+   "DE"
+  ],
+  "population": {
+   "value": 5818553,
+   "year": 2019
+  },
+  "languagesHint": {
+   "dan": "Danish"
+  }
+ },
+ {
+  "iso2": "DE",
+  "iso3": "DEU",
+  "ccn3": "276",
+  "status": "un",
+  "name": {
+   "de": "Deutschland",
+   "en": "Germany",
+   "es": "Alemania",
+   "officialDe": "Bundesrepublik Deutschland"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Westeuropa",
+  "capitalHint": [
+   "Berlin"
+  ],
+  "capitalCoords": {
+   "lat": 52.5238,
+   "lng": 13.3996
+  },
+  "center": [
+   51,
+   9
+  ],
+  "area": 357114,
+  "landlocked": false,
+  "borders": [
+   "AT",
+   "BE",
+   "CZ",
+   "DK",
+   "FR",
+   "LU",
+   "NL",
+   "PL",
+   "CH"
+  ],
+  "population": {
+   "value": 83132799,
+   "year": 2019
+  },
+  "languagesHint": {
+   "deu": "German"
+  }
+ },
+ {
+  "iso2": "DM",
+  "iso3": "DMA",
+  "ccn3": "212",
+  "status": "un",
+  "name": {
+   "de": "Dominica",
+   "en": "Dominica",
+   "es": "Dominica",
+   "officialDe": "Commonwealth von Dominica"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Karibik",
+  "capitalHint": [
+   "Roseau"
+  ],
+  "capitalCoords": {
+   "lat": 15.301,
+   "lng": -61.387
+  },
+  "center": [
+   15.41666666,
+   -61.33333333
+  ],
+  "area": 751,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 71808,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "DO",
+  "iso3": "DOM",
+  "ccn3": "214",
+  "status": "un",
+  "name": {
+   "de": "Dominikanische Republik",
+   "en": "Dominican Republic",
+   "es": "República Dominicana",
+   "officialDe": "Dominikanische Republik"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Karibik",
+  "capitalHint": [
+   "Santo Domingo"
+  ],
+  "capitalCoords": {
+   "lat": 18.472,
+   "lng": -69.902
+  },
+  "center": [
+   19,
+   -70.66666666
+  ],
+  "area": 48671,
+  "landlocked": false,
+  "borders": [
+   "HT"
+  ],
+  "population": {
+   "value": 10738958,
+   "year": 2019
+  },
+  "languagesHint": {
+   "spa": "Spanish"
+  }
+ },
+ {
+  "iso2": "DJ",
+  "iso3": "DJI",
+  "ccn3": "262",
+  "status": "un",
+  "name": {
+   "de": "Dschibuti",
+   "en": "Djibouti",
+   "es": "Djibouti",
+   "officialDe": "Republik Dschibuti"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Ostafrika",
+  "capitalHint": [
+   "Djibouti"
+  ],
+  "capitalCoords": {
+   "lat": 11.595,
+   "lng": 43.148
+  },
+  "center": [
+   11.5,
+   43
+  ],
+  "area": 23200,
+  "landlocked": false,
+  "borders": [
+   "ER",
+   "ET",
+   "SO"
+  ],
+  "population": {
+   "value": 973560,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic",
+   "fra": "French"
+  }
+ },
+ {
+  "iso2": "EC",
+  "iso3": "ECU",
+  "ccn3": "218",
+  "status": "un",
+  "name": {
+   "de": "Ecuador",
+   "en": "Ecuador",
+   "es": "Ecuador",
+   "officialDe": "Republik Ecuador"
+  },
+  "continents": [
+   "south-america"
+  ],
+  "subregion": "Südamerika",
+  "capitalHint": [
+   "Quito"
+  ],
+  "capitalCoords": {
+   "lat": -0.213,
+   "lng": -78.502
+  },
+  "center": [
+   -2,
+   -77.5
+  ],
+  "area": 276841,
+  "landlocked": false,
+  "borders": [
+   "CO",
+   "PE"
+  ],
+  "population": {
+   "value": 17373662,
+   "year": 2019
+  },
+  "languagesHint": {
+   "spa": "Spanish"
+  }
+ },
+ {
+  "iso2": "SV",
+  "iso3": "SLV",
+  "ccn3": "222",
+  "status": "un",
+  "name": {
+   "de": "El Salvador",
+   "en": "El Salvador",
+   "es": "El Salvador",
+   "officialDe": "Republik El Salvador"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Mittelamerika",
+  "capitalHint": [
+   "San Salvador"
+  ],
+  "capitalCoords": {
+   "lat": 13.7119,
+   "lng": -89.205
+  },
+  "center": [
+   13.83333333,
+   -88.91666666
+  ],
+  "area": 21041,
+  "landlocked": false,
+  "borders": [
+   "GT",
+   "HN"
+  ],
+  "population": {
+   "value": 6453553,
+   "year": 2019
+  },
+  "languagesHint": {
+   "spa": "Spanish"
+  }
+ },
+ {
+  "iso2": "ER",
+  "iso3": "ERI",
+  "ccn3": "232",
+  "status": "un",
+  "name": {
+   "de": "Eritrea",
+   "en": "Eritrea",
+   "es": "Eritrea",
+   "officialDe": "Staat Eritrea"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Ostafrika",
+  "capitalHint": [
+   "Asmara"
+  ],
+  "capitalCoords": {
+   "lat": 15.3333,
+   "lng": 38.9333
+  },
+  "center": [
+   15,
+   39
+  ],
+  "area": 117600,
+  "landlocked": false,
+  "borders": [
+   "DJ",
+   "ET",
+   "SD"
+  ],
+  "population": {
+   "value": 6081196,
+   "year": 2020
+  },
+  "languagesHint": {
+   "ara": "Arabic",
+   "eng": "English",
+   "tir": "Tigrinya"
+  }
+ },
+ {
+  "iso2": "EE",
+  "iso3": "EST",
+  "ccn3": "233",
+  "status": "un",
+  "name": {
+   "de": "Estland",
+   "en": "Estonia",
+   "es": "Estonia",
+   "officialDe": "Republik Estland"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Nordeuropa",
+  "capitalHint": [
+   "Tallinn"
+  ],
+  "capitalCoords": {
+   "lat": 59.4339,
+   "lng": 24.728
+  },
+  "center": [
+   59,
+   26
+  ],
+  "area": 45227,
+  "landlocked": false,
+  "borders": [
+   "LV",
+   "RU"
+  ],
+  "population": {
+   "value": 1326590,
+   "year": 2019
+  },
+  "languagesHint": {
+   "est": "Estonian"
+  }
+ },
+ {
+  "iso2": "FJ",
+  "iso3": "FJI",
+  "ccn3": "242",
+  "status": "un",
+  "name": {
+   "de": "Fidschi",
+   "en": "Fiji",
+   "es": "Fiyi",
+   "officialDe": "Republik Fidschi"
+  },
+  "continents": [
+   "oceania"
+  ],
+  "subregion": "Melanesien",
+  "capitalHint": [
+   "Suva"
+  ],
+  "capitalCoords": {
+   "lat": -18.133,
+   "lng": 178.4417
+  },
+  "center": [
+   -18,
+   175
+  ],
+  "area": 18272,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 889953,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "fij": "Fijian",
+   "hif": "Fiji Hindi"
+  }
+ },
+ {
+  "iso2": "FI",
+  "iso3": "FIN",
+  "ccn3": "246",
+  "status": "un",
+  "name": {
+   "de": "Finnland",
+   "en": "Finland",
+   "es": "Finlandia",
+   "officialDe": "Republik Finnland"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Nordeuropa",
+  "capitalHint": [
+   "Helsinki"
+  ],
+  "capitalCoords": {
+   "lat": 60.1775,
+   "lng": 24.9322
+  },
+  "center": [
+   64,
+   26
+  ],
+  "area": 338424,
+  "landlocked": false,
+  "borders": [
+   "NO",
+   "SE",
+   "RU"
+  ],
+  "population": {
+   "value": 5520314,
+   "year": 2019
+  },
+  "languagesHint": {
+   "fin": "Finnish",
+   "swe": "Swedish"
+  }
+ },
+ {
+  "iso2": "FR",
+  "iso3": "FRA",
+  "ccn3": "250",
+  "status": "un",
+  "name": {
+   "de": "Frankreich",
+   "en": "France",
+   "es": "Francia",
+   "officialDe": "Französische Republik"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Westeuropa",
+  "capitalHint": [
+   "Paris"
+  ],
+  "capitalCoords": {
+   "lat": 48.8686,
+   "lng": 2.3314
+  },
+  "center": [
+   46,
+   2
+  ],
+  "area": 551695,
+  "landlocked": false,
+  "borders": [
+   "AD",
+   "BE",
+   "DE",
+   "IT",
+   "LU",
+   "MC",
+   "ES",
+   "CH"
+  ],
+  "population": {
+   "value": 67059887,
+   "year": 2019
+  },
+  "languagesHint": {
+   "fra": "French"
+  }
+ },
+ {
+  "iso2": "GA",
+  "iso3": "GAB",
+  "ccn3": "266",
+  "status": "un",
+  "name": {
+   "de": "Gabun",
+   "en": "Gabon",
+   "es": "Gabón",
+   "officialDe": "Gabunische Republik"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Zentralafrika",
+  "capitalHint": [
+   "Libreville"
+  ],
+  "capitalCoords": {
+   "lat": 0.3854,
+   "lng": 9.458
+  },
+  "center": [
+   -1,
+   11.75
+  ],
+  "area": 267668,
+  "landlocked": false,
+  "borders": [
+   "CM",
+   "CG",
+   "GQ"
+  ],
+  "population": {
+   "value": 2172579,
+   "year": 2019
+  },
+  "languagesHint": {
+   "fra": "French"
+  }
+ },
+ {
+  "iso2": "GM",
+  "iso3": "GMB",
+  "ccn3": "270",
+  "status": "un",
+  "name": {
+   "de": "Gambia",
+   "en": "Gambia",
+   "es": "Gambia",
+   "officialDe": "Republik Gambia"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Westafrika",
+  "capitalHint": [
+   "Banjul"
+  ],
+  "capitalCoords": {
+   "lat": 13.4539,
+   "lng": -16.5917
+  },
+  "center": [
+   13.46666666,
+   -16.56666666
+  ],
+  "area": 10689,
+  "landlocked": false,
+  "borders": [
+   "SN"
+  ],
+  "population": {
+   "value": 2347706,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "GE",
+  "iso3": "GEO",
+  "ccn3": "268",
+  "status": "un",
+  "name": {
+   "de": "Georgien",
+   "en": "Georgia",
+   "es": "Georgia",
+   "officialDe": "Georgien"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Westasien",
+  "capitalHint": [
+   "Tbilisi"
+  ],
+  "capitalCoords": {
+   "lat": 41.727,
+   "lng": 44.7888
+  },
+  "center": [
+   42,
+   43.5
+  ],
+  "area": 69700,
+  "landlocked": false,
+  "borders": [
+   "AM",
+   "AZ",
+   "RU",
+   "TR"
+  ],
+  "population": {
+   "value": 3720382,
+   "year": 2019
+  },
+  "languagesHint": {
+   "kat": "Georgian"
+  }
+ },
+ {
+  "iso2": "GH",
+  "iso3": "GHA",
+  "ccn3": "288",
+  "status": "un",
+  "name": {
+   "de": "Ghana",
+   "en": "Ghana",
+   "es": "Ghana",
+   "officialDe": "Republik Ghana"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Westafrika",
+  "capitalHint": [
+   "Accra"
+  ],
+  "capitalCoords": {
+   "lat": 5.552,
+   "lng": -0.2187
+  },
+  "center": [
+   8,
+   -2
+  ],
+  "area": 238533,
+  "landlocked": false,
+  "borders": [
+   "BF",
+   "CI",
+   "TG"
+  ],
+  "population": {
+   "value": 30417856,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "GD",
+  "iso3": "GRD",
+  "ccn3": "308",
+  "status": "un",
+  "name": {
+   "de": "Grenada",
+   "en": "Grenada",
+   "es": "Grenada",
+   "officialDe": "Grenada"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Karibik",
+  "capitalHint": [
+   "St. George's"
+  ],
+  "capitalCoords": {
+   "lat": 12.0526,
+   "lng": -61.7416
+  },
+  "center": [
+   12.11666666,
+   -61.66666666
+  ],
+  "area": 344,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 112003,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "GR",
+  "iso3": "GRC",
+  "ccn3": "300",
+  "status": "un",
+  "name": {
+   "de": "Griechenland",
+   "en": "Greece",
+   "es": "Grecia",
+   "officialDe": "Hellenische Republik"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Südeuropa",
+  "capitalHint": [
+   "Athens"
+  ],
+  "capitalCoords": {
+   "lat": 37.9853,
+   "lng": 23.7314
+  },
+  "center": [
+   39,
+   22
+  ],
+  "area": 131990,
+  "landlocked": false,
+  "borders": [
+   "AL",
+   "BG",
+   "TR",
+   "MK"
+  ],
+  "population": {
+   "value": 10716322,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ell": "Greek"
+  }
+ },
+ {
+  "iso2": "GT",
+  "iso3": "GTM",
+  "ccn3": "320",
+  "status": "un",
+  "name": {
+   "de": "Guatemala",
+   "en": "Guatemala",
+   "es": "Guatemala",
+   "officialDe": "Republik Guatemala"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Mittelamerika",
+  "capitalHint": [
+   "Guatemala City"
+  ],
+  "capitalCoords": {
+   "lat": 14.6231,
+   "lng": -90.5289
+  },
+  "center": [
+   15.5,
+   -90.25
+  ],
+  "area": 108889,
+  "landlocked": false,
+  "borders": [
+   "BZ",
+   "SV",
+   "HN",
+   "MX"
+  ],
+  "population": {
+   "value": 16604026,
+   "year": 2019
+  },
+  "languagesHint": {
+   "spa": "Spanish"
+  }
+ },
+ {
+  "iso2": "GN",
+  "iso3": "GIN",
+  "ccn3": "324",
+  "status": "un",
+  "name": {
+   "de": "Guinea",
+   "en": "Guinea",
+   "es": "Guinea",
+   "officialDe": "Republik Guinea"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Westafrika",
+  "capitalHint": [
+   "Conakry"
+  ],
+  "capitalCoords": {
+   "lat": 9.5335,
+   "lng": -13.6822
+  },
+  "center": [
+   11,
+   -10
+  ],
+  "area": 245857,
+  "landlocked": false,
+  "borders": [
+   "CI",
+   "GW",
+   "LR",
+   "ML",
+   "SN",
+   "SL"
+  ],
+  "population": {
+   "value": 12771246,
+   "year": 2019
+  },
+  "languagesHint": {
+   "fra": "French"
+  }
+ },
+ {
+  "iso2": "GW",
+  "iso3": "GNB",
+  "ccn3": "624",
+  "status": "un",
+  "name": {
+   "de": "Guinea-Bissau",
+   "en": "Guinea-Bissau",
+   "es": "Guinea-Bisáu",
+   "officialDe": "Republik Guinea-Bissau"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Westafrika",
+  "capitalHint": [
+   "Bissau"
+  ],
+  "capitalCoords": {
+   "lat": 11.865,
+   "lng": -15.5984
+  },
+  "center": [
+   12,
+   -15
+  ],
+  "area": 36125,
+  "landlocked": false,
+  "borders": [
+   "GN",
+   "SN"
+  ],
+  "population": {
+   "value": 1920922,
+   "year": 2019
+  },
+  "languagesHint": {
+   "por": "Portuguese",
+   "pov": "Upper Guinea Creole"
+  }
+ },
+ {
+  "iso2": "GY",
+  "iso3": "GUY",
+  "ccn3": "328",
+  "status": "un",
+  "name": {
+   "de": "Guyana",
+   "en": "Guyana",
+   "es": "Guyana",
+   "officialDe": "Kooperative Republik Guyana"
+  },
+  "continents": [
+   "south-america"
+  ],
+  "subregion": "Südamerika",
+  "capitalHint": [
+   "Georgetown"
+  ],
+  "capitalCoords": {
+   "lat": 6.802,
+   "lng": -58.167
+  },
+  "center": [
+   5,
+   -59
+  ],
+  "area": 214969,
+  "landlocked": false,
+  "borders": [
+   "BR",
+   "SR",
+   "VE"
+  ],
+  "population": {
+   "value": 782766,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "HT",
+  "iso3": "HTI",
+  "ccn3": "332",
+  "status": "un",
+  "name": {
+   "de": "Haiti",
+   "en": "Haiti",
+   "es": "Haití",
+   "officialDe": "Republik Haiti"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Karibik",
+  "capitalHint": [
+   "Port-au-Prince"
+  ],
+  "capitalCoords": {
+   "lat": 18.543,
+   "lng": -72.338
+  },
+  "center": [
+   19,
+   -72.41666666
+  ],
+  "area": 27750,
+  "landlocked": false,
+  "borders": [
+   "DO"
+  ],
+  "population": {
+   "value": 11263077,
+   "year": 2019
+  },
+  "languagesHint": {
+   "fra": "French",
+   "hat": "Haitian Creole"
+  }
+ },
+ {
+  "iso2": "HN",
+  "iso3": "HND",
+  "ccn3": "340",
+  "status": "un",
+  "name": {
+   "de": "Honduras",
+   "en": "Honduras",
+   "es": "Honduras",
+   "officialDe": "Republik Honduras"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Mittelamerika",
+  "capitalHint": [
+   "Tegucigalpa"
+  ],
+  "capitalCoords": {
+   "lat": 14.104,
+   "lng": -87.2195
+  },
+  "center": [
+   15,
+   -86.5
+  ],
+  "area": 112492,
+  "landlocked": false,
+  "borders": [
+   "GT",
+   "SV",
+   "NI"
+  ],
+  "population": {
+   "value": 9746117,
+   "year": 2019
+  },
+  "languagesHint": {
+   "spa": "Spanish"
+  }
+ },
+ {
+  "iso2": "IN",
+  "iso3": "IND",
+  "ccn3": "356",
+  "status": "un",
+  "name": {
+   "de": "Indien",
+   "en": "India",
+   "es": "India",
+   "officialDe": "Republik Indien"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Südasien",
+  "capitalHint": [
+   "New Delhi"
+  ],
+  "capitalCoords": {
+   "lat": 28.6,
+   "lng": 77.2
+  },
+  "center": [
+   20,
+   77
+  ],
+  "area": 3287590,
+  "landlocked": false,
+  "borders": [
+   "BD",
+   "BT",
+   "MM",
+   "CN",
+   "NP",
+   "PK"
+  ],
+  "population": {
+   "value": 1366417754,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "hin": "Hindi",
+   "tam": "Tamil"
+  }
+ },
+ {
+  "iso2": "ID",
+  "iso3": "IDN",
+  "ccn3": "360",
+  "status": "un",
+  "name": {
+   "de": "Indonesien",
+   "en": "Indonesia",
+   "es": "Indonesia",
+   "officialDe": "Republik Indonesien"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Südostasien",
+  "capitalHint": [
+   "Jakarta"
+  ],
+  "capitalCoords": {
+   "lat": -6.1725,
+   "lng": 106.8275
+  },
+  "center": [
+   -5,
+   120
+  ],
+  "area": 1904569,
+  "landlocked": false,
+  "borders": [
+   "TL",
+   "MY",
+   "PG"
+  ],
+  "population": {
+   "value": 270625568,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ind": "Indonesian"
+  }
+ },
+ {
+  "iso2": "IQ",
+  "iso3": "IRQ",
+  "ccn3": "368",
+  "status": "un",
+  "name": {
+   "de": "Irak",
+   "en": "Iraq",
+   "es": "Irak",
+   "officialDe": "Republik Irak"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Westasien",
+  "capitalHint": [
+   "Baghdad"
+  ],
+  "capitalCoords": {
+   "lat": 33.3406,
+   "lng": 44.3919
+  },
+  "center": [
+   33,
+   44
+  ],
+  "area": 438317,
+  "landlocked": false,
+  "borders": [
+   "IR",
+   "JO",
+   "KW",
+   "SA",
+   "SY",
+   "TR"
+  ],
+  "population": {
+   "value": 39309783,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic",
+   "arc": "Aramaic",
+   "ckb": "Sorani"
+  }
+ },
+ {
+  "iso2": "IR",
+  "iso3": "IRN",
+  "ccn3": "364",
+  "status": "un",
+  "name": {
+   "de": "Iran",
+   "en": "Iran",
+   "es": "Iran",
+   "officialDe": "Islamische Republik Iran"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Südasien",
+  "capitalHint": [
+   "Tehran"
+  ],
+  "capitalCoords": {
+   "lat": 35.6739,
+   "lng": 51.4224
+  },
+  "center": [
+   32,
+   53
+  ],
+  "area": 1648195,
+  "landlocked": false,
+  "borders": [
+   "AF",
+   "AM",
+   "AZ",
+   "IQ",
+   "PK",
+   "TR",
+   "TM"
+  ],
+  "population": {
+   "value": 82913906,
+   "year": 2019
+  },
+  "languagesHint": {
+   "fas": "Persian (Farsi)"
+  }
+ },
+ {
+  "iso2": "IE",
+  "iso3": "IRL",
+  "ccn3": "372",
+  "status": "un",
+  "name": {
+   "de": "Irland",
+   "en": "Ireland",
+   "es": "Irlanda",
+   "officialDe": "Republik Irland"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Nordeuropa",
+  "capitalHint": [
+   "Dublin"
+  ],
+  "capitalCoords": {
+   "lat": 53.335,
+   "lng": -6.2509
+  },
+  "center": [
+   53,
+   -8
+  ],
+  "area": 70273,
+  "landlocked": false,
+  "borders": [
+   "GB"
+  ],
+  "population": {
+   "value": 4941444,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "gle": "Irish"
+  }
+ },
+ {
+  "iso2": "IS",
+  "iso3": "ISL",
+  "ccn3": "352",
+  "status": "un",
+  "name": {
+   "de": "Island",
+   "en": "Iceland",
+   "es": "Islandia",
+   "officialDe": "Island"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Nordeuropa",
+  "capitalHint": [
+   "Reykjavik"
+  ],
+  "capitalCoords": {
+   "lat": 64.15,
+   "lng": -21.95
+  },
+  "center": [
+   65,
+   -18
+  ],
+  "area": 103000,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 361313,
+   "year": 2019
+  },
+  "languagesHint": {
+   "isl": "Icelandic"
+  }
+ },
+ {
+  "iso2": "IL",
+  "iso3": "ISR",
+  "ccn3": "376",
+  "status": "un",
+  "name": {
+   "de": "Israel",
+   "en": "Israel",
+   "es": "Israel",
+   "officialDe": "Staat Israel"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Westasien",
+  "capitalHint": [
+   "Jerusalem"
+  ],
+  "capitalCoords": {
+   "lat": 31.7784,
+   "lng": 35.2066
+  },
+  "center": [
+   31.47,
+   35.13
+  ],
+  "area": 20770,
+  "landlocked": false,
+  "borders": [
+   "EG",
+   "JO",
+   "LB",
+   "PS",
+   "SY"
+  ],
+  "population": {
+   "value": 9053300,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic",
+   "heb": "Hebrew"
+  }
+ },
+ {
+  "iso2": "IT",
+  "iso3": "ITA",
+  "ccn3": "380",
+  "status": "un",
+  "name": {
+   "de": "Italien",
+   "en": "Italy",
+   "es": "Italia",
+   "officialDe": "Italienische Republik"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Südeuropa",
+  "capitalHint": [
+   "Rome"
+  ],
+  "capitalCoords": {
+   "lat": 41.8979,
+   "lng": 12.4813
+  },
+  "center": [
+   42.83333333,
+   12.83333333
+  ],
+  "area": 301336,
+  "landlocked": false,
+  "borders": [
+   "AT",
+   "FR",
+   "SM",
+   "SI",
+   "CH",
+   "VA"
+  ],
+  "population": {
+   "value": 60297396,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ita": "Italian"
+  }
+ },
+ {
+  "iso2": "JM",
+  "iso3": "JAM",
+  "ccn3": "388",
+  "status": "un",
+  "name": {
+   "de": "Jamaika",
+   "en": "Jamaica",
+   "es": "Jamaica",
+   "officialDe": "Jamaika"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Karibik",
+  "capitalHint": [
+   "Kingston"
+  ],
+  "capitalCoords": {
+   "lat": 17.9771,
+   "lng": -76.7674
+  },
+  "center": [
+   18.25,
+   -77.5
+  ],
+  "area": 10991,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 2948279,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "jam": "Jamaican Patois"
+  }
+ },
+ {
+  "iso2": "JP",
+  "iso3": "JPN",
+  "ccn3": "392",
+  "status": "un",
+  "name": {
+   "de": "Japan",
+   "en": "Japan",
+   "es": "Japón",
+   "officialDe": "Japan"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Ostasien",
+  "capitalHint": [
+   "Tokyo"
+  ],
+  "capitalCoords": {
+   "lat": 35.687,
+   "lng": 139.7495
+  },
+  "center": [
+   36,
+   138
+  ],
+  "area": 377930,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 126264931,
+   "year": 2019
+  },
+  "languagesHint": {
+   "jpn": "Japanese"
+  }
+ },
+ {
+  "iso2": "YE",
+  "iso3": "YEM",
+  "ccn3": "887",
+  "status": "un",
+  "name": {
+   "de": "Jemen",
+   "en": "Yemen",
+   "es": "Yemen",
+   "officialDe": "Republik Jemen"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Westasien",
+  "capitalHint": [
+   "Sana'a"
+  ],
+  "capitalCoords": {
+   "lat": 15.3567,
+   "lng": 44.2046
+  },
+  "center": [
+   15,
+   48
+  ],
+  "area": 527968,
+  "landlocked": false,
+  "borders": [
+   "OM",
+   "SA"
+  ],
+  "population": {
+   "value": 29161922,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic"
+  }
+ },
+ {
+  "iso2": "JO",
+  "iso3": "JOR",
+  "ccn3": "400",
+  "status": "un",
+  "name": {
+   "de": "Jordanien",
+   "en": "Jordan",
+   "es": "Jordania",
+   "officialDe": "Haschemitisches Königreich Jordanien"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Westasien",
+  "capitalHint": [
+   "Amman"
+  ],
+  "capitalCoords": {
+   "lat": 31.952,
+   "lng": 35.9314
+  },
+  "center": [
+   31,
+   36
+  ],
+  "area": 89342,
+  "landlocked": false,
+  "borders": [
+   "IQ",
+   "IL",
+   "PS",
+   "SA",
+   "SY"
+  ],
+  "population": {
+   "value": 10101694,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic"
+  }
+ },
+ {
+  "iso2": "KH",
+  "iso3": "KHM",
+  "ccn3": "116",
+  "status": "un",
+  "name": {
+   "de": "Kambodscha",
+   "en": "Cambodia",
+   "es": "Camboya",
+   "officialDe": "Königreich Kambodscha"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Südostasien",
+  "capitalHint": [
+   "Phnom Penh"
+  ],
+  "capitalCoords": {
+   "lat": 11.552,
+   "lng": 104.9147
+  },
+  "center": [
+   13,
+   105
+  ],
+  "area": 181035,
+  "landlocked": false,
+  "borders": [
+   "LA",
+   "TH",
+   "VN"
+  ],
+  "population": {
+   "value": 16486542,
+   "year": 2019
+  },
+  "languagesHint": {
+   "khm": "Khmer"
+  }
+ },
+ {
+  "iso2": "CM",
+  "iso3": "CMR",
+  "ccn3": "120",
+  "status": "un",
+  "name": {
+   "de": "Kamerun",
+   "en": "Cameroon",
+   "es": "Camerún",
+   "officialDe": "Republik Kamerun"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Zentralafrika",
+  "capitalHint": [
+   "Yaoundé"
+  ],
+  "capitalCoords": {
+   "lat": 3.8686,
+   "lng": 11.5147
+  },
+  "center": [
+   6,
+   12
+  ],
+  "area": 475442,
+  "landlocked": false,
+  "borders": [
+   "CF",
+   "TD",
+   "CG",
+   "GQ",
+   "GA",
+   "NG"
+  ],
+  "population": {
+   "value": 25876380,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "fra": "French"
+  }
+ },
+ {
+  "iso2": "CA",
+  "iso3": "CAN",
+  "ccn3": "124",
+  "status": "un",
+  "name": {
+   "de": "Kanada",
+   "en": "Canada",
+   "es": "Canadá",
+   "officialDe": "Kanada"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Nordamerika",
+  "capitalHint": [
+   "Ottawa"
+  ],
+  "capitalCoords": {
+   "lat": 45.4186,
+   "lng": -75.702
+  },
+  "center": [
+   60,
+   -95
+  ],
+  "area": 9984670,
+  "landlocked": false,
+  "borders": [
+   "US"
+  ],
+  "population": {
+   "value": 37589262,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "fra": "French"
+  }
+ },
+ {
+  "iso2": "CV",
+  "iso3": "CPV",
+  "ccn3": "132",
+  "status": "un",
+  "name": {
+   "de": "Kap Verde",
+   "en": "Cape Verde",
+   "es": "Cabo Verde",
+   "officialDe": "Republik Cabo Verde"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Westafrika",
+  "capitalHint": [
+   "Praia"
+  ],
+  "capitalCoords": {
+   "lat": 14.9167,
+   "lng": -23.5167
+  },
+  "center": [
+   16,
+   -24
+  ],
+  "area": 4033,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 549935,
+   "year": 2019
+  },
+  "languagesHint": {
+   "por": "Portuguese"
+  }
+ },
+ {
+  "iso2": "KZ",
+  "iso3": "KAZ",
+  "ccn3": "398",
+  "status": "un",
+  "name": {
+   "de": "Kasachstan",
+   "en": "Kazakhstan",
+   "es": "Kazajistán",
+   "officialDe": "Republik Kasachstan"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Zentralasien",
+  "capitalHint": [
+   "Astana"
+  ],
+  "capitalCoords": {
+   "lat": 51.1605,
+   "lng": 71.4704
+  },
+  "center": [
+   48,
+   68
+  ],
+  "area": 2724900,
+  "landlocked": true,
+  "borders": [
+   "CN",
+   "KG",
+   "RU",
+   "TM",
+   "UZ"
+  ],
+  "population": {
+   "value": 18513930,
+   "year": 2019
+  },
+  "languagesHint": {
+   "kaz": "Kazakh",
+   "rus": "Russian"
+  }
+ },
+ {
+  "iso2": "QA",
+  "iso3": "QAT",
+  "ccn3": "634",
+  "status": "un",
+  "name": {
+   "de": "Katar",
+   "en": "Qatar",
+   "es": "Catar",
+   "officialDe": "Staat Katar"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Westasien",
+  "capitalHint": [
+   "Doha"
+  ],
+  "capitalCoords": {
+   "lat": 25.2866,
+   "lng": 51.533
+  },
+  "center": [
+   25.5,
+   51.25
+  ],
+  "area": 11586,
+  "landlocked": false,
+  "borders": [
+   "SA"
+  ],
+  "population": {
+   "value": 2832067,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic"
+  }
+ },
+ {
+  "iso2": "KE",
+  "iso3": "KEN",
+  "ccn3": "404",
+  "status": "un",
+  "name": {
+   "de": "Kenia",
+   "en": "Kenya",
+   "es": "Kenia",
+   "officialDe": "Republik Kenia"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Ostafrika",
+  "capitalHint": [
+   "Nairobi"
+  ],
+  "capitalCoords": {
+   "lat": -1.2814,
+   "lng": 36.8147
+  },
+  "center": [
+   1,
+   38
+  ],
+  "area": 580367,
+  "landlocked": false,
+  "borders": [
+   "ET",
+   "SO",
+   "SS",
+   "TZ",
+   "UG"
+  ],
+  "population": {
+   "value": 52573973,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "swa": "Swahili"
+  }
+ },
+ {
+  "iso2": "KG",
+  "iso3": "KGZ",
+  "ccn3": "417",
+  "status": "un",
+  "name": {
+   "de": "Kirgisistan",
+   "en": "Kyrgyzstan",
+   "es": "Kirguizistán",
+   "officialDe": "Kirgisische Republik"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Zentralasien",
+  "capitalHint": [
+   "Bishkek"
+  ],
+  "capitalCoords": {
+   "lat": 42.875,
+   "lng": 74.5833
+  },
+  "center": [
+   41,
+   75
+  ],
+  "area": 199951,
+  "landlocked": true,
+  "borders": [
+   "CN",
+   "KZ",
+   "TJ",
+   "UZ"
+  ],
+  "population": {
+   "value": 6456900,
+   "year": 2019
+  },
+  "languagesHint": {
+   "kir": "Kyrgyz",
+   "rus": "Russian"
+  }
+ },
+ {
+  "iso2": "KI",
+  "iso3": "KIR",
+  "ccn3": "296",
+  "status": "un",
+  "name": {
+   "de": "Kiribati",
+   "en": "Kiribati",
+   "es": "Kiribati",
+   "officialDe": "Republik Kiribati"
+  },
+  "continents": [
+   "oceania"
+  ],
+  "subregion": "Mikronesien",
+  "capitalHint": [
+   "South Tarawa"
+  ],
+  "capitalCoords": {
+   "lat": 1.3382,
+   "lng": 173.0176
+  },
+  "center": [
+   1.41666666,
+   173
+  ],
+  "area": 811,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 117606,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "gil": "Gilbertese"
+  }
+ },
+ {
+  "iso2": "CO",
+  "iso3": "COL",
+  "ccn3": "170",
+  "status": "un",
+  "name": {
+   "de": "Kolumbien",
+   "en": "Colombia",
+   "es": "Colombia",
+   "officialDe": "Republik Kolumbien"
+  },
+  "continents": [
+   "south-america"
+  ],
+  "subregion": "Südamerika",
+  "capitalHint": [
+   "Bogotá"
+  ],
+  "capitalCoords": {
+   "lat": 4.5984,
+   "lng": -74.0853
+  },
+  "center": [
+   4,
+   -72
+  ],
+  "area": 1141748,
+  "landlocked": false,
+  "borders": [
+   "BR",
+   "EC",
+   "PA",
+   "PE",
+   "VE"
+  ],
+  "population": {
+   "value": 50339443,
+   "year": 2019
+  },
+  "languagesHint": {
+   "spa": "Spanish"
+  }
+ },
+ {
+  "iso2": "KM",
+  "iso3": "COM",
+  "ccn3": "174",
+  "status": "un",
+  "name": {
+   "de": "Komoren",
+   "en": "Comoros",
+   "es": "Comoras",
+   "officialDe": "Union der Komoren"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Ostafrika",
+  "capitalHint": [
+   "Moroni"
+  ],
+  "capitalCoords": {
+   "lat": -11.7042,
+   "lng": 43.2402
+  },
+  "center": [
+   -12.16666666,
+   44.25
+  ],
+  "area": 1862,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 850886,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic",
+   "fra": "French",
+   "zdj": "Comorian"
+  }
+ },
+ {
+  "iso2": "CG",
+  "iso3": "COG",
+  "ccn3": "178",
+  "status": "un",
+  "name": {
+   "de": "Kongo",
+   "en": "Republic of the Congo",
+   "es": "Congo",
+   "officialDe": "Republik Kongo"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Zentralafrika",
+  "capitalHint": [
+   "Brazzaville"
+  ],
+  "capitalCoords": {
+   "lat": -4.2572,
+   "lng": 15.2827
+  },
+  "center": [
+   -1,
+   15
+  ],
+  "area": 342000,
+  "landlocked": false,
+  "borders": [
+   "AO",
+   "CM",
+   "CF",
+   "CD",
+   "GA"
+  ],
+  "population": {
+   "value": 5380508,
+   "year": 2019
+  },
+  "languagesHint": {
+   "fra": "French",
+   "kon": "Kikongo",
+   "lin": "Lingala"
+  }
+ },
+ {
+  "iso2": "CD",
+  "iso3": "COD",
+  "ccn3": "180",
+  "status": "un",
+  "name": {
+   "de": "Kongo (Dem. Rep.)",
+   "en": "DR Congo",
+   "es": "Congo (Rep. Dem.)",
+   "officialDe": "Demokratische Republik Kongo"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Zentralafrika",
+  "capitalHint": [
+   "Kinshasa"
+  ],
+  "capitalCoords": {
+   "lat": -4.3278,
+   "lng": 15.313
+  },
+  "center": [
+   0,
+   25
+  ],
+  "area": 2344858,
+  "landlocked": false,
+  "borders": [
+   "AO",
+   "BI",
+   "CF",
+   "CG",
+   "RW",
+   "SS",
+   "TZ",
+   "UG",
+   "ZM"
+  ],
+  "population": {
+   "value": 86790567,
+   "year": 2019
+  },
+  "languagesHint": {
+   "fra": "French",
+   "kon": "Kikongo",
+   "lin": "Lingala",
+   "lua": "Tshiluba",
+   "swa": "Swahili"
+  }
+ },
+ {
+  "iso2": "XK",
+  "iso3": "UNK",
+  "ccn3": null,
+  "status": "partial",
+  "name": {
+   "de": "Kosovo",
+   "en": "Kosovo",
+   "es": "Kosovo",
+   "officialDe": "Republik Kosovo"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Südosteuropa",
+  "capitalHint": [
+   "Pristina"
+  ],
+  "capitalCoords": {
+   "lat": 42.6629,
+   "lng": 21.1655
+  },
+  "center": [
+   42.666667,
+   21.166667
+  ],
+  "area": 10908,
+  "landlocked": true,
+  "borders": [
+   "AL",
+   "MK",
+   "ME",
+   "RS"
+  ],
+  "population": {
+   "value": 1794248,
+   "year": 2019
+  },
+  "languagesHint": {
+   "sqi": "Albanian",
+   "srp": "Serbian"
+  }
+ },
+ {
+  "iso2": "HR",
+  "iso3": "HRV",
+  "ccn3": "191",
+  "status": "un",
+  "name": {
+   "de": "Kroatien",
+   "en": "Croatia",
+   "es": "Croacia",
+   "officialDe": "Republik Kroatien"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Südosteuropa",
+  "capitalHint": [
+   "Zagreb"
+  ],
+  "capitalCoords": {
+   "lat": 45.8,
+   "lng": 16
+  },
+  "center": [
+   45.16666666,
+   15.5
+  ],
+  "area": 56594,
+  "landlocked": false,
+  "borders": [
+   "BA",
+   "HU",
+   "ME",
+   "RS",
+   "SI"
+  ],
+  "population": {
+   "value": 4067500,
+   "year": 2019
+  },
+  "languagesHint": {
+   "hrv": "Croatian"
+  }
+ },
+ {
+  "iso2": "CU",
+  "iso3": "CUB",
+  "ccn3": "192",
+  "status": "un",
+  "name": {
+   "de": "Kuba",
+   "en": "Cuba",
+   "es": "Cuba",
+   "officialDe": "Republik Kuba"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Karibik",
+  "capitalHint": [
+   "Havana"
+  ],
+  "capitalCoords": {
+   "lat": 23.1339,
+   "lng": -82.3661
+  },
+  "center": [
+   21.5,
+   -80
+  ],
+  "area": 109884,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 11333483,
+   "year": 2019
+  },
+  "languagesHint": {
+   "spa": "Spanish"
+  }
+ },
+ {
+  "iso2": "KW",
+  "iso3": "KWT",
+  "ccn3": "414",
+  "status": "un",
+  "name": {
+   "de": "Kuwait",
+   "en": "Kuwait",
+   "es": "Kuwait",
+   "officialDe": "Staat Kuwait"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Westasien",
+  "capitalHint": [
+   "Kuwait City"
+  ],
+  "capitalCoords": {
+   "lat": 29.3717,
+   "lng": 47.9764
+  },
+  "center": [
+   29.5,
+   45.75
+  ],
+  "area": 17818,
+  "landlocked": false,
+  "borders": [
+   "IQ",
+   "SA"
+  ],
+  "population": {
+   "value": 4207083,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic"
+  }
+ },
+ {
+  "iso2": "LA",
+  "iso3": "LAO",
+  "ccn3": "418",
+  "status": "un",
+  "name": {
+   "de": "Laos",
+   "en": "Laos",
+   "es": "Laos",
+   "officialDe": "Demokratische Volksrepublik Laos"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Südostasien",
+  "capitalHint": [
+   "Vientiane"
+  ],
+  "capitalCoords": {
+   "lat": 17.9667,
+   "lng": 102.6
+  },
+  "center": [
+   18,
+   105
+  ],
+  "area": 236800,
+  "landlocked": true,
+  "borders": [
+   "MM",
+   "KH",
+   "CN",
+   "TH",
+   "VN"
+  ],
+  "population": {
+   "value": 7169455,
+   "year": 2019
+  },
+  "languagesHint": {
+   "lao": "Lao"
+  }
+ },
+ {
+  "iso2": "LS",
+  "iso3": "LSO",
+  "ccn3": "426",
+  "status": "un",
+  "name": {
+   "de": "Lesotho",
+   "en": "Lesotho",
+   "es": "Lesotho",
+   "officialDe": "Königreich Lesotho"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Südliches Afrika",
+  "capitalHint": [
+   "Maseru"
+  ],
+  "capitalCoords": {
+   "lat": -29.3167,
+   "lng": 27.4833
+  },
+  "center": [
+   -29.5,
+   28.5
+  ],
+  "area": 30355,
+  "landlocked": true,
+  "borders": [
+   "ZA"
+  ],
+  "population": {
+   "value": 2125268,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "sot": "Sotho"
+  }
+ },
+ {
+  "iso2": "LV",
+  "iso3": "LVA",
+  "ccn3": "428",
+  "status": "un",
+  "name": {
+   "de": "Lettland",
+   "en": "Latvia",
+   "es": "Letonia",
+   "officialDe": "Republik Lettland"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Nordeuropa",
+  "capitalHint": [
+   "Riga"
+  ],
+  "capitalCoords": {
+   "lat": 56.95,
+   "lng": 24.1
+  },
+  "center": [
+   57,
+   25
+  ],
+  "area": 64559,
+  "landlocked": false,
+  "borders": [
+   "BY",
+   "EE",
+   "LT",
+   "RU"
+  ],
+  "population": {
+   "value": 1912789,
+   "year": 2019
+  },
+  "languagesHint": {
+   "lav": "Latvian"
+  }
+ },
+ {
+  "iso2": "LB",
+  "iso3": "LBN",
+  "ccn3": "422",
+  "status": "un",
+  "name": {
+   "de": "Libanon",
+   "en": "Lebanon",
+   "es": "Líbano",
+   "officialDe": "Libanesische Republik"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Westasien",
+  "capitalHint": [
+   "Beirut"
+  ],
+  "capitalCoords": {
+   "lat": 33.8739,
+   "lng": 35.5078
+  },
+  "center": [
+   33.83333333,
+   35.83333333
+  ],
+  "area": 10452,
+  "landlocked": false,
+  "borders": [
+   "IL",
+   "SY"
+  ],
+  "population": {
+   "value": 6855713,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic",
+   "fra": "French"
+  }
+ },
+ {
+  "iso2": "LR",
+  "iso3": "LBR",
+  "ccn3": "430",
+  "status": "un",
+  "name": {
+   "de": "Liberia",
+   "en": "Liberia",
+   "es": "Liberia",
+   "officialDe": "Republik Liberia"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Westafrika",
+  "capitalHint": [
+   "Monrovia"
+  ],
+  "capitalCoords": {
+   "lat": 6.3146,
+   "lng": -10.7997
+  },
+  "center": [
+   6.5,
+   -9.5
+  ],
+  "area": 111369,
+  "landlocked": false,
+  "borders": [
+   "GN",
+   "CI",
+   "SL"
+  ],
+  "population": {
+   "value": 4937374,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "LY",
+  "iso3": "LBY",
+  "ccn3": "434",
+  "status": "un",
+  "name": {
+   "de": "Libyen",
+   "en": "Libya",
+   "es": "Libia",
+   "officialDe": "Staat Libyen"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Nordafrika",
+  "capitalHint": [
+   "Tripoli"
+  ],
+  "capitalCoords": {
+   "lat": 32.8925,
+   "lng": 13.18
+  },
+  "center": [
+   25,
+   17
+  ],
+  "area": 1759540,
+  "landlocked": false,
+  "borders": [
+   "DZ",
+   "TD",
+   "EG",
+   "NE",
+   "SD",
+   "TN"
+  ],
+  "population": {
+   "value": 6777452,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic"
+  }
+ },
+ {
+  "iso2": "LI",
+  "iso3": "LIE",
+  "ccn3": "438",
+  "status": "un",
+  "name": {
+   "de": "Liechtenstein",
+   "en": "Liechtenstein",
+   "es": "Liechtenstein",
+   "officialDe": "Fürstentum Liechtenstein"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Westeuropa",
+  "capitalHint": [
+   "Vaduz"
+  ],
+  "capitalCoords": {
+   "lat": 47.1337,
+   "lng": 9.5167
+  },
+  "center": [
+   47.26666666,
+   9.53333333
+  ],
+  "area": 160,
+  "landlocked": true,
+  "borders": [
+   "AT",
+   "CH"
+  ],
+  "population": {
+   "value": 38019,
+   "year": 2019
+  },
+  "languagesHint": {
+   "deu": "German"
+  }
+ },
+ {
+  "iso2": "LT",
+  "iso3": "LTU",
+  "ccn3": "440",
+  "status": "un",
+  "name": {
+   "de": "Litauen",
+   "en": "Lithuania",
+   "es": "Lituania",
+   "officialDe": "Republik Litauen"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Nordeuropa",
+  "capitalHint": [
+   "Vilnius"
+  ],
+  "capitalCoords": {
+   "lat": 54.6834,
+   "lng": 25.3166
+  },
+  "center": [
+   56,
+   24
+  ],
+  "area": 65300,
+  "landlocked": false,
+  "borders": [
+   "BY",
+   "LV",
+   "PL",
+   "RU"
+  ],
+  "population": {
+   "value": 2786844,
+   "year": 2019
+  },
+  "languagesHint": {
+   "lit": "Lithuanian"
+  }
+ },
+ {
+  "iso2": "LU",
+  "iso3": "LUX",
+  "ccn3": "442",
+  "status": "un",
+  "name": {
+   "de": "Luxemburg",
+   "en": "Luxembourg",
+   "es": "Luxemburgo",
+   "officialDe": "Großherzogtum Luxemburg,"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Westeuropa",
+  "capitalHint": [
+   "Luxembourg"
+  ],
+  "capitalCoords": {
+   "lat": 49.6117,
+   "lng": 6.13
+  },
+  "center": [
+   49.75,
+   6.16666666
+  ],
+  "area": 2586,
+  "landlocked": true,
+  "borders": [
+   "BE",
+   "FR",
+   "DE"
+  ],
+  "population": {
+   "value": 619896,
+   "year": 2019
+  },
+  "languagesHint": {
+   "deu": "German",
+   "fra": "French",
+   "ltz": "Luxembourgish"
+  }
+ },
+ {
+  "iso2": "MG",
+  "iso3": "MDG",
+  "ccn3": "450",
+  "status": "un",
+  "name": {
+   "de": "Madagaskar",
+   "en": "Madagascar",
+   "es": "Madagascar",
+   "officialDe": "Republik Madagaskar"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Ostafrika",
+  "capitalHint": [
+   "Antananarivo"
+  ],
+  "capitalCoords": {
+   "lat": -18.9147,
+   "lng": 47.5147
+  },
+  "center": [
+   -20,
+   47
+  ],
+  "area": 587041,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 26969307,
+   "year": 2019
+  },
+  "languagesHint": {
+   "fra": "French",
+   "mlg": "Malagasy"
+  }
+ },
+ {
+  "iso2": "MW",
+  "iso3": "MWI",
+  "ccn3": "454",
+  "status": "un",
+  "name": {
+   "de": "Malawi",
+   "en": "Malawi",
+   "es": "Malawi",
+   "officialDe": "Republik Malawi"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Ostafrika",
+  "capitalHint": [
+   "Lilongwe"
+  ],
+  "capitalCoords": {
+   "lat": -13.9833,
+   "lng": 33.7833
+  },
+  "center": [
+   -13.5,
+   34
+  ],
+  "area": 118484,
+  "landlocked": true,
+  "borders": [
+   "MZ",
+   "TZ",
+   "ZM"
+  ],
+  "population": {
+   "value": 18628747,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "nya": "Chewa"
+  }
+ },
+ {
+  "iso2": "MY",
+  "iso3": "MYS",
+  "ccn3": "458",
+  "status": "un",
+  "name": {
+   "de": "Malaysia",
+   "en": "Malaysia",
+   "es": "Malasia",
+   "officialDe": "Malaysia"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Südostasien",
+  "capitalHint": [
+   "Kuala Lumpur"
+  ],
+  "capitalCoords": {
+   "lat": 3.1686,
+   "lng": 101.698
+  },
+  "center": [
+   2.5,
+   112.5
+  ],
+  "area": 330803,
+  "landlocked": false,
+  "borders": [
+   "BN",
+   "ID",
+   "TH"
+  ],
+  "population": {
+   "value": 31949777,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "msa": "Malay"
+  }
+ },
+ {
+  "iso2": "MV",
+  "iso3": "MDV",
+  "ccn3": "462",
+  "status": "un",
+  "name": {
+   "de": "Malediven",
+   "en": "Maldives",
+   "es": "Maldivas",
+   "officialDe": "Republik Malediven"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Südasien",
+  "capitalHint": [
+   "Malé"
+  ],
+  "capitalCoords": {
+   "lat": 4.1667,
+   "lng": 73.4999
+  },
+  "center": [
+   3.25,
+   73
+  ],
+  "area": 300,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 530953,
+   "year": 2019
+  },
+  "languagesHint": {
+   "div": "Maldivian"
+  }
+ },
+ {
+  "iso2": "ML",
+  "iso3": "MLI",
+  "ccn3": "466",
+  "status": "un",
+  "name": {
+   "de": "Mali",
+   "en": "Mali",
+   "es": "Mali",
+   "officialDe": "Republik Mali"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Westafrika",
+  "capitalHint": [
+   "Bamako"
+  ],
+  "capitalCoords": {
+   "lat": 12.652,
+   "lng": -8.002
+  },
+  "center": [
+   17,
+   -4
+  ],
+  "area": 1240192,
+  "landlocked": true,
+  "borders": [
+   "DZ",
+   "BF",
+   "GN",
+   "CI",
+   "MR",
+   "NE",
+   "SN"
+  ],
+  "population": {
+   "value": 19658031,
+   "year": 2019
+  },
+  "languagesHint": {
+   "fra": "French"
+  }
+ },
+ {
+  "iso2": "MT",
+  "iso3": "MLT",
+  "ccn3": "470",
+  "status": "un",
+  "name": {
+   "de": "Malta",
+   "en": "Malta",
+   "es": "Malta",
+   "officialDe": "Republik Malta"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Südeuropa",
+  "capitalHint": [
+   "Valletta"
+  ],
+  "capitalCoords": {
+   "lat": 35.8997,
+   "lng": 14.5147
+  },
+  "center": [
+   35.83333333,
+   14.58333333
+  ],
+  "area": 316,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 502653,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "mlt": "Maltese"
+  }
+ },
+ {
+  "iso2": "MA",
+  "iso3": "MAR",
+  "ccn3": "504",
+  "status": "un",
+  "name": {
+   "de": "Marokko",
+   "en": "Morocco",
+   "es": "Marruecos",
+   "officialDe": "Königreich Marokko"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Nordafrika",
+  "capitalHint": [
+   "Rabat"
+  ],
+  "capitalCoords": {
+   "lat": 34.0253,
+   "lng": -6.8364
+  },
+  "center": [
+   32,
+   -5
+  ],
+  "area": 446550,
+  "landlocked": false,
+  "borders": [
+   "DZ",
+   "EH",
+   "ES"
+  ],
+  "population": {
+   "value": 36471769,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic",
+   "ber": "Berber"
+  }
+ },
+ {
+  "iso2": "MH",
+  "iso3": "MHL",
+  "ccn3": "584",
+  "status": "un",
+  "name": {
+   "de": "Marshallinseln",
+   "en": "Marshall Islands",
+   "es": "Islas Marshall",
+   "officialDe": "Republik Marshallinseln"
+  },
+  "continents": [
+   "oceania"
+  ],
+  "subregion": "Mikronesien",
+  "capitalHint": [
+   "Majuro"
+  ],
+  "capitalCoords": {
+   "lat": 7.103,
+   "lng": 171.38
+  },
+  "center": [
+   9,
+   168
+  ],
+  "area": 181,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 58791,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "mah": "Marshallese"
+  }
+ },
+ {
+  "iso2": "MR",
+  "iso3": "MRT",
+  "ccn3": "478",
+  "status": "un",
+  "name": {
+   "de": "Mauretanien",
+   "en": "Mauritania",
+   "es": "Mauritania",
+   "officialDe": "Islamische Republik Mauretanien"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Westafrika",
+  "capitalHint": [
+   "Nouakchott"
+  ],
+  "capitalCoords": {
+   "lat": 18.0864,
+   "lng": -15.9753
+  },
+  "center": [
+   20,
+   -12
+  ],
+  "area": 1030700,
+  "landlocked": false,
+  "borders": [
+   "DZ",
+   "ML",
+   "SN",
+   "EH"
+  ],
+  "population": {
+   "value": 4525696,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic"
+  }
+ },
+ {
+  "iso2": "MU",
+  "iso3": "MUS",
+  "ccn3": "480",
+  "status": "un",
+  "name": {
+   "de": "Mauritius",
+   "en": "Mauritius",
+   "es": "Mauricio",
+   "officialDe": "Republik Mauritius"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Ostafrika",
+  "capitalHint": [
+   "Port Louis"
+  ],
+  "capitalCoords": {
+   "lat": -20.1666,
+   "lng": 57.5
+  },
+  "center": [
+   -20.28333333,
+   57.55
+  ],
+  "area": 2040,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 1265711,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "fra": "French",
+   "mfe": "Mauritian Creole"
+  }
+ },
+ {
+  "iso2": "MX",
+  "iso3": "MEX",
+  "ccn3": "484",
+  "status": "un",
+  "name": {
+   "de": "Mexiko",
+   "en": "Mexico",
+   "es": "México",
+   "officialDe": "Vereinigte Mexikanische Staaten"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Nordamerika",
+  "capitalHint": [
+   "Mexico City"
+  ],
+  "capitalCoords": {
+   "lat": 19.4444,
+   "lng": -99.1329
+  },
+  "center": [
+   23,
+   -102
+  ],
+  "area": 1964375,
+  "landlocked": false,
+  "borders": [
+   "BZ",
+   "GT",
+   "US"
+  ],
+  "population": {
+   "value": 127575529,
+   "year": 2019
+  },
+  "languagesHint": {
+   "spa": "Spanish"
+  }
+ },
+ {
+  "iso2": "FM",
+  "iso3": "FSM",
+  "ccn3": "583",
+  "status": "un",
+  "name": {
+   "de": "Mikronesien",
+   "en": "Micronesia",
+   "es": "Micronesia",
+   "officialDe": "Föderierte Staaten von Mikronesien"
+  },
+  "continents": [
+   "oceania"
+  ],
+  "subregion": "Mikronesien",
+  "capitalHint": [
+   "Palikir"
+  ],
+  "capitalCoords": {
+   "lat": 6.9166,
+   "lng": 158.15
+  },
+  "center": [
+   6.91666666,
+   158.25
+  ],
+  "area": 702,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 113815,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "MD",
+  "iso3": "MDA",
+  "ccn3": "498",
+  "status": "un",
+  "name": {
+   "de": "Moldawien",
+   "en": "Moldova",
+   "es": "Moldavia",
+   "officialDe": "Republik Moldau"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Osteuropa",
+  "capitalHint": [
+   "Chișinău"
+  ],
+  "capitalCoords": {
+   "lat": 47.005,
+   "lng": 28.8577
+  },
+  "center": [
+   47,
+   29
+  ],
+  "area": 33846,
+  "landlocked": true,
+  "borders": [
+   "RO",
+   "UA"
+  ],
+  "population": {
+   "value": 2657637,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ron": "Moldavian"
+  }
+ },
+ {
+  "iso2": "MC",
+  "iso3": "MCO",
+  "ccn3": "492",
+  "status": "un",
+  "name": {
+   "de": "Monaco",
+   "en": "Monaco",
+   "es": "Mónaco",
+   "officialDe": "Fürstentum Monaco"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Westeuropa",
+  "capitalHint": [
+   "Monaco"
+  ],
+  "capitalCoords": {
+   "lat": 43.7396,
+   "lng": 7.4069
+  },
+  "center": [
+   43.73333333,
+   7.4
+  ],
+  "area": 2.02,
+  "landlocked": false,
+  "borders": [
+   "FR"
+  ],
+  "population": {
+   "value": 38964,
+   "year": 2019
+  },
+  "languagesHint": {
+   "fra": "French"
+  }
+ },
+ {
+  "iso2": "MN",
+  "iso3": "MNG",
+  "ccn3": "496",
+  "status": "un",
+  "name": {
+   "de": "Mongolei",
+   "en": "Mongolia",
+   "es": "Mongolia",
+   "officialDe": "Mongolei"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Ostasien",
+  "capitalHint": [
+   "Ulan Bator"
+  ],
+  "capitalCoords": {
+   "lat": 47.9186,
+   "lng": 106.9147
+  },
+  "center": [
+   46,
+   105
+  ],
+  "area": 1564110,
+  "landlocked": true,
+  "borders": [
+   "CN",
+   "RU"
+  ],
+  "population": {
+   "value": 3225167,
+   "year": 2019
+  },
+  "languagesHint": {
+   "mon": "Mongolian"
+  }
+ },
+ {
+  "iso2": "ME",
+  "iso3": "MNE",
+  "ccn3": "499",
+  "status": "un",
+  "name": {
+   "de": "Montenegro",
+   "en": "Montenegro",
+   "es": "Montenegro",
+   "officialDe": "Montenegro"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Südosteuropa",
+  "capitalHint": [
+   "Podgorica"
+  ],
+  "capitalCoords": {
+   "lat": 42.466,
+   "lng": 19.2663
+  },
+  "center": [
+   42.5,
+   19.3
+  ],
+  "area": 13812,
+  "landlocked": false,
+  "borders": [
+   "AL",
+   "BA",
+   "HR",
+   "XK",
+   "RS"
+  ],
+  "population": {
+   "value": 622137,
+   "year": 2019
+  },
+  "languagesHint": {
+   "cnr": "Montenegrin"
+  }
+ },
+ {
+  "iso2": "MZ",
+  "iso3": "MOZ",
+  "ccn3": "508",
+  "status": "un",
+  "name": {
+   "de": "Mosambik",
+   "en": "Mozambique",
+   "es": "Mozambique",
+   "officialDe": "Republik Mosambik"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Ostafrika",
+  "capitalHint": [
+   "Maputo"
+  ],
+  "capitalCoords": {
+   "lat": -25.9533,
+   "lng": 32.5872
+  },
+  "center": [
+   -18.25,
+   35
+  ],
+  "area": 801590,
+  "landlocked": false,
+  "borders": [
+   "MW",
+   "ZA",
+   "SZ",
+   "TZ",
+   "ZM",
+   "ZW"
+  ],
+  "population": {
+   "value": 30366036,
+   "year": 2019
+  },
+  "languagesHint": {
+   "por": "Portuguese"
+  }
+ },
+ {
+  "iso2": "MM",
+  "iso3": "MMR",
+  "ccn3": "104",
+  "status": "un",
+  "name": {
+   "de": "Myanmar",
+   "en": "Myanmar",
+   "es": "Myanmar",
+   "officialDe": "Republik der Union Myanmar"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Südostasien",
+  "capitalHint": [
+   "Naypyidaw"
+  ],
+  "capitalCoords": {
+   "lat": 19.7685,
+   "lng": 96.1167
+  },
+  "center": [
+   22,
+   98
+  ],
+  "area": 676578,
+  "landlocked": false,
+  "borders": [
+   "BD",
+   "CN",
+   "IN",
+   "LA",
+   "TH"
+  ],
+  "population": {
+   "value": 54045420,
+   "year": 2019
+  },
+  "languagesHint": {
+   "mya": "Burmese"
+  }
+ },
+ {
+  "iso2": "NA",
+  "iso3": "NAM",
+  "ccn3": "516",
+  "status": "un",
+  "name": {
+   "de": "Namibia",
+   "en": "Namibia",
+   "es": "Namibia",
+   "officialDe": "Republik Namibia"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Südliches Afrika",
+  "capitalHint": [
+   "Windhoek"
+  ],
+  "capitalCoords": {
+   "lat": -22.57,
+   "lng": 17.0835
+  },
+  "center": [
+   -22,
+   17
+  ],
+  "area": 825615,
+  "landlocked": false,
+  "borders": [
+   "AO",
+   "BW",
+   "ZA",
+   "ZM"
+  ],
+  "population": {
+   "value": 2494530,
+   "year": 2019
+  },
+  "languagesHint": {
+   "afr": "Afrikaans",
+   "deu": "German",
+   "eng": "English",
+   "her": "Herero",
+   "hgm": "Khoekhoe",
+   "kwn": "Kwangali",
+   "loz": "Lozi",
+   "ndo": "Ndonga",
+   "tsn": "Tswana"
+  }
+ },
+ {
+  "iso2": "NR",
+  "iso3": "NRU",
+  "ccn3": "520",
+  "status": "un",
+  "name": {
+   "de": "Nauru",
+   "en": "Nauru",
+   "es": "Nauru",
+   "officialDe": "Republik Nauru"
+  },
+  "continents": [
+   "oceania"
+  ],
+  "subregion": "Mikronesien",
+  "capitalHint": [
+   "Yaren"
+  ],
+  "capitalCoords": {
+   "lat": -0.5477,
+   "lng": 166.9209
+  },
+  "center": [
+   -0.53333333,
+   166.91666666
+  ],
+  "area": 21,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 12581,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "nau": "Nauru"
+  }
+ },
+ {
+  "iso2": "NP",
+  "iso3": "NPL",
+  "ccn3": "524",
+  "status": "un",
+  "name": {
+   "de": "Nepal",
+   "en": "Nepal",
+   "es": "Nepal",
+   "officialDe": "Demokratische Bundesrepublik Nepal"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Südasien",
+  "capitalHint": [
+   "Kathmandu"
+  ],
+  "capitalCoords": {
+   "lat": 27.7186,
+   "lng": 85.3147
+  },
+  "center": [
+   28,
+   84
+  ],
+  "area": 147181,
+  "landlocked": true,
+  "borders": [
+   "CN",
+   "IN"
+  ],
+  "population": {
+   "value": 28608710,
+   "year": 2019
+  },
+  "languagesHint": {
+   "nep": "Nepali"
+  }
+ },
+ {
+  "iso2": "NZ",
+  "iso3": "NZL",
+  "ccn3": "554",
+  "status": "un",
+  "name": {
+   "de": "Neuseeland",
+   "en": "New Zealand",
+   "es": "Nueva Zelanda",
+   "officialDe": "Neuseeland"
+  },
+  "continents": [
+   "oceania"
+  ],
+  "subregion": "Australien & Neuseeland",
+  "capitalHint": [
+   "Wellington"
+  ],
+  "capitalCoords": {
+   "lat": -41.3,
+   "lng": 174.7833
+  },
+  "center": [
+   -41,
+   174
+  ],
+  "area": 270467,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 4917000,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "mri": "Māori",
+   "nzs": "New Zealand Sign Language"
+  }
+ },
+ {
+  "iso2": "NI",
+  "iso3": "NIC",
+  "ccn3": "558",
+  "status": "un",
+  "name": {
+   "de": "Nicaragua",
+   "en": "Nicaragua",
+   "es": "Nicaragua",
+   "officialDe": "Republik Nicaragua"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Mittelamerika",
+  "capitalHint": [
+   "Managua"
+  ],
+  "capitalCoords": {
+   "lat": 12.155,
+   "lng": -86.2704
+  },
+  "center": [
+   13,
+   -85
+  ],
+  "area": 130373,
+  "landlocked": false,
+  "borders": [
+   "CR",
+   "HN"
+  ],
+  "population": {
+   "value": 6545502,
+   "year": 2019
+  },
+  "languagesHint": {
+   "spa": "Spanish"
+  }
+ },
+ {
+  "iso2": "NL",
+  "iso3": "NLD",
+  "ccn3": "528",
+  "status": "un",
+  "name": {
+   "de": "Niederlande",
+   "en": "Netherlands",
+   "es": "Países Bajos",
+   "officialDe": "Niederlande"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Westeuropa",
+  "capitalHint": [
+   "Amsterdam"
+  ],
+  "capitalCoords": {
+   "lat": 52.3519,
+   "lng": 4.9147
+  },
+  "center": [
+   52.5,
+   5.75
+  ],
+  "area": 41850,
+  "landlocked": false,
+  "borders": [
+   "BE",
+   "DE"
+  ],
+  "population": {
+   "value": 17332850,
+   "year": 2019
+  },
+  "languagesHint": {
+   "nld": "Dutch"
+  }
+ },
+ {
+  "iso2": "NE",
+  "iso3": "NER",
+  "ccn3": "562",
+  "status": "un",
+  "name": {
+   "de": "Niger",
+   "en": "Niger",
+   "es": "Níger",
+   "officialDe": "Republik Niger"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Westafrika",
+  "capitalHint": [
+   "Niamey"
+  ],
+  "capitalCoords": {
+   "lat": 13.5187,
+   "lng": 2.1147
+  },
+  "center": [
+   16,
+   8
+  ],
+  "area": 1267000,
+  "landlocked": true,
+  "borders": [
+   "DZ",
+   "BJ",
+   "BF",
+   "TD",
+   "LY",
+   "ML",
+   "NG"
+  ],
+  "population": {
+   "value": 23310715,
+   "year": 2019
+  },
+  "languagesHint": {
+   "fra": "French"
+  }
+ },
+ {
+  "iso2": "NG",
+  "iso3": "NGA",
+  "ccn3": "566",
+  "status": "un",
+  "name": {
+   "de": "Nigeria",
+   "en": "Nigeria",
+   "es": "Nigeria",
+   "officialDe": "Bundesrepublik Nigeria"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Westafrika",
+  "capitalHint": [
+   "Abuja"
+  ],
+  "capitalCoords": {
+   "lat": 9.0853,
+   "lng": 7.5314
+  },
+  "center": [
+   10,
+   8
+  ],
+  "area": 923768,
+  "landlocked": false,
+  "borders": [
+   "BJ",
+   "CM",
+   "TD",
+   "NE"
+  ],
+  "population": {
+   "value": 200963599,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "KP",
+  "iso3": "PRK",
+  "ccn3": "408",
+  "status": "un",
+  "name": {
+   "de": "Nordkorea",
+   "en": "North Korea",
+   "es": "Corea del Norte",
+   "officialDe": "Demokratische Volksrepublik Korea"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Ostasien",
+  "capitalHint": [
+   "Pyongyang"
+  ],
+  "capitalCoords": {
+   "lat": 39.0214,
+   "lng": 125.7527
+  },
+  "center": [
+   40,
+   127
+  ],
+  "area": 120538,
+  "landlocked": false,
+  "borders": [
+   "CN",
+   "KR",
+   "RU"
+  ],
+  "population": {
+   "value": 25666161,
+   "year": 2019
+  },
+  "languagesHint": {
+   "kor": "Korean"
+  }
+ },
+ {
+  "iso2": "MK",
+  "iso3": "MKD",
+  "ccn3": "807",
+  "status": "un",
+  "name": {
+   "de": "Nordmazedonien",
+   "en": "North Macedonia",
+   "es": "Macedonia del Norte",
+   "officialDe": "Republik Nordmazedonien"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Südosteuropa",
+  "capitalHint": [
+   "Skopje"
+  ],
+  "capitalCoords": {
+   "lat": 42,
+   "lng": 21.4335
+  },
+  "center": [
+   41.83333333,
+   22
+  ],
+  "area": 25713,
+  "landlocked": true,
+  "borders": [
+   "AL",
+   "BG",
+   "GR",
+   "XK",
+   "RS"
+  ],
+  "population": {
+   "value": 2083459,
+   "year": 2019
+  },
+  "languagesHint": {
+   "mkd": "Macedonian"
+  }
+ },
+ {
+  "iso2": "NO",
+  "iso3": "NOR",
+  "ccn3": "578",
+  "status": "un",
+  "name": {
+   "de": "Norwegen",
+   "en": "Norway",
+   "es": "Noruega",
+   "officialDe": "Königreich Norwegen"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Nordeuropa",
+  "capitalHint": [
+   "Oslo"
+  ],
+  "capitalCoords": {
+   "lat": 59.9186,
+   "lng": 10.748
+  },
+  "center": [
+   62,
+   10
+  ],
+  "area": 323802,
+  "landlocked": false,
+  "borders": [
+   "FI",
+   "SE",
+   "RU"
+  ],
+  "population": {
+   "value": 5347896,
+   "year": 2019
+  },
+  "languagesHint": {
+   "nno": "Norwegian Nynorsk",
+   "nob": "Norwegian Bokmål",
+   "smi": "Sami"
+  }
+ },
+ {
+  "iso2": "OM",
+  "iso3": "OMN",
+  "ccn3": "512",
+  "status": "un",
+  "name": {
+   "de": "Oman",
+   "en": "Oman",
+   "es": "Omán",
+   "officialDe": "Sultanat Oman"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Westasien",
+  "capitalHint": [
+   "Muscat"
+  ],
+  "capitalCoords": {
+   "lat": 23.6133,
+   "lng": 58.5933
+  },
+  "center": [
+   21,
+   57
+  ],
+  "area": 309500,
+  "landlocked": false,
+  "borders": [
+   "SA",
+   "AE",
+   "YE"
+  ],
+  "population": {
+   "value": 4974986,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic"
+  }
+ },
+ {
+  "iso2": "AT",
+  "iso3": "AUT",
+  "ccn3": "040",
+  "status": "un",
+  "name": {
+   "de": "Österreich",
+   "en": "Austria",
+   "es": "Austria",
+   "officialDe": "Republik Österreich"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Mitteleuropa",
+  "capitalHint": [
+   "Vienna"
+  ],
+  "capitalCoords": {
+   "lat": 48.202,
+   "lng": 16.3647
+  },
+  "center": [
+   47.33333333,
+   13.33333333
+  ],
+  "area": 83871,
+  "landlocked": true,
+  "borders": [
+   "CZ",
+   "DE",
+   "HU",
+   "IT",
+   "LI",
+   "SK",
+   "SI",
+   "CH"
+  ],
+  "population": {
+   "value": 8877067,
+   "year": 2019
+  },
+  "languagesHint": {
+   "bar": "Austro-Bavarian German"
+  }
+ },
+ {
+  "iso2": "TL",
+  "iso3": "TLS",
+  "ccn3": "626",
+  "status": "un",
+  "name": {
+   "de": "Osttimor",
+   "en": "Timor-Leste",
+   "es": "Timor Oriental",
+   "officialDe": "Demokratische Republik Timor-Leste"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Südostasien",
+  "capitalHint": [
+   "Dili"
+  ],
+  "capitalCoords": {
+   "lat": -8.5594,
+   "lng": 125.5795
+  },
+  "center": [
+   -8.83333333,
+   125.91666666
+  ],
+  "area": 14874,
+  "landlocked": false,
+  "borders": [
+   "ID"
+  ],
+  "population": {
+   "value": 1293119,
+   "year": 2019
+  },
+  "languagesHint": {
+   "por": "Portuguese",
+   "tet": "Tetum"
+  }
+ },
+ {
+  "iso2": "PK",
+  "iso3": "PAK",
+  "ccn3": "586",
+  "status": "un",
+  "name": {
+   "de": "Pakistan",
+   "en": "Pakistan",
+   "es": "Pakistán",
+   "officialDe": "Islamische Republik Pakistan"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Südasien",
+  "capitalHint": [
+   "Islamabad"
+  ],
+  "capitalCoords": {
+   "lat": 33.7019,
+   "lng": 73.1647
+  },
+  "center": [
+   30,
+   70
+  ],
+  "area": 881912,
+  "landlocked": false,
+  "borders": [
+   "AF",
+   "CN",
+   "IN",
+   "IR"
+  ],
+  "population": {
+   "value": 216565318,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "urd": "Urdu"
+  }
+ },
+ {
+  "iso2": "PS",
+  "iso3": "PSE",
+  "ccn3": "275",
+  "status": "observer",
+  "name": {
+   "de": "Palästina",
+   "en": "Palestine",
+   "es": "Palestina",
+   "officialDe": "Staat Palästina"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Westasien",
+  "capitalHint": [
+   "Ramallah"
+  ],
+  "capitalCoords": {
+   "lat": 31.9038,
+   "lng": 35.2034
+  },
+  "center": [
+   31.9,
+   35.2
+  ],
+  "area": 6220,
+  "landlocked": false,
+  "borders": [
+   "IL",
+   "EG",
+   "JO"
+  ],
+  "population": {
+   "value": 4685306,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic"
+  }
+ },
+ {
+  "iso2": "PW",
+  "iso3": "PLW",
+  "ccn3": "585",
+  "status": "un",
+  "name": {
+   "de": "Palau",
+   "en": "Palau",
+   "es": "Palau",
+   "officialDe": "Republik Palau"
+  },
+  "continents": [
+   "oceania"
+  ],
+  "subregion": "Mikronesien",
+  "capitalHint": [
+   "Ngerulmud"
+  ],
+  "capitalCoords": {
+   "lat": 7.4874,
+   "lng": 134.6265
+  },
+  "center": [
+   7.5,
+   134.5
+  ],
+  "area": 459,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 18008,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "pau": "Palauan"
+  }
+ },
+ {
+  "iso2": "PA",
+  "iso3": "PAN",
+  "ccn3": "591",
+  "status": "un",
+  "name": {
+   "de": "Panama",
+   "en": "Panama",
+   "es": "Panamá",
+   "officialDe": "Republik Panama"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Mittelamerika",
+  "capitalHint": [
+   "Panama City"
+  ],
+  "capitalCoords": {
+   "lat": 8.97,
+   "lng": -79.535
+  },
+  "center": [
+   9,
+   -80
+  ],
+  "area": 75417,
+  "landlocked": false,
+  "borders": [
+   "CO",
+   "CR"
+  ],
+  "population": {
+   "value": 4246439,
+   "year": 2019
+  },
+  "languagesHint": {
+   "spa": "Spanish"
+  }
+ },
+ {
+  "iso2": "PG",
+  "iso3": "PNG",
+  "ccn3": "598",
+  "status": "un",
+  "name": {
+   "de": "Papua-Neuguinea",
+   "en": "Papua New Guinea",
+   "es": "Papúa Nueva Guinea",
+   "officialDe": "Unabhängiger Staat Papua-Neuguinea"
+  },
+  "continents": [
+   "oceania"
+  ],
+  "subregion": "Melanesien",
+  "capitalHint": [
+   "Port Moresby"
+  ],
+  "capitalCoords": {
+   "lat": -9.4647,
+   "lng": 147.1925
+  },
+  "center": [
+   -6,
+   147
+  ],
+  "area": 462840,
+  "landlocked": false,
+  "borders": [
+   "ID"
+  ],
+  "population": {
+   "value": 8776109,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "hmo": "Hiri Motu",
+   "tpi": "Tok Pisin"
+  }
+ },
+ {
+  "iso2": "PY",
+  "iso3": "PRY",
+  "ccn3": "600",
+  "status": "un",
+  "name": {
+   "de": "Paraguay",
+   "en": "Paraguay",
+   "es": "Paraguay",
+   "officialDe": "Republik Paraguay"
+  },
+  "continents": [
+   "south-america"
+  ],
+  "subregion": "Südamerika",
+  "capitalHint": [
+   "Asunción"
+  ],
+  "capitalCoords": {
+   "lat": -25.2945,
+   "lng": -57.6435
+  },
+  "center": [
+   -23,
+   -58
+  ],
+  "area": 406752,
+  "landlocked": true,
+  "borders": [
+   "AR",
+   "BO",
+   "BR"
+  ],
+  "population": {
+   "value": 7044636,
+   "year": 2019
+  },
+  "languagesHint": {
+   "grn": "Guaraní",
+   "spa": "Spanish"
+  }
+ },
+ {
+  "iso2": "PE",
+  "iso3": "PER",
+  "ccn3": "604",
+  "status": "un",
+  "name": {
+   "de": "Peru",
+   "en": "Peru",
+   "es": "Perú",
+   "officialDe": "Republik Peru"
+  },
+  "continents": [
+   "south-america"
+  ],
+  "subregion": "Südamerika",
+  "capitalHint": [
+   "Lima"
+  ],
+  "capitalCoords": {
+   "lat": -12.0461,
+   "lng": -77.052
+  },
+  "center": [
+   -10,
+   -76
+  ],
+  "area": 1285216,
+  "landlocked": false,
+  "borders": [
+   "BO",
+   "BR",
+   "CL",
+   "CO",
+   "EC"
+  ],
+  "population": {
+   "value": 32510453,
+   "year": 2019
+  },
+  "languagesHint": {
+   "aym": "Aymara",
+   "que": "Quechua",
+   "spa": "Spanish"
+  }
+ },
+ {
+  "iso2": "PH",
+  "iso3": "PHL",
+  "ccn3": "608",
+  "status": "un",
+  "name": {
+   "de": "Philippinen",
+   "en": "Philippines",
+   "es": "Filipinas",
+   "officialDe": "Republik der Philippinen"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Südostasien",
+  "capitalHint": [
+   "Manila"
+  ],
+  "capitalCoords": {
+   "lat": 14.6061,
+   "lng": 120.9803
+  },
+  "center": [
+   13,
+   122
+  ],
+  "area": 342353,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 108116615,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "fil": "Filipino"
+  }
+ },
+ {
+  "iso2": "PL",
+  "iso3": "POL",
+  "ccn3": "616",
+  "status": "un",
+  "name": {
+   "de": "Polen",
+   "en": "Poland",
+   "es": "Polonia",
+   "officialDe": "Republik Polen"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Mitteleuropa",
+  "capitalHint": [
+   "Warsaw"
+  ],
+  "capitalCoords": {
+   "lat": 52.2519,
+   "lng": 20.9981
+  },
+  "center": [
+   52,
+   20
+  ],
+  "area": 312679,
+  "landlocked": false,
+  "borders": [
+   "BY",
+   "CZ",
+   "DE",
+   "LT",
+   "RU",
+   "SK",
+   "UA"
+  ],
+  "population": {
+   "value": 37970874,
+   "year": 2019
+  },
+  "languagesHint": {
+   "pol": "Polish"
+  }
+ },
+ {
+  "iso2": "PT",
+  "iso3": "PRT",
+  "ccn3": "620",
+  "status": "un",
+  "name": {
+   "de": "Portugal",
+   "en": "Portugal",
+   "es": "Portugal",
+   "officialDe": "Portugiesische Republik"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Südeuropa",
+  "capitalHint": [
+   "Lisbon"
+  ],
+  "capitalCoords": {
+   "lat": 38.7247,
+   "lng": -9.1468
+  },
+  "center": [
+   39.5,
+   -8
+  ],
+  "area": 92090,
+  "landlocked": false,
+  "borders": [
+   "ES"
+  ],
+  "population": {
+   "value": 10269417,
+   "year": 2019
+  },
+  "languagesHint": {
+   "por": "Portuguese"
+  }
+ },
+ {
+  "iso2": "PR",
+  "iso3": "PRI",
+  "ccn3": "630",
+  "status": "territory",
+  "name": {
+   "de": "Puerto Rico",
+   "en": "Puerto Rico",
+   "es": "Puerto Rico",
+   "officialDe": "Freistaat Puerto Rico"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Karibik",
+  "capitalHint": [
+   "San Juan"
+  ],
+  "capitalCoords": {
+   "lat": 18.4655,
+   "lng": -66.1057
+  },
+  "center": [
+   18.25,
+   -66.5
+  ],
+  "area": 8870,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 3193694,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "spa": "Spanish"
+  }
+ },
+ {
+  "iso2": "RW",
+  "iso3": "RWA",
+  "ccn3": "646",
+  "status": "un",
+  "name": {
+   "de": "Ruanda",
+   "en": "Rwanda",
+   "es": "Ruanda",
+   "officialDe": "Republik Ruanda"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Ostafrika",
+  "capitalHint": [
+   "Kigali"
+  ],
+  "capitalCoords": {
+   "lat": -1.9516,
+   "lng": 30.0586
+  },
+  "center": [
+   -2,
+   30
+  ],
+  "area": 26338,
+  "landlocked": true,
+  "borders": [
+   "BI",
+   "CD",
+   "TZ",
+   "UG"
+  ],
+  "population": {
+   "value": 12626950,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "fra": "French",
+   "kin": "Kinyarwanda"
+  }
+ },
+ {
+  "iso2": "RO",
+  "iso3": "ROU",
+  "ccn3": "642",
+  "status": "un",
+  "name": {
+   "de": "Rumänien",
+   "en": "Romania",
+   "es": "Rumania",
+   "officialDe": "Rumänien"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Südosteuropa",
+  "capitalHint": [
+   "Bucharest"
+  ],
+  "capitalCoords": {
+   "lat": 44.4353,
+   "lng": 26.098
+  },
+  "center": [
+   46,
+   25
+  ],
+  "area": 238391,
+  "landlocked": false,
+  "borders": [
+   "BG",
+   "HU",
+   "MD",
+   "RS",
+   "UA"
+  ],
+  "population": {
+   "value": 19356544,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ron": "Romanian"
+  }
+ },
+ {
+  "iso2": "RU",
+  "iso3": "RUS",
+  "ccn3": "643",
+  "status": "un",
+  "name": {
+   "de": "Russland",
+   "en": "Russia",
+   "es": "Rusia",
+   "officialDe": "Russische Föderation"
+  },
+  "continents": [
+   "europe",
+   "asia"
+  ],
+  "subregion": "Osteuropa",
+  "capitalHint": [
+   "Moscow"
+  ],
+  "capitalCoords": {
+   "lat": 55.7541,
+   "lng": 37.6136
+  },
+  "center": [
+   60,
+   100
+  ],
+  "area": 17098242,
+  "landlocked": false,
+  "borders": [
+   "AZ",
+   "BY",
+   "CN",
+   "EE",
+   "FI",
+   "GE",
+   "KZ",
+   "KP",
+   "LV",
+   "LT",
+   "MN",
+   "NO",
+   "PL",
+   "UA"
+  ],
+  "population": {
+   "value": 144373535,
+   "year": 2019
+  },
+  "languagesHint": {
+   "rus": "Russian"
+  }
+ },
+ {
+  "iso2": "SB",
+  "iso3": "SLB",
+  "ccn3": "090",
+  "status": "un",
+  "name": {
+   "de": "Salomonen",
+   "en": "Solomon Islands",
+   "es": "Islas Salomón",
+   "officialDe": "Salomonen"
+  },
+  "continents": [
+   "oceania"
+  ],
+  "subregion": "Melanesien",
+  "capitalHint": [
+   "Honiara"
+  ],
+  "capitalCoords": {
+   "lat": -9.438,
+   "lng": 159.9498
+  },
+  "center": [
+   -8,
+   159
+  ],
+  "area": 28896,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 669823,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "ZM",
+  "iso3": "ZMB",
+  "ccn3": "894",
+  "status": "un",
+  "name": {
+   "de": "Sambia",
+   "en": "Zambia",
+   "es": "Zambia",
+   "officialDe": "Republik Sambia"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Ostafrika",
+  "capitalHint": [
+   "Lusaka"
+  ],
+  "capitalCoords": {
+   "lat": -15.4147,
+   "lng": 28.2814
+  },
+  "center": [
+   -15,
+   30
+  ],
+  "area": 752612,
+  "landlocked": true,
+  "borders": [
+   "AO",
+   "BW",
+   "CD",
+   "MW",
+   "MZ",
+   "NA",
+   "TZ",
+   "ZW"
+  ],
+  "population": {
+   "value": 17861030,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "WS",
+  "iso3": "WSM",
+  "ccn3": "882",
+  "status": "un",
+  "name": {
+   "de": "Samoa",
+   "en": "Samoa",
+   "es": "Samoa",
+   "officialDe": "Unabhängige Staat Samoa"
+  },
+  "continents": [
+   "oceania"
+  ],
+  "subregion": "Polynesien",
+  "capitalHint": [
+   "Apia"
+  ],
+  "capitalCoords": {
+   "lat": -13.8415,
+   "lng": -171.7386
+  },
+  "center": [
+   -13.58333333,
+   -172.33333333
+  ],
+  "area": 2842,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 197097,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "smo": "Samoan"
+  }
+ },
+ {
+  "iso2": "SM",
+  "iso3": "SMR",
+  "ccn3": "674",
+  "status": "un",
+  "name": {
+   "de": "San Marino",
+   "en": "San Marino",
+   "es": "San Marino",
+   "officialDe": "Republik San Marino"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Südeuropa",
+  "capitalHint": [
+   "City of San Marino"
+  ],
+  "capitalCoords": {
+   "lat": 43.9361,
+   "lng": 12.4418
+  },
+  "center": [
+   43.76666666,
+   12.41666666
+  ],
+  "area": 61,
+  "landlocked": true,
+  "borders": [
+   "IT"
+  ],
+  "population": {
+   "value": 33860,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ita": "Italian"
+  }
+ },
+ {
+  "iso2": "ST",
+  "iso3": "STP",
+  "ccn3": "678",
+  "status": "un",
+  "name": {
+   "de": "São Tomé und Príncipe",
+   "en": "São Tomé and Príncipe",
+   "es": "Santo Tomé y Príncipe",
+   "officialDe": "Demokratische Republik São Tomé und Príncipe"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Zentralafrika",
+  "capitalHint": [
+   "São Tomé"
+  ],
+  "capitalCoords": {
+   "lat": 0.3334,
+   "lng": 6.7333
+  },
+  "center": [
+   1,
+   7
+  ],
+  "area": 964,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 215056,
+   "year": 2019
+  },
+  "languagesHint": {
+   "por": "Portuguese"
+  }
+ },
+ {
+  "iso2": "SA",
+  "iso3": "SAU",
+  "ccn3": "682",
+  "status": "un",
+  "name": {
+   "de": "Saudi-Arabien",
+   "en": "Saudi Arabia",
+   "es": "Arabia Saudí",
+   "officialDe": "Königreich Saudi-Arabien"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Westasien",
+  "capitalHint": [
+   "Riyadh"
+  ],
+  "capitalCoords": {
+   "lat": 24.6428,
+   "lng": 46.7708
+  },
+  "center": [
+   25,
+   45
+  ],
+  "area": 2149690,
+  "landlocked": false,
+  "borders": [
+   "IQ",
+   "JO",
+   "KW",
+   "OM",
+   "QA",
+   "AE",
+   "YE"
+  ],
+  "population": {
+   "value": 34268528,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic"
+  }
+ },
+ {
+  "iso2": "SE",
+  "iso3": "SWE",
+  "ccn3": "752",
+  "status": "un",
+  "name": {
+   "de": "Schweden",
+   "en": "Sweden",
+   "es": "Suecia",
+   "officialDe": "Königreich Schweden"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Nordeuropa",
+  "capitalHint": [
+   "Stockholm"
+  ],
+  "capitalCoords": {
+   "lat": 59.3527,
+   "lng": 18.0954
+  },
+  "center": [
+   62,
+   15
+  ],
+  "area": 450295,
+  "landlocked": false,
+  "borders": [
+   "FI",
+   "NO"
+  ],
+  "population": {
+   "value": 10285453,
+   "year": 2019
+  },
+  "languagesHint": {
+   "swe": "Swedish"
+  }
+ },
+ {
+  "iso2": "CH",
+  "iso3": "CHE",
+  "ccn3": "756",
+  "status": "un",
+  "name": {
+   "de": "Schweiz",
+   "en": "Switzerland",
+   "es": "Suiza",
+   "officialDe": "Schweizerische Eidgenossenschaft"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Westeuropa",
+  "capitalHint": [
+   "Bern"
+  ],
+  "capitalCoords": {
+   "lat": 46.9167,
+   "lng": 7.467
+  },
+  "center": [
+   47,
+   8
+  ],
+  "area": 41284,
+  "landlocked": true,
+  "borders": [
+   "AT",
+   "FR",
+   "IT",
+   "LI",
+   "DE"
+  ],
+  "population": {
+   "value": 8574832,
+   "year": 2019
+  },
+  "languagesHint": {
+   "fra": "French",
+   "gsw": "Swiss German",
+   "ita": "Italian",
+   "roh": "Romansh"
+  }
+ },
+ {
+  "iso2": "SN",
+  "iso3": "SEN",
+  "ccn3": "686",
+  "status": "un",
+  "name": {
+   "de": "Senegal",
+   "en": "Senegal",
+   "es": "Senegal",
+   "officialDe": "Republik Senegal"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Westafrika",
+  "capitalHint": [
+   "Dakar"
+  ],
+  "capitalCoords": {
+   "lat": 14.7178,
+   "lng": -17.4751
+  },
+  "center": [
+   14,
+   -14
+  ],
+  "area": 196722,
+  "landlocked": false,
+  "borders": [
+   "GM",
+   "GN",
+   "GW",
+   "ML",
+   "MR"
+  ],
+  "population": {
+   "value": 16296364,
+   "year": 2019
+  },
+  "languagesHint": {
+   "fra": "French"
+  }
+ },
+ {
+  "iso2": "RS",
+  "iso3": "SRB",
+  "ccn3": "688",
+  "status": "un",
+  "name": {
+   "de": "Serbien",
+   "en": "Serbia",
+   "es": "Serbia",
+   "officialDe": "Republik Serbien"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Südosteuropa",
+  "capitalHint": [
+   "Belgrade"
+  ],
+  "capitalCoords": {
+   "lat": 44.8206,
+   "lng": 20.466
+  },
+  "center": [
+   44,
+   21
+  ],
+  "area": 88361,
+  "landlocked": true,
+  "borders": [
+   "BA",
+   "BG",
+   "HR",
+   "HU",
+   "XK",
+   "MK",
+   "ME",
+   "RO"
+  ],
+  "population": {
+   "value": 6944975,
+   "year": 2019
+  },
+  "languagesHint": {
+   "srp": "Serbian"
+  }
+ },
+ {
+  "iso2": "SC",
+  "iso3": "SYC",
+  "ccn3": "690",
+  "status": "un",
+  "name": {
+   "de": "Seychellen",
+   "en": "Seychelles",
+   "es": "Seychelles",
+   "officialDe": "Republik der Seychellen"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Ostafrika",
+  "capitalHint": [
+   "Victoria"
+  ],
+  "capitalCoords": {
+   "lat": -4.6166,
+   "lng": 55.45
+  },
+  "center": [
+   -4.58333333,
+   55.66666666
+  ],
+  "area": 452,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 97625,
+   "year": 2019
+  },
+  "languagesHint": {
+   "crs": "Seychellois Creole",
+   "eng": "English",
+   "fra": "French"
+  }
+ },
+ {
+  "iso2": "SL",
+  "iso3": "SLE",
+  "ccn3": "694",
+  "status": "un",
+  "name": {
+   "de": "Sierra Leone",
+   "en": "Sierra Leone",
+   "es": "Sierra Leone",
+   "officialDe": "Republik Sierra Leone"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Westafrika",
+  "capitalHint": [
+   "Freetown"
+  ],
+  "capitalCoords": {
+   "lat": 8.472,
+   "lng": -13.2362
+  },
+  "center": [
+   8.5,
+   -11.5
+  ],
+  "area": 71740,
+  "landlocked": false,
+  "borders": [
+   "GN",
+   "LR"
+  ],
+  "population": {
+   "value": 7813215,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "ZW",
+  "iso3": "ZWE",
+  "ccn3": "716",
+  "status": "un",
+  "name": {
+   "de": "Simbabwe",
+   "en": "Zimbabwe",
+   "es": "Zimbabue",
+   "officialDe": "Republik Simbabwe"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Ostafrika",
+  "capitalHint": [
+   "Harare"
+  ],
+  "capitalCoords": {
+   "lat": -17.8158,
+   "lng": 31.0428
+  },
+  "center": [
+   -20,
+   30
+  ],
+  "area": 390757,
+  "landlocked": true,
+  "borders": [
+   "BW",
+   "MZ",
+   "ZA",
+   "ZM"
+  ],
+  "population": {
+   "value": 14645468,
+   "year": 2019
+  },
+  "languagesHint": {
+   "bwg": "Chibarwe",
+   "eng": "English",
+   "kck": "Kalanga",
+   "khi": "Khoisan",
+   "ndc": "Ndau",
+   "nde": "Northern Ndebele",
+   "nya": "Chewa",
+   "sna": "Shona",
+   "sot": "Sotho",
+   "toi": "Tonga",
+   "tsn": "Tswana",
+   "tso": "Tsonga",
+   "ven": "Venda",
+   "xho": "Xhosa",
+   "zib": "Zimbabwean Sign Language"
+  }
+ },
+ {
+  "iso2": "SG",
+  "iso3": "SGP",
+  "ccn3": "702",
+  "status": "un",
+  "name": {
+   "de": "Singapur",
+   "en": "Singapore",
+   "es": "Singapur",
+   "officialDe": "Republik Singapur"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Südostasien",
+  "capitalHint": [
+   "Singapore"
+  ],
+  "capitalCoords": {
+   "lat": 1.295,
+   "lng": 103.8539
+  },
+  "center": [
+   1.36666666,
+   103.8
+  ],
+  "area": 710,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 5703569,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "msa": "Malay",
+   "tam": "Tamil",
+   "zho": "Chinese"
+  }
+ },
+ {
+  "iso2": "SK",
+  "iso3": "SVK",
+  "ccn3": "703",
+  "status": "un",
+  "name": {
+   "de": "Slowakei",
+   "en": "Slovakia",
+   "es": "Eslovaquia",
+   "officialDe": "Slowakische Republik"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Mitteleuropa",
+  "capitalHint": [
+   "Bratislava"
+  ],
+  "capitalCoords": {
+   "lat": 48.15,
+   "lng": 17.117
+  },
+  "center": [
+   48.66666666,
+   19.5
+  ],
+  "area": 49037,
+  "landlocked": true,
+  "borders": [
+   "AT",
+   "CZ",
+   "HU",
+   "PL",
+   "UA"
+  ],
+  "population": {
+   "value": 5454073,
+   "year": 2019
+  },
+  "languagesHint": {
+   "slk": "Slovak"
+  }
+ },
+ {
+  "iso2": "SI",
+  "iso3": "SVN",
+  "ccn3": "705",
+  "status": "un",
+  "name": {
+   "de": "Slowenien",
+   "en": "Slovenia",
+   "es": "Eslovenia",
+   "officialDe": "Republik Slowenien"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Mitteleuropa",
+  "capitalHint": [
+   "Ljubljana"
+  ],
+  "capitalCoords": {
+   "lat": 46.0553,
+   "lng": 14.515
+  },
+  "center": [
+   46.11666666,
+   14.81666666
+  ],
+  "area": 20273,
+  "landlocked": false,
+  "borders": [
+   "AT",
+   "HR",
+   "IT",
+   "HU"
+  ],
+  "population": {
+   "value": 2087946,
+   "year": 2019
+  },
+  "languagesHint": {
+   "slv": "Slovene"
+  }
+ },
+ {
+  "iso2": "SO",
+  "iso3": "SOM",
+  "ccn3": "706",
+  "status": "un",
+  "name": {
+   "de": "Somalia",
+   "en": "Somalia",
+   "es": "Somalia",
+   "officialDe": "Bundesrepublik Somalia"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Ostafrika",
+  "capitalHint": [
+   "Mogadishu"
+  ],
+  "capitalCoords": {
+   "lat": 2.0686,
+   "lng": 45.3647
+  },
+  "center": [
+   10,
+   49
+  ],
+  "area": 637657,
+  "landlocked": false,
+  "borders": [
+   "DJ",
+   "ET",
+   "KE"
+  ],
+  "population": {
+   "value": 10192317.3,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic",
+   "som": "Somali"
+  }
+ },
+ {
+  "iso2": "ES",
+  "iso3": "ESP",
+  "ccn3": "724",
+  "status": "un",
+  "name": {
+   "de": "Spanien",
+   "en": "Spain",
+   "es": "España",
+   "officialDe": "Königreich Spanien"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Südeuropa",
+  "capitalHint": [
+   "Madrid"
+  ],
+  "capitalCoords": {
+   "lat": 40.402,
+   "lng": -3.6853
+  },
+  "center": [
+   40,
+   -4
+  ],
+  "area": 505992,
+  "landlocked": false,
+  "borders": [
+   "AD",
+   "FR",
+   "GI",
+   "PT",
+   "MA"
+  ],
+  "population": {
+   "value": 47076781,
+   "year": 2019
+  },
+  "languagesHint": {
+   "spa": "Spanish"
+  }
+ },
+ {
+  "iso2": "LK",
+  "iso3": "LKA",
+  "ccn3": "144",
+  "status": "un",
+  "name": {
+   "de": "Sri Lanka",
+   "en": "Sri Lanka",
+   "es": "Sri Lanka",
+   "officialDe": "Demokratische Sozialistische Republik Sri Lanka"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Südasien",
+  "capitalHint": [
+   "Colombo"
+  ],
+  "capitalCoords": {
+   "lat": 6.932,
+   "lng": 79.8578
+  },
+  "center": [
+   7,
+   81
+  ],
+  "area": 65610,
+  "landlocked": false,
+  "borders": [
+   "IN"
+  ],
+  "population": {
+   "value": 21803000,
+   "year": 2019
+  },
+  "languagesHint": {
+   "sin": "Sinhala",
+   "tam": "Tamil"
+  }
+ },
+ {
+  "iso2": "KN",
+  "iso3": "KNA",
+  "ccn3": "659",
+  "status": "un",
+  "name": {
+   "de": "St. Kitts und Nevis",
+   "en": "Saint Kitts and Nevis",
+   "es": "San Cristóbal y Nieves",
+   "officialDe": "Föderation von St. Kitts und Nevis"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Karibik",
+  "capitalHint": [
+   "Basseterre"
+  ],
+  "capitalCoords": {
+   "lat": 17.302,
+   "lng": -62.717
+  },
+  "center": [
+   17.33333333,
+   -62.75
+  ],
+  "area": 261,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 52834,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "LC",
+  "iso3": "LCA",
+  "ccn3": "662",
+  "status": "un",
+  "name": {
+   "de": "St. Lucia",
+   "en": "Saint Lucia",
+   "es": "Santa Lucía",
+   "officialDe": "St. Lucia"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Karibik",
+  "capitalHint": [
+   "Castries"
+  ],
+  "capitalCoords": {
+   "lat": 14.002,
+   "lng": -61
+  },
+  "center": [
+   13.88333333,
+   -60.96666666
+  ],
+  "area": 616,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 182790,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "VC",
+  "iso3": "VCT",
+  "ccn3": "670",
+  "status": "un",
+  "name": {
+   "de": "St. Vincent und die Grenadinen",
+   "en": "Saint Vincent and the Grenadines",
+   "es": "San Vicente y Granadinas",
+   "officialDe": "St. Vincent und die Grenadinen"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Karibik",
+  "capitalHint": [
+   "Kingstown"
+  ],
+  "capitalCoords": {
+   "lat": 13.1483,
+   "lng": -61.2121
+  },
+  "center": [
+   13.25,
+   -61.2
+  ],
+  "area": 389,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 110589,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "ZA",
+  "iso3": "ZAF",
+  "ccn3": "710",
+  "status": "un",
+  "name": {
+   "de": "Südafrika",
+   "en": "South Africa",
+   "es": "Sudáfrica",
+   "officialDe": "Republik Südafrika"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Südliches Afrika",
+  "capitalHint": [
+   "Pretoria",
+   "Bloemfontein",
+   "Cape Town"
+  ],
+  "capitalCoords": {
+   "lat": -25.705,
+   "lng": 28.2275
+  },
+  "center": [
+   -29,
+   24
+  ],
+  "area": 1221037,
+  "landlocked": false,
+  "borders": [
+   "BW",
+   "LS",
+   "MZ",
+   "NA",
+   "SZ",
+   "ZW"
+  ],
+  "population": {
+   "value": 58558270,
+   "year": 2019
+  },
+  "languagesHint": {
+   "afr": "Afrikaans",
+   "eng": "English",
+   "nbl": "Southern Ndebele",
+   "nso": "Northern Sotho",
+   "sot": "Southern Sotho",
+   "ssw": "Swazi",
+   "tsn": "Tswana",
+   "tso": "Tsonga",
+   "ven": "Venda",
+   "xho": "Xhosa",
+   "zul": "Zulu"
+  }
+ },
+ {
+  "iso2": "SD",
+  "iso3": "SDN",
+  "ccn3": "729",
+  "status": "un",
+  "name": {
+   "de": "Sudan",
+   "en": "Sudan",
+   "es": "Sudán",
+   "officialDe": "Republik Sudan"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Nordafrika",
+  "capitalHint": [
+   "Khartoum"
+  ],
+  "capitalCoords": {
+   "lat": 15.59,
+   "lng": 32.5322
+  },
+  "center": [
+   15,
+   30
+  ],
+  "area": 1886068,
+  "landlocked": false,
+  "borders": [
+   "CF",
+   "TD",
+   "EG",
+   "ER",
+   "ET",
+   "LY",
+   "SS"
+  ],
+  "population": {
+   "value": 42813238,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic",
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "KR",
+  "iso3": "KOR",
+  "ccn3": "410",
+  "status": "un",
+  "name": {
+   "de": "Südkorea",
+   "en": "South Korea",
+   "es": "Corea del Sur",
+   "officialDe": "Republik Korea"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Ostasien",
+  "capitalHint": [
+   "Seoul"
+  ],
+  "capitalCoords": {
+   "lat": 37.5683,
+   "lng": 126.9978
+  },
+  "center": [
+   37,
+   127.5
+  ],
+  "area": 100210,
+  "landlocked": false,
+  "borders": [
+   "KP"
+  ],
+  "population": {
+   "value": 51709098,
+   "year": 2019
+  },
+  "languagesHint": {
+   "kor": "Korean"
+  }
+ },
+ {
+  "iso2": "SS",
+  "iso3": "SSD",
+  "ccn3": "728",
+  "status": "un",
+  "name": {
+   "de": "Südsudan",
+   "en": "South Sudan",
+   "es": "Sudán del Sur",
+   "officialDe": "Republik Südsudan"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Zentralafrika",
+  "capitalHint": [
+   "Juba"
+  ],
+  "capitalCoords": {
+   "lat": 4.83,
+   "lng": 31.58
+  },
+  "center": [
+   7,
+   30
+  ],
+  "area": 619745,
+  "landlocked": true,
+  "borders": [
+   "CF",
+   "CD",
+   "ET",
+   "KE",
+   "SD",
+   "UG"
+  ],
+  "population": {
+   "value": 11062113,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "SR",
+  "iso3": "SUR",
+  "ccn3": "740",
+  "status": "un",
+  "name": {
+   "de": "Suriname",
+   "en": "Suriname",
+   "es": "Surinam",
+   "officialDe": "Republik Suriname"
+  },
+  "continents": [
+   "south-america"
+  ],
+  "subregion": "Südamerika",
+  "capitalHint": [
+   "Paramaribo"
+  ],
+  "capitalCoords": {
+   "lat": 5.835,
+   "lng": -55.167
+  },
+  "center": [
+   4,
+   -56
+  ],
+  "area": 163820,
+  "landlocked": false,
+  "borders": [
+   "BR",
+   "GF",
+   "GY"
+  ],
+  "population": {
+   "value": 581363,
+   "year": 2019
+  },
+  "languagesHint": {
+   "nld": "Dutch"
+  }
+ },
+ {
+  "iso2": "SZ",
+  "iso3": "SWZ",
+  "ccn3": "748",
+  "status": "un",
+  "name": {
+   "de": "Swasiland",
+   "en": "Eswatini",
+   "es": "Suazilandia",
+   "officialDe": "Königreich Eswatini"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Südliches Afrika",
+  "capitalHint": [
+   "Lobamba"
+  ],
+  "capitalCoords": {
+   "lat": -26.4667,
+   "lng": 31.2
+  },
+  "center": [
+   -26.5,
+   31.5
+  ],
+  "area": 17364,
+  "landlocked": true,
+  "borders": [
+   "MZ",
+   "ZA"
+  ],
+  "population": {
+   "value": 1148130,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "ssw": "Swazi"
+  }
+ },
+ {
+  "iso2": "SY",
+  "iso3": "SYR",
+  "ccn3": "760",
+  "status": "un",
+  "name": {
+   "de": "Syrien",
+   "en": "Syria",
+   "es": "Siria",
+   "officialDe": "Arabische Republik Syrien"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Westasien",
+  "capitalHint": [
+   "Damascus"
+  ],
+  "capitalCoords": {
+   "lat": 33.502,
+   "lng": 36.2981
+  },
+  "center": [
+   35,
+   38
+  ],
+  "area": 185180,
+  "landlocked": false,
+  "borders": [
+   "IQ",
+   "IL",
+   "JO",
+   "LB",
+   "TR"
+  ],
+  "population": {
+   "value": 17070135,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic"
+  }
+ },
+ {
+  "iso2": "TJ",
+  "iso3": "TJK",
+  "ccn3": "762",
+  "status": "un",
+  "name": {
+   "de": "Tadschikistan",
+   "en": "Tajikistan",
+   "es": "Tayikistán",
+   "officialDe": "Republik Tadschikistan"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Zentralasien",
+  "capitalHint": [
+   "Dushanbe"
+  ],
+  "capitalCoords": {
+   "lat": 38.56,
+   "lng": 68.7739
+  },
+  "center": [
+   39,
+   71
+  ],
+  "area": 143100,
+  "landlocked": true,
+  "borders": [
+   "AF",
+   "CN",
+   "KG",
+   "UZ"
+  ],
+  "population": {
+   "value": 9321018,
+   "year": 2019
+  },
+  "languagesHint": {
+   "rus": "Russian",
+   "tgk": "Tajik"
+  }
+ },
+ {
+  "iso2": "TW",
+  "iso3": "TWN",
+  "ccn3": "158",
+  "status": "partial",
+  "name": {
+   "de": "Taiwan",
+   "en": "Taiwan",
+   "es": "Taiwán",
+   "officialDe": "Republik China (Taiwan)"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Ostasien",
+  "capitalHint": [
+   "Taipei"
+  ],
+  "capitalCoords": {
+   "lat": 25.033,
+   "lng": 121.5654
+  },
+  "center": [
+   23.5,
+   121
+  ],
+  "area": 36193,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 23568378,
+   "year": 2020
+  },
+  "languagesHint": {
+   "zho": "Chinese"
+  }
+ },
+ {
+  "iso2": "TZ",
+  "iso3": "TZA",
+  "ccn3": "834",
+  "status": "un",
+  "name": {
+   "de": "Tansania",
+   "en": "Tanzania",
+   "es": "Tanzania",
+   "officialDe": "Vereinigte Republik Tansania"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Ostafrika",
+  "capitalHint": [
+   "Dodoma"
+  ],
+  "capitalCoords": {
+   "lat": -6.1833,
+   "lng": 35.75
+  },
+  "center": [
+   -6,
+   35
+  ],
+  "area": 945087,
+  "landlocked": false,
+  "borders": [
+   "BI",
+   "CD",
+   "KE",
+   "MW",
+   "MZ",
+   "RW",
+   "UG",
+   "ZM"
+  ],
+  "population": {
+   "value": 58005463,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "swa": "Swahili"
+  }
+ },
+ {
+  "iso2": "TH",
+  "iso3": "THA",
+  "ccn3": "764",
+  "status": "un",
+  "name": {
+   "de": "Thailand",
+   "en": "Thailand",
+   "es": "Tailandia",
+   "officialDe": "Königreich Thailand"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Südostasien",
+  "capitalHint": [
+   "Bangkok"
+  ],
+  "capitalCoords": {
+   "lat": 13.7519,
+   "lng": 100.5147
+  },
+  "center": [
+   15,
+   100
+  ],
+  "area": 513120,
+  "landlocked": false,
+  "borders": [
+   "MM",
+   "KH",
+   "LA",
+   "MY"
+  ],
+  "population": {
+   "value": 69625582,
+   "year": 2019
+  },
+  "languagesHint": {
+   "tha": "Thai"
+  }
+ },
+ {
+  "iso2": "TG",
+  "iso3": "TGO",
+  "ccn3": "768",
+  "status": "un",
+  "name": {
+   "de": "Togo",
+   "en": "Togo",
+   "es": "Togo",
+   "officialDe": "Republik Togo"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Westafrika",
+  "capitalHint": [
+   "Lomé"
+  ],
+  "capitalCoords": {
+   "lat": 6.1339,
+   "lng": 1.2208
+  },
+  "center": [
+   8,
+   1.16666666
+  ],
+  "area": 56785,
+  "landlocked": false,
+  "borders": [
+   "BJ",
+   "BF",
+   "GH"
+  ],
+  "population": {
+   "value": 8082366,
+   "year": 2019
+  },
+  "languagesHint": {
+   "fra": "French"
+  }
+ },
+ {
+  "iso2": "TO",
+  "iso3": "TON",
+  "ccn3": "776",
+  "status": "un",
+  "name": {
+   "de": "Tonga",
+   "en": "Tonga",
+   "es": "Tonga",
+   "officialDe": "Königreich Tonga"
+  },
+  "continents": [
+   "oceania"
+  ],
+  "subregion": "Polynesien",
+  "capitalHint": [
+   "Nuku'alofa"
+  ],
+  "capitalCoords": {
+   "lat": -21.1385,
+   "lng": -175.2206
+  },
+  "center": [
+   -20,
+   -175
+  ],
+  "area": 747,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 104494,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "ton": "Tongan"
+  }
+ },
+ {
+  "iso2": "TT",
+  "iso3": "TTO",
+  "ccn3": "780",
+  "status": "un",
+  "name": {
+   "de": "Trinidad und Tobago",
+   "en": "Trinidad and Tobago",
+   "es": "Trinidad y Tobago",
+   "officialDe": "Republik Trinidad und Tobago"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Karibik",
+  "capitalHint": [
+   "Port of Spain"
+  ],
+  "capitalCoords": {
+   "lat": 10.652,
+   "lng": -61.517
+  },
+  "center": [
+   11,
+   -61
+  ],
+  "area": 5130,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 1394973,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "TD",
+  "iso3": "TCD",
+  "ccn3": "148",
+  "status": "un",
+  "name": {
+   "de": "Tschad",
+   "en": "Chad",
+   "es": "Chad",
+   "officialDe": "Republik Tschad"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Zentralafrika",
+  "capitalHint": [
+   "N'Djamena"
+  ],
+  "capitalCoords": {
+   "lat": 12.115,
+   "lng": 15.0472
+  },
+  "center": [
+   15,
+   19
+  ],
+  "area": 1284000,
+  "landlocked": true,
+  "borders": [
+   "CM",
+   "CF",
+   "LY",
+   "NE",
+   "NG",
+   "SD"
+  ],
+  "population": {
+   "value": 15946876,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic",
+   "fra": "French"
+  }
+ },
+ {
+  "iso2": "CZ",
+  "iso3": "CZE",
+  "ccn3": "203",
+  "status": "un",
+  "name": {
+   "de": "Tschechien",
+   "en": "Czechia",
+   "es": "Chequia",
+   "officialDe": "Tschechische Republik"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Mitteleuropa",
+  "capitalHint": [
+   "Prague"
+  ],
+  "capitalCoords": {
+   "lat": 50.0853,
+   "lng": 14.464
+  },
+  "center": [
+   49.75,
+   15.5
+  ],
+  "area": 78865,
+  "landlocked": true,
+  "borders": [
+   "AT",
+   "DE",
+   "PL",
+   "SK"
+  ],
+  "population": {
+   "value": 10669709,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ces": "Czech",
+   "slk": "Slovak"
+  }
+ },
+ {
+  "iso2": "TN",
+  "iso3": "TUN",
+  "ccn3": "788",
+  "status": "un",
+  "name": {
+   "de": "Tunesien",
+   "en": "Tunisia",
+   "es": "Túnez",
+   "officialDe": "Tunesische Republik"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Nordafrika",
+  "capitalHint": [
+   "Tunis"
+  ],
+  "capitalCoords": {
+   "lat": 36.8028,
+   "lng": 10.1797
+  },
+  "center": [
+   34,
+   9
+  ],
+  "area": 163610,
+  "landlocked": false,
+  "borders": [
+   "DZ",
+   "LY"
+  ],
+  "population": {
+   "value": 11694719,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic"
+  }
+ },
+ {
+  "iso2": "TR",
+  "iso3": "TUR",
+  "ccn3": "792",
+  "status": "un",
+  "name": {
+   "de": "Türkei",
+   "en": "Türkiye",
+   "es": "Turquía",
+   "officialDe": "Republik Türkei"
+  },
+  "continents": [
+   "asia",
+   "europe"
+  ],
+  "subregion": "Westasien",
+  "capitalHint": [
+   "Ankara"
+  ],
+  "capitalCoords": {
+   "lat": 39.9292,
+   "lng": 32.8624
+  },
+  "center": [
+   39,
+   35
+  ],
+  "area": 783562,
+  "landlocked": false,
+  "borders": [
+   "AM",
+   "AZ",
+   "BG",
+   "GE",
+   "GR",
+   "IR",
+   "IQ",
+   "SY"
+  ],
+  "population": {
+   "value": 83429615,
+   "year": 2019
+  },
+  "languagesHint": {
+   "tur": "Turkish"
+  }
+ },
+ {
+  "iso2": "TM",
+  "iso3": "TKM",
+  "ccn3": "795",
+  "status": "un",
+  "name": {
+   "de": "Turkmenistan",
+   "en": "Turkmenistan",
+   "es": "Turkmenistán",
+   "officialDe": "Turkmenistan"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Zentralasien",
+  "capitalHint": [
+   "Ashgabat"
+  ],
+  "capitalCoords": {
+   "lat": 37.95,
+   "lng": 58.3833
+  },
+  "center": [
+   40,
+   60
+  ],
+  "area": 488100,
+  "landlocked": true,
+  "borders": [
+   "AF",
+   "IR",
+   "KZ",
+   "UZ"
+  ],
+  "population": {
+   "value": 5942089,
+   "year": 2019
+  },
+  "languagesHint": {
+   "rus": "Russian",
+   "tuk": "Turkmen"
+  }
+ },
+ {
+  "iso2": "TV",
+  "iso3": "TUV",
+  "ccn3": "798",
+  "status": "un",
+  "name": {
+   "de": "Tuvalu",
+   "en": "Tuvalu",
+   "es": "Tuvalu",
+   "officialDe": "Tuvalu"
+  },
+  "continents": [
+   "oceania"
+  ],
+  "subregion": "Polynesien",
+  "capitalHint": [
+   "Funafuti"
+  ],
+  "capitalCoords": {
+   "lat": -8.5167,
+   "lng": 179.2166
+  },
+  "center": [
+   -8,
+   178
+  ],
+  "area": 26,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 11646,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "tvl": "Tuvaluan"
+  }
+ },
+ {
+  "iso2": "UG",
+  "iso3": "UGA",
+  "ccn3": "800",
+  "status": "un",
+  "name": {
+   "de": "Uganda",
+   "en": "Uganda",
+   "es": "Uganda",
+   "officialDe": "Republik Uganda"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Ostafrika",
+  "capitalHint": [
+   "Kampala"
+  ],
+  "capitalCoords": {
+   "lat": 0.3186,
+   "lng": 32.5814
+  },
+  "center": [
+   1,
+   32
+  ],
+  "area": 241550,
+  "landlocked": true,
+  "borders": [
+   "CD",
+   "KE",
+   "RW",
+   "SS",
+   "TZ"
+  ],
+  "population": {
+   "value": 44269594,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English",
+   "swa": "Swahili"
+  }
+ },
+ {
+  "iso2": "UA",
+  "iso3": "UKR",
+  "ccn3": "804",
+  "status": "un",
+  "name": {
+   "de": "Ukraine",
+   "en": "Ukraine",
+   "es": "Ucrania",
+   "officialDe": "Ukraine"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Osteuropa",
+  "capitalHint": [
+   "Kyiv"
+  ],
+  "capitalCoords": {
+   "lat": 50.4353,
+   "lng": 30.5147
+  },
+  "center": [
+   49,
+   32
+  ],
+  "area": 603500,
+  "landlocked": false,
+  "borders": [
+   "BY",
+   "HU",
+   "MD",
+   "PL",
+   "RO",
+   "RU",
+   "SK"
+  ],
+  "population": {
+   "value": 44385155,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ukr": "Ukrainian"
+  }
+ },
+ {
+  "iso2": "HU",
+  "iso3": "HUN",
+  "ccn3": "348",
+  "status": "un",
+  "name": {
+   "de": "Ungarn",
+   "en": "Hungary",
+   "es": "Hungría",
+   "officialDe": "Ungarn"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Mitteleuropa",
+  "capitalHint": [
+   "Budapest"
+  ],
+  "capitalCoords": {
+   "lat": 47.502,
+   "lng": 19.0814
+  },
+  "center": [
+   47,
+   20
+  ],
+  "area": 93028,
+  "landlocked": true,
+  "borders": [
+   "AT",
+   "HR",
+   "RO",
+   "RS",
+   "SK",
+   "SI",
+   "UA"
+  ],
+  "population": {
+   "value": 9769949,
+   "year": 2019
+  },
+  "languagesHint": {
+   "hun": "Hungarian"
+  }
+ },
+ {
+  "iso2": "UY",
+  "iso3": "URY",
+  "ccn3": "858",
+  "status": "un",
+  "name": {
+   "de": "Uruguay",
+   "en": "Uruguay",
+   "es": "Uruguay",
+   "officialDe": "Republik Östlich des Uruguay"
+  },
+  "continents": [
+   "south-america"
+  ],
+  "subregion": "Südamerika",
+  "capitalHint": [
+   "Montevideo"
+  ],
+  "capitalCoords": {
+   "lat": -34.8561,
+   "lng": -56.173
+  },
+  "center": [
+   -33,
+   -56
+  ],
+  "area": 181034,
+  "landlocked": false,
+  "borders": [
+   "AR",
+   "BR"
+  ],
+  "population": {
+   "value": 3461734,
+   "year": 2019
+  },
+  "languagesHint": {
+   "spa": "Spanish"
+  }
+ },
+ {
+  "iso2": "UZ",
+  "iso3": "UZB",
+  "ccn3": "860",
+  "status": "un",
+  "name": {
+   "de": "Usbekistan",
+   "en": "Uzbekistan",
+   "es": "Uzbekistán",
+   "officialDe": "Republik Usbekistan"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Zentralasien",
+  "capitalHint": [
+   "Tashkent"
+  ],
+  "capitalCoords": {
+   "lat": 41.3136,
+   "lng": 69.293
+  },
+  "center": [
+   41,
+   64
+  ],
+  "area": 447400,
+  "landlocked": true,
+  "borders": [
+   "AF",
+   "KZ",
+   "KG",
+   "TJ",
+   "TM"
+  ],
+  "population": {
+   "value": 33580650,
+   "year": 2019
+  },
+  "languagesHint": {
+   "rus": "Russian",
+   "uzb": "Uzbek"
+  }
+ },
+ {
+  "iso2": "VU",
+  "iso3": "VUT",
+  "ccn3": "548",
+  "status": "un",
+  "name": {
+   "de": "Vanuatu",
+   "en": "Vanuatu",
+   "es": "Vanuatu",
+   "officialDe": "Vanuatu"
+  },
+  "continents": [
+   "oceania"
+  ],
+  "subregion": "Melanesien",
+  "capitalHint": [
+   "Port Vila"
+  ],
+  "capitalCoords": {
+   "lat": -17.7334,
+   "lng": 168.3166
+  },
+  "center": [
+   -16,
+   167
+  ],
+  "area": 12189,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 299882,
+   "year": 2019
+  },
+  "languagesHint": {
+   "bis": "Bislama",
+   "eng": "English",
+   "fra": "French"
+  }
+ },
+ {
+  "iso2": "VA",
+  "iso3": "VAT",
+  "ccn3": "336",
+  "status": "observer",
+  "name": {
+   "de": "Vatikanstadt",
+   "en": "Vatican City",
+   "es": "Ciudad del Vaticano",
+   "officialDe": "Staat Vatikanstadt"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Südeuropa",
+  "capitalHint": [
+   "Vatican City"
+  ],
+  "capitalCoords": {
+   "lat": 41.9033,
+   "lng": 12.4534
+  },
+  "center": [
+   41.9,
+   12.45
+  ],
+  "area": 0.44,
+  "landlocked": true,
+  "borders": [
+   "IT"
+  ],
+  "population": {
+   "value": 825,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ita": "Italian",
+   "lat": "Latin"
+  }
+ },
+ {
+  "iso2": "VE",
+  "iso3": "VEN",
+  "ccn3": "862",
+  "status": "un",
+  "name": {
+   "de": "Venezuela",
+   "en": "Venezuela",
+   "es": "Venezuela",
+   "officialDe": "Bolivarische Republik Venezuela"
+  },
+  "continents": [
+   "south-america"
+  ],
+  "subregion": "Südamerika",
+  "capitalHint": [
+   "Caracas"
+  ],
+  "capitalCoords": {
+   "lat": 10.5029,
+   "lng": -66.919
+  },
+  "center": [
+   8,
+   -66
+  ],
+  "area": 916445,
+  "landlocked": false,
+  "borders": [
+   "BR",
+   "CO",
+   "GY"
+  ],
+  "population": {
+   "value": 28515829,
+   "year": 2019
+  },
+  "languagesHint": {
+   "spa": "Spanish"
+  }
+ },
+ {
+  "iso2": "AE",
+  "iso3": "ARE",
+  "ccn3": "784",
+  "status": "un",
+  "name": {
+   "de": "Vereinigte Arabische Emirate",
+   "en": "United Arab Emirates",
+   "es": "Emiratos Árabes Unidos",
+   "officialDe": "Vereinigte Arabische Emirate"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Westasien",
+  "capitalHint": [
+   "Abu Dhabi"
+  ],
+  "capitalCoords": {
+   "lat": 24.4667,
+   "lng": 54.3666
+  },
+  "center": [
+   24,
+   54
+  ],
+  "area": 83600,
+  "landlocked": false,
+  "borders": [
+   "OM",
+   "SA"
+  ],
+  "population": {
+   "value": 9770529,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ara": "Arabic"
+  }
+ },
+ {
+  "iso2": "US",
+  "iso3": "USA",
+  "ccn3": "840",
+  "status": "un",
+  "name": {
+   "de": "Vereinigte Staaten",
+   "en": "United States",
+   "es": "Estados Unidos",
+   "officialDe": "Vereinigte Staaten von Amerika"
+  },
+  "continents": [
+   "north-america"
+  ],
+  "subregion": "Nordamerika",
+  "capitalHint": [
+   "Washington D.C."
+  ],
+  "capitalCoords": {
+   "lat": 38.9015,
+   "lng": -77.0114
+  },
+  "center": [
+   38,
+   -97
+  ],
+  "area": 9372610,
+  "landlocked": false,
+  "borders": [
+   "CA",
+   "MX"
+  ],
+  "population": {
+   "value": 328239523,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "GB",
+  "iso3": "GBR",
+  "ccn3": "826",
+  "status": "un",
+  "name": {
+   "de": "Vereinigtes Königreich",
+   "en": "United Kingdom",
+   "es": "Reino Unido",
+   "officialDe": "Vereinigtes Königreich Großbritannien und Nordirland"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Nordeuropa",
+  "capitalHint": [
+   "London"
+  ],
+  "capitalCoords": {
+   "lat": 51.5019,
+   "lng": -0.1187
+  },
+  "center": [
+   54,
+   -2
+  ],
+  "area": 242900,
+  "landlocked": false,
+  "borders": [
+   "IE"
+  ],
+  "population": {
+   "value": 66834405,
+   "year": 2019
+  },
+  "languagesHint": {
+   "eng": "English"
+  }
+ },
+ {
+  "iso2": "VN",
+  "iso3": "VNM",
+  "ccn3": "704",
+  "status": "un",
+  "name": {
+   "de": "Vietnam",
+   "en": "Vietnam",
+   "es": "Vietnam",
+   "officialDe": "Sozialistische Republik Vietnam"
+  },
+  "continents": [
+   "asia"
+  ],
+  "subregion": "Südostasien",
+  "capitalHint": [
+   "Hanoi"
+  ],
+  "capitalCoords": {
+   "lat": 21.0353,
+   "lng": 105.8481
+  },
+  "center": [
+   16.16666666,
+   107.83333333
+  ],
+  "area": 331212,
+  "landlocked": false,
+  "borders": [
+   "KH",
+   "CN",
+   "LA"
+  ],
+  "population": {
+   "value": 96462106,
+   "year": 2019
+  },
+  "languagesHint": {
+   "vie": "Vietnamese"
+  }
+ },
+ {
+  "iso2": "CF",
+  "iso3": "CAF",
+  "ccn3": "140",
+  "status": "un",
+  "name": {
+   "de": "Zentralafrikanische Republik",
+   "en": "Central African Republic",
+   "es": "República Centroafricana",
+   "officialDe": "Zentralafrikanische Republik"
+  },
+  "continents": [
+   "africa"
+  ],
+  "subregion": "Zentralafrika",
+  "capitalHint": [
+   "Bangui"
+  ],
+  "capitalCoords": {
+   "lat": 4.3666,
+   "lng": 18.5583
+  },
+  "center": [
+   7,
+   21
+  ],
+  "area": 622984,
+  "landlocked": true,
+  "borders": [
+   "CM",
+   "TD",
+   "CD",
+   "CG",
+   "SS",
+   "SD"
+  ],
+  "population": {
+   "value": 4745185,
+   "year": 2019
+  },
+  "languagesHint": {
+   "fra": "French",
+   "sag": "Sango"
+  }
+ },
+ {
+  "iso2": "CY",
+  "iso3": "CYP",
+  "ccn3": "196",
+  "status": "un",
+  "name": {
+   "de": "Zypern",
+   "en": "Cyprus",
+   "es": "Chipre",
+   "officialDe": "Republik Zypern"
+  },
+  "continents": [
+   "europe"
+  ],
+  "subregion": "Südeuropa",
+  "capitalHint": [
+   "Nicosia"
+  ],
+  "capitalCoords": {
+   "lat": 35.1667,
+   "lng": 33.3666
+  },
+  "center": [
+   35,
+   33
+  ],
+  "area": 9251,
+  "landlocked": false,
+  "borders": [],
+  "population": {
+   "value": 1198575,
+   "year": 2019
+  },
+  "languagesHint": {
+   "ell": "Greek",
+   "tur": "Turkish"
+  }
+ }
+]

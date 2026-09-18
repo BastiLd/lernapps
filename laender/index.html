@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Länder der Welt – Lernapps</title>
+    <meta name="description" content="Flaggen, Hauptstädte, Sprachen, Geschichte und Kultur aller Länder lernen – mit Satellitenkarte, Karteikarten und Quiz." />
+    <meta name="theme-color" content="#0b1020" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../icons/icon-192.png" />
+    <script>
+      (function () {
+        try {
+          var s = JSON.parse(localStorage.getItem('lernapps:theme') || '"system"');
+          var dark = s === 'dark' || (s === 'system' && matchMedia('(prefers-color-scheme: dark)').matches);
+          document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+        } catch (e) {
+          document.documentElement.dataset.theme = 'light';
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/apps/laender/main.tsx"></script>
+  </body>
+</html>

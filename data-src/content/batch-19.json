@@ -1,0 +1,478 @@
+{
+  "batch": "19",
+  "languageNames": {
+    "en": {
+      "de": "Englisch",
+      "es": "inglés",
+      "en": "English"
+    },
+    "ms": {
+      "de": "Malaiisch",
+      "es": "malayo",
+      "en": "Malay"
+    },
+    "zh": {
+      "de": "Chinesisch",
+      "es": "chino",
+      "en": "Chinese"
+    },
+    "ta": {
+      "de": "Tamil",
+      "es": "tamil",
+      "en": "Tamil"
+    },
+    "th": {
+      "de": "Thai",
+      "es": "tailandés",
+      "en": "Thai"
+    },
+    "vi": {
+      "de": "Vietnamesisch",
+      "es": "vietnamita",
+      "en": "Vietnamese"
+    },
+    "mi": {
+      "de": "Māori",
+      "es": "maorí",
+      "en": "Māori"
+    },
+    "fj": {
+      "de": "Fidschianisch",
+      "es": "fiyiano",
+      "en": "Fijian"
+    },
+    "hif": {
+      "de": "Fidschi-Hindi",
+      "es": "hindi de Fiyi",
+      "en": "Fiji Hindi"
+    },
+    "tpi": {
+      "de": "Tok Pisin",
+      "es": "tok pisin",
+      "en": "Tok Pisin"
+    },
+    "ho": {
+      "de": "Hiri Motu",
+      "es": "hiri motu",
+      "en": "Hiri Motu"
+    },
+    "pis": {
+      "de": "Pijin (Salomonen)",
+      "es": "pijin de las Islas Salomón",
+      "en": "Solomons Pijin"
+    },
+    "bi": {
+      "de": "Bislama",
+      "es": "bislama",
+      "en": "Bislama"
+    },
+    "fr": {
+      "de": "Französisch",
+      "es": "francés",
+      "en": "French"
+    },
+    "gil": {
+      "de": "Kiribatisch",
+      "es": "gilbertés",
+      "en": "Gilbertese"
+    }
+  },
+  "countries": [
+    {
+      "iso2": "SG",
+      "name": {
+        "de": "Singapur",
+        "es": "Singapur",
+        "en": "Singapore"
+      },
+      "aliases": [
+        "Republik Singapur",
+        "Republic of Singapore"
+      ],
+      "capital": {
+        "de": "Singapur",
+        "es": "Singapur",
+        "en": "Singapore",
+        "lat": 1.2897,
+        "lng": 103.8501
+      },
+      "capitalNote": "Singapur ist ein Stadtstaat: Staat und Hauptstadt sind identisch.",
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "en",
+          "ms",
+          "zh",
+          "ta"
+        ],
+        "regional": [],
+        "spoken": []
+      },
+      "languageNote": "Malaiisch ist die Nationalsprache, Englisch die wichtigste Sprache in Schule, Verwaltung und Wirtschaft; mit Chinesisch ist Mandarin gemeint.",
+      "demonym": {
+        "deM": "Singapurer",
+        "deF": "Singapurerin",
+        "esM": "singapurense",
+        "esF": "singapurense"
+      },
+      "history": "Schon im 14. Jahrhundert gab es auf der Insel einen Handelsort namens Temasek. 1819 gründete der Brite Stamford Raffles hier einen Handelsposten, aus dem eine wichtige britische Kolonie wurde; im Zweiten Weltkrieg war Singapur von 1942 bis 1945 von Japan besetzt. 1963 wurde es Teil des neu gegründeten Malaysia, trennte sich aber schon 1965 und wurde ein unabhängiger Staat. Seither hat sich Singapur zu einem der reichsten Handels- und Finanzzentren der Welt entwickelt.",
+      "culture": "In den „Hawker Centres“, großen Hallen mit vielen Garküchen, gibt es günstige Gerichte wie Hainan-Hühnerreis, die Nudelsuppe Laksa und Chili-Krabben. Wahrzeichen sind der Merlion (halb Löwe, halb Fisch), das Hotel Marina Bay Sands und die riesigen künstlichen „Supertrees“ in den Gardens by the Bay. Das chinesische Neujahr, das muslimische Hari Raya und das hinduistische Lichterfest Deepavali sind Feiertage für alle, und jedes Jahr findet ein Formel-1-Nachtrennen statt.",
+      "funFact": "Seit 1992 ist der Verkauf von Kaugummi in Singapur verboten – nur medizinische Kaugummis gibt es in der Apotheke."
+    },
+    {
+      "iso2": "TH",
+      "name": {
+        "de": "Thailand",
+        "es": "Tailandia",
+        "en": "Thailand"
+      },
+      "aliases": [
+        "Königreich Thailand",
+        "Siam",
+        "Kingdom of Thailand"
+      ],
+      "capital": {
+        "de": "Bangkok",
+        "es": "Bangkok",
+        "en": "Bangkok",
+        "lat": 13.7563,
+        "lng": 100.5018
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "th"
+        ],
+        "regional": [],
+        "spoken": []
+      },
+      "languageNote": "Im Nordosten spricht ein großer Teil der Bevölkerung Isan, das eng mit dem Laotischen verwandt ist; im äußersten Süden ist Malaiisch verbreitet.",
+      "demonym": {
+        "deM": "Thailänder",
+        "deF": "Thailänderin",
+        "esM": "tailandés",
+        "esF": "tailandesa"
+      },
+      "history": "Im 13. Jahrhundert entstand das Königreich Sukhothai, danach war Ayutthaya rund 400 Jahre lang das Zentrum eines mächtigen Reiches. Seit 1782 ist Bangkok Hauptstadt, und das Land, das früher Siam hieß, ist das einzige in Südostasien, das nie von einer europäischen Macht kolonisiert wurde. Seit 1932 ist Thailand eine konstitutionelle Monarchie, in der sich gewählte Regierungen und Militärregierungen mehrmals abwechselten.",
+      "culture": "Die thailändische Küche ist mit Gerichten wie Pad Thai, der scharf-sauren Suppe Tom Yum und würzigen Currys weltberühmt. Beim Neujahrsfest Songkran im April bespritzen sich die Menschen auf den Straßen mit Wasser, beim Lichterfest Loi Krathong lassen sie kleine Schiffchen mit Kerzen auf dem Wasser treiben. Bekannt sind außerdem buddhistische Tempel wie der Wat Arun in Bangkok, der Kampfsport Muay Thai und der Gruß „Wai“ mit aneinandergelegten Handflächen.",
+      "funFact": "Der vollständige zeremonielle Name von Bangkok gilt als längster Städtename der Welt; die Thailänder selbst sagen meist kurz „Krung Thep“."
+    },
+    {
+      "iso2": "VN",
+      "name": {
+        "de": "Vietnam",
+        "es": "Vietnam",
+        "en": "Vietnam"
+      },
+      "aliases": [
+        "Sozialistische Republik Vietnam",
+        "Viet Nam"
+      ],
+      "capital": {
+        "de": "Hanoi",
+        "es": "Hanói",
+        "en": "Hanoi",
+        "lat": 21.0285,
+        "lng": 105.8542
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "vi"
+        ],
+        "regional": [],
+        "spoken": []
+      },
+      "languageNote": "Vietnamesisch wird mit lateinischen Buchstaben und vielen Zusatzzeichen geschrieben; die 53 anerkannten ethnischen Minderheiten sprechen zahlreiche eigene Sprachen.",
+      "demonym": {
+        "deM": "Vietnamese",
+        "deF": "Vietnamesin",
+        "esM": "vietnamita",
+        "esF": "vietnamita"
+      },
+      "history": "Rund tausend Jahre lang stand das Gebiet unter chinesischer Herrschaft, bevor im 10. Jahrhundert eigene vietnamesische Reiche entstanden. Ab der Mitte des 19. Jahrhunderts eroberte Frankreich das Land und machte es zu einem Teil von Französisch-Indochina. 1945 rief Ho Chi Minh die Unabhängigkeit aus; nach dem Abzug der Franzosen 1954 war das Land geteilt und wurde erst nach dem Ende des Vietnamkriegs (1975) im Jahr 1976 wiedervereinigt. Seit den Wirtschaftsreformen ab 1986 („Doi Moi“) wächst die Wirtschaft sehr schnell.",
+      "culture": "Die Nudelsuppe „Phở“, das Baguette-Sandwich „Bánh mì“ und frische Sommerrollen sind weltweit bekannt. Das wichtigste Fest ist „Tết“, das Neujahrsfest nach dem Mondkalender. Berühmt sind die Halong-Bucht mit über tausend Kalksteininseln, die Altstadt von Hội An mit ihren bunten Laternen und das Wasserpuppentheater; typisch sind auch das lange Kleid „Áo dài“ und der kegelförmige Hut „Nón lá“.",
+      "funFact": "Vietnam ist hinter Brasilien der zweitgrößte Kaffeeproduzent der Welt – angebaut wird vor allem die Sorte Robusta."
+    },
+    {
+      "iso2": "AU",
+      "name": {
+        "de": "Australien",
+        "es": "Australia",
+        "en": "Australia"
+      },
+      "aliases": [
+        "Commonwealth of Australia",
+        "Down Under"
+      ],
+      "capital": {
+        "de": "Canberra",
+        "es": "Canberra",
+        "en": "Canberra",
+        "lat": -35.2809,
+        "lng": 149.13
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "en"
+        ],
+        "regional": [],
+        "spoken": []
+      },
+      "languageNote": "Englisch ist ohne eigenes Gesetz die Landessprache; von den ursprünglich über 250 Sprachen der Aborigines und Torres-Strait-Insulaner werden heute nur noch wenige an Kinder weitergegeben.",
+      "demonym": {
+        "deM": "Australier",
+        "deF": "Australierin",
+        "esM": "australiano",
+        "esF": "australiana"
+      },
+      "history": "Die Aborigines und Torres-Strait-Insulaner leben seit mindestens 50.000 Jahren auf dem Kontinent und gehören zu den ältesten fortbestehenden Kulturen der Welt. 1770 beanspruchte James Cook die Ostküste für Großbritannien, und 1788 wurde bei Sydney eine britische Sträflingskolonie gegründet. Für die Ureinwohner bedeutete die Kolonisierung den Verlust von Land und traditioneller Lebensweise. 1901 schlossen sich die sechs Kolonien zum Australischen Bund zusammen, der sich schrittweise von Großbritannien löste; Staatsoberhaupt ist bis heute der britische Monarch.",
+      "culture": "Berühmte Sehenswürdigkeiten sind das Opernhaus von Sydney, der für die Aborigines heilige Felsen Uluru und das Great Barrier Reef, das größte Korallenriff der Erde. Typisch sind Grillfeste („Barbie“), der salzige Brotaufstrich Vegemite und einzigartige Tiere wie Kängurus, Koalas und Schnabeltiere. Sport spielt eine große Rolle: Cricket, Rugby, Australian Football und Surfen sind sehr beliebt, und in Melbourne findet jedes Jahr das Tennisturnier Australian Open statt.",
+      "funFact": "Canberra wurde eigens als Hauptstadt geplant und gebaut, weil sich die Rivalen Sydney und Melbourne nicht einigen konnten."
+    },
+    {
+      "iso2": "NZ",
+      "name": {
+        "de": "Neuseeland",
+        "es": "Nueva Zelanda",
+        "en": "New Zealand"
+      },
+      "aliases": [
+        "Aotearoa",
+        "Nueva Zelandia",
+        "NZ"
+      ],
+      "capital": {
+        "de": "Wellington",
+        "es": "Wellington",
+        "en": "Wellington",
+        "lat": -41.2865,
+        "lng": 174.7762
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "en",
+          "mi"
+        ],
+        "regional": [],
+        "spoken": []
+      },
+      "languageNote": "Māori ist seit 1987 und die Neuseeländische Gebärdensprache seit 2006 gesetzlich Amtssprache; Englisch ist ohne eigenes Gesetz die wichtigste Landessprache.",
+      "demonym": {
+        "deM": "Neuseeländer",
+        "deF": "Neuseeländerin",
+        "esM": "neozelandés",
+        "esF": "neozelandesa"
+      },
+      "history": "Um 1300 erreichten polynesische Seefahrer mit Kanus die Inseln; ihre Nachkommen sind die Māori. 1642 kam mit dem Niederländer Abel Tasman der erste Europäer, und 1840 unterzeichneten Vertreter der britischen Krone und viele Māori-Häuptlinge den Vertrag von Waitangi, danach wurde Neuseeland britische Kolonie. 1893 erhielten Frauen hier als erstem selbstverwalteten Land der Welt das Wahlrecht bei Parlamentswahlen. Im 20. Jahrhundert löste sich Neuseeland schrittweise von Großbritannien, Staatsoberhaupt ist aber weiterhin der britische Monarch.",
+      "culture": "Rugby ist Nationalsport, und die Nationalmannschaft „All Blacks“ führt vor ihren Länderspielen den traditionellen Māori-Tanz „Haka“ auf. Die Landschaften mit Vulkanen, Gletschern und Fjorden wie dem Milford Sound dienten als Kulisse für die „Herr der Ringe“-Filme. Die Neuseeländer nennen sich selbst gern „Kiwis“ nach dem flugunfähigen Nationalvogel, und in Queenstown wurde das kommerzielle Bungee-Springen populär.",
+      "funFact": "Wellington ist die südlichste Hauptstadt eines unabhängigen Staates der Welt."
+    },
+    {
+      "iso2": "FJ",
+      "name": {
+        "de": "Fidschi",
+        "es": "Fiyi",
+        "en": "Fiji"
+      },
+      "aliases": [
+        "Fidschi-Inseln",
+        "Republik Fidschi",
+        "Islas Fiyi"
+      ],
+      "capital": {
+        "de": "Suva",
+        "es": "Suva",
+        "en": "Suva",
+        "lat": -18.1416,
+        "lng": 178.4419
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "en",
+          "fj",
+          "hif"
+        ],
+        "regional": [],
+        "spoken": []
+      },
+      "languageNote": "Fidschi-Hindi sprechen vor allem die Nachfahren indischer Einwanderer; Englisch ist die wichtigste Sprache in Verwaltung und Schule.",
+      "demonym": {
+        "deM": "Fidschianer",
+        "deF": "Fidschianerin",
+        "esM": "fiyiano",
+        "esF": "fiyiana"
+      },
+      "history": "Die Inseln wurden vor rund 3000 Jahren von seefahrenden Völkern besiedelt, deren Nachfahren die heutigen indigenen Fidschianer sind. Ab 1874 war Fidschi britische Kolonie, und ab 1879 holten die Briten Zehntausende Arbeiter aus Indien für die Zuckerrohrplantagen ins Land. Nach der Unabhängigkeit im Jahr 1970 gab es mehrere Staatsstreiche, doch seit 2014 wird wieder regelmäßig gewählt.",
+      "culture": "Gäste werden mit dem herzlichen Gruß „Bula!“ empfangen, oft auch mit einer Zeremonie, bei der Kava, ein Getränk aus der Wurzel einer Pfefferpflanze, getrunken wird. Typische Gerichte sind im Erdofen „Lovo“ gegarte Speisen und „Kokoda“, roher Fisch in Limettensaft und Kokosmilch. Rugby ist Volkssport, und Fidschis Siebener-Rugby-Team gewann 2016 und 2021 olympisches Gold. Durch die indischstämmige Bevölkerung gehören auch Currys und das Lichterfest Diwali zum Alltag.",
+      "funFact": "Durch Fidschi verläuft der 180. Längengrad; die Datumsgrenze macht deshalb einen Bogen, damit das ganze Land dasselbe Datum hat."
+    },
+    {
+      "iso2": "PG",
+      "name": {
+        "de": "Papua-Neuguinea",
+        "es": "Papúa Nueva Guinea",
+        "en": "Papua New Guinea"
+      },
+      "aliases": [
+        "PNG",
+        "Unabhängiger Staat Papua-Neuguinea"
+      ],
+      "capital": {
+        "de": "Port Moresby",
+        "es": "Port Moresby",
+        "en": "Port Moresby",
+        "lat": -9.4438,
+        "lng": 147.1803
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "en",
+          "tpi",
+          "ho"
+        ],
+        "regional": [],
+        "spoken": []
+      },
+      "languageNote": "Mit über 800 Sprachen ist Papua-Neuguinea das sprachenreichste Land der Welt; Tok Pisin ist die wichtigste Verkehrssprache, Hiri Motu wird vor allem im Süden gesprochen.",
+      "demonym": {
+        "deM": "Papua-Neuguineer",
+        "deF": "Papua-Neuguineerin",
+        "esM": "papú",
+        "esF": "papú"
+      },
+      "history": "Menschen leben seit mindestens 40.000 Jahren auf der Insel Neuguinea, und im Hochland wurde schon vor Jahrtausenden Landwirtschaft betrieben. Im Jahr 1884 teilten Deutschland und Großbritannien den Osten der Insel unter sich auf, der Norden hieß damals Kaiser-Wilhelmsland; später übernahm Australien die Verwaltung beider Teile. Die Unabhängigkeit erlangte Papua-Neuguinea 1975. Im Jahr 2019 stimmte die Bevölkerung der Region Bougainville in einem nicht bindenden Referendum mit großer Mehrheit für die Unabhängigkeit.",
+      "culture": "Bei großen Festen wie der Goroka Show treffen sich Gruppen aus dem ganzen Land zu „Sing-Sings“ mit Tänzen, Körperbemalung und Kopfschmuck aus Federn. Der Paradiesvogel ist Nationalsymbol und ziert auch die Flagge. Gegessen werden oft Süßkartoffeln, Sago und im Erdofen „Mumu“ gegarte Speisen, und Rugby League ist der mit Abstand beliebteste Sport.",
+      "funFact": "In Papua-Neuguinea lebt mit dem Zweifarbenpitohui einer der wenigen giftigen Vögel der Welt – das Gift steckt in Haut und Federn."
+    },
+    {
+      "iso2": "SB",
+      "name": {
+        "de": "Salomonen",
+        "es": "Islas Salomón",
+        "en": "Solomon Islands"
+      },
+      "aliases": [
+        "Salomoninseln"
+      ],
+      "capital": {
+        "de": "Honiara",
+        "es": "Honiara",
+        "en": "Honiara",
+        "lat": -9.4319,
+        "lng": 159.9556
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "en"
+        ],
+        "regional": [],
+        "spoken": [
+          "pis"
+        ]
+      },
+      "languageNote": "Englisch sprechen im Alltag nur wenige; die wichtigste Verkehrssprache ist Pijin, daneben gibt es rund 70 einheimische Sprachen.",
+      "demonym": {
+        "deM": "Salomoner",
+        "deF": "Salomonerin",
+        "esM": "salomonense",
+        "esF": "salomonense"
+      },
+      "history": "Die Inseln sind seit vielen Jahrtausenden besiedelt. 1568 erreichte der Spanier Álvaro de Mendaña die Inselgruppe; der Name erinnert an den biblischen König Salomo, dessen sagenhafte Reichtümer man hier vermutete. Ab 1893 waren die Salomonen britisches Protektorat, und im Zweiten Weltkrieg war die Insel Guadalcanal 1942/43 Schauplatz einer großen Schlacht zwischen den USA und Japan. 1978 wurden die Inseln unabhängig; nach schweren Unruhen half ab 2003 eine internationale Mission unter Führung Australiens, wieder für Ordnung zu sorgen.",
+      "culture": "Auf manchen Inseln wird traditionelles Muschelgeld bis heute bei Zeremonien wie Hochzeiten verwendet. Bekannt sind die Panflöten-Ensembles der Insel Malaita und kunstvolle Holzschnitzereien mit Perlmutt-Einlagen. Taucher kommen wegen der Korallenriffe und der zahlreichen Schiffs- und Flugzeugwracks aus dem Zweiten Weltkrieg, und Fußball und Futsal sind die beliebtesten Sportarten.",
+      "funFact": "Die Hauptinsel Guadalcanal trägt den Namen eines Ortes in Andalusien – ein Mitglied der spanischen Expedition benannte sie nach seinem Heimatort."
+    },
+    {
+      "iso2": "VU",
+      "name": {
+        "de": "Vanuatu",
+        "es": "Vanuatu",
+        "en": "Vanuatu"
+      },
+      "aliases": [
+        "Neue Hebriden",
+        "New Hebrides",
+        "Republik Vanuatu"
+      ],
+      "capital": {
+        "de": "Port Vila",
+        "es": "Port Vila",
+        "en": "Port Vila",
+        "lat": -17.7338,
+        "lng": 168.3219
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "bi",
+          "en",
+          "fr"
+        ],
+        "regional": [],
+        "spoken": []
+      },
+      "languageNote": "Bislama ist Nationalsprache und wichtigste Verkehrssprache; unterrichtet wird auf Englisch oder Französisch, dazu kommen über 100 einheimische Sprachen.",
+      "demonym": {
+        "deM": "Vanuatuer",
+        "deF": "Vanuatuerin",
+        "esM": "vanuatuense",
+        "esF": "vanuatuense"
+      },
+      "history": "Die Inseln wurden vor rund 3000 Jahren von seefahrenden Völkern besiedelt. 1606 erreichte Pedro Fernandes de Queirós im Dienst Spaniens die größte Insel und nannte sie „La Austrialia del Espíritu Santo“ – sie heißt bis heute Espíritu Santo; später gab James Cook der Gruppe den Namen Neue Hebriden. Ab 1906 regierten Großbritannien und Frankreich das Gebiet gemeinsam als sogenanntes Kondominium, bis Vanuatu 1980 unabhängig wurde. 2015 richtete der Zyklon Pam schwere Schäden an.",
+      "culture": "Auf der Insel Pentecost stürzen sich Männer beim „Naghol“ mit Lianen an den Füßen von hohen Holztürmen – ein Vorbild für das Bungee-Springen. Auf Tanna kann man bis an den Kraterrand des aktiven Vulkans Yasur wandern. Nationalgericht ist „Laplap“, eine Art Kuchen aus geriebenen Wurzelknollen und Kokosmilch, der im Erdofen gegart wird, und die traditionellen Sandzeichnungen gehören zum immateriellen Kulturerbe der UNESCO.",
+      "funFact": "Vor der kleinen Insel Hideaway Island gibt es ein Unterwasser-Postamt, in das Taucher wasserfeste Postkarten einwerfen können."
+    },
+    {
+      "iso2": "KI",
+      "name": {
+        "de": "Kiribati",
+        "es": "Kiribati",
+        "en": "Kiribati"
+      },
+      "aliases": [
+        "Republik Kiribati",
+        "Gilbertinseln"
+      ],
+      "capital": {
+        "de": "Süd-Tarawa",
+        "es": "Tarawa Sur",
+        "en": "South Tarawa",
+        "lat": 1.329,
+        "lng": 172.979
+      },
+      "capitalNote": "Süd-Tarawa ist keine einzelne Stadt, sondern eine Kette kleiner Inseln des Tarawa-Atolls, die durch Dämme verbunden sind.",
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "en",
+          "gil"
+        ],
+        "regional": [],
+        "spoken": []
+      },
+      "languageNote": "Im Alltag sprechen fast alle Einwohner Kiribatisch (Gilbertesisch); Englisch dient vor allem in Verwaltung und Schule.",
+      "demonym": {
+        "deM": "Kiribatier",
+        "deF": "Kiribatierin",
+        "esM": "kiribatiano",
+        "esF": "kiribatiana"
+      },
+      "history": "Die Atolle wurden vor mehreren tausend Jahren von mikronesischen Seefahrern besiedelt. Ab 1892 standen die Inseln unter britischer Herrschaft und bildeten zusammen mit dem heutigen Tuvalu die Kolonie Gilbert- und Ellice-Inseln. 1943 kam es auf Tarawa zu einer großen Schlacht zwischen den USA und Japan. 1979 wurde Kiribati unabhängig; heute bedroht der steigende Meeresspiegel die sehr flachen Atolle.",
+      "culture": "Die traditionellen Tänze erinnern mit ihren ausgebreiteten Armen oft an den Flug des Fregattvogels, der auch auf der Flagge zu sehen ist. Mittelpunkt jedes Dorfes ist das „Maneaba“, ein großes, offenes Versammlungshaus mit Palmblattdach. Gegessen werden vor allem Fisch, Kokosnüsse, Brotfrucht und die Riesensumpftaro „Babai“, und Fischen mit dem Auslegerkanu gehört für viele zum Alltag.",
+      "funFact": "Kiribati liegt als einziges Land in allen vier Hemisphären – nördlich und südlich des Äquators sowie östlich und westlich des 180. Längengrads."
+    }
+  ]
+}

@@ -1,0 +1,505 @@
+{
+  "batch": "18",
+  "languageNames": {
+    "ko": {
+      "de": "Koreanisch",
+      "es": "coreano",
+      "en": "Korean"
+    },
+    "zh": {
+      "de": "Chinesisch (Mandarin)",
+      "es": "chino (mandarín)",
+      "en": "Chinese (Mandarin)"
+    },
+    "nan": {
+      "de": "Hokkien (Taiwanisch)",
+      "es": "hokkien (taiwanés)",
+      "en": "Hokkien (Taiwanese)"
+    },
+    "hak": {
+      "de": "Hakka",
+      "es": "hakka",
+      "en": "Hakka"
+    },
+    "ms": {
+      "de": "Malaiisch",
+      "es": "malayo",
+      "en": "Malay"
+    },
+    "en": {
+      "de": "Englisch",
+      "es": "inglés",
+      "en": "English"
+    },
+    "id": {
+      "de": "Indonesisch",
+      "es": "indonesio",
+      "en": "Indonesian"
+    },
+    "jv": {
+      "de": "Javanisch",
+      "es": "javanés",
+      "en": "Javanese"
+    },
+    "km": {
+      "de": "Khmer",
+      "es": "jemer",
+      "en": "Khmer"
+    },
+    "lo": {
+      "de": "Laotisch",
+      "es": "lao",
+      "en": "Lao"
+    },
+    "my": {
+      "de": "Birmanisch",
+      "es": "birmano",
+      "en": "Burmese"
+    },
+    "pt": {
+      "de": "Portugiesisch",
+      "es": "portugués",
+      "en": "Portuguese"
+    },
+    "tet": {
+      "de": "Tetum",
+      "es": "tetun",
+      "en": "Tetum"
+    },
+    "fil": {
+      "de": "Filipino",
+      "es": "filipino",
+      "en": "Filipino"
+    },
+    "ceb": {
+      "de": "Cebuano",
+      "es": "cebuano",
+      "en": "Cebuano"
+    },
+    "ilo": {
+      "de": "Ilokano",
+      "es": "ilocano",
+      "en": "Ilocano"
+    },
+    "hil": {
+      "de": "Hiligaynon",
+      "es": "hiligainón",
+      "en": "Hiligaynon"
+    }
+  },
+  "countries": [
+    {
+      "iso2": "KR",
+      "name": {
+        "de": "Südkorea",
+        "es": "Corea del Sur",
+        "en": "South Korea"
+      },
+      "aliases": [
+        "Republik Korea",
+        "Republic of Korea",
+        "República de Corea"
+      ],
+      "capital": {
+        "de": "Seoul",
+        "es": "Seúl",
+        "en": "Seoul",
+        "lat": 37.5665,
+        "lng": 126.978
+      },
+      "capitalNote": "Viele Ministerien sitzen inzwischen in der Planstadt Sejong, Hauptstadt ist aber weiterhin Seoul.",
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "ko"
+        ],
+        "regional": [],
+        "spoken": []
+      },
+      "languageNote": "Koreanisch wird mit einer eigenen Schrift, dem im 15. Jahrhundert geschaffenen Hangeul, geschrieben.",
+      "demonym": {
+        "deM": "Südkoreaner",
+        "deF": "Südkoreanerin",
+        "esM": "surcoreano",
+        "esF": "surcoreana"
+      },
+      "history": "Auf der Koreanischen Halbinsel bestanden über viele Jahrhunderte eigene Königreiche, zuletzt ab 1392 die Joseon-Dynastie. Von 1910 bis 1945 war Korea eine japanische Kolonie. Nach dem Zweiten Weltkrieg wurde das Land geteilt, 1948 entstand im Süden die Republik Korea. Nach dem Koreakrieg (1950–1953) entwickelte sich Südkorea vom armen Agrarland zu einer führenden Industrienation und wurde Ende der 1980er-Jahre zu einer Demokratie.",
+      "culture": "Typisch sind „Kimchi“ (scharf eingelegtes, vergorenes Gemüse), „Bibimbap“ und koreanisches Barbecue. Weltweit bekannt sind K-Pop-Gruppen wie BTS und Blackpink sowie Filme und Serien wie „Parasite“ und „Squid Game“. Der Kampfsport Taekwondo stammt aus Korea, und Seoul war 1988 Gastgeber der Olympischen Sommerspiele.",
+      "funFact": "Nach traditioneller Zählung war man in Südkorea bei der Geburt schon ein Jahr alt – seit 2023 gilt offiziell das internationale Alter."
+    },
+    {
+      "iso2": "TW",
+      "name": {
+        "de": "Taiwan",
+        "es": "Taiwán",
+        "en": "Taiwan"
+      },
+      "aliases": [
+        "Republik China",
+        "República de China",
+        "Republic of China",
+        "Formosa"
+      ],
+      "capital": {
+        "de": "Taipeh",
+        "es": "Taipéi",
+        "en": "Taipei",
+        "lat": 25.033,
+        "lng": 121.5654
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "zh"
+        ],
+        "regional": [
+          "nan",
+          "hak"
+        ],
+        "spoken": []
+      },
+      "languageNote": "Seit 2019 gelten auch Taiwanisch (Hokkien), Hakka und die indigenen Sprachen als Nationalsprachen; geschrieben wird mit traditionellen chinesischen Schriftzeichen.",
+      "demonym": {
+        "deM": "Taiwaner",
+        "deF": "Taiwanerin",
+        "esM": "taiwanés",
+        "esF": "taiwanesa"
+      },
+      "history": "Ursprünglich lebten auf Taiwan austronesische Völker; ab dem 17. Jahrhundert kamen Niederländer, Spanier und chinesische Siedler, später gehörte die Insel zum chinesischen Kaiserreich. Von 1895 bis 1945 war Taiwan eine japanische Kolonie. 1949 zog sich nach dem chinesischen Bürgerkrieg die Regierung der Republik China nach Taiwan zurück, während auf dem Festland die Volksrepublik China entstand. Die Volksrepublik betrachtet Taiwan als Teil ihres Staatsgebiets; nur wenige Staaten erkennen Taiwan offiziell an, viele unterhalten aber inoffizielle Beziehungen.",
+      "culture": "Beliebt sind Nachtmärkte mit Streetfood, Rindernudelsuppe und Bubble Tea, der in Taiwan erfunden wurde. Wahrzeichen von Taipeh ist der Wolkenkratzer Taipei 101, der von 2004 bis 2010 das höchste Gebäude der Welt war. Das Nationale Palastmuseum zeigt eine der größten Sammlungen chinesischer Kunst, und Baseball ist ein sehr beliebter Sport.",
+      "funFact": "Ein großer Teil der modernsten Computerchips der Welt wird in Taiwan hergestellt."
+    },
+    {
+      "iso2": "BN",
+      "name": {
+        "de": "Brunei",
+        "es": "Brunéi",
+        "en": "Brunei"
+      },
+      "aliases": [
+        "Brunei Darussalam",
+        "Brunéi Darussalam"
+      ],
+      "capital": {
+        "de": "Bandar Seri Begawan",
+        "es": "Bandar Seri Begawan",
+        "en": "Bandar Seri Begawan",
+        "lat": 4.9031,
+        "lng": 114.9398
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "ms"
+        ],
+        "regional": [],
+        "spoken": [
+          "en"
+        ]
+      },
+      "languageNote": "Malaiisch wird in lateinischer und teilweise in arabischer Schrift (Jawi) geschrieben; Englisch ist in Schule und Wirtschaft weit verbreitet.",
+      "demonym": {
+        "deM": "Bruneier",
+        "deF": "Bruneierin",
+        "esM": "bruneano",
+        "esF": "bruneana"
+      },
+      "history": "Im 15. und 16. Jahrhundert war das Sultanat Brunei ein mächtiges Reich, das weite Teile der Insel Borneo und Gebiete der heutigen Philippinen beherrschte. Später verlor es viele Gebiete und wurde 1888 britisches Protektorat. 1929 wurde Erdöl entdeckt, das das Land reich machte. 1984 wurde Brunei unabhängig und wird bis heute von einem Sultan als absolutem Monarchen regiert.",
+      "culture": "Nationalgericht ist „Ambuyat“, ein zäher Brei aus Sagostärke, der mit einer Bambusgabel aufgewickelt und in Soße getunkt wird. Wahrzeichen der Hauptstadt sind die Sultan-Omar-Ali-Saifuddin-Moschee und das Wasserdorf Kampong Ayer, dessen Häuser auf Stelzen im Fluss stehen. Der Islam prägt das öffentliche Leben stark, und der Geburtstag des Sultans wird jedes Jahr groß gefeiert.",
+      "funFact": "Der Sultanspalast Istana Nurul Iman in Bandar Seri Begawan gilt als größter Wohnpalast der Welt und hat über 1.700 Räume."
+    },
+    {
+      "iso2": "ID",
+      "name": {
+        "de": "Indonesien",
+        "es": "Indonesia",
+        "en": "Indonesia"
+      },
+      "aliases": [
+        "Republik Indonesien",
+        "República de Indonesia"
+      ],
+      "capital": {
+        "de": "Jakarta",
+        "es": "Yakarta",
+        "en": "Jakarta",
+        "lat": -6.2088,
+        "lng": 106.8456
+      },
+      "capitalNote": "Die neue Hauptstadt Nusantara auf der Insel Borneo ist im Bau; bis zum offiziellen Umzug bleibt Jakarta Hauptstadt.",
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "id"
+        ],
+        "regional": [],
+        "spoken": [
+          "jv"
+        ]
+      },
+      "languageNote": "In Indonesien werden über 700 Sprachen gesprochen; Indonesisch ist für viele Menschen Zweitsprache, die meisten Muttersprachler hat Javanisch.",
+      "demonym": {
+        "deM": "Indonesier",
+        "deF": "Indonesierin",
+        "esM": "indonesio",
+        "esF": "indonesia"
+      },
+      "history": "Auf den Inseln entstanden früh hinduistisch-buddhistische Reiche wie Srivijaya und Majapahit, später verbreitete sich der Islam. Ab dem 17. Jahrhundert brachten die Niederlande das Gebiet schrittweise als „Niederländisch-Indien“ unter ihre Kontrolle. Nach der japanischen Besetzung im Zweiten Weltkrieg rief Sukarno 1945 die Unabhängigkeit aus, die die Niederlande 1949 anerkannten. Heute ist Indonesien das Land mit der größten muslimischen Bevölkerung der Welt.",
+      "culture": "Bekannt sind Gerichte wie „Nasi Goreng“ (gebratener Reis), „Sate“-Spieße und „Rendang“. Auf Java und Bali gibt es Gamelan-Musik, Schattenspiele mit Lederfiguren („Wayang“) und die Batik-Kunst. Berühmte Sehenswürdigkeiten sind der buddhistische Tempel Borobudur, die Insel Bali und der Komodo-Nationalpark mit den Komodowaranen; sehr beliebt ist außerdem Badminton.",
+      "funFact": "Indonesien besteht aus über 17.000 Inseln und ist damit der größte Inselstaat der Welt."
+    },
+    {
+      "iso2": "KH",
+      "name": {
+        "de": "Kambodscha",
+        "es": "Camboya",
+        "en": "Cambodia"
+      },
+      "aliases": [
+        "Königreich Kambodscha",
+        "Reino de Camboya",
+        "Kampuchea"
+      ],
+      "capital": {
+        "de": "Phnom Penh",
+        "es": "Nom Pen",
+        "en": "Phnom Penh",
+        "lat": 11.5564,
+        "lng": 104.9282
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "km"
+        ],
+        "regional": [],
+        "spoken": []
+      },
+      "languageNote": null,
+      "demonym": {
+        "deM": "Kambodschaner",
+        "deF": "Kambodschanerin",
+        "esM": "camboyano",
+        "esF": "camboyana"
+      },
+      "history": "Vom 9. bis zum 15. Jahrhundert beherrschte das Khmer-Reich mit seiner Hauptstadt Angkor große Teile Südostasiens. Ab 1863 war Kambodscha französisches Protektorat und gehörte später zu Französisch-Indochina, 1953 wurde es unabhängig. Unter der Herrschaft der Roten Khmer von 1975 bis 1979 kamen sehr viele Menschen ums Leben. Seit 1993 ist Kambodscha wieder ein Königreich.",
+      "culture": "Das Nationalgericht „Amok“ ist ein Fischcurry mit Kokosmilch, das oft in Bananenblättern gedämpft wird. Die Tempelanlage Angkor Wat gilt als größtes religiöses Bauwerk der Welt und ist sogar auf der Nationalflagge abgebildet. Berühmt ist auch der klassische Apsara-Tanz, und das Neujahrsfest „Choul Chnam Thmey“ wird im April gefeiert.",
+      "funFact": "Der Fluss Tonle Sap fließt in der Regenzeit rückwärts: Dann strömt Wasser aus dem Mekong in den großen See Tonle Sap."
+    },
+    {
+      "iso2": "LA",
+      "name": {
+        "de": "Laos",
+        "es": "Laos",
+        "en": "Laos"
+      },
+      "aliases": [
+        "Demokratische Volksrepublik Laos",
+        "Lao PDR",
+        "República Democrática Popular Lao"
+      ],
+      "capital": {
+        "de": "Vientiane",
+        "es": "Vientián",
+        "en": "Vientiane",
+        "lat": 17.9757,
+        "lng": 102.6331
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "lo"
+        ],
+        "regional": [],
+        "spoken": []
+      },
+      "languageNote": "Neben Laotisch werden viele Sprachen ethnischer Minderheiten gesprochen, zum Beispiel Hmong.",
+      "demonym": {
+        "deM": "Laote",
+        "deF": "Laotin",
+        "esM": "laosiano",
+        "esF": "laosiana"
+      },
+      "history": "Im 14. Jahrhundert gründete Fa Ngum das Königreich Lan Xang, das „Land der Million Elefanten“. Ende des 19. Jahrhunderts wurde Laos Teil von Französisch-Indochina und 1953 vollständig unabhängig. Während des Vietnamkriegs wurde das Land schwer bombardiert, und 1975 übernahm die kommunistische Pathet Lao die Macht und schaffte die Monarchie ab.",
+      "culture": "Grundnahrungsmittel ist Klebreis, der oft mit den Händen gegessen wird, dazu gibt es etwa den würzigen Fleischsalat „Larb“. Die meisten Menschen sind Buddhisten; in der Altstadt von Luang Prabang, die UNESCO-Welterbe ist, sammeln Mönche jeden Morgen Essensspenden. Zum Neujahrsfest „Pi Mai“ im April bespritzen sich die Menschen fröhlich mit Wasser.",
+      "funFact": "Laos ist das einzige Binnenland Südostasiens."
+    },
+    {
+      "iso2": "MY",
+      "name": {
+        "de": "Malaysia",
+        "es": "Malasia",
+        "en": "Malaysia"
+      },
+      "aliases": [],
+      "capital": {
+        "de": "Kuala Lumpur",
+        "es": "Kuala Lumpur",
+        "en": "Kuala Lumpur",
+        "lat": 3.139,
+        "lng": 101.6869
+      },
+      "capitalNote": "Hauptstadt und Sitz des Parlaments ist Kuala Lumpur; Regierung und oberste Gerichte sitzen in der Planstadt Putrajaya.",
+      "otherCapitals": [
+        {
+          "de": "Putrajaya",
+          "es": "Putrajaya",
+          "en": "Putrajaya",
+          "role": "Regierungssitz",
+          "lat": 2.9264,
+          "lng": 101.6964
+        }
+      ],
+      "languages": {
+        "official": [
+          "ms"
+        ],
+        "regional": [
+          "en"
+        ],
+        "spoken": [
+          "zh"
+        ]
+      },
+      "languageNote": "Englisch ist landesweit als Verkehrs-, Wirtschafts- und Bildungssprache verbreitet und im Bundesstaat Sarawak zusätzlich Amtssprache; Chinesisch und Tamil sprechen vor allem die chinesisch- bzw. indischstämmigen Bevölkerungsgruppen.",
+      "demonym": {
+        "deM": "Malaysier",
+        "deF": "Malaysierin",
+        "esM": "malasio",
+        "esF": "malasia"
+      },
+      "history": "Um 1400 wurde das Sultanat Malakka gegründet, ein wichtiges Handelszentrum an der gleichnamigen Meeresstraße. Danach eroberten Portugiesen (1511), Niederländer und schließlich Briten die Region. 1957 wurde die Malaiische Föderation unabhängig, 1963 entstand zusammen mit Sabah, Sarawak und Singapur der Staat Malaysia, von dem sich Singapur 1965 wieder trennte.",
+      "culture": "Die Küche vereint malaiische, chinesische und indische Einflüsse; als Nationalgericht gilt „Nasi Lemak“, in Kokosmilch gekochter Reis. Wahrzeichen von Kuala Lumpur sind die Petronas Towers, die von 1998 bis 2004 die höchsten Gebäude der Welt waren. Beliebt sind Badminton und Fußball, und Feste wie „Hari Raya“ am Ende des Ramadan, das chinesische Neujahr und Deepavali feiern oft alle gemeinsam.",
+      "funFact": "In den Regenwäldern Malaysias wachsen Rafflesien – Pflanzen mit einigen der größten Blüten der Welt, die nach Aas riechen."
+    },
+    {
+      "iso2": "MM",
+      "name": {
+        "de": "Myanmar",
+        "es": "Birmania",
+        "en": "Myanmar"
+      },
+      "aliases": [
+        "Birma",
+        "Burma",
+        "Republik der Union Myanmar"
+      ],
+      "capital": {
+        "de": "Naypyidaw",
+        "es": "Naipyidó",
+        "en": "Naypyidaw",
+        "lat": 19.7633,
+        "lng": 96.0785
+      },
+      "capitalNote": "Seit 2005/2006 ist die neu gebaute Planstadt Naypyidaw Regierungssitz und Hauptstadt; die frühere Hauptstadt Rangun (Yangon) ist weiterhin die größte Stadt.",
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "my"
+        ],
+        "regional": [],
+        "spoken": []
+      },
+      "languageNote": "Neben Birmanisch werden viele Sprachen ethnischer Minderheiten gesprochen, etwa Shan und Karen.",
+      "demonym": {
+        "deM": "Myanmarer",
+        "deF": "Myanmarerin",
+        "esM": "birmano",
+        "esF": "birmana"
+      },
+      "history": "Im 11. Jahrhundert entstand mit dem Reich von Bagan das erste große Königreich der Birmanen. Im 19. Jahrhundert eroberten die Briten das Land in mehreren Kriegen und verwalteten es zunächst als Teil von Britisch-Indien. 1948 wurde Birma unabhängig, danach regierte über Jahrzehnte das Militär, das 1989 den Landesnamen in Myanmar änderte. Nach einer Phase der Öffnung ab 2011 übernahm das Militär 2021 durch einen Putsch erneut die Macht.",
+      "culture": "Wahrzeichen des Landes ist die goldene Shwedagon-Pagode in Rangun, eines der wichtigsten buddhistischen Heiligtümer. Viele Menschen tragen den Wickelrock „Longyi“ und streichen sich die gelbliche Paste „Thanaka“ als Sonnenschutz ins Gesicht. Beliebt sind die Fischnudelsuppe „Mohinga“ und Teeblattsalat, und beim Neujahrsfest „Thingyan“ im April gibt es große Wasserschlachten.",
+      "funFact": "In der Ebene von Bagan stehen noch über 2.000 Tempel und Pagoden, die meisten aus dem 11. bis 13. Jahrhundert."
+    },
+    {
+      "iso2": "TL",
+      "name": {
+        "de": "Osttimor",
+        "es": "Timor Oriental",
+        "en": "East Timor"
+      },
+      "aliases": [
+        "Timor-Leste",
+        "Demokratische Republik Timor-Leste",
+        "República Democrática de Timor-Leste"
+      ],
+      "capital": {
+        "de": "Dili",
+        "es": "Dili",
+        "en": "Dili",
+        "lat": -8.5569,
+        "lng": 125.5603
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "pt",
+          "tet"
+        ],
+        "regional": [],
+        "spoken": [
+          "id"
+        ]
+      },
+      "languageNote": "Laut Verfassung sind Indonesisch und Englisch zusätzlich Arbeitssprachen, außerdem sind mehrere einheimische Sprachen als Nationalsprachen anerkannt; Tetum ist die wichtigste Verkehrssprache.",
+      "demonym": {
+        "deM": "Osttimorese",
+        "deF": "Osttimoresin",
+        "esM": "timorense",
+        "esF": "timorense"
+      },
+      "history": "Ab dem 16. Jahrhundert kamen Portugiesen auf die Insel Timor, deren Ostteil bis 1975 portugiesische Kolonie blieb. Kurz nach dem Rückzug Portugals besetzte Indonesien 1975 das Gebiet, wogegen es lange Widerstand gab. Nach einer Volksabstimmung 1999 und einer Übergangsverwaltung der Vereinten Nationen wurde Osttimor 2002 unabhängig. 2025 trat das Land als elftes Mitglied dem südostasiatischen Staatenbund ASEAN bei.",
+      "culture": "Die Kultur verbindet einheimische Traditionen mit portugiesischen und katholischen Einflüssen. Typisch sind handgewebte Stoffe namens „Tais“, die bei Festen getragen und als Geschenk überreicht werden. Über der Hauptstadt Dili wacht die große Christusstatue „Cristo Rei“, beliebt ist Fußball, und Kaffee aus den Bergen gehört zu den wichtigsten Exportgütern.",
+      "funFact": "Osttimor und die Philippinen sind die einzigen Länder Asiens, in denen die Mehrheit der Menschen katholisch ist."
+    },
+    {
+      "iso2": "PH",
+      "name": {
+        "de": "Philippinen",
+        "es": "Filipinas",
+        "en": "Philippines"
+      },
+      "aliases": [
+        "Republik der Philippinen",
+        "República de Filipinas",
+        "Republic of the Philippines"
+      ],
+      "capital": {
+        "de": "Manila",
+        "es": "Manila",
+        "en": "Manila",
+        "lat": 14.5995,
+        "lng": 120.9842
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "fil",
+          "en"
+        ],
+        "regional": [
+          "ceb",
+          "ilo",
+          "hil"
+        ],
+        "spoken": []
+      },
+      "languageNote": "Filipino beruht auf Tagalog; regionale Sprachen wie Cebuano sind in ihren Regionen Hilfsamtssprachen. Spanisch war bis 1987 Amtssprache und hat viele Lehnwörter hinterlassen.",
+      "demonym": {
+        "deM": "Philippiner",
+        "deF": "Philippinerin",
+        "esM": "filipino",
+        "esF": "filipina"
+      },
+      "history": "Vor der Kolonialzeit gab es auf den Inseln viele kleine Herrschaftsgebiete, die unter anderem mit China Handel trieben. 1521 erreichte Ferdinand Magellan die Inseln; benannt wurden sie 1543 nach dem spanischen Thronfolger und späteren König Philipp II., ab 1565 waren sie spanische Kolonie. Nach dem Spanisch-Amerikanischen Krieg 1898 übernahmen die USA die Kontrolle, 1946 wurden die Philippinen unabhängig. 1986 beendete die friedliche „People Power“-Revolution die Herrschaft von Ferdinand Marcos.",
+      "culture": "Durch über 300 Jahre spanische Herrschaft sind die meisten Menschen katholisch, und viele Wörter stammen aus dem Spanischen, etwa „mesa“ (Tisch) oder „kumusta“ von „¿cómo está?“. Beliebt sind Gerichte wie „Adobo“ und „Lechón“ (Spanferkel) sowie Basketball, Boxen und Karaoke. Berühmt sind die Reisterrassen von Banaue und die Chocolate Hills auf Bohol, und Weihnachten wird oft schon ab September gefeiert.",
+      "funFact": "Die Philippinen bestehen aus über 7.600 Inseln, bewohnt ist aber nur ein kleiner Teil davon."
+    }
+  ]
+}

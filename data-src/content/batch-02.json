@@ -1,0 +1,499 @@
+{
+  "batch": "02",
+  "languageNames": {
+    "es": {
+      "de": "Spanisch",
+      "es": "español",
+      "en": "Spanish"
+    },
+    "qu": {
+      "de": "Quechua",
+      "es": "quechua",
+      "en": "Quechua"
+    },
+    "ay": {
+      "de": "Aymara",
+      "es": "aimara",
+      "en": "Aymara"
+    },
+    "gn": {
+      "de": "Guaraní",
+      "es": "guaraní",
+      "en": "Guarani"
+    },
+    "guc": {
+      "de": "Wayuunaiki",
+      "es": "wayuunaiki",
+      "en": "Wayuu"
+    },
+    "jiv": {
+      "de": "Shuar",
+      "es": "shuar",
+      "en": "Shuar"
+    },
+    "arn": {
+      "de": "Mapudungun",
+      "es": "mapudungun",
+      "en": "Mapudungun"
+    },
+    "rap": {
+      "de": "Rapanui",
+      "es": "rapanui",
+      "en": "Rapa Nui"
+    },
+    "fr": {
+      "de": "Französisch",
+      "es": "francés",
+      "en": "French"
+    },
+    "pt": {
+      "de": "Portugiesisch",
+      "es": "portugués",
+      "en": "Portuguese"
+    },
+    "fan": {
+      "de": "Fang",
+      "es": "fang",
+      "en": "Fang"
+    },
+    "bvb": {
+      "de": "Bubi",
+      "es": "bubi",
+      "en": "Bubi"
+    }
+  },
+  "countries": [
+    {
+      "iso2": "CO",
+      "name": {
+        "de": "Kolumbien",
+        "es": "Colombia",
+        "en": "Colombia"
+      },
+      "aliases": [
+        "Republik Kolumbien",
+        "República de Colombia",
+        "Republic of Colombia"
+      ],
+      "capital": {
+        "de": "Bogotá",
+        "es": "Bogotá",
+        "en": "Bogotá",
+        "lat": 4.5981,
+        "lng": -74.076
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "es"
+        ],
+        "regional": [
+          "guc"
+        ],
+        "spoken": []
+      },
+      "languageNote": "Laut Verfassung sind die Sprachen der indigenen und anderen ethnischen Gruppen in ihren Gebieten ebenfalls Amtssprachen; es gibt über 60 indigene Sprachen, die größte ist Wayuunaiki (Wayuu) auf der Halbinsel La Guajira.",
+      "demonym": {
+        "deM": "Kolumbianer",
+        "deF": "Kolumbianerin",
+        "esM": "colombiano",
+        "esF": "colombiana"
+      },
+      "history": "Vor der Ankunft der Spanier lebten im Gebiet Kolumbiens Völker wie die Muisca, deren Rituale mit Gold die Legende von „El Dorado“ entstehen ließen. Ab dem frühen 16. Jahrhundert eroberten die Spanier das Land, das später zum Vizekönigreich Neugranada gehörte. Nach der Unabhängigkeitserklärung von 1810 sicherte Simón Bolívars Sieg bei Boyacá im Jahr 1819 die Unabhängigkeit; das Land war zunächst Teil von Großkolumbien. Nach jahrzehntelangem bewaffnetem Konflikt mit Guerillagruppen wie der FARC wurde 2016 ein Friedensabkommen unterzeichnet.",
+      "culture": "Typisch kolumbianisch sind „arepas“ aus Maismehl, die Hühnersuppe „ajiaco“ aus Bogotá und der weltweit geschätzte Kaffee. Musikstile wie „cumbia“ und „vallenato“ stammen aus Kolumbien, und der „Carnaval de Barranquilla“ gehört zum immateriellen Kulturerbe der UNESCO. Weltbekannt sind der Schriftsteller Gabriel García Márquez („Cien años de soledad“), der Maler Fernando Botero und die Sängerin Shakira.",
+      "funFact": "In keinem anderen Land der Welt wurden so viele Vogelarten nachgewiesen wie in Kolumbien."
+    },
+    {
+      "iso2": "VE",
+      "name": {
+        "de": "Venezuela",
+        "es": "Venezuela",
+        "en": "Venezuela"
+      },
+      "aliases": [
+        "Bolivarische Republik Venezuela",
+        "República Bolivariana de Venezuela",
+        "Bolivarian Republic of Venezuela"
+      ],
+      "capital": {
+        "de": "Caracas",
+        "es": "Caracas",
+        "en": "Caracas",
+        "lat": 10.5061,
+        "lng": -66.9146
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "es"
+        ],
+        "regional": [
+          "guc"
+        ],
+        "spoken": []
+      },
+      "languageNote": "Laut Verfassung sind die indigenen Sprachen für die indigenen Völker ebenfalls Amtssprachen; am weitesten verbreitet ist Wayuunaiki (Wayuu).",
+      "demonym": {
+        "deM": "Venezolaner",
+        "deF": "Venezolanerin",
+        "esM": "venezolano",
+        "esF": "venezolana"
+      },
+      "history": "Vor der spanischen Kolonialzeit, die im 16. Jahrhundert begann, lebten hier unter anderem Völker der Kariben und Arawak. Im Jahr 1811 erklärte Venezuela als eines der ersten Länder Lateinamerikas seine Unabhängigkeit, die der in Caracas geborene Simón Bolívar mit dem Sieg bei Carabobo 1821 entscheidend sicherte. Im 20. Jahrhundert machten große Erdölvorkommen Venezuela zu einem der wichtigsten Ölexporteure der Welt; 1960 war es Gründungsmitglied der OPEC. Seit den 2010er-Jahren steckt das Land in einer schweren wirtschaftlichen und politischen Krise, in deren Folge Millionen Menschen ausgewandert sind.",
+      "culture": "Zu den bekanntesten Gerichten gehören „arepas“, das Nationalgericht „pabellón criollo“ mit Reis, schwarzen Bohnen, Rindfleisch und Kochbananen sowie die „hallacas“ zu Weihnachten. Der Nationaltanz ist der „joropo“, begleitet von Harfe und der kleinen Gitarre „cuatro“. Anders als in den meisten Ländern Südamerikas ist Baseball dort der beliebteste Sport. Das Jugendorchester-Programm „El Sistema“ wurde weltweit zum Vorbild; aus ihm ging der Dirigent Gustavo Dudamel hervor.",
+      "funFact": "Der Salto Ángel in Venezuela ist mit rund 979 Metern Fallhöhe der höchste Wasserfall der Erde."
+    },
+    {
+      "iso2": "EC",
+      "name": {
+        "de": "Ecuador",
+        "es": "Ecuador",
+        "en": "Ecuador"
+      },
+      "aliases": [
+        "Republik Ecuador",
+        "República del Ecuador",
+        "Republic of Ecuador"
+      ],
+      "capital": {
+        "de": "Quito",
+        "es": "Quito",
+        "en": "Quito",
+        "lat": -0.2201,
+        "lng": -78.5123
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "es"
+        ],
+        "regional": [
+          "qu",
+          "jiv"
+        ],
+        "spoken": []
+      },
+      "languageNote": "Spanisch ist Amtssprache; Kichwa (die in Ecuador gesprochene Form des Quechua) und Shuar sind laut Verfassung offizielle Sprachen der interkulturellen Verständigung, die übrigen indigenen Sprachen gelten in ihren Siedlungsgebieten als Amtssprachen.",
+      "demonym": {
+        "deM": "Ecuadorianer",
+        "deF": "Ecuadorianerin",
+        "esM": "ecuatoriano",
+        "esF": "ecuatoriana"
+      },
+      "history": "Im 15. Jahrhundert eroberten die Inka das Gebiet des heutigen Ecuador, in dem zuvor Völker wie die Cañari und Quitu lebten. In den 1530er-Jahren übernahmen spanische Konquistadoren die Herrschaft und gründeten 1534 Quito auf den Resten einer Inka-Stadt neu. Nach dem Sieg in der Schlacht am Pichincha 1822 gehörte das Land zu Großkolumbien und wurde 1830 ein eigenständiger Staat. Seit dem Jahr 2000 ist der US-Dollar die offizielle Währung, und die Verfassung von 2008 gewährt als erste der Welt der Natur eigene Rechte.",
+      "culture": "Die Galápagos-Inseln mit ihren Riesenschildkröten und die Altstadt von Quito gehörten 1978 zu den ersten UNESCO-Welterbestätten überhaupt. Beliebte Gerichte sind die Kartoffelsuppe „locro de papa“, die Fischsuppe „encebollado“ und „ceviche“ mit Garnelen. Die als „Panamahut“ bekannten Strohhüte („sombreros de paja toquilla“) werden eigentlich in Ecuador geflochten. Am Denkmal „Mitad del Mundo“ nördlich von Quito lassen sich viele Besucher auf der markierten Äquatorlinie fotografieren.",
+      "funFact": "Der Gipfel des Chimborazo in Ecuador ist der Punkt der Erdoberfläche, der am weitesten vom Erdmittelpunkt entfernt ist."
+    },
+    {
+      "iso2": "PE",
+      "name": {
+        "de": "Peru",
+        "es": "Perú",
+        "en": "Peru"
+      },
+      "aliases": [
+        "Republik Peru",
+        "República del Perú",
+        "Republic of Peru"
+      ],
+      "capital": {
+        "de": "Lima",
+        "es": "Lima",
+        "en": "Lima",
+        "lat": -12.0453,
+        "lng": -77.0311
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "es",
+          "qu",
+          "ay"
+        ],
+        "regional": [],
+        "spoken": []
+      },
+      "languageNote": "Laut Verfassung sind neben Spanisch auch Quechua, Aymara und die übrigen indigenen Sprachen dort Amtssprachen, wo sie überwiegend gesprochen werden.",
+      "demonym": {
+        "deM": "Peruaner",
+        "deF": "Peruanerin",
+        "esM": "peruano",
+        "esF": "peruana"
+      },
+      "history": "In Peru entstanden sehr alte Kulturen wie Caral, Chavín, Nazca und Moche; im 15. Jahrhundert wuchs das Inkareich mit der Hauptstadt Cusco zum größten Reich des vorkolumbischen Amerika. Ab 1532 eroberten Spanier unter Francisco Pizarro das Land, und das 1535 gegründete Lima wurde Sitz des Vizekönigreichs Peru. José de San Martín rief 1821 die Unabhängigkeit aus, die mit der Schlacht von Ayacucho 1824 endgültig gesichert wurde. Von 1980 bis 2000 litt das Land unter einem bewaffneten Konflikt mit der Guerillagruppe „Sendero Luminoso“.",
+      "culture": "Die peruanische Küche gilt als eine der vielfältigsten der Welt; bekannt sind vor allem „ceviche“ aus rohem, in Limettensaft mariniertem Fisch, „lomo saltado“ und der Traubenbrand „pisco“. Die Inkastadt Machu Picchu, die Nazca-Linien und der Titicacasee ziehen Besucher aus aller Welt an. Zu den traditionellen Tänzen gehören die „marinera“ und der „huayno“, und der Schriftsteller Mario Vargas Llosa erhielt 2010 den Literaturnobelpreis.",
+      "funFact": "In Peru werden mehrere tausend Kartoffelsorten angebaut – die Knolle wurde vor Jahrtausenden in den Anden erstmals kultiviert."
+    },
+    {
+      "iso2": "BO",
+      "name": {
+        "de": "Bolivien",
+        "es": "Bolivia",
+        "en": "Bolivia"
+      },
+      "aliases": [
+        "Plurinationaler Staat Bolivien",
+        "Estado Plurinacional de Bolivia",
+        "Plurinational State of Bolivia"
+      ],
+      "capital": {
+        "de": "Sucre",
+        "es": "Sucre",
+        "en": "Sucre",
+        "lat": -19.0476,
+        "lng": -65.2596
+      },
+      "capitalNote": "Sucre ist laut Verfassung Hauptstadt, Regierungssitz ist La Paz.",
+      "otherCapitals": [
+        {
+          "de": "La Paz",
+          "es": "La Paz",
+          "en": "La Paz",
+          "role": "Regierungssitz",
+          "lat": -16.4955,
+          "lng": -68.1336
+        }
+      ],
+      "languages": {
+        "official": [
+          "es",
+          "qu",
+          "ay",
+          "gn"
+        ],
+        "regional": [],
+        "spoken": []
+      },
+      "languageNote": "Die Verfassung von 2009 erkennt neben Spanisch, Quechua, Aymara und Guaraní noch 33 weitere indigene Sprachen als Amtssprachen an.",
+      "demonym": {
+        "deM": "Bolivianer",
+        "deF": "Bolivianerin",
+        "esM": "boliviano",
+        "esF": "boliviana"
+      },
+      "history": "Am Titicacasee blühte schon vor über tausend Jahren die Tiwanaku-Kultur, später gehörte das Hochland zum Inkareich. Unter spanischer Herrschaft ab den 1530er-Jahren wurde der Silberberg von Potosí zu einer der wichtigsten Silberquellen des Kolonialreichs. Im Jahr 1825 wurde das Land unabhängig und nach Simón Bolívar benannt. Im Salpeterkrieg (1879–1884) verlor Bolivien seine Pazifikküste an Chile; seit der Verfassung von 2009 heißt es offiziell „Plurinationaler Staat“.",
+      "culture": "Der „Carnaval de Oruro“ mit dem Teufelstanz „diablada“ gehört zum immateriellen Kulturerbe der UNESCO. Typisch für die Andenmusik sind die kleine Gitarre „charango“ und die Panflöte „zampoña“; am Vormittag isst man gern „salteñas“, saftig gefüllte Teigtaschen. Berühmt sind der Salar de Uyuni, die größte Salzfläche der Erde, und das Seilbahnnetz „Mi Teleférico“, das in La Paz als öffentliches Verkehrsmittel dient.",
+      "funFact": "La Paz liegt auf rund 3.600 Metern Höhe und ist damit der höchstgelegene Regierungssitz der Welt."
+    },
+    {
+      "iso2": "CL",
+      "name": {
+        "de": "Chile",
+        "es": "Chile",
+        "en": "Chile"
+      },
+      "aliases": [
+        "Republik Chile",
+        "República de Chile",
+        "Republic of Chile"
+      ],
+      "capital": {
+        "de": "Santiago de Chile",
+        "es": "Santiago de Chile",
+        "en": "Santiago",
+        "lat": -33.4378,
+        "lng": -70.6505
+      },
+      "capitalNote": "Der Nationalkongress (das Parlament) hat seit 1990 seinen Sitz in der Hafenstadt Valparaíso.",
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "es"
+        ],
+        "regional": [
+          "arn",
+          "rap"
+        ],
+        "spoken": []
+      },
+      "languageNote": "Spanisch ist ohne gesetzliche Festlegung die Landessprache; das Indigenengesetz von 1993 schützt indigene Sprachen wie Mapudungun (Sprache der Mapuche) und Rapanui (Osterinsel).",
+      "demonym": {
+        "deM": "Chilene",
+        "deF": "Chilenin",
+        "esM": "chileno",
+        "esF": "chilena"
+      },
+      "history": "Vor der Ankunft der Spanier gehörte der Norden Chiles zum Inkareich, während die Mapuche im Süden ihre Unabhängigkeit sehr lange verteidigten. Pedro de Valdivia gründete 1541 Santiago, und Chile wurde eine spanische Kolonie. Nach Siegen unter Bernardo O’Higgins und José de San Martín erklärte Chile 1818 seine Unabhängigkeit. Nach einem Militärputsch 1973 herrschte bis 1990 eine Militärdiktatur unter Augusto Pinochet; seitdem ist Chile wieder eine Demokratie.",
+      "culture": "Rund um den Nationalfeiertag am 18. September, die „Fiestas Patrias“, isst man „empanadas de pino“ mit Fleischfüllung und tanzt den Nationaltanz „cueca“. Berühmt sind die Moai-Steinfiguren auf der Osterinsel („Rapa Nui“), die Atacama-Wüste mit großen Sternwarten und der Nationalpark Torres del Paine in Patagonien. Mit Gabriela Mistral und Pablo Neruda hat Chile zwei Literaturnobelpreisträger; Mistral war 1945 die erste Person aus Lateinamerika mit diesem Preis.",
+      "funFact": "Chile ist über 4.000 Kilometer lang, aber im Durchschnitt nur etwa 180 Kilometer breit."
+    },
+    {
+      "iso2": "AR",
+      "name": {
+        "de": "Argentinien",
+        "es": "Argentina",
+        "en": "Argentina"
+      },
+      "aliases": [
+        "Argentinische Republik",
+        "República Argentina",
+        "Argentine Republic"
+      ],
+      "capital": {
+        "de": "Buenos Aires",
+        "es": "Buenos Aires",
+        "en": "Buenos Aires",
+        "lat": -34.6083,
+        "lng": -58.3712
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "es"
+        ],
+        "regional": [
+          "gn"
+        ],
+        "spoken": []
+      },
+      "languageNote": "Spanisch ist ohne gesetzliche Festlegung die Landessprache; in der Provinz Corrientes ist Guaraní zusätzlich Amtssprache, in der Provinz Chaco sind es die indigenen Sprachen Qom, Moqoit und Wichí.",
+      "demonym": {
+        "deM": "Argentinier",
+        "deF": "Argentinierin",
+        "esM": "argentino",
+        "esF": "argentina"
+      },
+      "history": "Vor der Kolonialzeit lebten im Nordwesten Völker wie die Diaguita, in der Pampa und in Patagonien nomadische Völker. Ab dem 16. Jahrhundert kolonisierten die Spanier das Gebiet; ab 1776 war Buenos Aires Hauptstadt des Vizekönigreichs Río de la Plata. Nach der Mai-Revolution von 1810 erklärte Argentinien 1816 in Tucumán seine Unabhängigkeit, und später wanderten Millionen Menschen vor allem aus Italien und Spanien ein. Während der Militärdiktatur (1976–1983) kam es 1982 zum Krieg mit dem Vereinigten Königreich um die Falklandinseln („Islas Malvinas“), die Argentinien bis heute beansprucht.",
+      "culture": "Beliebt sind das Grillfest „asado“, „empanadas“, die Karamellcreme „dulce de leche“ und der Kräutertee „mate“, der aus einem Gefäß mit Metallröhrchen („bombilla“) getrunken wird. Der Tango entstand Ende des 19. Jahrhunderts am Río de la Plata und gehört zum immateriellen Kulturerbe der UNESCO. Fußball ist Nationalsport: Argentinien wurde dreimal Weltmeister, zuletzt 2022 mit Lionel Messi. Zu den bekanntesten Naturwundern zählen die Iguazú-Wasserfälle und der Perito-Moreno-Gletscher.",
+      "funFact": "Im argentinischen Spanisch sagt man „vos“ statt „tú“ – statt „tú tienes“ heißt es also „vos tenés“."
+    },
+    {
+      "iso2": "UY",
+      "name": {
+        "de": "Uruguay",
+        "es": "Uruguay",
+        "en": "Uruguay"
+      },
+      "aliases": [
+        "Republik Östlich des Uruguay",
+        "República Oriental del Uruguay",
+        "Oriental Republic of Uruguay"
+      ],
+      "capital": {
+        "de": "Montevideo",
+        "es": "Montevideo",
+        "en": "Montevideo",
+        "lat": -34.9067,
+        "lng": -56.1997
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "es"
+        ],
+        "regional": [],
+        "spoken": []
+      },
+      "languageNote": "Spanisch ist die Landessprache; im Norden an der Grenze zu Brasilien sprechen viele Menschen auch Portugiesisch oder die Mischform „portuñol“.",
+      "demonym": {
+        "deM": "Uruguayer",
+        "deF": "Uruguayerin",
+        "esM": "uruguayo",
+        "esF": "uruguaya"
+      },
+      "history": "Ursprünglich lebten hier Völker wie die Charrúa. Im 17. und 18. Jahrhundert stritten Spanien und Portugal um das Land am Ostufer des Río Uruguay, die „Banda Oriental“, und die Spanier gründeten Montevideo. Nach Kämpfen, in denen José Gervasio Artigas zum Nationalhelden wurde, erklärte Uruguay 1825 seine Unabhängigkeit von Brasilien, die 1828 anerkannt wurde. Wegen früher Sozialreformen nannte man Uruguay im 20. Jahrhundert „Suiza de América“ (Schweiz Amerikas), doch von 1973 bis 1985 herrschte eine Militärdiktatur.",
+      "culture": "Typisch ist der „chivito“, ein üppig belegtes Rindfleisch-Sandwich, und fast überall sieht man Menschen mit Thermoskanne und „mate“. Die afro-uruguayische Trommelmusik „candombe“ und der Tango, den Uruguay mit Argentinien teilt, gehören zum immateriellen Kulturerbe der UNESCO. Die Altstadt von Colonia del Sacramento ist Weltkulturerbe, und im Fußball ist Uruguay zweifacher Weltmeister.",
+      "funFact": "Uruguay richtete 1930 die erste Fußball-Weltmeisterschaft aus und gewann sie im Finale gegen Argentinien."
+    },
+    {
+      "iso2": "PY",
+      "name": {
+        "de": "Paraguay",
+        "es": "Paraguay",
+        "en": "Paraguay"
+      },
+      "aliases": [
+        "Republik Paraguay",
+        "República del Paraguay",
+        "Republic of Paraguay",
+        "Tetã Paraguái"
+      ],
+      "capital": {
+        "de": "Asunción",
+        "es": "Asunción",
+        "en": "Asunción",
+        "lat": -25.28,
+        "lng": -57.6344
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "es",
+          "gn"
+        ],
+        "regional": [],
+        "spoken": []
+      },
+      "languageNote": "Guaraní ist seit 1992 gleichberechtigte Amtssprache und wird von einem Großteil der Bevölkerung gesprochen, oft gemischt mit Spanisch („jopara“).",
+      "demonym": {
+        "deM": "Paraguayer",
+        "deF": "Paraguayerin",
+        "esM": "paraguayo",
+        "esF": "paraguaya"
+      },
+      "history": "Vor der Ankunft der Europäer lebten im Gebiet des heutigen Paraguay vor allem Guaraní-Völker. Die Spanier gründeten 1537 Asunción, und im 17. und 18. Jahrhundert errichteten Jesuiten gemeinsam mit den Guaraní Missionssiedlungen, die „reducciones“. Im Jahr 1811 wurde Paraguay unabhängig. Im Krieg gegen Brasilien, Argentinien und Uruguay (1864–1870) verlor das Land einen großen Teil seiner Bevölkerung; von 1954 bis 1989 regierte Diktator Alfredo Stroessner.",
+      "culture": "Das kalte Mate-Getränk „tereré“ gehört zum immateriellen Kulturerbe der UNESCO und wird besonders an heißen Tagen getrunken. Typische Speisen sind das Käsebrot „chipa“ und die „sopa paraguaya“, die trotz ihres Namens keine Suppe, sondern ein fester Maiskuchen ist. Die Harfe („arpa paraguaya“) ist das Nationalinstrument, und die feinen „ñandutí“-Spitzen sind ein bekanntes Kunsthandwerk. Gemeinsam mit Brasilien betreibt Paraguay das Wasserkraftwerk Itaipú, eines der größten der Welt.",
+      "funFact": "Die Flagge Paraguays zeigt auf Vorder- und Rückseite unterschiedliche Wappen – weltweit eine große Ausnahme."
+    },
+    {
+      "iso2": "GQ",
+      "name": {
+        "de": "Äquatorialguinea",
+        "es": "Guinea Ecuatorial",
+        "en": "Equatorial Guinea"
+      },
+      "aliases": [
+        "Republik Äquatorialguinea",
+        "República de Guinea Ecuatorial",
+        "Republic of Equatorial Guinea"
+      ],
+      "capital": {
+        "de": "Ciudad de la Paz",
+        "es": "Ciudad de la Paz",
+        "en": "Ciudad de la Paz",
+        "lat": 1.5889,
+        "lng": 10.8225
+      },
+      "capitalNote": "Seit einem Präsidentenerlass vom Januar 2026 ist die auf dem Festland neu gebaute Stadt Ciudad de la Paz (früher Oyala) Hauptstadt; der Umzug der Regierung aus Malabo auf der Insel Bioko erfolgt schrittweise. In vielen Schulbüchern steht noch Malabo als Hauptstadt.",
+      "otherCapitals": [
+        {
+          "de": "Malabo",
+          "es": "Malabo",
+          "en": "Malabo",
+          "role": "bisherige Hauptstadt",
+          "lat": 3.7456,
+          "lng": 8.7744
+        }
+      ],
+      "languages": {
+        "official": [
+          "es",
+          "fr",
+          "pt"
+        ],
+        "regional": [
+          "fan",
+          "bvb"
+        ],
+        "spoken": []
+      },
+      "languageNote": "Spanisch ist die wichtigste Verwaltungs- und Schulsprache; Französisch und (seit 2010) Portugiesisch kamen später als Amtssprachen hinzu, sind im Alltag aber wenig verbreitet. Die Verfassung erkennt einheimische Sprachen wie Fang und Bubi als Teil der nationalen Kultur an.",
+      "demonym": {
+        "deM": "Äquatorialguineer",
+        "deF": "Äquatorialguineerin",
+        "esM": "ecuatoguineano",
+        "esF": "ecuatoguineana"
+      },
+      "history": "Ursprünglich lebten auf der Insel Bioko die Bubi und auf dem Festland unter anderem die Fang; im 15. Jahrhundert erreichten portugiesische Seefahrer die Insel. Im Jahr 1778 trat Portugal seine Ansprüche in der Region an Spanien ab, das später die Kolonie „Guinea Española“ errichtete. Am 12. Oktober 1968 wurde Äquatorialguinea unabhängig; seit den 1990er-Jahren ist Erdöl das wichtigste Exportgut. Seit 1979 regiert Präsident Teodoro Obiang Nguema Mbasogo, und 2026 wurde die neu gebaute Stadt Ciudad de la Paz auf dem Festland zur Hauptstadt erklärt.",
+      "culture": "Die größte Volksgruppe sind die Fang, deren Erzähler zum Saiteninstrument „mvet“ lange Heldenepen vortragen. Typische Zutaten der Küche sind Fisch, Maniok („yuca“), Kochbananen und scharfe Soßen. Die bisherige Hauptstadt Malabo hieß in der Kolonialzeit „Santa Isabel“, und ihre neugotische Kathedrale ist ein Wahrzeichen des Landes. Im Fußball war Äquatorialguinea 2012 (gemeinsam mit Gabun) und 2015 Gastgeber des Afrika-Cups.",
+      "funFact": "Äquatorialguinea ist das einzige unabhängige Land Afrikas, in dem Spanisch Amtssprache ist."
+    }
+  ]
+}

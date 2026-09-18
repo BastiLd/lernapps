@@ -1,0 +1,357 @@
+{
+  "batch": "20",
+  "languageNames": {
+    "en": {
+      "de": "Englisch",
+      "es": "inglés",
+      "en": "English"
+    },
+    "mh": {
+      "de": "Marshallesisch",
+      "es": "marshalés",
+      "en": "Marshallese"
+    },
+    "chk": {
+      "de": "Chuukesisch",
+      "es": "chuukés",
+      "en": "Chuukese"
+    },
+    "pon": {
+      "de": "Pohnpeanisch",
+      "es": "pohnpeiano",
+      "en": "Pohnpeian"
+    },
+    "na": {
+      "de": "Nauruisch",
+      "es": "nauruano",
+      "en": "Nauruan"
+    },
+    "pau": {
+      "de": "Palauisch",
+      "es": "palauano",
+      "en": "Palauan"
+    },
+    "sov": {
+      "de": "Sonsorolesisch",
+      "es": "sonsorolés",
+      "en": "Sonsorolese"
+    },
+    "tox": {
+      "de": "Tobianisch",
+      "es": "tobiano",
+      "en": "Tobian"
+    },
+    "ja": {
+      "de": "Japanisch",
+      "es": "japonés",
+      "en": "Japanese"
+    },
+    "sm": {
+      "de": "Samoanisch",
+      "es": "samoano",
+      "en": "Samoan"
+    },
+    "to": {
+      "de": "Tongaisch",
+      "es": "tongano",
+      "en": "Tongan"
+    },
+    "tvl": {
+      "de": "Tuvaluisch",
+      "es": "tuvaluano",
+      "en": "Tuvaluan"
+    }
+  },
+  "countries": [
+    {
+      "iso2": "MH",
+      "name": {
+        "de": "Marshallinseln",
+        "es": "Islas Marshall",
+        "en": "Marshall Islands"
+      },
+      "aliases": [
+        "Republik Marshallinseln",
+        "Republic of the Marshall Islands",
+        "República de las Islas Marshall"
+      ],
+      "capital": {
+        "de": "Majuro",
+        "es": "Majuro",
+        "en": "Majuro",
+        "lat": 7.0897,
+        "lng": 171.3803
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "mh",
+          "en"
+        ],
+        "regional": [],
+        "spoken": []
+      },
+      "languageNote": null,
+      "demonym": {
+        "deM": "Marshaller",
+        "deF": "Marshallerin",
+        "esM": "marshalés",
+        "esF": "marshalesa"
+      },
+      "history": "Die Atolle wurden vor mindestens 2000 Jahren von mikronesischen Seefahrern besiedelt; ihren Namen erhielten sie später nach dem britischen Kapitän John Marshall. Ab 1885 waren die Inseln deutsches Schutzgebiet, ab 1914 unter japanischer Verwaltung und nach dem Zweiten Weltkrieg Teil des von den USA verwalteten UN-Treuhandgebiets. Von 1946 bis 1958 führten die USA auf den Atollen Bikini und Enewetak zahlreiche Atomwaffentests durch. Seit 1986 sind die Marshallinseln in freier Assoziierung mit den USA unabhängig.",
+      "culture": "Berühmt sind die traditionellen Stabkarten aus Palmrippen und Muscheln, mit denen Seefahrer Wellenmuster und die Lage der Inseln darstellten. Gegessen werden vor allem Fisch, Kokosnuss, Brotfrucht und Pandanus, und aus Pandanusblättern entstehen kunstvolle Flechtarbeiten. Die Gesellschaft ist traditionell matrilinear: Land und Clan-Zugehörigkeit werden über die Mutter weitergegeben.",
+      "funFact": "Der Bikini wurde 1946 nach dem Bikini-Atoll benannt, auf dem die USA kurz zuvor mit Atomwaffentests begonnen hatten."
+    },
+    {
+      "iso2": "FM",
+      "name": {
+        "de": "Mikronesien",
+        "es": "Micronesia",
+        "en": "Micronesia"
+      },
+      "aliases": [
+        "Föderierte Staaten von Mikronesien",
+        "Federated States of Micronesia",
+        "Estados Federados de Micronesia",
+        "FSM"
+      ],
+      "capital": {
+        "de": "Palikir",
+        "es": "Palikir",
+        "en": "Palikir",
+        "lat": 6.9172,
+        "lng": 158.1589
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "en"
+        ],
+        "regional": [],
+        "spoken": [
+          "chk",
+          "pon"
+        ]
+      },
+      "languageNote": "Jeder der vier Bundesstaaten hat eigene einheimische Sprachen; am weitesten verbreitet sind Chuukesisch und Pohnpeanisch.",
+      "demonym": {
+        "deM": "Mikronesier",
+        "deF": "Mikronesierin",
+        "esM": "micronesio",
+        "esF": "micronesia"
+      },
+      "history": "Die Inseln wurden vor mehreren tausend Jahren von Seefahrern besiedelt; auf Pohnpei entstand im Mittelalter die aus Basaltsäulen erbaute Stadt Nan Madol. Im 19. Jahrhundert gehörten die Karolinen zum spanischen Kolonialreich, 1899 verkaufte Spanien sie an Deutschland, und ab 1914 verwaltete Japan die Inseln. Nach dem Zweiten Weltkrieg waren sie Teil des UN-Treuhandgebiets unter US-Verwaltung, 1986 wurden die Föderierten Staaten von Mikronesien in freier Assoziierung mit den USA unabhängig.",
+      "culture": "Die vier Bundesstaaten Yap, Chuuk, Pohnpei und Kosrae haben jeweils eigene Sprachen und Traditionen. Die Ruinen von Nan Madol, errichtet auf künstlichen Inseln vor der Küste von Pohnpei, gehören zum UNESCO-Welterbe. In der Lagune von Chuuk liegen viele Schiffswracks aus dem Zweiten Weltkrieg, die Taucher aus aller Welt anziehen, und auf Pohnpei wird aus der Sakau-Wurzel ein zeremonielles Getränk zubereitet.",
+      "funFact": "Auf der Insel Yap dient Steingeld – riesige, durchlöcherte Steinscheiben, teils größer als ein Mensch – bis heute bei traditionellen Anlässen als Zahlungsmittel."
+    },
+    {
+      "iso2": "NR",
+      "name": {
+        "de": "Nauru",
+        "es": "Nauru",
+        "en": "Nauru"
+      },
+      "aliases": [
+        "Republik Nauru",
+        "Republic of Nauru",
+        "República de Nauru"
+      ],
+      "capital": {
+        "de": "Yaren",
+        "es": "Yaren",
+        "en": "Yaren",
+        "lat": -0.5477,
+        "lng": 166.9209
+      },
+      "capitalNote": "Nauru hat keine offizielle Hauptstadt; Parlament und Regierungsbüros befinden sich im Distrikt Yaren.",
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "na",
+          "en"
+        ],
+        "regional": [],
+        "spoken": []
+      },
+      "languageNote": "Nauruisch ist die Landessprache, Englisch wird in Verwaltung, Schule und Handel verwendet.",
+      "demonym": {
+        "deM": "Nauruer",
+        "deF": "Nauruerin",
+        "esM": "nauruano",
+        "esF": "nauruana"
+      },
+      "history": "Nauru wurde vor rund 3000 Jahren von mikronesischen und polynesischen Seefahrern besiedelt. Ab 1888 gehörte die Insel zum deutschen Kolonialreich, nach dem Ersten Weltkrieg verwaltete sie Australien im Auftrag des Völkerbunds gemeinsam mit Neuseeland und dem Vereinigten Königreich. Der Abbau von Phosphat brachte großen Reichtum, verwandelte aber große Teile der Insel in eine karge Kraterlandschaft. Seit 1968 ist Nauru unabhängig.",
+      "culture": "Die Insel ist nur etwa 21 Quadratkilometer groß; eine einzige Ringstraße führt entlang der Küste, an der fast alle Menschen leben. Beliebtester Sport ist Australian Football, und im Gewichtheben gewann Nauru mehrere Goldmedaillen bei den Commonwealth Games, etwa durch den späteren Präsidenten Marcus Stephen. Weil das ausgebeutete Inselinnere („Topside“) kaum Landwirtschaft zulässt, werden die meisten Lebensmittel importiert.",
+      "funFact": "Nauru ist die kleinste Republik der Welt – nur der Vatikanstaat und Monaco sind als unabhängige Staaten noch kleiner."
+    },
+    {
+      "iso2": "PW",
+      "name": {
+        "de": "Palau",
+        "es": "Palaos",
+        "en": "Palau"
+      },
+      "aliases": [
+        "Republik Palau",
+        "Republic of Palau",
+        "República de Palaos",
+        "Belau"
+      ],
+      "capital": {
+        "de": "Ngerulmud",
+        "es": "Ngerulmud",
+        "en": "Ngerulmud",
+        "lat": 7.5006,
+        "lng": 134.6242
+      },
+      "capitalNote": "Seit 2006 ist Ngerulmud auf der Insel Babeldaob Regierungssitz; zuvor war die größte Stadt Koror Hauptstadt.",
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "pau",
+          "en"
+        ],
+        "regional": [
+          "sov",
+          "tox",
+          "ja"
+        ],
+        "spoken": []
+      },
+      "languageNote": "In einzelnen Bundesstaaten gelten zusätzlich Sonsorolesisch, Tobianisch und – im Bundesstaat Angaur – Japanisch als Amtssprachen.",
+      "demonym": {
+        "deM": "Palauer",
+        "deF": "Palauerin",
+        "esM": "palauano",
+        "esF": "palauana"
+      },
+      "history": "Palau wurde vor rund 3000 Jahren von Seefahrern besiedelt. Im 19. Jahrhundert gehörte die Inselgruppe zum spanischen Kolonialreich, 1899 verkaufte Spanien sie an Deutschland, und ab 1914 verwaltete Japan sie. Im Zweiten Weltkrieg kam es 1944 auf der Insel Peleliu zu einer schweren Schlacht zwischen Japan und den USA; danach wurde Palau Teil des UN-Treuhandgebiets unter US-Verwaltung. Seit 1994 ist Palau in freier Assoziierung mit den USA unabhängig.",
+      "culture": "Palau ist ein Paradies für Taucher: Die grünen Kalksteininseln der Rock Islands in der türkisblauen Lagune gehören zum UNESCO-Welterbe. In einem Meeressee auf der Insel Eil Malk leben zeitweise Millionen Quallen, deren Nesselgift für Menschen kaum spürbar ist. Typisch sind die reich bemalten Versammlungshäuser („bai“) und geschnitzte Geschichtsbretter, und die palauische Sprache enthält bis heute viele japanische Lehnwörter.",
+      "funFact": "Wer nach Palau einreist, bekommt ein Umweltversprechen, den „Palau Pledge“, in den Reisepass gestempelt und muss es unterschreiben."
+    },
+    {
+      "iso2": "WS",
+      "name": {
+        "de": "Samoa",
+        "es": "Samoa",
+        "en": "Samoa"
+      },
+      "aliases": [
+        "Unabhängiger Staat Samoa",
+        "Westsamoa",
+        "Western Samoa",
+        "Estado Independiente de Samoa"
+      ],
+      "capital": {
+        "de": "Apia",
+        "es": "Apia",
+        "en": "Apia",
+        "lat": -13.8333,
+        "lng": -171.7667
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "sm",
+          "en"
+        ],
+        "regional": [],
+        "spoken": []
+      },
+      "languageNote": null,
+      "demonym": {
+        "deM": "Samoaner",
+        "deF": "Samoanerin",
+        "esM": "samoano",
+        "esF": "samoana"
+      },
+      "history": "Die Inseln wurden vor rund 3000 Jahren besiedelt und gelten als eine Wiege der polynesischen Kultur. Um 1900 teilten Deutschland und die USA die Inselgruppe auf: Der Westen wurde deutsche Kolonie, der Osten ist bis heute als Amerikanisch-Samoa ein Außengebiet der USA. Ab 1914 verwaltete Neuseeland Westsamoa, das 1962 als erster pazifischer Inselstaat im 20. Jahrhundert unabhängig wurde. Seit 1997 heißt das Land offiziell nur noch Samoa.",
+      "culture": "Das Leben folgt dem „fa'a Samoa“, der samoanischen Lebensweise mit Großfamilien und ihren Oberhäuptern („matai“). Typisch sind offene Rundhäuser („fale“), im Erdofen („umu“) gegarte Speisen und kunstvolle traditionelle Tätowierungen („tatau“). Der Feuermessertanz stammt aus Samoa, und Rugby ist Nationalsport: Die Nationalmannschaft „Manu Samoa“ führt vor Spielen den Kriegstanz „Siva Tau“ auf.",
+      "funFact": "Samoa ließ den 30. Dezember 2011 komplett ausfallen, als das Land auf die westliche Seite der Datumsgrenze wechselte."
+    },
+    {
+      "iso2": "TO",
+      "name": {
+        "de": "Tonga",
+        "es": "Tonga",
+        "en": "Tonga"
+      },
+      "aliases": [
+        "Königreich Tonga",
+        "Kingdom of Tonga",
+        "Reino de Tonga",
+        "Freundschaftsinseln"
+      ],
+      "capital": {
+        "de": "Nuku'alofa",
+        "es": "Nukualofa",
+        "en": "Nuku'alofa",
+        "lat": -21.1394,
+        "lng": -175.2032
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "to",
+          "en"
+        ],
+        "regional": [],
+        "spoken": []
+      },
+      "languageNote": null,
+      "demonym": {
+        "deM": "Tongaer",
+        "deF": "Tongaerin",
+        "esM": "tongano",
+        "esF": "tongana"
+      },
+      "history": "Tonga wurde vor rund 3000 Jahren von Seefahrern der Lapita-Kultur besiedelt. Ab etwa dem 10. Jahrhundert entstand das Reich der Tu'i Tonga, dessen Einfluss zeitweise bis zu benachbarten Inselgruppen reichte. König George Tupou I. gab dem Land 1875 eine Verfassung; von 1900 bis 1970 stand Tonga unter britischem Schutz, wurde aber nie eine Kolonie. Seit 1970 ist das Königreich vollständig unabhängig, und seit 2010 wählt das Volk die Mehrheit der Parlamentsabgeordneten.",
+      "culture": "Tonga ist der einzige Inselstaat im Pazifik mit einem einheimischen Königshaus, und der Sonntag ist laut Verfassung ein Ruhetag, an dem die meisten Geschäfte geschlossen bleiben. Zu festlichen Anlässen tragen viele Menschen geflochtene Matten („ta'ovala“) um die Hüfte, und der Gruppentanz „lakalaka“ gehört zum immateriellen Kulturerbe der UNESCO. Rugby ist sehr beliebt; die Nationalmannschaft zeigt vor Spielen den Kriegstanz „Sipi Tau“.",
+      "funFact": "Beim Ausbruch des Unterwasservulkans Hunga Tonga-Hunga Ha'apai im Januar 2022 lief die Druckwelle mehrmals um die ganze Erde."
+    },
+    {
+      "iso2": "TV",
+      "name": {
+        "de": "Tuvalu",
+        "es": "Tuvalu",
+        "en": "Tuvalu"
+      },
+      "aliases": [
+        "Ellice-Inseln",
+        "Ellice Islands",
+        "Islas Ellice"
+      ],
+      "capital": {
+        "de": "Funafuti",
+        "es": "Funafuti",
+        "en": "Funafuti",
+        "lat": -8.5243,
+        "lng": 179.1942
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "tvl",
+          "en"
+        ],
+        "regional": [],
+        "spoken": []
+      },
+      "languageNote": "Auf der Insel Nui wird traditionell ein Dialekt des Kiribatischen (Gilbertesischen) gesprochen.",
+      "demonym": {
+        "deM": "Tuvaluer",
+        "deF": "Tuvaluerin",
+        "esM": "tuvaluano",
+        "esF": "tuvaluana"
+      },
+      "history": "Die Atolle wurden vor vielen Jahrhunderten von polynesischen Seefahrern besiedelt. Ab 1892 standen die damals Ellice-Inseln genannten Atolle unter britischem Schutz, später bildeten sie mit den Gilbertinseln, dem heutigen Kiribati, eine Kolonie. Nach einer Volksabstimmung trennten sie sich 1975 davon und wurden 1978 als Tuvalu unabhängig. Heute bedroht der steigende Meeresspiegel das flache Land; 2023 schloss Tuvalu mit Australien ein Abkommen, das auch Umsiedlungen ermöglicht.",
+      "culture": "Beliebt ist der Tanz „fatele“, der bei Festen im Versammlungshaus („maneapa“) aufgeführt wird. Gegessen werden vor allem Fisch, Kokosnuss, Brotfrucht und Sumpftaro („pulaka“). Ein traditionelles Ballspiel ist „te ano“, und auf Funafuti dient die Landebahn des Flughafens außerhalb der Flugzeiten oft als Sport- und Spielplatz.",
+      "funFact": "Tuvalu verdient mit seiner Internet-Endung „.tv“, die gern von Fernsehsendern und Streamingdiensten genutzt wird, einen bedeutenden Teil seiner Staatseinnahmen."
+    }
+  ]
+}

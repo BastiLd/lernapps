@@ -1,0 +1,3032 @@
+[
+ {
+  "id": "01",
+  "label": "Spanischsprachig (Europa, Mittelamerika, Karibik)",
+  "countries": [
+   {
+    "iso2": "ES",
+    "nameDe": "Spanien",
+    "nameEn": "Spain",
+    "nameEs": "España",
+    "subregion": "Südeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Madrid"
+    ],
+    "languagesHint": [
+     "Spanish"
+    ]
+   },
+   {
+    "iso2": "MX",
+    "nameDe": "Mexiko",
+    "nameEn": "Mexico",
+    "nameEs": "México",
+    "subregion": "Nordamerika",
+    "status": "un",
+    "capitalHint": [
+     "Mexico City"
+    ],
+    "languagesHint": [
+     "Spanish"
+    ]
+   },
+   {
+    "iso2": "GT",
+    "nameDe": "Guatemala",
+    "nameEn": "Guatemala",
+    "nameEs": "Guatemala",
+    "subregion": "Mittelamerika",
+    "status": "un",
+    "capitalHint": [
+     "Guatemala City"
+    ],
+    "languagesHint": [
+     "Spanish"
+    ]
+   },
+   {
+    "iso2": "HN",
+    "nameDe": "Honduras",
+    "nameEn": "Honduras",
+    "nameEs": "Honduras",
+    "subregion": "Mittelamerika",
+    "status": "un",
+    "capitalHint": [
+     "Tegucigalpa"
+    ],
+    "languagesHint": [
+     "Spanish"
+    ]
+   },
+   {
+    "iso2": "SV",
+    "nameDe": "El Salvador",
+    "nameEn": "El Salvador",
+    "nameEs": "El Salvador",
+    "subregion": "Mittelamerika",
+    "status": "un",
+    "capitalHint": [
+     "San Salvador"
+    ],
+    "languagesHint": [
+     "Spanish"
+    ]
+   },
+   {
+    "iso2": "NI",
+    "nameDe": "Nicaragua",
+    "nameEn": "Nicaragua",
+    "nameEs": "Nicaragua",
+    "subregion": "Mittelamerika",
+    "status": "un",
+    "capitalHint": [
+     "Managua"
+    ],
+    "languagesHint": [
+     "Spanish"
+    ]
+   },
+   {
+    "iso2": "CR",
+    "nameDe": "Costa Rica",
+    "nameEn": "Costa Rica",
+    "nameEs": "Costa Rica",
+    "subregion": "Mittelamerika",
+    "status": "un",
+    "capitalHint": [
+     "San José"
+    ],
+    "languagesHint": [
+     "Spanish"
+    ]
+   },
+   {
+    "iso2": "PA",
+    "nameDe": "Panama",
+    "nameEn": "Panama",
+    "nameEs": "Panamá",
+    "subregion": "Mittelamerika",
+    "status": "un",
+    "capitalHint": [
+     "Panama City"
+    ],
+    "languagesHint": [
+     "Spanish"
+    ]
+   },
+   {
+    "iso2": "CU",
+    "nameDe": "Kuba",
+    "nameEn": "Cuba",
+    "nameEs": "Cuba",
+    "subregion": "Karibik",
+    "status": "un",
+    "capitalHint": [
+     "Havana"
+    ],
+    "languagesHint": [
+     "Spanish"
+    ]
+   },
+   {
+    "iso2": "DO",
+    "nameDe": "Dominikanische Republik",
+    "nameEn": "Dominican Republic",
+    "nameEs": "República Dominicana",
+    "subregion": "Karibik",
+    "status": "un",
+    "capitalHint": [
+     "Santo Domingo"
+    ],
+    "languagesHint": [
+     "Spanish"
+    ]
+   },
+   {
+    "iso2": "PR",
+    "nameDe": "Puerto Rico",
+    "nameEn": "Puerto Rico",
+    "nameEs": "Puerto Rico",
+    "subregion": "Karibik",
+    "status": "territory",
+    "capitalHint": [
+     "San Juan"
+    ],
+    "languagesHint": [
+     "English",
+     "Spanish"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "02",
+  "label": "Spanischsprachig (Südamerika, Afrika)",
+  "countries": [
+   {
+    "iso2": "CO",
+    "nameDe": "Kolumbien",
+    "nameEn": "Colombia",
+    "nameEs": "Colombia",
+    "subregion": "Südamerika",
+    "status": "un",
+    "capitalHint": [
+     "Bogotá"
+    ],
+    "languagesHint": [
+     "Spanish"
+    ]
+   },
+   {
+    "iso2": "VE",
+    "nameDe": "Venezuela",
+    "nameEn": "Venezuela",
+    "nameEs": "Venezuela",
+    "subregion": "Südamerika",
+    "status": "un",
+    "capitalHint": [
+     "Caracas"
+    ],
+    "languagesHint": [
+     "Spanish"
+    ]
+   },
+   {
+    "iso2": "EC",
+    "nameDe": "Ecuador",
+    "nameEn": "Ecuador",
+    "nameEs": "Ecuador",
+    "subregion": "Südamerika",
+    "status": "un",
+    "capitalHint": [
+     "Quito"
+    ],
+    "languagesHint": [
+     "Spanish"
+    ]
+   },
+   {
+    "iso2": "PE",
+    "nameDe": "Peru",
+    "nameEn": "Peru",
+    "nameEs": "Perú",
+    "subregion": "Südamerika",
+    "status": "un",
+    "capitalHint": [
+     "Lima"
+    ],
+    "languagesHint": [
+     "Aymara",
+     "Quechua",
+     "Spanish"
+    ]
+   },
+   {
+    "iso2": "BO",
+    "nameDe": "Bolivien",
+    "nameEn": "Bolivia",
+    "nameEs": "Bolivia",
+    "subregion": "Südamerika",
+    "status": "un",
+    "capitalHint": [
+     "Sucre"
+    ],
+    "languagesHint": [
+     "Aymara",
+     "Guaraní",
+     "Quechua",
+     "Spanish"
+    ]
+   },
+   {
+    "iso2": "CL",
+    "nameDe": "Chile",
+    "nameEn": "Chile",
+    "nameEs": "Chile",
+    "subregion": "Südamerika",
+    "status": "un",
+    "capitalHint": [
+     "Santiago"
+    ],
+    "languagesHint": [
+     "Spanish"
+    ]
+   },
+   {
+    "iso2": "AR",
+    "nameDe": "Argentinien",
+    "nameEn": "Argentina",
+    "nameEs": "Argentina",
+    "subregion": "Südamerika",
+    "status": "un",
+    "capitalHint": [
+     "Buenos Aires"
+    ],
+    "languagesHint": [
+     "Guaraní",
+     "Spanish"
+    ]
+   },
+   {
+    "iso2": "UY",
+    "nameDe": "Uruguay",
+    "nameEn": "Uruguay",
+    "nameEs": "Uruguay",
+    "subregion": "Südamerika",
+    "status": "un",
+    "capitalHint": [
+     "Montevideo"
+    ],
+    "languagesHint": [
+     "Spanish"
+    ]
+   },
+   {
+    "iso2": "PY",
+    "nameDe": "Paraguay",
+    "nameEn": "Paraguay",
+    "nameEs": "Paraguay",
+    "subregion": "Südamerika",
+    "status": "un",
+    "capitalHint": [
+     "Asunción"
+    ],
+    "languagesHint": [
+     "Guaraní",
+     "Spanish"
+    ]
+   },
+   {
+    "iso2": "GQ",
+    "nameDe": "Äquatorialguinea",
+    "nameEn": "Equatorial Guinea",
+    "nameEs": "Guinea Ecuatorial",
+    "subregion": "Zentralafrika",
+    "status": "un",
+    "capitalHint": [
+     "Malabo"
+    ],
+    "languagesHint": [
+     "French",
+     "Portuguese",
+     "Spanish"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "03",
+  "label": "Nordeuropa",
+  "countries": [
+   {
+    "iso2": "DK",
+    "nameDe": "Dänemark",
+    "nameEn": "Denmark",
+    "nameEs": "Dinamarca",
+    "subregion": "Nordeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Copenhagen"
+    ],
+    "languagesHint": [
+     "Danish"
+    ]
+   },
+   {
+    "iso2": "EE",
+    "nameDe": "Estland",
+    "nameEn": "Estonia",
+    "nameEs": "Estonia",
+    "subregion": "Nordeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Tallinn"
+    ],
+    "languagesHint": [
+     "Estonian"
+    ]
+   },
+   {
+    "iso2": "FI",
+    "nameDe": "Finnland",
+    "nameEn": "Finland",
+    "nameEs": "Finlandia",
+    "subregion": "Nordeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Helsinki"
+    ],
+    "languagesHint": [
+     "Finnish",
+     "Swedish"
+    ]
+   },
+   {
+    "iso2": "IE",
+    "nameDe": "Irland",
+    "nameEn": "Ireland",
+    "nameEs": "Irlanda",
+    "subregion": "Nordeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Dublin"
+    ],
+    "languagesHint": [
+     "English",
+     "Irish"
+    ]
+   },
+   {
+    "iso2": "IS",
+    "nameDe": "Island",
+    "nameEn": "Iceland",
+    "nameEs": "Islandia",
+    "subregion": "Nordeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Reykjavik"
+    ],
+    "languagesHint": [
+     "Icelandic"
+    ]
+   },
+   {
+    "iso2": "LV",
+    "nameDe": "Lettland",
+    "nameEn": "Latvia",
+    "nameEs": "Letonia",
+    "subregion": "Nordeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Riga"
+    ],
+    "languagesHint": [
+     "Latvian"
+    ]
+   },
+   {
+    "iso2": "LT",
+    "nameDe": "Litauen",
+    "nameEn": "Lithuania",
+    "nameEs": "Lituania",
+    "subregion": "Nordeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Vilnius"
+    ],
+    "languagesHint": [
+     "Lithuanian"
+    ]
+   },
+   {
+    "iso2": "NO",
+    "nameDe": "Norwegen",
+    "nameEn": "Norway",
+    "nameEs": "Noruega",
+    "subregion": "Nordeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Oslo"
+    ],
+    "languagesHint": [
+     "Norwegian Nynorsk",
+     "Norwegian Bokmål",
+     "Sami"
+    ]
+   },
+   {
+    "iso2": "SE",
+    "nameDe": "Schweden",
+    "nameEn": "Sweden",
+    "nameEs": "Suecia",
+    "subregion": "Nordeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Stockholm"
+    ],
+    "languagesHint": [
+     "Swedish"
+    ]
+   },
+   {
+    "iso2": "GB",
+    "nameDe": "Vereinigtes Königreich",
+    "nameEn": "United Kingdom",
+    "nameEs": "Reino Unido",
+    "subregion": "Nordeuropa",
+    "status": "un",
+    "capitalHint": [
+     "London"
+    ],
+    "languagesHint": [
+     "English"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "04",
+  "label": "Westeuropa, Mitteleuropa",
+  "countries": [
+   {
+    "iso2": "BE",
+    "nameDe": "Belgien",
+    "nameEn": "Belgium",
+    "nameEs": "Bélgica",
+    "subregion": "Westeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Brussels"
+    ],
+    "languagesHint": [
+     "German",
+     "French",
+     "Dutch"
+    ]
+   },
+   {
+    "iso2": "DE",
+    "nameDe": "Deutschland",
+    "nameEn": "Germany",
+    "nameEs": "Alemania",
+    "subregion": "Westeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Berlin"
+    ],
+    "languagesHint": [
+     "German"
+    ]
+   },
+   {
+    "iso2": "FR",
+    "nameDe": "Frankreich",
+    "nameEn": "France",
+    "nameEs": "Francia",
+    "subregion": "Westeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Paris"
+    ],
+    "languagesHint": [
+     "French"
+    ]
+   },
+   {
+    "iso2": "LI",
+    "nameDe": "Liechtenstein",
+    "nameEn": "Liechtenstein",
+    "nameEs": "Liechtenstein",
+    "subregion": "Westeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Vaduz"
+    ],
+    "languagesHint": [
+     "German"
+    ]
+   },
+   {
+    "iso2": "LU",
+    "nameDe": "Luxemburg",
+    "nameEn": "Luxembourg",
+    "nameEs": "Luxemburgo",
+    "subregion": "Westeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Luxembourg"
+    ],
+    "languagesHint": [
+     "German",
+     "French",
+     "Luxembourgish"
+    ]
+   },
+   {
+    "iso2": "MC",
+    "nameDe": "Monaco",
+    "nameEn": "Monaco",
+    "nameEs": "Mónaco",
+    "subregion": "Westeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Monaco"
+    ],
+    "languagesHint": [
+     "French"
+    ]
+   },
+   {
+    "iso2": "NL",
+    "nameDe": "Niederlande",
+    "nameEn": "Netherlands",
+    "nameEs": "Países Bajos",
+    "subregion": "Westeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Amsterdam"
+    ],
+    "languagesHint": [
+     "Dutch"
+    ]
+   },
+   {
+    "iso2": "CH",
+    "nameDe": "Schweiz",
+    "nameEn": "Switzerland",
+    "nameEs": "Suiza",
+    "subregion": "Westeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Bern"
+    ],
+    "languagesHint": [
+     "French",
+     "Swiss German",
+     "Italian",
+     "Romansh"
+    ]
+   },
+   {
+    "iso2": "AT",
+    "nameDe": "Österreich",
+    "nameEn": "Austria",
+    "nameEs": "Austria",
+    "subregion": "Mitteleuropa",
+    "status": "un",
+    "capitalHint": [
+     "Vienna"
+    ],
+    "languagesHint": [
+     "Austro-Bavarian German"
+    ]
+   },
+   {
+    "iso2": "PL",
+    "nameDe": "Polen",
+    "nameEn": "Poland",
+    "nameEs": "Polonia",
+    "subregion": "Mitteleuropa",
+    "status": "un",
+    "capitalHint": [
+     "Warsaw"
+    ],
+    "languagesHint": [
+     "Polish"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "05",
+  "label": "Mitteleuropa, Südeuropa",
+  "countries": [
+   {
+    "iso2": "SK",
+    "nameDe": "Slowakei",
+    "nameEn": "Slovakia",
+    "nameEs": "Eslovaquia",
+    "subregion": "Mitteleuropa",
+    "status": "un",
+    "capitalHint": [
+     "Bratislava"
+    ],
+    "languagesHint": [
+     "Slovak"
+    ]
+   },
+   {
+    "iso2": "SI",
+    "nameDe": "Slowenien",
+    "nameEn": "Slovenia",
+    "nameEs": "Eslovenia",
+    "subregion": "Mitteleuropa",
+    "status": "un",
+    "capitalHint": [
+     "Ljubljana"
+    ],
+    "languagesHint": [
+     "Slovene"
+    ]
+   },
+   {
+    "iso2": "CZ",
+    "nameDe": "Tschechien",
+    "nameEn": "Czechia",
+    "nameEs": "Chequia",
+    "subregion": "Mitteleuropa",
+    "status": "un",
+    "capitalHint": [
+     "Prague"
+    ],
+    "languagesHint": [
+     "Czech",
+     "Slovak"
+    ]
+   },
+   {
+    "iso2": "HU",
+    "nameDe": "Ungarn",
+    "nameEn": "Hungary",
+    "nameEs": "Hungría",
+    "subregion": "Mitteleuropa",
+    "status": "un",
+    "capitalHint": [
+     "Budapest"
+    ],
+    "languagesHint": [
+     "Hungarian"
+    ]
+   },
+   {
+    "iso2": "AD",
+    "nameDe": "Andorra",
+    "nameEn": "Andorra",
+    "nameEs": "Andorra",
+    "subregion": "Südeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Andorra la Vella"
+    ],
+    "languagesHint": [
+     "Catalan"
+    ]
+   },
+   {
+    "iso2": "GR",
+    "nameDe": "Griechenland",
+    "nameEn": "Greece",
+    "nameEs": "Grecia",
+    "subregion": "Südeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Athens"
+    ],
+    "languagesHint": [
+     "Greek"
+    ]
+   },
+   {
+    "iso2": "IT",
+    "nameDe": "Italien",
+    "nameEn": "Italy",
+    "nameEs": "Italia",
+    "subregion": "Südeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Rome"
+    ],
+    "languagesHint": [
+     "Italian"
+    ]
+   },
+   {
+    "iso2": "MT",
+    "nameDe": "Malta",
+    "nameEn": "Malta",
+    "nameEs": "Malta",
+    "subregion": "Südeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Valletta"
+    ],
+    "languagesHint": [
+     "English",
+     "Maltese"
+    ]
+   },
+   {
+    "iso2": "PT",
+    "nameDe": "Portugal",
+    "nameEn": "Portugal",
+    "nameEs": "Portugal",
+    "subregion": "Südeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Lisbon"
+    ],
+    "languagesHint": [
+     "Portuguese"
+    ]
+   },
+   {
+    "iso2": "SM",
+    "nameDe": "San Marino",
+    "nameEn": "San Marino",
+    "nameEs": "San Marino",
+    "subregion": "Südeuropa",
+    "status": "un",
+    "capitalHint": [
+     "City of San Marino"
+    ],
+    "languagesHint": [
+     "Italian"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "06",
+  "label": "Südeuropa, Südosteuropa",
+  "countries": [
+   {
+    "iso2": "VA",
+    "nameDe": "Vatikanstadt",
+    "nameEn": "Vatican City",
+    "nameEs": "Ciudad del Vaticano",
+    "subregion": "Südeuropa",
+    "status": "observer",
+    "capitalHint": [
+     "Vatican City"
+    ],
+    "languagesHint": [
+     "Italian",
+     "Latin"
+    ]
+   },
+   {
+    "iso2": "CY",
+    "nameDe": "Zypern",
+    "nameEn": "Cyprus",
+    "nameEs": "Chipre",
+    "subregion": "Südeuropa",
+    "status": "un",
+    "capitalHint": [
+     "Nicosia"
+    ],
+    "languagesHint": [
+     "Greek",
+     "Turkish"
+    ]
+   },
+   {
+    "iso2": "AL",
+    "nameDe": "Albanien",
+    "nameEn": "Albania",
+    "nameEs": "Albania",
+    "subregion": "Südosteuropa",
+    "status": "un",
+    "capitalHint": [
+     "Tirana"
+    ],
+    "languagesHint": [
+     "Albanian"
+    ]
+   },
+   {
+    "iso2": "BA",
+    "nameDe": "Bosnien und Herzegowina",
+    "nameEn": "Bosnia and Herzegovina",
+    "nameEs": "Bosnia y Herzegovina",
+    "subregion": "Südosteuropa",
+    "status": "un",
+    "capitalHint": [
+     "Sarajevo"
+    ],
+    "languagesHint": [
+     "Bosnian",
+     "Croatian",
+     "Serbian"
+    ]
+   },
+   {
+    "iso2": "BG",
+    "nameDe": "Bulgarien",
+    "nameEn": "Bulgaria",
+    "nameEs": "Bulgaria",
+    "subregion": "Südosteuropa",
+    "status": "un",
+    "capitalHint": [
+     "Sofia"
+    ],
+    "languagesHint": [
+     "Bulgarian"
+    ]
+   },
+   {
+    "iso2": "XK",
+    "nameDe": "Kosovo",
+    "nameEn": "Kosovo",
+    "nameEs": "Kosovo",
+    "subregion": "Südosteuropa",
+    "status": "partial",
+    "capitalHint": [
+     "Pristina"
+    ],
+    "languagesHint": [
+     "Albanian",
+     "Serbian"
+    ]
+   },
+   {
+    "iso2": "HR",
+    "nameDe": "Kroatien",
+    "nameEn": "Croatia",
+    "nameEs": "Croacia",
+    "subregion": "Südosteuropa",
+    "status": "un",
+    "capitalHint": [
+     "Zagreb"
+    ],
+    "languagesHint": [
+     "Croatian"
+    ]
+   },
+   {
+    "iso2": "ME",
+    "nameDe": "Montenegro",
+    "nameEn": "Montenegro",
+    "nameEs": "Montenegro",
+    "subregion": "Südosteuropa",
+    "status": "un",
+    "capitalHint": [
+     "Podgorica"
+    ],
+    "languagesHint": [
+     "Montenegrin"
+    ]
+   },
+   {
+    "iso2": "MK",
+    "nameDe": "Nordmazedonien",
+    "nameEn": "North Macedonia",
+    "nameEs": "Macedonia del Norte",
+    "subregion": "Südosteuropa",
+    "status": "un",
+    "capitalHint": [
+     "Skopje"
+    ],
+    "languagesHint": [
+     "Macedonian"
+    ]
+   },
+   {
+    "iso2": "RO",
+    "nameDe": "Rumänien",
+    "nameEn": "Romania",
+    "nameEs": "Rumania",
+    "subregion": "Südosteuropa",
+    "status": "un",
+    "capitalHint": [
+     "Bucharest"
+    ],
+    "languagesHint": [
+     "Romanian"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "07",
+  "label": "Südosteuropa, Osteuropa, Nordamerika, Mittelamerika, Karibik",
+  "countries": [
+   {
+    "iso2": "RS",
+    "nameDe": "Serbien",
+    "nameEn": "Serbia",
+    "nameEs": "Serbia",
+    "subregion": "Südosteuropa",
+    "status": "un",
+    "capitalHint": [
+     "Belgrade"
+    ],
+    "languagesHint": [
+     "Serbian"
+    ]
+   },
+   {
+    "iso2": "BY",
+    "nameDe": "Belarus",
+    "nameEn": "Belarus",
+    "nameEs": "Bielorrusia",
+    "subregion": "Osteuropa",
+    "status": "un",
+    "capitalHint": [
+     "Minsk"
+    ],
+    "languagesHint": [
+     "Belarusian",
+     "Russian"
+    ]
+   },
+   {
+    "iso2": "MD",
+    "nameDe": "Moldawien",
+    "nameEn": "Moldova",
+    "nameEs": "Moldavia",
+    "subregion": "Osteuropa",
+    "status": "un",
+    "capitalHint": [
+     "Chișinău"
+    ],
+    "languagesHint": [
+     "Moldavian"
+    ]
+   },
+   {
+    "iso2": "RU",
+    "nameDe": "Russland",
+    "nameEn": "Russia",
+    "nameEs": "Rusia",
+    "subregion": "Osteuropa",
+    "status": "un",
+    "capitalHint": [
+     "Moscow"
+    ],
+    "languagesHint": [
+     "Russian"
+    ]
+   },
+   {
+    "iso2": "UA",
+    "nameDe": "Ukraine",
+    "nameEn": "Ukraine",
+    "nameEs": "Ucrania",
+    "subregion": "Osteuropa",
+    "status": "un",
+    "capitalHint": [
+     "Kyiv"
+    ],
+    "languagesHint": [
+     "Ukrainian"
+    ]
+   },
+   {
+    "iso2": "CA",
+    "nameDe": "Kanada",
+    "nameEn": "Canada",
+    "nameEs": "Canadá",
+    "subregion": "Nordamerika",
+    "status": "un",
+    "capitalHint": [
+     "Ottawa"
+    ],
+    "languagesHint": [
+     "English",
+     "French"
+    ]
+   },
+   {
+    "iso2": "US",
+    "nameDe": "Vereinigte Staaten",
+    "nameEn": "United States",
+    "nameEs": "Estados Unidos",
+    "subregion": "Nordamerika",
+    "status": "un",
+    "capitalHint": [
+     "Washington D.C."
+    ],
+    "languagesHint": [
+     "English"
+    ]
+   },
+   {
+    "iso2": "BZ",
+    "nameDe": "Belize",
+    "nameEn": "Belize",
+    "nameEs": "Belice",
+    "subregion": "Mittelamerika",
+    "status": "un",
+    "capitalHint": [
+     "Belmopan"
+    ],
+    "languagesHint": [
+     "Belizean Creole",
+     "English",
+     "Spanish"
+    ]
+   },
+   {
+    "iso2": "AG",
+    "nameDe": "Antigua und Barbuda",
+    "nameEn": "Antigua and Barbuda",
+    "nameEs": "Antigua y Barbuda",
+    "subregion": "Karibik",
+    "status": "un",
+    "capitalHint": [
+     "Saint John's"
+    ],
+    "languagesHint": [
+     "English"
+    ]
+   },
+   {
+    "iso2": "BS",
+    "nameDe": "Bahamas",
+    "nameEn": "Bahamas",
+    "nameEs": "Bahamas",
+    "subregion": "Karibik",
+    "status": "un",
+    "capitalHint": [
+     "Nassau"
+    ],
+    "languagesHint": [
+     "English"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "08",
+  "label": "Karibik, Südamerika",
+  "countries": [
+   {
+    "iso2": "BB",
+    "nameDe": "Barbados",
+    "nameEn": "Barbados",
+    "nameEs": "Barbados",
+    "subregion": "Karibik",
+    "status": "un",
+    "capitalHint": [
+     "Bridgetown"
+    ],
+    "languagesHint": [
+     "English"
+    ]
+   },
+   {
+    "iso2": "DM",
+    "nameDe": "Dominica",
+    "nameEn": "Dominica",
+    "nameEs": "Dominica",
+    "subregion": "Karibik",
+    "status": "un",
+    "capitalHint": [
+     "Roseau"
+    ],
+    "languagesHint": [
+     "English"
+    ]
+   },
+   {
+    "iso2": "GD",
+    "nameDe": "Grenada",
+    "nameEn": "Grenada",
+    "nameEs": "Grenada",
+    "subregion": "Karibik",
+    "status": "un",
+    "capitalHint": [
+     "St. George's"
+    ],
+    "languagesHint": [
+     "English"
+    ]
+   },
+   {
+    "iso2": "HT",
+    "nameDe": "Haiti",
+    "nameEn": "Haiti",
+    "nameEs": "Haití",
+    "subregion": "Karibik",
+    "status": "un",
+    "capitalHint": [
+     "Port-au-Prince"
+    ],
+    "languagesHint": [
+     "French",
+     "Haitian Creole"
+    ]
+   },
+   {
+    "iso2": "JM",
+    "nameDe": "Jamaika",
+    "nameEn": "Jamaica",
+    "nameEs": "Jamaica",
+    "subregion": "Karibik",
+    "status": "un",
+    "capitalHint": [
+     "Kingston"
+    ],
+    "languagesHint": [
+     "English",
+     "Jamaican Patois"
+    ]
+   },
+   {
+    "iso2": "KN",
+    "nameDe": "St. Kitts und Nevis",
+    "nameEn": "Saint Kitts and Nevis",
+    "nameEs": "San Cristóbal y Nieves",
+    "subregion": "Karibik",
+    "status": "un",
+    "capitalHint": [
+     "Basseterre"
+    ],
+    "languagesHint": [
+     "English"
+    ]
+   },
+   {
+    "iso2": "LC",
+    "nameDe": "St. Lucia",
+    "nameEn": "Saint Lucia",
+    "nameEs": "Santa Lucía",
+    "subregion": "Karibik",
+    "status": "un",
+    "capitalHint": [
+     "Castries"
+    ],
+    "languagesHint": [
+     "English"
+    ]
+   },
+   {
+    "iso2": "VC",
+    "nameDe": "St. Vincent und die Grenadinen",
+    "nameEn": "Saint Vincent and the Grenadines",
+    "nameEs": "San Vicente y Granadinas",
+    "subregion": "Karibik",
+    "status": "un",
+    "capitalHint": [
+     "Kingstown"
+    ],
+    "languagesHint": [
+     "English"
+    ]
+   },
+   {
+    "iso2": "TT",
+    "nameDe": "Trinidad und Tobago",
+    "nameEn": "Trinidad and Tobago",
+    "nameEs": "Trinidad y Tobago",
+    "subregion": "Karibik",
+    "status": "un",
+    "capitalHint": [
+     "Port of Spain"
+    ],
+    "languagesHint": [
+     "English"
+    ]
+   },
+   {
+    "iso2": "BR",
+    "nameDe": "Brasilien",
+    "nameEn": "Brazil",
+    "nameEs": "Brasil",
+    "subregion": "Südamerika",
+    "status": "un",
+    "capitalHint": [
+     "Brasília"
+    ],
+    "languagesHint": [
+     "Portuguese"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "09",
+  "label": "Südamerika, Nordafrika, Westafrika",
+  "countries": [
+   {
+    "iso2": "GY",
+    "nameDe": "Guyana",
+    "nameEn": "Guyana",
+    "nameEs": "Guyana",
+    "subregion": "Südamerika",
+    "status": "un",
+    "capitalHint": [
+     "Georgetown"
+    ],
+    "languagesHint": [
+     "English"
+    ]
+   },
+   {
+    "iso2": "SR",
+    "nameDe": "Suriname",
+    "nameEn": "Suriname",
+    "nameEs": "Surinam",
+    "subregion": "Südamerika",
+    "status": "un",
+    "capitalHint": [
+     "Paramaribo"
+    ],
+    "languagesHint": [
+     "Dutch"
+    ]
+   },
+   {
+    "iso2": "EG",
+    "nameDe": "Ägypten",
+    "nameEn": "Egypt",
+    "nameEs": "Egipto",
+    "subregion": "Nordafrika",
+    "status": "un",
+    "capitalHint": [
+     "Cairo"
+    ],
+    "languagesHint": [
+     "Arabic"
+    ]
+   },
+   {
+    "iso2": "DZ",
+    "nameDe": "Algerien",
+    "nameEn": "Algeria",
+    "nameEs": "Argelia",
+    "subregion": "Nordafrika",
+    "status": "un",
+    "capitalHint": [
+     "Algiers"
+    ],
+    "languagesHint": [
+     "Arabic"
+    ]
+   },
+   {
+    "iso2": "LY",
+    "nameDe": "Libyen",
+    "nameEn": "Libya",
+    "nameEs": "Libia",
+    "subregion": "Nordafrika",
+    "status": "un",
+    "capitalHint": [
+     "Tripoli"
+    ],
+    "languagesHint": [
+     "Arabic"
+    ]
+   },
+   {
+    "iso2": "MA",
+    "nameDe": "Marokko",
+    "nameEn": "Morocco",
+    "nameEs": "Marruecos",
+    "subregion": "Nordafrika",
+    "status": "un",
+    "capitalHint": [
+     "Rabat"
+    ],
+    "languagesHint": [
+     "Arabic",
+     "Berber"
+    ]
+   },
+   {
+    "iso2": "SD",
+    "nameDe": "Sudan",
+    "nameEn": "Sudan",
+    "nameEs": "Sudán",
+    "subregion": "Nordafrika",
+    "status": "un",
+    "capitalHint": [
+     "Khartoum"
+    ],
+    "languagesHint": [
+     "Arabic",
+     "English"
+    ]
+   },
+   {
+    "iso2": "TN",
+    "nameDe": "Tunesien",
+    "nameEn": "Tunisia",
+    "nameEs": "Túnez",
+    "subregion": "Nordafrika",
+    "status": "un",
+    "capitalHint": [
+     "Tunis"
+    ],
+    "languagesHint": [
+     "Arabic"
+    ]
+   },
+   {
+    "iso2": "BJ",
+    "nameDe": "Benin",
+    "nameEn": "Benin",
+    "nameEs": "Benín",
+    "subregion": "Westafrika",
+    "status": "un",
+    "capitalHint": [
+     "Porto-Novo"
+    ],
+    "languagesHint": [
+     "French"
+    ]
+   },
+   {
+    "iso2": "BF",
+    "nameDe": "Burkina Faso",
+    "nameEn": "Burkina Faso",
+    "nameEs": "Burkina Faso",
+    "subregion": "Westafrika",
+    "status": "un",
+    "capitalHint": [
+     "Ouagadougou"
+    ],
+    "languagesHint": [
+     "French"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "10",
+  "label": "Westafrika",
+  "countries": [
+   {
+    "iso2": "CI",
+    "nameDe": "Côte d'Ivoire",
+    "nameEn": "Ivory Coast",
+    "nameEs": "Costa de Marfil",
+    "subregion": "Westafrika",
+    "status": "un",
+    "capitalHint": [
+     "Yamoussoukro"
+    ],
+    "languagesHint": [
+     "French"
+    ]
+   },
+   {
+    "iso2": "GM",
+    "nameDe": "Gambia",
+    "nameEn": "Gambia",
+    "nameEs": "Gambia",
+    "subregion": "Westafrika",
+    "status": "un",
+    "capitalHint": [
+     "Banjul"
+    ],
+    "languagesHint": [
+     "English"
+    ]
+   },
+   {
+    "iso2": "GH",
+    "nameDe": "Ghana",
+    "nameEn": "Ghana",
+    "nameEs": "Ghana",
+    "subregion": "Westafrika",
+    "status": "un",
+    "capitalHint": [
+     "Accra"
+    ],
+    "languagesHint": [
+     "English"
+    ]
+   },
+   {
+    "iso2": "GN",
+    "nameDe": "Guinea",
+    "nameEn": "Guinea",
+    "nameEs": "Guinea",
+    "subregion": "Westafrika",
+    "status": "un",
+    "capitalHint": [
+     "Conakry"
+    ],
+    "languagesHint": [
+     "French"
+    ]
+   },
+   {
+    "iso2": "GW",
+    "nameDe": "Guinea-Bissau",
+    "nameEn": "Guinea-Bissau",
+    "nameEs": "Guinea-Bisáu",
+    "subregion": "Westafrika",
+    "status": "un",
+    "capitalHint": [
+     "Bissau"
+    ],
+    "languagesHint": [
+     "Portuguese",
+     "Upper Guinea Creole"
+    ]
+   },
+   {
+    "iso2": "CV",
+    "nameDe": "Kap Verde",
+    "nameEn": "Cape Verde",
+    "nameEs": "Cabo Verde",
+    "subregion": "Westafrika",
+    "status": "un",
+    "capitalHint": [
+     "Praia"
+    ],
+    "languagesHint": [
+     "Portuguese"
+    ]
+   },
+   {
+    "iso2": "LR",
+    "nameDe": "Liberia",
+    "nameEn": "Liberia",
+    "nameEs": "Liberia",
+    "subregion": "Westafrika",
+    "status": "un",
+    "capitalHint": [
+     "Monrovia"
+    ],
+    "languagesHint": [
+     "English"
+    ]
+   },
+   {
+    "iso2": "ML",
+    "nameDe": "Mali",
+    "nameEn": "Mali",
+    "nameEs": "Mali",
+    "subregion": "Westafrika",
+    "status": "un",
+    "capitalHint": [
+     "Bamako"
+    ],
+    "languagesHint": [
+     "French"
+    ]
+   },
+   {
+    "iso2": "MR",
+    "nameDe": "Mauretanien",
+    "nameEn": "Mauritania",
+    "nameEs": "Mauritania",
+    "subregion": "Westafrika",
+    "status": "un",
+    "capitalHint": [
+     "Nouakchott"
+    ],
+    "languagesHint": [
+     "Arabic"
+    ]
+   },
+   {
+    "iso2": "NE",
+    "nameDe": "Niger",
+    "nameEn": "Niger",
+    "nameEs": "Níger",
+    "subregion": "Westafrika",
+    "status": "un",
+    "capitalHint": [
+     "Niamey"
+    ],
+    "languagesHint": [
+     "French"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "11",
+  "label": "Westafrika, Zentralafrika",
+  "countries": [
+   {
+    "iso2": "NG",
+    "nameDe": "Nigeria",
+    "nameEn": "Nigeria",
+    "nameEs": "Nigeria",
+    "subregion": "Westafrika",
+    "status": "un",
+    "capitalHint": [
+     "Abuja"
+    ],
+    "languagesHint": [
+     "English"
+    ]
+   },
+   {
+    "iso2": "SN",
+    "nameDe": "Senegal",
+    "nameEn": "Senegal",
+    "nameEs": "Senegal",
+    "subregion": "Westafrika",
+    "status": "un",
+    "capitalHint": [
+     "Dakar"
+    ],
+    "languagesHint": [
+     "French"
+    ]
+   },
+   {
+    "iso2": "SL",
+    "nameDe": "Sierra Leone",
+    "nameEn": "Sierra Leone",
+    "nameEs": "Sierra Leone",
+    "subregion": "Westafrika",
+    "status": "un",
+    "capitalHint": [
+     "Freetown"
+    ],
+    "languagesHint": [
+     "English"
+    ]
+   },
+   {
+    "iso2": "TG",
+    "nameDe": "Togo",
+    "nameEn": "Togo",
+    "nameEs": "Togo",
+    "subregion": "Westafrika",
+    "status": "un",
+    "capitalHint": [
+     "Lomé"
+    ],
+    "languagesHint": [
+     "French"
+    ]
+   },
+   {
+    "iso2": "AO",
+    "nameDe": "Angola",
+    "nameEn": "Angola",
+    "nameEs": "Angola",
+    "subregion": "Zentralafrika",
+    "status": "un",
+    "capitalHint": [
+     "Luanda"
+    ],
+    "languagesHint": [
+     "Portuguese"
+    ]
+   },
+   {
+    "iso2": "GA",
+    "nameDe": "Gabun",
+    "nameEn": "Gabon",
+    "nameEs": "Gabón",
+    "subregion": "Zentralafrika",
+    "status": "un",
+    "capitalHint": [
+     "Libreville"
+    ],
+    "languagesHint": [
+     "French"
+    ]
+   },
+   {
+    "iso2": "CM",
+    "nameDe": "Kamerun",
+    "nameEn": "Cameroon",
+    "nameEs": "Camerún",
+    "subregion": "Zentralafrika",
+    "status": "un",
+    "capitalHint": [
+     "Yaoundé"
+    ],
+    "languagesHint": [
+     "English",
+     "French"
+    ]
+   },
+   {
+    "iso2": "CG",
+    "nameDe": "Kongo",
+    "nameEn": "Republic of the Congo",
+    "nameEs": "Congo",
+    "subregion": "Zentralafrika",
+    "status": "un",
+    "capitalHint": [
+     "Brazzaville"
+    ],
+    "languagesHint": [
+     "French",
+     "Kikongo",
+     "Lingala"
+    ]
+   },
+   {
+    "iso2": "CD",
+    "nameDe": "Kongo (Dem. Rep.)",
+    "nameEn": "DR Congo",
+    "nameEs": "Congo (Rep. Dem.)",
+    "subregion": "Zentralafrika",
+    "status": "un",
+    "capitalHint": [
+     "Kinshasa"
+    ],
+    "languagesHint": [
+     "French",
+     "Kikongo",
+     "Lingala",
+     "Tshiluba",
+     "Swahili"
+    ]
+   },
+   {
+    "iso2": "ST",
+    "nameDe": "São Tomé und Príncipe",
+    "nameEn": "São Tomé and Príncipe",
+    "nameEs": "Santo Tomé y Príncipe",
+    "subregion": "Zentralafrika",
+    "status": "un",
+    "capitalHint": [
+     "São Tomé"
+    ],
+    "languagesHint": [
+     "Portuguese"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "12",
+  "label": "Zentralafrika, Ostafrika",
+  "countries": [
+   {
+    "iso2": "SS",
+    "nameDe": "Südsudan",
+    "nameEn": "South Sudan",
+    "nameEs": "Sudán del Sur",
+    "subregion": "Zentralafrika",
+    "status": "un",
+    "capitalHint": [
+     "Juba"
+    ],
+    "languagesHint": [
+     "English"
+    ]
+   },
+   {
+    "iso2": "TD",
+    "nameDe": "Tschad",
+    "nameEn": "Chad",
+    "nameEs": "Chad",
+    "subregion": "Zentralafrika",
+    "status": "un",
+    "capitalHint": [
+     "N'Djamena"
+    ],
+    "languagesHint": [
+     "Arabic",
+     "French"
+    ]
+   },
+   {
+    "iso2": "CF",
+    "nameDe": "Zentralafrikanische Republik",
+    "nameEn": "Central African Republic",
+    "nameEs": "República Centroafricana",
+    "subregion": "Zentralafrika",
+    "status": "un",
+    "capitalHint": [
+     "Bangui"
+    ],
+    "languagesHint": [
+     "French",
+     "Sango"
+    ]
+   },
+   {
+    "iso2": "ET",
+    "nameDe": "Äthiopien",
+    "nameEn": "Ethiopia",
+    "nameEs": "Etiopía",
+    "subregion": "Ostafrika",
+    "status": "un",
+    "capitalHint": [
+     "Addis Ababa"
+    ],
+    "languagesHint": [
+     "Amharic"
+    ]
+   },
+   {
+    "iso2": "BI",
+    "nameDe": "Burundi",
+    "nameEn": "Burundi",
+    "nameEs": "Burundi",
+    "subregion": "Ostafrika",
+    "status": "un",
+    "capitalHint": [
+     "Gitega"
+    ],
+    "languagesHint": [
+     "French",
+     "Kirundi"
+    ]
+   },
+   {
+    "iso2": "DJ",
+    "nameDe": "Dschibuti",
+    "nameEn": "Djibouti",
+    "nameEs": "Djibouti",
+    "subregion": "Ostafrika",
+    "status": "un",
+    "capitalHint": [
+     "Djibouti"
+    ],
+    "languagesHint": [
+     "Arabic",
+     "French"
+    ]
+   },
+   {
+    "iso2": "ER",
+    "nameDe": "Eritrea",
+    "nameEn": "Eritrea",
+    "nameEs": "Eritrea",
+    "subregion": "Ostafrika",
+    "status": "un",
+    "capitalHint": [
+     "Asmara"
+    ],
+    "languagesHint": [
+     "Arabic",
+     "English",
+     "Tigrinya"
+    ]
+   },
+   {
+    "iso2": "KE",
+    "nameDe": "Kenia",
+    "nameEn": "Kenya",
+    "nameEs": "Kenia",
+    "subregion": "Ostafrika",
+    "status": "un",
+    "capitalHint": [
+     "Nairobi"
+    ],
+    "languagesHint": [
+     "English",
+     "Swahili"
+    ]
+   },
+   {
+    "iso2": "KM",
+    "nameDe": "Komoren",
+    "nameEn": "Comoros",
+    "nameEs": "Comoras",
+    "subregion": "Ostafrika",
+    "status": "un",
+    "capitalHint": [
+     "Moroni"
+    ],
+    "languagesHint": [
+     "Arabic",
+     "French",
+     "Comorian"
+    ]
+   },
+   {
+    "iso2": "MG",
+    "nameDe": "Madagaskar",
+    "nameEn": "Madagascar",
+    "nameEs": "Madagascar",
+    "subregion": "Ostafrika",
+    "status": "un",
+    "capitalHint": [
+     "Antananarivo"
+    ],
+    "languagesHint": [
+     "French",
+     "Malagasy"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "13",
+  "label": "Ostafrika",
+  "countries": [
+   {
+    "iso2": "MW",
+    "nameDe": "Malawi",
+    "nameEn": "Malawi",
+    "nameEs": "Malawi",
+    "subregion": "Ostafrika",
+    "status": "un",
+    "capitalHint": [
+     "Lilongwe"
+    ],
+    "languagesHint": [
+     "English",
+     "Chewa"
+    ]
+   },
+   {
+    "iso2": "MU",
+    "nameDe": "Mauritius",
+    "nameEn": "Mauritius",
+    "nameEs": "Mauricio",
+    "subregion": "Ostafrika",
+    "status": "un",
+    "capitalHint": [
+     "Port Louis"
+    ],
+    "languagesHint": [
+     "English",
+     "French",
+     "Mauritian Creole"
+    ]
+   },
+   {
+    "iso2": "MZ",
+    "nameDe": "Mosambik",
+    "nameEn": "Mozambique",
+    "nameEs": "Mozambique",
+    "subregion": "Ostafrika",
+    "status": "un",
+    "capitalHint": [
+     "Maputo"
+    ],
+    "languagesHint": [
+     "Portuguese"
+    ]
+   },
+   {
+    "iso2": "RW",
+    "nameDe": "Ruanda",
+    "nameEn": "Rwanda",
+    "nameEs": "Ruanda",
+    "subregion": "Ostafrika",
+    "status": "un",
+    "capitalHint": [
+     "Kigali"
+    ],
+    "languagesHint": [
+     "English",
+     "French",
+     "Kinyarwanda"
+    ]
+   },
+   {
+    "iso2": "ZM",
+    "nameDe": "Sambia",
+    "nameEn": "Zambia",
+    "nameEs": "Zambia",
+    "subregion": "Ostafrika",
+    "status": "un",
+    "capitalHint": [
+     "Lusaka"
+    ],
+    "languagesHint": [
+     "English"
+    ]
+   },
+   {
+    "iso2": "SC",
+    "nameDe": "Seychellen",
+    "nameEn": "Seychelles",
+    "nameEs": "Seychelles",
+    "subregion": "Ostafrika",
+    "status": "un",
+    "capitalHint": [
+     "Victoria"
+    ],
+    "languagesHint": [
+     "Seychellois Creole",
+     "English",
+     "French"
+    ]
+   },
+   {
+    "iso2": "ZW",
+    "nameDe": "Simbabwe",
+    "nameEn": "Zimbabwe",
+    "nameEs": "Zimbabue",
+    "subregion": "Ostafrika",
+    "status": "un",
+    "capitalHint": [
+     "Harare"
+    ],
+    "languagesHint": [
+     "Chibarwe",
+     "English",
+     "Kalanga",
+     "Khoisan",
+     "Ndau",
+     "Northern Ndebele",
+     "Chewa",
+     "Shona",
+     "Sotho",
+     "Tonga",
+     "Tswana",
+     "Tsonga",
+     "Venda",
+     "Xhosa",
+     "Zimbabwean Sign Language"
+    ]
+   },
+   {
+    "iso2": "SO",
+    "nameDe": "Somalia",
+    "nameEn": "Somalia",
+    "nameEs": "Somalia",
+    "subregion": "Ostafrika",
+    "status": "un",
+    "capitalHint": [
+     "Mogadishu"
+    ],
+    "languagesHint": [
+     "Arabic",
+     "Somali"
+    ]
+   },
+   {
+    "iso2": "TZ",
+    "nameDe": "Tansania",
+    "nameEn": "Tanzania",
+    "nameEs": "Tanzania",
+    "subregion": "Ostafrika",
+    "status": "un",
+    "capitalHint": [
+     "Dodoma"
+    ],
+    "languagesHint": [
+     "English",
+     "Swahili"
+    ]
+   },
+   {
+    "iso2": "UG",
+    "nameDe": "Uganda",
+    "nameEn": "Uganda",
+    "nameEs": "Uganda",
+    "subregion": "Ostafrika",
+    "status": "un",
+    "capitalHint": [
+     "Kampala"
+    ],
+    "languagesHint": [
+     "English",
+     "Swahili"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "14",
+  "label": "Südliches Afrika, Westasien",
+  "countries": [
+   {
+    "iso2": "BW",
+    "nameDe": "Botswana",
+    "nameEn": "Botswana",
+    "nameEs": "Botswana",
+    "subregion": "Südliches Afrika",
+    "status": "un",
+    "capitalHint": [
+     "Gaborone"
+    ],
+    "languagesHint": [
+     "English",
+     "Tswana"
+    ]
+   },
+   {
+    "iso2": "LS",
+    "nameDe": "Lesotho",
+    "nameEn": "Lesotho",
+    "nameEs": "Lesotho",
+    "subregion": "Südliches Afrika",
+    "status": "un",
+    "capitalHint": [
+     "Maseru"
+    ],
+    "languagesHint": [
+     "English",
+     "Sotho"
+    ]
+   },
+   {
+    "iso2": "NA",
+    "nameDe": "Namibia",
+    "nameEn": "Namibia",
+    "nameEs": "Namibia",
+    "subregion": "Südliches Afrika",
+    "status": "un",
+    "capitalHint": [
+     "Windhoek"
+    ],
+    "languagesHint": [
+     "Afrikaans",
+     "German",
+     "English",
+     "Herero",
+     "Khoekhoe",
+     "Kwangali",
+     "Lozi",
+     "Ndonga",
+     "Tswana"
+    ]
+   },
+   {
+    "iso2": "ZA",
+    "nameDe": "Südafrika",
+    "nameEn": "South Africa",
+    "nameEs": "Sudáfrica",
+    "subregion": "Südliches Afrika",
+    "status": "un",
+    "capitalHint": [
+     "Pretoria",
+     "Bloemfontein",
+     "Cape Town"
+    ],
+    "languagesHint": [
+     "Afrikaans",
+     "English",
+     "Southern Ndebele",
+     "Northern Sotho",
+     "Southern Sotho",
+     "Swazi",
+     "Tswana",
+     "Tsonga",
+     "Venda",
+     "Xhosa",
+     "Zulu"
+    ]
+   },
+   {
+    "iso2": "SZ",
+    "nameDe": "Swasiland",
+    "nameEn": "Eswatini",
+    "nameEs": "Suazilandia",
+    "subregion": "Südliches Afrika",
+    "status": "un",
+    "capitalHint": [
+     "Lobamba"
+    ],
+    "languagesHint": [
+     "English",
+     "Swazi"
+    ]
+   },
+   {
+    "iso2": "AM",
+    "nameDe": "Armenien",
+    "nameEn": "Armenia",
+    "nameEs": "Armenia",
+    "subregion": "Westasien",
+    "status": "un",
+    "capitalHint": [
+     "Yerevan"
+    ],
+    "languagesHint": [
+     "Armenian"
+    ]
+   },
+   {
+    "iso2": "AZ",
+    "nameDe": "Aserbaidschan",
+    "nameEn": "Azerbaijan",
+    "nameEs": "Azerbaiyán",
+    "subregion": "Westasien",
+    "status": "un",
+    "capitalHint": [
+     "Baku"
+    ],
+    "languagesHint": [
+     "Azerbaijani",
+     "Russian"
+    ]
+   },
+   {
+    "iso2": "BH",
+    "nameDe": "Bahrain",
+    "nameEn": "Bahrain",
+    "nameEs": "Bahrein",
+    "subregion": "Westasien",
+    "status": "un",
+    "capitalHint": [
+     "Manama"
+    ],
+    "languagesHint": [
+     "Arabic"
+    ]
+   },
+   {
+    "iso2": "GE",
+    "nameDe": "Georgien",
+    "nameEn": "Georgia",
+    "nameEs": "Georgia",
+    "subregion": "Westasien",
+    "status": "un",
+    "capitalHint": [
+     "Tbilisi"
+    ],
+    "languagesHint": [
+     "Georgian"
+    ]
+   },
+   {
+    "iso2": "IQ",
+    "nameDe": "Irak",
+    "nameEn": "Iraq",
+    "nameEs": "Irak",
+    "subregion": "Westasien",
+    "status": "un",
+    "capitalHint": [
+     "Baghdad"
+    ],
+    "languagesHint": [
+     "Arabic",
+     "Aramaic",
+     "Sorani"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "15",
+  "label": "Westasien",
+  "countries": [
+   {
+    "iso2": "IL",
+    "nameDe": "Israel",
+    "nameEn": "Israel",
+    "nameEs": "Israel",
+    "subregion": "Westasien",
+    "status": "un",
+    "capitalHint": [
+     "Jerusalem"
+    ],
+    "languagesHint": [
+     "Arabic",
+     "Hebrew"
+    ]
+   },
+   {
+    "iso2": "YE",
+    "nameDe": "Jemen",
+    "nameEn": "Yemen",
+    "nameEs": "Yemen",
+    "subregion": "Westasien",
+    "status": "un",
+    "capitalHint": [
+     "Sana'a"
+    ],
+    "languagesHint": [
+     "Arabic"
+    ]
+   },
+   {
+    "iso2": "JO",
+    "nameDe": "Jordanien",
+    "nameEn": "Jordan",
+    "nameEs": "Jordania",
+    "subregion": "Westasien",
+    "status": "un",
+    "capitalHint": [
+     "Amman"
+    ],
+    "languagesHint": [
+     "Arabic"
+    ]
+   },
+   {
+    "iso2": "QA",
+    "nameDe": "Katar",
+    "nameEn": "Qatar",
+    "nameEs": "Catar",
+    "subregion": "Westasien",
+    "status": "un",
+    "capitalHint": [
+     "Doha"
+    ],
+    "languagesHint": [
+     "Arabic"
+    ]
+   },
+   {
+    "iso2": "KW",
+    "nameDe": "Kuwait",
+    "nameEn": "Kuwait",
+    "nameEs": "Kuwait",
+    "subregion": "Westasien",
+    "status": "un",
+    "capitalHint": [
+     "Kuwait City"
+    ],
+    "languagesHint": [
+     "Arabic"
+    ]
+   },
+   {
+    "iso2": "LB",
+    "nameDe": "Libanon",
+    "nameEn": "Lebanon",
+    "nameEs": "Líbano",
+    "subregion": "Westasien",
+    "status": "un",
+    "capitalHint": [
+     "Beirut"
+    ],
+    "languagesHint": [
+     "Arabic",
+     "French"
+    ]
+   },
+   {
+    "iso2": "OM",
+    "nameDe": "Oman",
+    "nameEn": "Oman",
+    "nameEs": "Omán",
+    "subregion": "Westasien",
+    "status": "un",
+    "capitalHint": [
+     "Muscat"
+    ],
+    "languagesHint": [
+     "Arabic"
+    ]
+   },
+   {
+    "iso2": "PS",
+    "nameDe": "Palästina",
+    "nameEn": "Palestine",
+    "nameEs": "Palestina",
+    "subregion": "Westasien",
+    "status": "observer",
+    "capitalHint": [
+     "Ramallah"
+    ],
+    "languagesHint": [
+     "Arabic"
+    ]
+   },
+   {
+    "iso2": "SA",
+    "nameDe": "Saudi-Arabien",
+    "nameEn": "Saudi Arabia",
+    "nameEs": "Arabia Saudí",
+    "subregion": "Westasien",
+    "status": "un",
+    "capitalHint": [
+     "Riyadh"
+    ],
+    "languagesHint": [
+     "Arabic"
+    ]
+   },
+   {
+    "iso2": "SY",
+    "nameDe": "Syrien",
+    "nameEn": "Syria",
+    "nameEs": "Siria",
+    "subregion": "Westasien",
+    "status": "un",
+    "capitalHint": [
+     "Damascus"
+    ],
+    "languagesHint": [
+     "Arabic"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "16",
+  "label": "Westasien, Zentralasien, Südasien",
+  "countries": [
+   {
+    "iso2": "TR",
+    "nameDe": "Türkei",
+    "nameEn": "Türkiye",
+    "nameEs": "Turquía",
+    "subregion": "Westasien",
+    "status": "un",
+    "capitalHint": [
+     "Ankara"
+    ],
+    "languagesHint": [
+     "Turkish"
+    ]
+   },
+   {
+    "iso2": "AE",
+    "nameDe": "Vereinigte Arabische Emirate",
+    "nameEn": "United Arab Emirates",
+    "nameEs": "Emiratos Árabes Unidos",
+    "subregion": "Westasien",
+    "status": "un",
+    "capitalHint": [
+     "Abu Dhabi"
+    ],
+    "languagesHint": [
+     "Arabic"
+    ]
+   },
+   {
+    "iso2": "KZ",
+    "nameDe": "Kasachstan",
+    "nameEn": "Kazakhstan",
+    "nameEs": "Kazajistán",
+    "subregion": "Zentralasien",
+    "status": "un",
+    "capitalHint": [
+     "Astana"
+    ],
+    "languagesHint": [
+     "Kazakh",
+     "Russian"
+    ]
+   },
+   {
+    "iso2": "KG",
+    "nameDe": "Kirgisistan",
+    "nameEn": "Kyrgyzstan",
+    "nameEs": "Kirguizistán",
+    "subregion": "Zentralasien",
+    "status": "un",
+    "capitalHint": [
+     "Bishkek"
+    ],
+    "languagesHint": [
+     "Kyrgyz",
+     "Russian"
+    ]
+   },
+   {
+    "iso2": "TJ",
+    "nameDe": "Tadschikistan",
+    "nameEn": "Tajikistan",
+    "nameEs": "Tayikistán",
+    "subregion": "Zentralasien",
+    "status": "un",
+    "capitalHint": [
+     "Dushanbe"
+    ],
+    "languagesHint": [
+     "Russian",
+     "Tajik"
+    ]
+   },
+   {
+    "iso2": "TM",
+    "nameDe": "Turkmenistan",
+    "nameEn": "Turkmenistan",
+    "nameEs": "Turkmenistán",
+    "subregion": "Zentralasien",
+    "status": "un",
+    "capitalHint": [
+     "Ashgabat"
+    ],
+    "languagesHint": [
+     "Russian",
+     "Turkmen"
+    ]
+   },
+   {
+    "iso2": "UZ",
+    "nameDe": "Usbekistan",
+    "nameEn": "Uzbekistan",
+    "nameEs": "Uzbekistán",
+    "subregion": "Zentralasien",
+    "status": "un",
+    "capitalHint": [
+     "Tashkent"
+    ],
+    "languagesHint": [
+     "Russian",
+     "Uzbek"
+    ]
+   },
+   {
+    "iso2": "AF",
+    "nameDe": "Afghanistan",
+    "nameEn": "Afghanistan",
+    "nameEs": "Afganistán",
+    "subregion": "Südasien",
+    "status": "un",
+    "capitalHint": [
+     "Kabul"
+    ],
+    "languagesHint": [
+     "Dari",
+     "Pashto",
+     "Turkmen"
+    ]
+   },
+   {
+    "iso2": "BD",
+    "nameDe": "Bangladesch",
+    "nameEn": "Bangladesh",
+    "nameEs": "Bangladesh",
+    "subregion": "Südasien",
+    "status": "un",
+    "capitalHint": [
+     "Dhaka"
+    ],
+    "languagesHint": [
+     "Bengali"
+    ]
+   },
+   {
+    "iso2": "BT",
+    "nameDe": "Bhutan",
+    "nameEn": "Bhutan",
+    "nameEs": "Bután",
+    "subregion": "Südasien",
+    "status": "un",
+    "capitalHint": [
+     "Thimphu"
+    ],
+    "languagesHint": [
+     "Dzongkha"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "17",
+  "label": "Südasien, Ostasien",
+  "countries": [
+   {
+    "iso2": "IN",
+    "nameDe": "Indien",
+    "nameEn": "India",
+    "nameEs": "India",
+    "subregion": "Südasien",
+    "status": "un",
+    "capitalHint": [
+     "New Delhi"
+    ],
+    "languagesHint": [
+     "English",
+     "Hindi",
+     "Tamil"
+    ]
+   },
+   {
+    "iso2": "IR",
+    "nameDe": "Iran",
+    "nameEn": "Iran",
+    "nameEs": "Iran",
+    "subregion": "Südasien",
+    "status": "un",
+    "capitalHint": [
+     "Tehran"
+    ],
+    "languagesHint": [
+     "Persian (Farsi)"
+    ]
+   },
+   {
+    "iso2": "MV",
+    "nameDe": "Malediven",
+    "nameEn": "Maldives",
+    "nameEs": "Maldivas",
+    "subregion": "Südasien",
+    "status": "un",
+    "capitalHint": [
+     "Malé"
+    ],
+    "languagesHint": [
+     "Maldivian"
+    ]
+   },
+   {
+    "iso2": "NP",
+    "nameDe": "Nepal",
+    "nameEn": "Nepal",
+    "nameEs": "Nepal",
+    "subregion": "Südasien",
+    "status": "un",
+    "capitalHint": [
+     "Kathmandu"
+    ],
+    "languagesHint": [
+     "Nepali"
+    ]
+   },
+   {
+    "iso2": "PK",
+    "nameDe": "Pakistan",
+    "nameEn": "Pakistan",
+    "nameEs": "Pakistán",
+    "subregion": "Südasien",
+    "status": "un",
+    "capitalHint": [
+     "Islamabad"
+    ],
+    "languagesHint": [
+     "English",
+     "Urdu"
+    ]
+   },
+   {
+    "iso2": "LK",
+    "nameDe": "Sri Lanka",
+    "nameEn": "Sri Lanka",
+    "nameEs": "Sri Lanka",
+    "subregion": "Südasien",
+    "status": "un",
+    "capitalHint": [
+     "Colombo"
+    ],
+    "languagesHint": [
+     "Sinhala",
+     "Tamil"
+    ]
+   },
+   {
+    "iso2": "CN",
+    "nameDe": "China",
+    "nameEn": "China",
+    "nameEs": "China",
+    "subregion": "Ostasien",
+    "status": "un",
+    "capitalHint": [
+     "Beijing"
+    ],
+    "languagesHint": [
+     "Chinese"
+    ]
+   },
+   {
+    "iso2": "JP",
+    "nameDe": "Japan",
+    "nameEn": "Japan",
+    "nameEs": "Japón",
+    "subregion": "Ostasien",
+    "status": "un",
+    "capitalHint": [
+     "Tokyo"
+    ],
+    "languagesHint": [
+     "Japanese"
+    ]
+   },
+   {
+    "iso2": "MN",
+    "nameDe": "Mongolei",
+    "nameEn": "Mongolia",
+    "nameEs": "Mongolia",
+    "subregion": "Ostasien",
+    "status": "un",
+    "capitalHint": [
+     "Ulan Bator"
+    ],
+    "languagesHint": [
+     "Mongolian"
+    ]
+   },
+   {
+    "iso2": "KP",
+    "nameDe": "Nordkorea",
+    "nameEn": "North Korea",
+    "nameEs": "Corea del Norte",
+    "subregion": "Ostasien",
+    "status": "un",
+    "capitalHint": [
+     "Pyongyang"
+    ],
+    "languagesHint": [
+     "Korean"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "18",
+  "label": "Ostasien, Südostasien",
+  "countries": [
+   {
+    "iso2": "KR",
+    "nameDe": "Südkorea",
+    "nameEn": "South Korea",
+    "nameEs": "Corea del Sur",
+    "subregion": "Ostasien",
+    "status": "un",
+    "capitalHint": [
+     "Seoul"
+    ],
+    "languagesHint": [
+     "Korean"
+    ]
+   },
+   {
+    "iso2": "TW",
+    "nameDe": "Taiwan",
+    "nameEn": "Taiwan",
+    "nameEs": "Taiwán",
+    "subregion": "Ostasien",
+    "status": "partial",
+    "capitalHint": [
+     "Taipei"
+    ],
+    "languagesHint": [
+     "Chinese"
+    ]
+   },
+   {
+    "iso2": "BN",
+    "nameDe": "Brunei",
+    "nameEn": "Brunei",
+    "nameEs": "Brunei",
+    "subregion": "Südostasien",
+    "status": "un",
+    "capitalHint": [
+     "Bandar Seri Begawan"
+    ],
+    "languagesHint": [
+     "Malay"
+    ]
+   },
+   {
+    "iso2": "ID",
+    "nameDe": "Indonesien",
+    "nameEn": "Indonesia",
+    "nameEs": "Indonesia",
+    "subregion": "Südostasien",
+    "status": "un",
+    "capitalHint": [
+     "Jakarta"
+    ],
+    "languagesHint": [
+     "Indonesian"
+    ]
+   },
+   {
+    "iso2": "KH",
+    "nameDe": "Kambodscha",
+    "nameEn": "Cambodia",
+    "nameEs": "Camboya",
+    "subregion": "Südostasien",
+    "status": "un",
+    "capitalHint": [
+     "Phnom Penh"
+    ],
+    "languagesHint": [
+     "Khmer"
+    ]
+   },
+   {
+    "iso2": "LA",
+    "nameDe": "Laos",
+    "nameEn": "Laos",
+    "nameEs": "Laos",
+    "subregion": "Südostasien",
+    "status": "un",
+    "capitalHint": [
+     "Vientiane"
+    ],
+    "languagesHint": [
+     "Lao"
+    ]
+   },
+   {
+    "iso2": "MY",
+    "nameDe": "Malaysia",
+    "nameEn": "Malaysia",
+    "nameEs": "Malasia",
+    "subregion": "Südostasien",
+    "status": "un",
+    "capitalHint": [
+     "Kuala Lumpur"
+    ],
+    "languagesHint": [
+     "English",
+     "Malay"
+    ]
+   },
+   {
+    "iso2": "MM",
+    "nameDe": "Myanmar",
+    "nameEn": "Myanmar",
+    "nameEs": "Myanmar",
+    "subregion": "Südostasien",
+    "status": "un",
+    "capitalHint": [
+     "Naypyidaw"
+    ],
+    "languagesHint": [
+     "Burmese"
+    ]
+   },
+   {
+    "iso2": "TL",
+    "nameDe": "Osttimor",
+    "nameEn": "Timor-Leste",
+    "nameEs": "Timor Oriental",
+    "subregion": "Südostasien",
+    "status": "un",
+    "capitalHint": [
+     "Dili"
+    ],
+    "languagesHint": [
+     "Portuguese",
+     "Tetum"
+    ]
+   },
+   {
+    "iso2": "PH",
+    "nameDe": "Philippinen",
+    "nameEn": "Philippines",
+    "nameEs": "Filipinas",
+    "subregion": "Südostasien",
+    "status": "un",
+    "capitalHint": [
+     "Manila"
+    ],
+    "languagesHint": [
+     "English",
+     "Filipino"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "19",
+  "label": "Südostasien, Australien & Neuseeland, Melanesien, Mikronesien",
+  "countries": [
+   {
+    "iso2": "SG",
+    "nameDe": "Singapur",
+    "nameEn": "Singapore",
+    "nameEs": "Singapur",
+    "subregion": "Südostasien",
+    "status": "un",
+    "capitalHint": [
+     "Singapore"
+    ],
+    "languagesHint": [
+     "English",
+     "Malay",
+     "Tamil",
+     "Chinese"
+    ]
+   },
+   {
+    "iso2": "TH",
+    "nameDe": "Thailand",
+    "nameEn": "Thailand",
+    "nameEs": "Tailandia",
+    "subregion": "Südostasien",
+    "status": "un",
+    "capitalHint": [
+     "Bangkok"
+    ],
+    "languagesHint": [
+     "Thai"
+    ]
+   },
+   {
+    "iso2": "VN",
+    "nameDe": "Vietnam",
+    "nameEn": "Vietnam",
+    "nameEs": "Vietnam",
+    "subregion": "Südostasien",
+    "status": "un",
+    "capitalHint": [
+     "Hanoi"
+    ],
+    "languagesHint": [
+     "Vietnamese"
+    ]
+   },
+   {
+    "iso2": "AU",
+    "nameDe": "Australien",
+    "nameEn": "Australia",
+    "nameEs": "Australia",
+    "subregion": "Australien & Neuseeland",
+    "status": "un",
+    "capitalHint": [
+     "Canberra"
+    ],
+    "languagesHint": [
+     "English"
+    ]
+   },
+   {
+    "iso2": "NZ",
+    "nameDe": "Neuseeland",
+    "nameEn": "New Zealand",
+    "nameEs": "Nueva Zelanda",
+    "subregion": "Australien & Neuseeland",
+    "status": "un",
+    "capitalHint": [
+     "Wellington"
+    ],
+    "languagesHint": [
+     "English",
+     "Māori",
+     "New Zealand Sign Language"
+    ]
+   },
+   {
+    "iso2": "FJ",
+    "nameDe": "Fidschi",
+    "nameEn": "Fiji",
+    "nameEs": "Fiyi",
+    "subregion": "Melanesien",
+    "status": "un",
+    "capitalHint": [
+     "Suva"
+    ],
+    "languagesHint": [
+     "English",
+     "Fijian",
+     "Fiji Hindi"
+    ]
+   },
+   {
+    "iso2": "PG",
+    "nameDe": "Papua-Neuguinea",
+    "nameEn": "Papua New Guinea",
+    "nameEs": "Papúa Nueva Guinea",
+    "subregion": "Melanesien",
+    "status": "un",
+    "capitalHint": [
+     "Port Moresby"
+    ],
+    "languagesHint": [
+     "English",
+     "Hiri Motu",
+     "Tok Pisin"
+    ]
+   },
+   {
+    "iso2": "SB",
+    "nameDe": "Salomonen",
+    "nameEn": "Solomon Islands",
+    "nameEs": "Islas Salomón",
+    "subregion": "Melanesien",
+    "status": "un",
+    "capitalHint": [
+     "Honiara"
+    ],
+    "languagesHint": [
+     "English"
+    ]
+   },
+   {
+    "iso2": "VU",
+    "nameDe": "Vanuatu",
+    "nameEn": "Vanuatu",
+    "nameEs": "Vanuatu",
+    "subregion": "Melanesien",
+    "status": "un",
+    "capitalHint": [
+     "Port Vila"
+    ],
+    "languagesHint": [
+     "Bislama",
+     "English",
+     "French"
+    ]
+   },
+   {
+    "iso2": "KI",
+    "nameDe": "Kiribati",
+    "nameEn": "Kiribati",
+    "nameEs": "Kiribati",
+    "subregion": "Mikronesien",
+    "status": "un",
+    "capitalHint": [
+     "South Tarawa"
+    ],
+    "languagesHint": [
+     "English",
+     "Gilbertese"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "20",
+  "label": "Mikronesien, Polynesien",
+  "countries": [
+   {
+    "iso2": "MH",
+    "nameDe": "Marshallinseln",
+    "nameEn": "Marshall Islands",
+    "nameEs": "Islas Marshall",
+    "subregion": "Mikronesien",
+    "status": "un",
+    "capitalHint": [
+     "Majuro"
+    ],
+    "languagesHint": [
+     "English",
+     "Marshallese"
+    ]
+   },
+   {
+    "iso2": "FM",
+    "nameDe": "Mikronesien",
+    "nameEn": "Micronesia",
+    "nameEs": "Micronesia",
+    "subregion": "Mikronesien",
+    "status": "un",
+    "capitalHint": [
+     "Palikir"
+    ],
+    "languagesHint": [
+     "English"
+    ]
+   },
+   {
+    "iso2": "NR",
+    "nameDe": "Nauru",
+    "nameEn": "Nauru",
+    "nameEs": "Nauru",
+    "subregion": "Mikronesien",
+    "status": "un",
+    "capitalHint": [
+     "Yaren"
+    ],
+    "languagesHint": [
+     "English",
+     "Nauru"
+    ]
+   },
+   {
+    "iso2": "PW",
+    "nameDe": "Palau",
+    "nameEn": "Palau",
+    "nameEs": "Palau",
+    "subregion": "Mikronesien",
+    "status": "un",
+    "capitalHint": [
+     "Ngerulmud"
+    ],
+    "languagesHint": [
+     "English",
+     "Palauan"
+    ]
+   },
+   {
+    "iso2": "WS",
+    "nameDe": "Samoa",
+    "nameEn": "Samoa",
+    "nameEs": "Samoa",
+    "subregion": "Polynesien",
+    "status": "un",
+    "capitalHint": [
+     "Apia"
+    ],
+    "languagesHint": [
+     "English",
+     "Samoan"
+    ]
+   },
+   {
+    "iso2": "TO",
+    "nameDe": "Tonga",
+    "nameEn": "Tonga",
+    "nameEs": "Tonga",
+    "subregion": "Polynesien",
+    "status": "un",
+    "capitalHint": [
+     "Nuku'alofa"
+    ],
+    "languagesHint": [
+     "English",
+     "Tongan"
+    ]
+   },
+   {
+    "iso2": "TV",
+    "nameDe": "Tuvalu",
+    "nameEn": "Tuvalu",
+    "nameEs": "Tuvalu",
+    "subregion": "Polynesien",
+    "status": "un",
+    "capitalHint": [
+     "Funafuti"
+    ],
+    "languagesHint": [
+     "English",
+     "Tuvaluan"
+    ]
+   }
+  ]
+ }
+]

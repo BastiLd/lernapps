@@ -1,0 +1,157 @@
+{
+  "batch": "15",
+  "languageNames": {
+    "ar": { "de": "Arabisch", "es": "árabe", "en": "Arabic" },
+    "he": { "de": "Hebräisch", "es": "hebreo", "en": "Hebrew" },
+    "en": { "de": "Englisch", "es": "inglés", "en": "English" },
+    "ru": { "de": "Russisch", "es": "ruso", "en": "Russian" },
+    "fr": { "de": "Französisch", "es": "francés", "en": "French" },
+    "ku": { "de": "Kurdisch", "es": "kurdo", "en": "Kurdish" }
+  },
+  "countries": [
+    {
+      "iso2": "IL",
+      "name": { "de": "Israel", "es": "Israel", "en": "Israel" },
+      "aliases": ["Staat Israel", "Estado de Israel"],
+      "capital": { "de": "Jerusalem", "es": "Jerusalén", "en": "Jerusalem", "lat": 31.7683, "lng": 35.2137 },
+      "capitalNote": "Israel hat Jerusalem zu seiner Hauptstadt erklärt; dieser Status ist international umstritten, weshalb viele Staaten ihre Botschaft in Tel Aviv haben.",
+      "otherCapitals": [],
+      "languages": { "official": ["he"], "regional": ["ar"], "spoken": ["ru", "en"] },
+      "languageNote": "Seit 2018 ist Hebräisch per Gesetz die Staatssprache, Arabisch hat einen Sonderstatus; durch Einwanderung aus der ehemaligen Sowjetunion sprechen auch viele Menschen Russisch.",
+      "demonym": { "deM": "Israeli", "deF": "Israelin", "esM": "israelí", "esF": "israelí" },
+      "history": "Im Altertum bestanden hier die Königreiche Israel und Juda; später herrschten unter anderem Römer, arabische Dynastien, Kreuzfahrer und ab 1517 die Osmanen. Nach dem Ersten Weltkrieg verwaltete Großbritannien das Gebiet als Mandat Palästina. 1948 wurde der Staat Israel ausgerufen, worauf mehrere Kriege mit arabischen Nachbarn folgten; mit Ägypten (1979) und Jordanien (1994) schloss Israel Friedensverträge. Der Konflikt mit den Palästinensern, zuletzt der Gaza-Krieg ab 2023, prägt die Region bis heute.",
+      "culture": "Beliebte Gerichte sind Falafel, Hummus und „Schakschuka“ (Eier in Tomatensoße), die man auch in den Nachbarländern kennt. Bekannte Sehenswürdigkeiten sind die Felsenfestung Masada am Toten Meer und die „Weiße Stadt“ von Tel Aviv mit Tausenden Bauhaus-Gebäuden, die zum UNESCO-Welterbe gehört. Wichtige Feste sind Pessach, Jom Kippur und Chanukka; der „Schabbat“ von Freitag- bis Samstagabend ist der wöchentliche Ruhetag.",
+      "funFact": "Hebräisch wurde jahrhundertelang fast nur in Gebet und Literatur verwendet und ist heute wieder die Alltagssprache von Millionen Menschen."
+    },
+    {
+      "iso2": "YE",
+      "name": { "de": "Jemen", "es": "Yemen", "en": "Yemen" },
+      "aliases": ["Republik Jemen", "República de Yemen"],
+      "capital": { "de": "Sanaa", "es": "Saná", "en": "Sanaa", "lat": 15.3547, "lng": 44.2067 },
+      "capitalNote": "Sanaa ist laut Verfassung Hauptstadt, wird aber seit 2014 von der Huthi-Bewegung kontrolliert; die international anerkannte Regierung hat 2015 Aden zur vorläufigen Hauptstadt erklärt.",
+      "otherCapitals": [
+        { "de": "Aden", "es": "Adén", "en": "Aden", "role": "vorläufiger Regierungssitz", "lat": 12.7855, "lng": 45.0187 }
+      ],
+      "languages": { "official": ["ar"], "regional": [], "spoken": [] },
+      "languageNote": "Im Osten und auf der Insel Sokotra werden auch neusüdarabische Sprachen wie Mehri und Soqotri gesprochen.",
+      "demonym": { "deM": "Jemenit", "deF": "Jemenitin", "esM": "yemení", "esF": "yemení" },
+      "history": "Im Altertum war der Jemen als „Arabia felix“ („glückliches Arabien“) bekannt; das Reich von Saba wurde durch den Handel mit Weihrauch und Myrrhe reich. Später gehörte der Norden zeitweise zum Osmanischen Reich, während der Süden mit Aden ab 1839 unter britischer Herrschaft stand. Der Nordjemen wurde 1918 unabhängig, der Südjemen 1967; 1990 vereinigten sich beide Staaten. Seit 2014 herrscht ein Bürgerkrieg, der eine schwere humanitäre Krise ausgelöst hat.",
+      "culture": "Die Altstadt von Sanaa mit ihren hohen, weiß verzierten Turmhäusern gehört zum UNESCO-Welterbe, ebenso Schibam mit seinen Hochhäusern aus Lehm, oft „Manhattan der Wüste“ genannt. Als Nationalgericht gilt „Saltah“, ein würziger Eintopf, der brodelnd heiß im Steintopf serviert wird. Viele Männer tragen traditionell einen gebogenen Dolch („Dschambija“) am Gürtel. Auf der Insel Sokotra wachsen die seltsam geformten Drachenblutbäume.",
+      "funFact": "Das Wort „Mokka“ geht auf die jemenitische Hafenstadt al-Mukha zurück, von der aus früher Kaffee in die ganze Welt verschifft wurde."
+    },
+    {
+      "iso2": "JO",
+      "name": { "de": "Jordanien", "es": "Jordania", "en": "Jordan" },
+      "aliases": ["Haschemitisches Königreich Jordanien", "Reino Hachemita de Jordania"],
+      "capital": { "de": "Amman", "es": "Amán", "en": "Amman", "lat": 31.9454, "lng": 35.9284 },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": { "official": ["ar"], "regional": [], "spoken": [] },
+      "languageNote": null,
+      "demonym": { "deM": "Jordanier", "deF": "Jordanierin", "esM": "jordano", "esF": "jordana" },
+      "history": "Im Altertum errichteten die Nabatäer hier die Felsenstadt Petra; später herrschten Römer, Byzantiner, arabische Kalifen und ab dem 16. Jahrhundert die Osmanen. Nach dem Ersten Weltkrieg entstand unter britischem Mandat das Emirat Transjordanien, das 1946 als Königreich unabhängig wurde. Seither regiert die haschemitische Königsfamilie. Jordanien hat im 20. und 21. Jahrhundert viele Flüchtlinge aus Palästina, dem Irak und Syrien aufgenommen.",
+      "culture": "Die Felsenstadt Petra, deren Fassaden direkt in rötlichen Sandstein gehauen wurden, zählt zu den „neuen sieben Weltwundern“. Sehenswert sind auch die römische Ruinenstadt Jerash und das Tote Meer. Das Nationalgericht „Mansaf“ besteht aus Lammfleisch und Reis mit einer Soße aus getrocknetem Joghurt. Typisch ist das rot-weiß karierte Kopftuch der Männer, der „Schmagh“.",
+      "funFact": "Die Wüste Wadi Rum in Jordanien wirkt so außerirdisch, dass dort Filme wie „Der Marsianer“ gedreht wurden, die auf dem Mars spielen."
+    },
+    {
+      "iso2": "QA",
+      "name": { "de": "Katar", "es": "Catar", "en": "Qatar" },
+      "aliases": ["Staat Katar", "Estado de Catar"],
+      "capital": { "de": "Doha", "es": "Doha", "en": "Doha", "lat": 25.2854, "lng": 51.5310 },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": { "official": ["ar"], "regional": [], "spoken": ["en"] },
+      "languageNote": "Da die große Mehrheit der Einwohner aus dem Ausland stammt, ist Englisch im Alltag als gemeinsame Sprache weit verbreitet.",
+      "demonym": { "deM": "Katarer", "deF": "Katarerin", "esM": "catarí", "esF": "catarí" },
+      "history": "Die Halbinsel ist seit Jahrtausenden besiedelt; lange lebten die Menschen vor allem von Perlentauchen, Fischfang und Handel. Seit dem 19. Jahrhundert regiert die Familie Al Thani, ab 1916 stand Katar unter britischem Schutz. 1971 wurde das Land unabhängig. Durch riesige Erdgasvorkommen wurde Katar zu einem der reichsten Länder der Welt und richtete 2022 als erstes arabisches Land die Fußball-Weltmeisterschaft aus.",
+      "culture": "Die Hauptstadt Doha ist bekannt für ihre moderne Skyline, das Museum für Islamische Kunst und den traditionellen Markt „Souq Waqif“. Beliebte Traditionen sind Falknerei und Kamelrennen, bei denen heute kleine Roboter als Jockeys eingesetzt werden. Ein typisches Gericht ist „Harees“, ein Brei aus Weizen und Fleisch, der besonders im Ramadan gegessen wird. Der bekannte Fernsehsender Al Jazeera hat seinen Sitz in Doha.",
+      "funFact": "Die Fußball-WM 2022 in Katar war die erste, die im November und Dezember stattfand, weil es im Sommer dort zu heiß ist."
+    },
+    {
+      "iso2": "KW",
+      "name": { "de": "Kuwait", "es": "Kuwait", "en": "Kuwait" },
+      "aliases": ["Staat Kuwait", "Estado de Kuwait"],
+      "capital": { "de": "Kuwait-Stadt", "es": "Ciudad de Kuwait", "en": "Kuwait City", "lat": 29.3759, "lng": 47.9774 },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": { "official": ["ar"], "regional": [], "spoken": ["en"] },
+      "languageNote": "Da ein großer Teil der Einwohner aus dem Ausland stammt, ist Englisch als Geschäfts- und Verkehrssprache weit verbreitet.",
+      "demonym": { "deM": "Kuwaiter", "deF": "Kuwaiterin", "esM": "kuwaití", "esF": "kuwaití" },
+      "history": "Im 18. Jahrhundert ließen sich arabische Familien an der Bucht nieder; seit etwa 1752 regiert die Familie Al Sabah. 1899 stellte sich Kuwait unter britischen Schutz und wurde 1961 unabhängig. Die Entdeckung von Erdöl im Jahr 1938 machte das Land reich. 1990 besetzte der Irak Kuwait, das im Zweiten Golfkrieg 1991 von einer internationalen Koalition unter Führung der USA befreit wurde.",
+      "culture": "Wahrzeichen der Hauptstadt sind die Kuwait Towers mit ihren blau-grün gemusterten Kugeln. Früher prägten Perlentauchen und der Bau hölzerner Segelschiffe („Dhau“) das Leben an der Küste. Typisch sind Fischgerichte aus dem Persischen Golf und „Machbus“, gewürzter Reis mit Fleisch. Beliebt sind Fußball und die „Diwaniya“, regelmäßige abendliche Treffen, bei denen sich vor allem Männer unterhalten und diskutieren.",
+      "funFact": "Der Kuwait-Dinar gilt als die Währung mit dem höchsten Wert pro Einheit weltweit."
+    },
+    {
+      "iso2": "LB",
+      "name": { "de": "Libanon", "es": "Líbano", "en": "Lebanon" },
+      "aliases": ["Libanesische Republik", "República Libanesa"],
+      "capital": { "de": "Beirut", "es": "Beirut", "en": "Beirut", "lat": 33.8938, "lng": 35.5018 },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": { "official": ["ar"], "regional": [], "spoken": ["fr", "en"] },
+      "languageNote": "Laut Verfassung ist Arabisch Amtssprache, Französisch darf per Gesetz in bestimmten Fällen verwendet werden; Französisch und Englisch sind verbreitete Bildungs- und Zweitsprachen.",
+      "demonym": { "deM": "Libanese", "deF": "Libanesin", "esM": "libanés", "esF": "libanesa" },
+      "history": "An der Küste lagen im Altertum die phönizischen Handelsstädte Byblos, Tyros und Sidon, deren Seefahrer das Mittelmeer befuhren. Später herrschten Römer, Byzantiner, arabische Dynastien und ab 1516 die Osmanen. Nach dem Ersten Weltkrieg kam das Gebiet unter französisches Mandat; 1943 wurde der Libanon unabhängig. Von 1975 bis 1990 erschütterte ein Bürgerkrieg das Land, und 2020 zerstörte eine gewaltige Explosion große Teile des Hafens von Beirut.",
+      "culture": "Die libanesische Küche ist berühmt für ihre vielen kleinen Vorspeisen („Mezze“) wie Hummus, Tabbouleh und Falafel. Die Libanon-Zeder ist Nationalsymbol und ziert die Flagge. Sehenswert sind die römischen Tempel von Baalbek und die uralte Hafenstadt Byblos. Die Sängerin Fairuz ist in der ganzen arabischen Welt berühmt, und beim Volkstanz „Dabke“ stampfen die Tänzer gemeinsam im Takt.",
+      "funFact": "Die kolumbianische Sängerin Shakira und die mexikanische Schauspielerin Salma Hayek haben beide libanesische Vorfahren."
+    },
+    {
+      "iso2": "OM",
+      "name": { "de": "Oman", "es": "Omán", "en": "Oman" },
+      "aliases": ["Sultanat Oman", "Sultanato de Omán"],
+      "capital": { "de": "Maskat", "es": "Mascate", "en": "Muscat", "lat": 23.5880, "lng": 58.3829 },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": { "official": ["ar"], "regional": [], "spoken": [] },
+      "languageNote": "Daneben werden unter anderem Belutschi und neusüdarabische Sprachen wie Mehri gesprochen; Englisch ist als Geschäftssprache verbreitet.",
+      "demonym": { "deM": "Omaner", "deF": "Omanerin", "esM": "omaní", "esF": "omaní" },
+      "history": "Schon im Altertum war Oman ein Zentrum des Weihrauchhandels und der Seefahrt. Im 16. Jahrhundert besetzten die Portugiesen Teile der Küste, wurden aber um 1650 vertrieben; danach wurde Oman eine Seemacht, die zeitweise auch Sansibar und Teile Ostafrikas beherrschte. Das Land wurde nie formell eine Kolonie, stand aber lange unter starkem britischem Einfluss. Unter Sultan Qabus (1970–2020) wurde Oman stark modernisiert.",
+      "culture": "Typisch für Oman sind zahlreiche alte Festungen wie in Nizwa und Bahla, das Hadschar-Gebirge und weite Sandwüsten. Zur Gastfreundschaft gehören Kaffee mit Kardamom („Kahwa“) und Datteln. Ein Festessen ist „Schuwa“: mariniertes Fleisch, das sehr lange in einer Erdgrube gegart wird. Viele Männer tragen ein langes weißes Gewand („Dischdascha“) und eine bestickte Kappe.",
+      "funFact": "Die Große Sultan-Qabus-Moschee in Maskat besitzt einen der größten handgeknüpften Teppiche der Welt."
+    },
+    {
+      "iso2": "PS",
+      "name": { "de": "Palästina", "es": "Palestina", "en": "Palestine" },
+      "aliases": ["Staat Palästina", "Estado de Palestina", "State of Palestine", "Palästinensische Gebiete"],
+      "capital": { "de": "Ramallah", "es": "Ramala", "en": "Ramallah", "lat": 31.9038, "lng": 35.2034 },
+      "capitalNote": "Palästina beansprucht Ostjerusalem als Hauptstadt; die Palästinensische Autonomiebehörde hat ihren Verwaltungssitz in Ramallah.",
+      "otherCapitals": [
+        { "de": "Ostjerusalem", "es": "Jerusalén Este", "en": "East Jerusalem", "role": "beanspruchte Hauptstadt", "lat": 31.7833, "lng": 35.2333 }
+      ],
+      "languages": { "official": ["ar"], "regional": [], "spoken": [] },
+      "languageNote": null,
+      "demonym": { "deM": "Palästinenser", "deF": "Palästinenserin", "esM": "palestino", "esF": "palestina" },
+      "history": "Von 1517 bis zum Ersten Weltkrieg gehörte das Gebiet zum Osmanischen Reich, danach verwaltete Großbritannien es als Mandat Palästina. Im Krieg von 1948 verloren Hunderttausende Palästinenser ihre Heimat; 1967 kamen Westjordanland, Ostjerusalem und Gazastreifen unter israelische Kontrolle. Der 1988 ausgerufene Staat Palästina ist seit 2012 UN-Beobachterstaat und wird von über 150 Staaten anerkannt, nicht aber von Israel und den USA. Der Gaza-Krieg ab 2023 führte zu schweren Zerstörungen.",
+      "culture": "Die Geburtskirche in Bethlehem wird von Christen als Geburtsort Jesu verehrt und gehört zum UNESCO-Welterbe. Typische Gerichte sind „Musachan“ (Hähnchen mit Zwiebeln und Sumach auf Fladenbrot), „Maqluba“ und die süße Käsespeise „Knafeh“ aus Nablus. Bei Hochzeiten wird der Reihentanz „Dabke“ getanzt, und die traditionelle Kreuzstich-Stickerei „Tatriz“ gehört zum immateriellen Kulturerbe der UNESCO. Der Olivenbaum ist ein wichtiges Symbol.",
+      "funFact": "Jericho im Westjordanland gilt als eine der ältesten Städte der Welt und liegt rund 250 Meter unter dem Meeresspiegel."
+    },
+    {
+      "iso2": "SA",
+      "name": { "de": "Saudi-Arabien", "es": "Arabia Saudí", "en": "Saudi Arabia" },
+      "aliases": ["Arabia Saudita", "Königreich Saudi-Arabien", "Reino de Arabia Saudí"],
+      "capital": { "de": "Riad", "es": "Riad", "en": "Riyadh", "lat": 24.7136, "lng": 46.6753 },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": { "official": ["ar"], "regional": [], "spoken": [] },
+      "languageNote": null,
+      "demonym": { "deM": "Saudi-Araber", "deF": "Saudi-Araberin", "esM": "saudí", "esF": "saudí" },
+      "history": "Im 7. Jahrhundert entstand in Mekka und Medina der Islam, der sich von hier aus weit verbreitete. Im 18. Jahrhundert verbündete sich die Familie Al Saud mit dem Gelehrten Muhammad ibn Abd al-Wahhab. Abd al-Aziz ibn Saud einte große Teile der Arabischen Halbinsel und rief 1932 das Königreich Saudi-Arabien aus. 1938 wurde Erdöl entdeckt, das das Land zu einem der größten Ölexporteure der Welt machte.",
+      "culture": "Mekka und Medina sind die heiligsten Städte des Islam; jedes Jahr pilgern weit über eine Million Muslime zur „Hadsch“ nach Mekka. Typisch sind arabischer Kaffee mit Kardamom, Datteln und das Reisgericht „Kabsa“ mit Fleisch. Die Felsgräber der Nabatäerstadt Hegra wurden 2008 die erste UNESCO-Welterbestätte des Landes. Fußball ist sehr beliebt, und 2034 soll Saudi-Arabien die Fußball-Weltmeisterschaft ausrichten.",
+      "funFact": "Saudi-Arabien ist das größte Land der Welt, in dem es keinen einzigen ganzjährig fließenden Fluss gibt."
+    },
+    {
+      "iso2": "SY",
+      "name": { "de": "Syrien", "es": "Siria", "en": "Syria" },
+      "aliases": ["Arabische Republik Syrien", "República Árabe Siria"],
+      "capital": { "de": "Damaskus", "es": "Damasco", "en": "Damascus", "lat": 33.5138, "lng": 36.2765 },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": { "official": ["ar"], "regional": ["ku"], "spoken": [] },
+      "languageNote": "Kurdisch wurde Anfang 2026 per Präsidialdekret als Nationalsprache anerkannt; daneben sprechen Minderheiten unter anderem Armenisch und Aramäisch.",
+      "demonym": { "deM": "Syrer", "deF": "Syrerin", "esM": "sirio", "esF": "siria" },
+      "history": "Syrien gehört zu den ältesten Kulturlandschaften der Welt; Damaskus und Aleppo zählen zu den ältesten dauerhaft bewohnten Städten. Von 661 bis 750 war Damaskus Hauptstadt des Kalifats der Umayyaden, ab 1516 herrschten die Osmanen. Nach dem Ersten Weltkrieg kam Syrien unter französisches Mandat und wurde 1946 unabhängig. Ab 2011 folgte ein langer Bürgerkrieg; im Dezember 2024 wurde Präsident Baschar al-Assad gestürzt, seither regiert eine Übergangsregierung.",
+      "culture": "Die Altstädte von Damaskus und Aleppo mit ihren überdachten Märkten („Souks“), die antike Oasenstadt Palmyra und die Kreuzritterburg Krak des Chevaliers gehören zum UNESCO-Welterbe. Beliebte Speisen sind „Kibbeh“ (Bällchen aus Weizenschrot und Hackfleisch), Hummus und Baklava. Aleppo ist berühmt für seine Seife aus Oliven- und Lorbeeröl, und der Stoff Damast ist nach Damaskus benannt.",
+      "funFact": "Im Dorf Maalula nordöstlich von Damaskus wird bis heute Westaramäisch gesprochen, das eng mit der Sprache Jesu verwandt ist."
+    }
+  ]
+}

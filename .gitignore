@@ -1,0 +1,7 @@
+node_modules/
+dist/
+data-src/raw/
+data-src/tmp/
+*.log
+.DS_Store
+Thumbs.db

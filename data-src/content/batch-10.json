@@ -1,0 +1,564 @@
+{
+  "batch": "10",
+  "languageNames": {
+    "fr": {
+      "de": "Französisch",
+      "es": "francés",
+      "en": "French"
+    },
+    "en": {
+      "de": "Englisch",
+      "es": "inglés",
+      "en": "English"
+    },
+    "pt": {
+      "de": "Portugiesisch",
+      "es": "portugués",
+      "en": "Portuguese"
+    },
+    "ar": {
+      "de": "Arabisch",
+      "es": "árabe",
+      "en": "Arabic"
+    },
+    "dyu": {
+      "de": "Dioula",
+      "es": "diula",
+      "en": "Dyula"
+    },
+    "mnk": {
+      "de": "Mandinka",
+      "es": "mandinga",
+      "en": "Mandinka"
+    },
+    "wo": {
+      "de": "Wolof",
+      "es": "wólof",
+      "en": "Wolof"
+    },
+    "ff": {
+      "de": "Fulfulde",
+      "es": "fula",
+      "en": "Fula"
+    },
+    "ak": {
+      "de": "Akan",
+      "es": "akan",
+      "en": "Akan"
+    },
+    "ee": {
+      "de": "Ewe",
+      "es": "ewe",
+      "en": "Ewe"
+    },
+    "dag": {
+      "de": "Dagbani",
+      "es": "dagbani",
+      "en": "Dagbani"
+    },
+    "emk": {
+      "de": "Malinke (Maninka)",
+      "es": "malinké",
+      "en": "Maninka"
+    },
+    "sus": {
+      "de": "Susu",
+      "es": "susu",
+      "en": "Susu"
+    },
+    "pov": {
+      "de": "Guinea-Bissau-Kreol (Kriol)",
+      "es": "criollo de Guinea-Bisáu",
+      "en": "Guinea-Bissau Creole"
+    },
+    "kea": {
+      "de": "Kapverdisches Kreol",
+      "es": "criollo caboverdiano",
+      "en": "Cape Verdean Creole"
+    },
+    "kpe": {
+      "de": "Kpelle",
+      "es": "kpelle",
+      "en": "Kpelle"
+    },
+    "bm": {
+      "de": "Bambara",
+      "es": "bambara",
+      "en": "Bambara"
+    },
+    "son": {
+      "de": "Songhai",
+      "es": "songhay",
+      "en": "Songhay"
+    },
+    "snk": {
+      "de": "Soninke",
+      "es": "soninké",
+      "en": "Soninke"
+    },
+    "tmh": {
+      "de": "Tamascheq (Tuareg)",
+      "es": "tamasheq",
+      "en": "Tamasheq"
+    },
+    "ha": {
+      "de": "Hausa",
+      "es": "hausa",
+      "en": "Hausa"
+    },
+    "dje": {
+      "de": "Zarma",
+      "es": "zarma",
+      "en": "Zarma"
+    },
+    "kr": {
+      "de": "Kanuri",
+      "es": "kanuri",
+      "en": "Kanuri"
+    }
+  },
+  "countries": [
+    {
+      "iso2": "CI",
+      "name": {
+        "de": "Elfenbeinküste",
+        "es": "Costa de Marfil",
+        "en": "Ivory Coast"
+      },
+      "aliases": [
+        "Côte d'Ivoire",
+        "Republik Côte d'Ivoire",
+        "República de Costa de Marfil"
+      ],
+      "capital": {
+        "de": "Yamoussoukro",
+        "es": "Yamusukro",
+        "en": "Yamoussoukro",
+        "lat": 6.8206,
+        "lng": -5.2768
+      },
+      "capitalNote": "Yamoussoukro ist seit 1983 offizielle Hauptstadt; die meisten Regierungsstellen und Botschaften befinden sich jedoch in der Wirtschaftsmetropole Abidjan.",
+      "otherCapitals": [
+        {
+          "de": "Abidjan",
+          "es": "Abiyán",
+          "en": "Abidjan",
+          "role": "faktischer Regierungssitz",
+          "lat": 5.3252,
+          "lng": -4.0197
+        }
+      ],
+      "languages": {
+        "official": [
+          "fr"
+        ],
+        "regional": [],
+        "spoken": [
+          "dyu"
+        ]
+      },
+      "languageNote": "Im Land werden über 60 Sprachen gesprochen; Dioula dient vor allem im Norden und auf Märkten als Verkehrssprache, weit verbreitet ist auch Baoulé. In Abidjan ist Französisch für viele Menschen Alltagssprache.",
+      "demonym": {
+        "deM": "Ivorer",
+        "deF": "Ivorerin",
+        "esM": "marfileño",
+        "esF": "marfileña"
+      },
+      "history": "Vor der Kolonialzeit gab es hier mehrere Reiche, etwa das Handelsreich von Kong im Norden. Europäische Händler kauften an der Küste Elfenbein – daher der Name des Landes. Ab 1893 war das Gebiet französische Kolonie, 1960 wurde es unter Félix Houphouët-Boigny unabhängig und erlebte dank Kakao und Kaffee einen wirtschaftlichen Aufschwung. Nach seinem Tod 1993 folgten politische Krisen und zwei Bürgerkriege; seit 2011 wächst die Wirtschaft wieder kräftig.",
+      "culture": "Die Elfenbeinküste ist der größte Kakaoproduzent der Welt. Beliebt sind „Attiéké“, eine Art Couscous aus Maniok, mit gegrilltem Fisch und „Alloco“ (frittierte Kochbananen); musikalisch prägen Zouglou und Coupé-Décalé das Land. Die Fußballnationalmannschaft „Les Éléphants“ gewann unter anderem Anfang 2024 im eigenen Land den Afrika-Cup; ihr bekanntester Spieler war Didier Drogba.",
+      "funFact": "Die Basilika Notre-Dame de la Paix in Yamoussoukro ist dem Petersdom in Rom nachempfunden und gilt als eine der größten Kirchen der Welt."
+    },
+    {
+      "iso2": "GM",
+      "name": {
+        "de": "Gambia",
+        "es": "Gambia",
+        "en": "Gambia"
+      },
+      "aliases": [
+        "The Gambia",
+        "Republik Gambia",
+        "República de Gambia"
+      ],
+      "capital": {
+        "de": "Banjul",
+        "es": "Banjul",
+        "en": "Banjul",
+        "lat": 13.4531,
+        "lng": -16.5775
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "en"
+        ],
+        "regional": [],
+        "spoken": [
+          "mnk",
+          "wo",
+          "ff"
+        ]
+      },
+      "languageNote": "Im Alltag sprechen die meisten Menschen afrikanische Sprachen, vor allem Mandinka, Wolof und Fulfulde; Wolof ist besonders im Großraum Banjul Verkehrssprache.",
+      "demonym": {
+        "deM": "Gambier",
+        "deF": "Gambierin",
+        "esM": "gambiano",
+        "esF": "gambiana"
+      },
+      "history": "Im Mittelalter gehörte das Gebiet am Gambia-Fluss zum Einflussbereich des Mali-Reichs, später entstanden hier kleinere Königreiche der Mandinka, Wolof und Fulbe. Ab dem 15. Jahrhundert trieben Portugiesen, dann Briten und Franzosen Handel entlang des Flusses – auch mit versklavten Menschen –, und im 19. Jahrhundert wurde Gambia britische Kolonie. Seit 1965 ist das Land unabhängig. Yahya Jammeh, der seit einem Putsch 1994 regiert hatte, verlor 2016 die Präsidentenwahl und verließ Anfang 2017 auf Druck der Nachbarstaaten das Land.",
+      "culture": "Die „Griots“ überliefern Geschichte und Familiengeschichten in Liedern und begleiten sich oft auf der Kora, einer Stegharfe mit 21 Saiten. Nationalgericht ist „Domoda“, ein Eintopf mit Erdnusssoße; beliebt ist auch „Benachin“, ein Reisgericht ähnlich dem Jollof-Reis. Die Insel Kunta Kinteh im Gambia-Fluss gehört zum UNESCO-Welterbe und erinnert an den Sklavenhandel. Wegen seiner Strände und freundlichen Menschen wird Gambia auch „Smiling Coast of Africa“ genannt.",
+      "funFact": "Gambia ist das kleinste Land auf dem afrikanischen Festland und wird bis auf seine kurze Atlantikküste vollständig von Senegal umschlossen."
+    },
+    {
+      "iso2": "GH",
+      "name": {
+        "de": "Ghana",
+        "es": "Ghana",
+        "en": "Ghana"
+      },
+      "aliases": [
+        "Republik Ghana",
+        "Republic of Ghana",
+        "República de Ghana",
+        "Goldküste"
+      ],
+      "capital": {
+        "de": "Accra",
+        "es": "Acra",
+        "en": "Accra",
+        "lat": 5.6037,
+        "lng": -0.187
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "en"
+        ],
+        "regional": [
+          "ak",
+          "ee",
+          "dag"
+        ],
+        "spoken": []
+      },
+      "languageNote": "Mehrere Landessprachen, darunter Akan (Twi und Fante), Ewe, Dagbani und Ga, werden staatlich gefördert und in der Schule unterrichtet; Akan ist die am weitesten verbreitete Sprache und dient vielerorts als Verkehrssprache.",
+      "demonym": {
+        "deM": "Ghanaer",
+        "deF": "Ghanaerin",
+        "esM": "ghanés",
+        "esF": "ghanesa"
+      },
+      "history": "Der Name erinnert an das mittelalterliche Reich Ghana, das allerdings weiter nordwestlich im heutigen Mali und Mauretanien lag. Ab etwa 1700 wurde das Reich der Asante mit der Hauptstadt Kumasi durch den Goldhandel mächtig, während Europäer ab 1482 an der Küste zahlreiche Handelsforts errichteten. Die britische Kolonie „Goldküste“ wurde 1957 unter Kwame Nkrumah als Ghana unabhängig; sie gilt als erste Kolonie südlich der Sahara, die dies erreichte. Nach mehreren Militärputschen gilt Ghana seit 1992 als stabile Demokratie mit friedlichen Regierungswechseln.",
+      "culture": "Bekannt ist Ghana für den farbenprächtigen, handgewebten „Kente“-Stoff. Beliebte Gerichte sind „Fufu“ mit Suppe und Jollof-Reis, um dessen beste Zubereitung Ghana und Nigeria scherzhaft wetteifern; musikalisch prägend sind Highlife und Hiplife. Die Burgen von Elmina und Cape Coast, einst Stützpunkte des Sklavenhandels, gehören zum UNESCO-Welterbe. Aus Ghana stammte der frühere UN-Generalsekretär Kofi Annan.",
+      "funFact": "Der Volta-Stausee in Ghana gilt als flächenmäßig größter künstlich angelegter See der Welt."
+    },
+    {
+      "iso2": "GN",
+      "name": {
+        "de": "Guinea",
+        "es": "Guinea",
+        "en": "Guinea"
+      },
+      "aliases": [
+        "Guinea-Conakry",
+        "Republik Guinea",
+        "República de Guinea",
+        "Guinée"
+      ],
+      "capital": {
+        "de": "Conakry",
+        "es": "Conakri",
+        "en": "Conakry",
+        "lat": 9.5092,
+        "lng": -13.7122
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "fr"
+        ],
+        "regional": [
+          "ff",
+          "emk",
+          "sus"
+        ],
+        "spoken": []
+      },
+      "languageNote": "Neben Französisch gelten mehrere Landessprachen als Nationalsprachen; die größten sind Pular (Fulfulde), Malinke und Susu, das in Conakry als Verkehrssprache dient.",
+      "demonym": {
+        "deM": "Guineer",
+        "deF": "Guineerin",
+        "esM": "guineano",
+        "esF": "guineana"
+      },
+      "history": "Das Gebiet gehörte im Mittelalter zum Reich Mali, im 18. Jahrhundert gründeten Fulbe im Bergland Fouta Djallon einen islamischen Staat. Ende des 19. Jahrhunderts leistete der Herrscher Samory Touré lange Widerstand gegen die Franzosen, die das Land danach als Kolonie Französisch-Guinea verwalteten. Bei einer Volksabstimmung 1958 stimmte Guinea als einzige französische Kolonie gegen den Verbleib in der Französischen Gemeinschaft und wurde sofort unabhängig. Nach einem Militärputsch 2021 wurde 2025 per Volksabstimmung eine neue Verfassung angenommen.",
+      "culture": "Guinea ist berühmt für seine Trommel- und Balafonmusik: Der „Sosso-Bala“, ein jahrhundertealtes Balafon (Holzxylofon), gehört zum immateriellen Kulturerbe der UNESCO, und Djembé-Meister wie Mamady Keïta machten die Trommelkunst weltweit bekannt. Typische Gerichte sind Reis mit Erdnusssoße oder mit Soßen aus Maniokblättern. Die grünen Hochländer des Fouta Djallon und das Nimba-Gebirge, dessen Naturschutzgebiet zum UNESCO-Welterbe gehört, prägen die Landschaft.",
+      "funFact": "In Guinea entspringen drei der großen Flüsse Westafrikas: der Niger, der Senegal und der Gambia."
+    },
+    {
+      "iso2": "GW",
+      "name": {
+        "de": "Guinea-Bissau",
+        "es": "Guinea-Bisáu",
+        "en": "Guinea-Bissau"
+      },
+      "aliases": [
+        "Republik Guinea-Bissau",
+        "Portugiesisch-Guinea",
+        "República de Guinea-Bisáu"
+      ],
+      "capital": {
+        "de": "Bissau",
+        "es": "Bisáu",
+        "en": "Bissau",
+        "lat": 11.8636,
+        "lng": -15.5977
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "pt"
+        ],
+        "regional": [],
+        "spoken": [
+          "pov",
+          "ff"
+        ]
+      },
+      "languageNote": "Portugiesisch sprechen nur wenige Menschen im Alltag; die Volksgruppen verständigen sich meist auf Kriol, einer auf dem Portugiesischen beruhenden Kreolsprache. Daneben sind unter anderem Balanta und Fulfulde verbreitet.",
+      "demonym": {
+        "deM": "Guinea-Bissauer",
+        "deF": "Guinea-Bissauerin",
+        "esM": "bisauguineano",
+        "esF": "bisauguineana"
+      },
+      "history": "Lange lag hier das Zentrum des Mandinka-Reichs Kaabu, das zunächst zum Reich Mali gehörte. Ab dem 15. Jahrhundert errichteten Portugiesen Handelsposten, von denen aus sie auch mit versklavten Menschen handelten; später wurde das Gebiet die Kolonie Portugiesisch-Guinea. Unter Führung von Amílcar Cabral kämpfte die Befreiungsbewegung PAIGC ab 1963 für die Unabhängigkeit, die 1973 ausgerufen und 1974 von Portugal anerkannt wurde. Seither prägen zahlreiche Militärputsche und politische Krisen das Land.",
+      "culture": "Grundnahrungsmittel ist Reis, oft mit Fisch oder Erdnusssoße; Cashewnüsse sind das wichtigste Exportgut. Ein großes Fest ist der farbenfrohe Karneval in Bissau, beliebt ist die Musikrichtung „Gumbé“. Vor der Küste liegt der Bijagós-Archipel mit über 80 Inseln, der als UNESCO-Biosphärenreservat geschützt ist und dessen Bewohner viele alte Traditionen bewahrt haben.",
+      "funFact": "Auf den Bijagós-Inseln leben Flusspferde, die sogar im salzigen Meerwasser zwischen den Inseln schwimmen."
+    },
+    {
+      "iso2": "CV",
+      "name": {
+        "de": "Kap Verde",
+        "es": "Cabo Verde",
+        "en": "Cape Verde"
+      },
+      "aliases": [
+        "Kapverden",
+        "Kapverdische Inseln",
+        "Republik Cabo Verde",
+        "República de Cabo Verde"
+      ],
+      "capital": {
+        "de": "Praia",
+        "es": "Praia",
+        "en": "Praia",
+        "lat": 14.9215,
+        "lng": -23.5087
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "pt"
+        ],
+        "regional": [],
+        "spoken": [
+          "kea"
+        ]
+      },
+      "languageNote": "Muttersprache fast aller Menschen ist das Kapverdische Kreol („Kriolu“), das auf dem Portugiesischen beruht; Portugiesisch ist vor allem Sprache von Verwaltung, Schule und Medien.",
+      "demonym": {
+        "deM": "Kapverdier",
+        "deF": "Kapverdierin",
+        "esM": "caboverdiano",
+        "esF": "caboverdiana"
+      },
+      "history": "Die Inseln waren unbewohnt, bis Portugiesen sie um 1460 entdeckten und ab 1462 besiedelten. Die erste Siedlung Ribeira Grande, heute Cidade Velha und UNESCO-Welterbe, wurde zu einem wichtigen Umschlagplatz des Sklavenhandels über den Atlantik. Nach einem gemeinsamen Unabhängigkeitskampf mit Guinea-Bissau wurde Kap Verde 1975 unabhängig. Seit 1991 gilt das Land mit freien Wahlen und friedlichen Regierungswechseln als eine der stabilsten Demokratien Afrikas.",
+      "culture": "Die melancholische „Morna“ gehört zum immateriellen Kulturerbe der UNESCO; weltberühmt wurde sie durch die Sängerin Cesária Évora, die oft barfuß auftrat. Nationalgericht ist „Cachupa“, ein langsam gekochter Eintopf aus Mais, Bohnen und Fisch oder Fleisch. Beim Karneval in Mindelo und zu den Klängen von „Funaná“ und „Batuku“ wird ausgelassen gefeiert. Im Jahr 2025 qualifizierte sich die Fußballnationalmannschaft erstmals für eine Weltmeisterschaft.",
+      "funFact": "Auf der Insel Fogo steht der aktive Vulkan Pico do Fogo, mit rund 2.800 Metern der höchste Berg des Landes; zuletzt brach er 2014 aus."
+    },
+    {
+      "iso2": "LR",
+      "name": {
+        "de": "Liberia",
+        "es": "Liberia",
+        "en": "Liberia"
+      },
+      "aliases": [
+        "Republik Liberia",
+        "Republic of Liberia",
+        "República de Liberia"
+      ],
+      "capital": {
+        "de": "Monrovia",
+        "es": "Monrovia",
+        "en": "Monrovia",
+        "lat": 6.3005,
+        "lng": -10.7969
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "en"
+        ],
+        "regional": [],
+        "spoken": [
+          "kpe"
+        ]
+      },
+      "languageNote": "Englisch wird meist in Form des Liberianischen Englisch gesprochen; daneben gibt es zahlreiche afrikanische Sprachen, die größte davon ist Kpelle.",
+      "demonym": {
+        "deM": "Liberianer",
+        "deF": "Liberianerin",
+        "esM": "liberiano",
+        "esF": "liberiana"
+      },
+      "history": "Ab 1822 gründete eine amerikanische Gesellschaft an dieser Küste Siedlungen für freigelassene Sklaven und andere freie Schwarze aus den USA. Im Jahr 1847 erklärte Liberia seine Unabhängigkeit; es gilt als älteste Republik Afrikas und war nie eine europäische Kolonie. Lange bestimmten die Nachfahren der Siedler die Politik, von 1989 bis 2003 herrschte Bürgerkrieg. Mit Ellen Johnson Sirleaf wurde 2005 erstmals in Afrika eine Frau zur Staatspräsidentin gewählt; sie erhielt 2011 den Friedensnobelpreis.",
+      "culture": "Die Hauptstadt Monrovia wurde nach dem US-Präsidenten James Monroe benannt. Typische Gerichte sind Reis mit „Palm Butter“, einer Soße aus Palmfrüchten, oder mit gekochten Maniokblättern; beliebt ist Hipco, eine liberianische Form des Hip-Hop. Der Fußballer George Weah wurde 1995 als erster Afrikaner mit dem Ballon d’Or ausgezeichnet und war von 2018 bis 2024 Präsident des Landes.",
+      "funFact": "Die Flagge Liberias ähnelt der US-Flagge: Sie hat elf rote und weiße Streifen und einen einzelnen weißen Stern auf blauem Feld."
+    },
+    {
+      "iso2": "ML",
+      "name": {
+        "de": "Mali",
+        "es": "Malí",
+        "en": "Mali"
+      },
+      "aliases": [
+        "Republik Mali",
+        "República de Malí",
+        "Republic of Mali"
+      ],
+      "capital": {
+        "de": "Bamako",
+        "es": "Bamako",
+        "en": "Bamako",
+        "lat": 12.6392,
+        "lng": -8.0029
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "bm",
+          "ff",
+          "son",
+          "snk",
+          "tmh"
+        ],
+        "regional": [],
+        "spoken": [
+          "fr"
+        ]
+      },
+      "languageNote": "Seit der Verfassung von 2023 sind die 13 Landessprachen, u. a. Bambara, Fulfulde, Songhai, Soninke und Tamascheq, Amtssprachen; Französisch ist seither nur noch Arbeitssprache. Bambara ist die wichtigste Verkehrssprache und wird von der großen Mehrheit verstanden.",
+      "demonym": {
+        "deM": "Malier",
+        "deF": "Malierin",
+        "esM": "maliense",
+        "esF": "maliense"
+      },
+      "history": "Auf dem Gebiet Malis lagen große Reiche: das Reich Mali, dessen Herrscher Mansa Musa im 14. Jahrhundert für seinen Goldreichtum berühmt war, und danach das Songhai-Reich. Timbuktu war damals ein bedeutendes Zentrum islamischer Gelehrsamkeit. Ende des 19. Jahrhunderts wurde das Land als Französisch-Sudan Teil des französischen Kolonialreichs und 1960 unabhängig. Seit 2012 leidet Mali unter Konflikten im Norden und in der Mitte; nach Militärputschen 2020 und 2021 regiert das Militär, das 2023 mit Burkina Faso und Niger die „Allianz der Sahelstaaten“ gründete.",
+      "culture": "Mali ist berühmt für seine Musik: „Griots“ überliefern Geschichte in Liedern, und Künstler wie Ali Farka Touré, Salif Keïta und der Kora-Spieler Toumani Diabaté wurden weltweit bekannt. Die Altstädte von Djenné und Timbuktu sowie das Land der Dogon mit der Felswand von Bandiagara gehören zum UNESCO-Welterbe. Gegessen werden oft Hirse- oder Reisgerichte mit Erdnusssoße.",
+      "funFact": "Die Große Moschee von Djenné gilt als größtes Lehmbauwerk der Welt; jedes Jahr erneuern die Einwohner gemeinsam ihren Lehmputz."
+    },
+    {
+      "iso2": "MR",
+      "name": {
+        "de": "Mauretanien",
+        "es": "Mauritania",
+        "en": "Mauritania"
+      },
+      "aliases": [
+        "Islamische Republik Mauretanien",
+        "República Islámica de Mauritania",
+        "Islamic Republic of Mauritania"
+      ],
+      "capital": {
+        "de": "Nouakchott",
+        "es": "Nuakchot",
+        "en": "Nouakchott",
+        "lat": 18.0858,
+        "lng": -15.9785
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "ar"
+        ],
+        "regional": [
+          "ff",
+          "snk",
+          "wo"
+        ],
+        "spoken": [
+          "fr"
+        ]
+      },
+      "languageNote": "Im Alltag spricht man vor allem Hassania, einen arabischen Dialekt; Pulaar (Fulfulde), Soninke und Wolof sind als Nationalsprachen anerkannt, Französisch ist in Wirtschaft und Bildung verbreitet.",
+      "demonym": {
+        "deM": "Mauretanier",
+        "deF": "Mauretanierin",
+        "esM": "mauritano",
+        "esF": "mauritana"
+      },
+      "history": "Im Südosten des heutigen Mauretaniens lag im Mittelalter vermutlich die Hauptstadt des Reichs Ghana, und im 11. Jahrhundert ging von hier die Bewegung der Almoraviden aus, die später auch über Teile Spaniens herrschten. Danach wanderten arabische Stämme ein; ihr Dialekt Hassania wird bis heute gesprochen. Ab Anfang des 20. Jahrhunderts war das Gebiet französische Kolonie, 1960 wurde es als Islamische Republik unabhängig. Nach mehreren Militärputschen gab es 2019 den ersten friedlichen Machtwechsel zwischen zwei gewählten Präsidenten.",
+      "culture": "Viele Mauretanier lebten traditionell als Nomaden mit Kamelen und Zelten; Gästen serviert man drei Gläser süßen grünen Tee mit Minze. Die alten Karawanenstädte Chinguetti, Ouadane, Tichitt und Oualata mit ihren Bibliotheken alter Handschriften gehören zum UNESCO-Welterbe, ebenso der Nationalpark Banc d’Arguin, ein Paradies für Zugvögel. In der Wüste liegt die Richat-Struktur, eine riesige kreisrunde Felsformation, die „Auge der Sahara“ genannt wird.",
+      "funFact": "Durch die mauretanische Wüste fahren einige der längsten Züge der Welt: Die Eisenerzzüge sind über zwei Kilometer lang."
+    },
+    {
+      "iso2": "NE",
+      "name": {
+        "de": "Niger",
+        "es": "Níger",
+        "en": "Niger"
+      },
+      "aliases": [
+        "Republik Niger",
+        "República del Níger",
+        "Republic of Niger"
+      ],
+      "capital": {
+        "de": "Niamey",
+        "es": "Niamey",
+        "en": "Niamey",
+        "lat": 13.5116,
+        "lng": 2.1254
+      },
+      "capitalNote": null,
+      "otherCapitals": [],
+      "languages": {
+        "official": [
+          "ha"
+        ],
+        "regional": [
+          "dje",
+          "ff",
+          "tmh",
+          "kr"
+        ],
+        "spoken": [
+          "fr"
+        ]
+      },
+      "languageNote": "Laut der Übergangscharta von 2025 ist Hausa die Nationalsprache, Französisch und Englisch sind Arbeitssprachen; weitere Landessprachen wie Zarma, Fulfulde, Tamascheq und Kanuri sind ebenfalls anerkannt. Hausa ist zugleich die wichtigste Verkehrssprache.",
+      "demonym": {
+        "deM": "Nigrer",
+        "deF": "Nigrerin",
+        "esM": "nigerino",
+        "esF": "nigerina"
+      },
+      "history": "Der Westen des Landes gehörte einst zum Songhai-Reich, im Süden lagen Stadtstaaten der Hausa und im Osten das Reich Kanem-Bornu; Agadez war ein wichtiger Handelsort der Tuareg an den Karawanenwegen durch die Sahara. Anfang des 20. Jahrhunderts wurde Niger französische Kolonie und 1960 unabhängig. Das Land erlebte mehrere Militärputsche, zuletzt 2023; die Militärregierung bildete noch im selben Jahr mit Mali und Burkina Faso die „Allianz der Sahelstaaten“.",
+      "culture": "Bei der „Cure Salée“ im Ort In-Gall treffen sich am Ende der Regenzeit Hirten der Tuareg und Wodaabe mit ihren Herden, die hier salzhaltige Weiden finden; die Wodaabe-Männer treten dabei geschmückt zum Schönheitswettbewerb „Gerewol“ an. Die Altstadt von Agadez mit ihrem hohen Lehmminarett gehört zum UNESCO-Welterbe, ebenso die Wüstenlandschaften von Aïr und Ténéré. Bekannt ist auch das „Kreuz von Agadez“, ein Silberschmuck der Tuareg.",
+      "funFact": "Der „Baum von Ténéré“ galt als einsamster Baum der Welt: Im Umkreis von über 400 Kilometern wuchs kein anderer, bis ihn 1973 ein Lastwagen umfuhr."
+    }
+  ]
+}
