@@ -1,27 +1,30 @@
 import { BY_ISO, COUNTRIES } from './data';
 import type { Country, Lang } from './types';
 
-export type QType = 'flag' | 'flag-rev' | 'capital' | 'capital-rev' | 'map' | 'click' | 'name-es' | 'demonym-es';
+export type QType = 'flag' | 'flag-rev' | 'capital' | 'capital-rev' | 'map' | 'click' | 'shape' | 'name-es' | 'demonym-es';
 
 export interface QTypeInfo {
   id: QType;
   label: string;
   hint: string;
   needsMap: boolean;
+  /** Can the answer be typed in (instead of picking one of four)? */
+  typeable: boolean;
   available: (c: Country) => boolean;
 }
 
 const always = () => true;
 
 export const QTYPES: QTypeInfo[] = [
-  { id: 'flag', label: 'Flagge → Land', hint: 'Zu welchem Land gehört die Flagge?', needsMap: false, available: always },
-  { id: 'flag-rev', label: 'Land → Flagge', hint: 'Welche Flagge hat das Land?', needsMap: false, available: always },
-  { id: 'capital', label: 'Land → Hauptstadt', hint: 'Wie heißt die Hauptstadt?', needsMap: false, available: always },
-  { id: 'capital-rev', label: 'Hauptstadt → Land', hint: 'Von welchem Land ist das die Hauptstadt?', needsMap: false, available: always },
-  { id: 'map', label: 'Karte → Land', hint: 'Welches Land ist auf der Karte markiert?', needsMap: true, available: always },
-  { id: 'click', label: 'Auf Karte finden', hint: 'Wo liegt das Land? Tippe es auf der Karte an.', needsMap: true, available: always },
-  { id: 'name-es', label: 'Name auf Spanisch', hint: 'Wie heißt das Land auf Spanisch?', needsMap: false, available: always },
-  { id: 'demonym-es', label: 'Nationalität (Spanisch)', hint: 'Wie heißen die Einwohner auf Spanisch?', needsMap: false, available: (c) => Boolean(c.demonym) },
+  { id: 'flag', label: 'Flagge → Land', hint: 'Zu welchem Land gehört die Flagge?', needsMap: false, typeable: true, available: always },
+  { id: 'flag-rev', label: 'Land → Flagge', hint: 'Welche Flagge hat das Land?', needsMap: false, typeable: false, available: always },
+  { id: 'capital', label: 'Land → Hauptstadt', hint: 'Wie heißt die Hauptstadt?', needsMap: false, typeable: true, available: always },
+  { id: 'capital-rev', label: 'Hauptstadt → Land', hint: 'Von welchem Land ist das die Hauptstadt?', needsMap: false, typeable: true, available: always },
+  { id: 'shape', label: 'Umriss → Land', hint: 'Welches Land hat diesen Umriss?', needsMap: false, typeable: true, available: (c) => !c.small },
+  { id: 'map', label: 'Karte → Land', hint: 'Welches Land ist auf der Karte markiert?', needsMap: true, typeable: true, available: always },
+  { id: 'click', label: 'Auf Karte finden', hint: 'Wo liegt das Land? Tippe es auf der Karte an.', needsMap: true, typeable: false, available: always },
+  { id: 'name-es', label: 'Name auf Spanisch', hint: 'Wie heißt das Land auf Spanisch?', needsMap: false, typeable: true, available: always },
+  { id: 'demonym-es', label: 'Nationalität (Spanisch)', hint: 'Wie heißen die Einwohner auf Spanisch?', needsMap: false, typeable: true, available: (c) => Boolean(c.demonym) },
 ];
 
 export const QTYPE_BY_ID = Object.fromEntries(QTYPES.map((q) => [q.id, q])) as Record<QType, QTypeInfo>;
@@ -77,6 +80,65 @@ export function pickOptions(type: QType, target: Country, pool: Country[], lang:
     if (picked.length === n - 1) break;
   }
   return shuffle([target, ...picked]);
+}
+
+/** All answers that count as right when typed in. */
+export function acceptedAnswers(type: QType, c: Country, lang: Lang): string[] {
+  switch (type) {
+    case 'capital':
+      return [c.capital[lang], c.capital.de, c.capital.es, c.capital.en, ...c.otherCapitals.flatMap((o) => [o[lang], o.de, o.es])];
+    case 'name-es':
+      return [c.name.es];
+    case 'demonym-es':
+      return c.demonym ? [c.demonym.esM, c.demonym.esF] : [];
+    default:
+      return [c.name[lang], c.name.de, c.name.es, c.name.en, ...c.aliases];
+  }
+}
+
+const clean = (s: string) =>
+  s
+    .toLowerCase()
+    .replace(/[.,;:!?¡¿'’"„“()-]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+const stripAccents = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '');
+
+function levenshtein(a: string, b: string): number {
+  if (a === b) return 0;
+  const prev = Array.from({ length: b.length + 1 }, (_, i) => i);
+  for (let i = 1; i <= a.length; i++) {
+    let diag = prev[0];
+    prev[0] = i;
+    for (let j = 1; j <= b.length; j++) {
+      const tmp = prev[j];
+      prev[j] = Math.min(prev[j] + 1, prev[j - 1] + 1, diag + (a[i - 1] === b[j - 1] ? 0 : 1));
+      diag = tmp;
+    }
+  }
+  return prev[b.length];
+}
+
+export type Grade = 'exact' | 'accent' | 'typo' | 'wrong';
+
+/**
+ * Grades a typed answer: exact, right except for accents (México vs. Mexico), a small typo
+ * (1 letter for short words, 2 for long ones) – all three count as right – or wrong.
+ */
+export function gradeTyped(input: string, accepted: string[]): { grade: Grade; match: string | null } {
+  const typed = clean(input);
+  if (!typed) return { grade: 'wrong', match: null };
+  const options = accepted.filter(Boolean);
+  for (const a of options) if (clean(a) === typed) return { grade: 'exact', match: a };
+  for (const a of options) if (stripAccents(clean(a)) === stripAccents(typed)) return { grade: 'accent', match: a };
+  let best: { d: number; a: string } | null = null;
+  for (const a of options) {
+    const target = stripAccents(clean(a));
+    const d = levenshtein(stripAccents(typed), target);
+    const allowed = target.length >= 9 ? 2 : target.length >= 4 ? 1 : 0;
+    if (d <= allowed && (!best || d < best.d)) best = { d, a };
+  }
+  return best ? { grade: 'typo', match: best.a } : { grade: 'wrong', match: null };
 }
 
 export function countryOrNull(iso: string | null | undefined): Country | null {

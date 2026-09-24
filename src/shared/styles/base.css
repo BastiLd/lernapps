@@ -1,60 +1,71 @@
 @import "tailwindcss";
 @import "@fontsource-variable/plus-jakarta-sans";
+@import "@fontsource-variable/bricolage-grotesque";
 
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
+/* "Atlas" design: warm paper, deep teal like the sea on old maps, a sunny highlight colour. */
 :root {
-  --bg: #f3f5fb;
-  --bg-glow: rgba(14, 165, 233, 0.1);
-  --surface: #ffffff;
-  --surface-2: #f1f4fa;
-  --surface-3: #e7ecf5;
-  --line: #dfe5ef;
-  --ink: #0e1628;
-  --muted: #5a6478;
-  --primary: #0b7fc0;
-  --primary-strong: #0a6ba3;
-  --primary-soft: rgba(11, 127, 192, 0.1);
+  --bg: #f4f1ea;
+  --bg-glow: rgba(15, 118, 110, 0.09);
+  --surface: #fffdf9;
+  --surface-2: #f5f1e8;
+  --surface-3: #ebe5d8;
+  --line: #e2dbcc;
+  --line-strong: #cbc1ad;
+  --ink: #15181e;
+  --muted: #676c76;
+  --primary: #0f766e;
+  --primary-strong: #0a5c55;
+  --primary-soft: rgba(15, 118, 110, 0.1);
   --on-primary: #ffffff;
-  --accent: #e89a07;
-  --accent-soft: rgba(245, 158, 11, 0.14);
-  --ok: #059669;
-  --ok-soft: rgba(5, 150, 105, 0.12);
-  --bad: #e11d48;
-  --bad-soft: rgba(225, 29, 72, 0.1);
-  --shadow-sm: 0 1px 2px rgba(14, 22, 40, 0.06);
-  --shadow: 0 1px 2px rgba(14, 22, 40, 0.05), 0 10px 30px -12px rgba(14, 22, 40, 0.18);
-  --shadow-lg: 0 24px 60px -24px rgba(14, 22, 40, 0.35);
+  --accent: #e8590c;
+  --accent-soft: rgba(232, 89, 12, 0.11);
+  --sun: #f2b100;
+  --sun-soft: rgba(242, 177, 0, 0.16);
+  --ok: #15803d;
+  --ok-soft: rgba(21, 128, 61, 0.11);
+  --bad: #dc2626;
+  --bad-soft: rgba(220, 38, 38, 0.09);
+  --contour: rgba(15, 118, 110, 0.07);
+  --shadow-sm: 0 1px 2px rgba(40, 30, 10, 0.06);
+  --shadow: 0 1px 2px rgba(40, 30, 10, 0.05), 0 12px 32px -16px rgba(40, 30, 10, 0.22);
+  --shadow-lg: 0 30px 70px -28px rgba(30, 22, 8, 0.4);
   color-scheme: light;
 }
 
 [data-theme="dark"] {
-  --bg: #0a0f1c;
-  --bg-glow: rgba(56, 189, 248, 0.08);
-  --surface: #121a2b;
-  --surface-2: #182236;
-  --surface-3: #1f2b43;
-  --line: #26324b;
-  --ink: #e8edf7;
-  --muted: #95a0b8;
-  --primary: #38bdf8;
-  --primary-strong: #7dd3fc;
-  --primary-soft: rgba(56, 189, 248, 0.14);
-  --on-primary: #04121d;
-  --accent: #fbbf24;
-  --accent-soft: rgba(251, 191, 36, 0.14);
-  --ok: #34d399;
-  --ok-soft: rgba(52, 211, 153, 0.14);
-  --bad: #fb7185;
-  --bad-soft: rgba(251, 113, 133, 0.14);
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
-  --shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 12px 32px -14px rgba(0, 0, 0, 0.6);
-  --shadow-lg: 0 24px 60px -20px rgba(0, 0, 0, 0.7);
+  --bg: #0b0f14;
+  --bg-glow: rgba(45, 212, 191, 0.07);
+  --surface: #121920;
+  --surface-2: #18212a;
+  --surface-3: #212c37;
+  --line: #25313e;
+  --line-strong: #364555;
+  --ink: #e8edf2;
+  --muted: #95a1b0;
+  --primary: #2dd4bf;
+  --primary-strong: #5eead4;
+  --primary-soft: rgba(45, 212, 191, 0.13);
+  --on-primary: #03211d;
+  --accent: #fb923c;
+  --accent-soft: rgba(251, 146, 60, 0.14);
+  --sun: #fcc419;
+  --sun-soft: rgba(252, 196, 25, 0.15);
+  --ok: #4ade80;
+  --ok-soft: rgba(74, 222, 128, 0.13);
+  --bad: #f87171;
+  --bad-soft: rgba(248, 113, 113, 0.13);
+  --contour: rgba(45, 212, 191, 0.06);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.45);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 14px 34px -16px rgba(0, 0, 0, 0.7);
+  --shadow-lg: 0 30px 70px -24px rgba(0, 0, 0, 0.8);
   color-scheme: dark;
 }
 
 @theme inline {
   --font-sans: "Plus Jakarta Sans Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Bricolage Grotesque Variable", "Plus Jakarta Sans Variable", ui-sans-serif, system-ui, sans-serif;
   --color-bg: var(--bg);
   --color-surface: var(--surface);
   --color-surface-2: var(--surface-2);
@@ -68,6 +79,7 @@
   --color-on-primary: var(--on-primary);
   --color-accent: var(--accent);
   --color-accent-soft: var(--accent-soft);
+  --color-sun: var(--sun);
   --color-ok: var(--ok);
   --color-ok-soft: var(--ok-soft);
   --color-bad: var(--bad);
@@ -87,9 +99,15 @@
     background: var(--bg);
     color: var(--ink);
     font-family: var(--font-sans);
-    font-feature-settings: "cv11", "ss01";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: var(--font-display);
+    font-optical-sizing: auto;
   }
   :focus-visible {
     outline: 2.5px solid var(--primary);
@@ -110,7 +128,7 @@
   .card {
     background: var(--surface);
     border: 1px solid var(--line);
-    border-radius: 1.25rem;
+    border-radius: 1.4rem;
     box-shadow: var(--shadow);
   }
   .btn {
@@ -120,20 +138,24 @@
     gap: 0.5rem;
     min-height: 2.75rem;
     padding: 0 1.1rem;
-    border-radius: 0.9rem;
-    font-weight: 650;
-    font-size: 0.95rem;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.94rem;
     line-height: 1;
+    white-space: nowrap;
     transition: background-color 0.15s, color 0.15s, border-color 0.15s, transform 0.1s, box-shadow 0.15s;
     user-select: none;
   }
   .btn:active:not(:disabled) {
-    transform: translateY(1px) scale(0.99);
+    transform: translateY(1px) scale(0.985);
+  }
+  .btn:disabled {
+    opacity: 0.45;
   }
   .btn-primary {
     background: var(--primary);
     color: var(--on-primary);
-    box-shadow: 0 6px 18px -8px var(--primary);
+    box-shadow: 0 8px 20px -10px var(--primary);
   }
   .btn-primary:hover:not(:disabled) {
     background: var(--primary-strong);
@@ -145,6 +167,13 @@
   }
   .btn-ghost:hover:not(:disabled) {
     background: var(--surface-2);
+    border-color: var(--line-strong);
+  }
+  .btn-quiet {
+    color: var(--ink);
+  }
+  .btn-quiet:hover:not(:disabled) {
+    background: var(--surface-2);
   }
   .btn-icon {
     width: 2.75rem;
@@ -154,36 +183,54 @@
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    min-height: 2.25rem;
-    padding: 0 0.85rem;
+    min-height: 2.3rem;
+    padding: 0 0.9rem;
     border-radius: 999px;
     border: 1px solid var(--line);
     background: var(--surface);
     font-size: 0.875rem;
-    font-weight: 600;
+    font-weight: 650;
     color: var(--ink);
     transition: background-color 0.15s, border-color 0.15s, color 0.15s;
   }
   .chip:hover {
     background: var(--surface-2);
+    border-color: var(--line-strong);
   }
   .chip[aria-pressed="true"],
   .chip[aria-checked="true"],
   .chip.is-active {
-    background: var(--primary-soft);
-    border-color: color-mix(in srgb, var(--primary) 45%, transparent);
-    color: var(--primary);
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--bg);
   }
   .label {
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--muted);
   }
   .scroll-thin {
     scrollbar-width: thin;
-    scrollbar-color: var(--line) transparent;
+    scrollbar-color: var(--line-strong) transparent;
+  }
+  /* Faint contour lines, like on a topographic map (tinted with the theme colour via a mask). */
+  .contours {
+    position: relative;
+    isolation: isolate;
+  }
+  .contours::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: var(--primary);
+    opacity: 0.09;
+    --contour-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260' viewBox='0 0 260 260'%3E%3Cg fill='none' stroke='%23000' stroke-width='1.2'%3E%3Cpath d='M-20 50c40-30 80 10 120-10s80-40 180-5'/%3E%3Cpath d='M-20 80c40-25 85 15 125-5s80-35 175 0'/%3E%3Cpath d='M-20 205c50-20 70 25 120 10s90-30 180 5'/%3E%3Cpath d='M-20 235c45-15 80 25 125 10s85-25 175 5'/%3E%3Cpath d='M70 140c0-26 22-40 45-35s35 24 26 42-40 26-56 14-15-21-15-21z'/%3E%3Cpath d='M52 142c-2-38 30-58 64-52s52 36 38 62-58 36-80 20-22-30-22-30z'/%3E%3C/g%3E%3C/svg%3E");
+    -webkit-mask: var(--contour-svg) 0 0 / 260px 260px repeat;
+    mask: var(--contour-svg) 0 0 / 260px 260px repeat;
   }
 }
 

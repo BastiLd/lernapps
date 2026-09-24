@@ -26,8 +26,8 @@ export default defineConfig(({ command }) => ({
         start_url: '.',
         scope: '.',
         display: 'standalone',
-        background_color: '#0b1020',
-        theme_color: '#0b1020',
+        background_color: '#f4f1ea',
+        theme_color: '#0f766e',
         icons: [
           { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
           { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
@@ -37,12 +37,25 @@ export default defineConfig(({ command }) => ({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,woff2,webmanifest}'],
+        globIgnores: ['geo/**'],
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
         navigateFallback: null,
         cleanupOutdatedCaches: true,
+        // Detailed country outlines (public/geo, ~34 MB in total) are cached as they are used, not up front.
+        runtimeCaching: [
+          {
+            urlPattern: ({ url }) => url.pathname.includes('/geo/'),
+            handler: 'CacheFirst',
+            options: { cacheName: 'geo-detail', expiration: { maxEntries: 400 } },
+          },
+        ],
       },
     }),
   ],
+  server: {
+    // Thousands of data files, often in OneDrive: watching them only costs time (and OneDrive locks can crash the watcher).
+    watch: { ignored: ['**/public/geo/**', '**/data-src/**'] },
+  },
   build: {
     rolldownOptions: {
       input: {

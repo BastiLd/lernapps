@@ -1,5 +1,6 @@
-import { ArrowLeftRight, ArrowUpDown, ChevronDown, ChevronUp, Crosshair, Globe2, Map as MapIcon, Maximize2, Minimize2, PanelLeftClose, PanelRightClose, Tags } from 'lucide-react';
-import { lazy, Suspense, useCallback, useEffect, useRef, useState, type KeyboardEvent, type PointerEvent as ReactPointerEvent, type ReactNode } from 'react';
+import { ArrowLeftRight, ArrowUpDown, Check, ChevronDown, ChevronUp, Crosshair, Globe2, Layers, Map as MapIcon, Maximize2, Minimize2, PanelLeftClose, PanelRightClose, Tags } from 'lucide-react';
+import { lazy, Suspense, useEffect, useRef, useState, type KeyboardEvent, type PointerEvent as ReactPointerEvent, type ReactNode } from 'react';
+import type { MapStyle } from '../lib/types';
 import { useApp } from '../state';
 
 const WorldMap = lazy(() => import('./WorldMap'));
@@ -13,18 +14,15 @@ function clampWidth(w: number) {
 }
 
 function defaultWidth() {
-  return clampWidth(Math.min(880, window.innerWidth * 0.46));
+  return clampWidth(Math.min(900, window.innerWidth * 0.46));
 }
 
-function MapBody() {
-  return (
-    <div className="map-body">
-      <Suspense fallback={<div className="grid h-full place-items-center text-sm font-semibold text-white/80">Karte wird geladen …</div>}>
-        <WorldMap />
-      </Suspense>
-    </div>
-  );
-}
+const STYLES: { id: MapStyle; label: string; hint: string }[] = [
+  { id: 'satellite', label: 'Satellit', hint: 'Echte Satellitenbilder' },
+  { id: 'terrain', label: 'Relief', hint: 'Gebirge und Flüsse, ohne Namen' },
+  { id: 'streets', label: 'Karte', hint: 'Mit Orts- und Straßennamen' },
+  { id: 'blank', label: 'Stumm', hint: 'Nur Umrisse – wie im Atlas, auch offline' },
+];
 
 function ToolButton({ label, onClick, pressed, children }: { label: string; onClick: () => void; pressed?: boolean; children: ReactNode }) {
   return (
@@ -34,11 +32,106 @@ function ToolButton({ label, onClick, pressed, children }: { label: string; onCl
   );
 }
 
+function LayerMenu() {
+  const { settings, updateSettings, scene } = useApp();
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const onDown = (e: PointerEvent) => {
+      if (!ref.current?.contains(e.target as Node)) setOpen(false);
+    };
+    const onKey = (e: globalThis.KeyboardEvent) => e.key === 'Escape' && setOpen(false);
+    document.addEventListener('pointerdown', onDown);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('pointerdown', onDown);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [open]);
+
+  return (
+    <div ref={ref} className="relative">
+      <ToolButton label="Kartenansicht wählen" onClick={() => setOpen((o) => !o)} pressed={open}>
+        <Layers size={18} />
+      </ToolButton>
+      {open && (
+        <div className="map-menu" role="menu" aria-label="Kartenansicht">
+          <div className="map-menu-grid">
+            {STYLES.map((s) => (
+              <button
+                key={s.id}
+                type="button"
+                role="menuitemradio"
+                aria-checked={settings.mapStyle === s.id}
+                className="map-style-option"
+                onClick={() => updateSettings({ mapStyle: s.id })}
+                title={s.hint}
+              >
+                <span className={`map-style-thumb thumb-${s.id}`} aria-hidden="true" />
+                <span>{s.label}</span>
+              </button>
+            ))}
+          </div>
+          {settings.mapStyle === 'streets' && scene.hideLabels && <p className="map-menu-note">Während einer Frage wird statt der Karte das Relief gezeigt – die Namen würden die Antwort verraten.</p>}
+          <label className="map-menu-toggle">
+            <input type="checkbox" checked={settings.mapBorders} onChange={(e) => updateSettings({ mapBorders: e.target.checked })} />
+            Ländergrenzen
+          </label>
+          <label className="map-menu-toggle">
+            <input type="checkbox" checked={settings.mapLabels} onChange={(e) => updateSettings({ mapLabels: e.target.checked })} disabled={settings.mapStyle === 'streets'} />
+            Ortsnamen einblenden
+          </label>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/** Explains the colours currently used on the map. */
+function Legend() {
+  const { scene } = useApp();
+  const items: { cls: string; label: string }[] = [];
+  if (scene.heat) {
+    items.push({ cls: 'lg-heat', label: 'Wenig → gut gelernt' });
+  } else {
+    if (scene.correct) items.push({ cls: 'lg-ok', label: 'Richtig' });
+    if (scene.wrong) items.push({ cls: 'lg-bad', label: 'Deine Antwort' });
+    if (scene.focus && !scene.correct) items.push({ cls: 'lg-focus', label: 'Land' });
+    if (scene.capital && (scene.focus || scene.correct)) items.push({ cls: 'lg-pin', label: 'Hauptstadt' });
+    if (scene.neighbors?.length) items.push({ cls: 'lg-neighbor', label: 'Nachbarn' });
+    if (scene.set?.length) items.push({ cls: 'lg-set', label: 'Filter' });
+  }
+  if (!items.length) return null;
+  return (
+    <div className="map-legend" aria-label="Legende">
+      {items.map((i) => (
+        <span key={i.cls}>
+          <i className={i.cls} /> {i.label}
+        </span>
+      ))}
+    </div>
+  );
+}
+
+function MapBody({ tools }: { tools: ReactNode }) {
+  return (
+    <div className="map-body">
+      <Suspense fallback={<div className="grid h-full place-items-center text-sm font-semibold text-white/80">Karte wird geladen …</div>}>
+        <WorldMap />
+      </Suspense>
+      <div className="map-float map-float--tr">{tools}</div>
+      <Legend />
+    </div>
+  );
+}
+
 export default function MapPanel() {
-  const { settings, updateSettings, isMobile, scene, setScene } = useApp();
+  const { settings, updateSettings, isMobile, scene, setScene, mapMax, setMapMax } = useApp();
   const open = settings.mapOpen;
   const [dragWidth, setDragWidth] = useState<number | null>(null);
-  const [winWidth, setWinWidth] = useState(() => window.innerWidth);
+  const [, setWinWidth] = useState(() => window.innerWidth);
   const dragging = useRef(false);
 
   useEffect(() => {
@@ -48,20 +141,16 @@ export default function MapPanel() {
   }, []);
 
   const width = dragWidth ?? (settings.mapWidth ? clampWidth(settings.mapWidth) : defaultWidth());
-  void winWidth;
 
   const recenter = () => setScene({ ...scene, fly: scene.focus || scene.correct ? 'focus' : scene.set ? 'set' : 'world', flyKey: `re-${Date.now()}` });
   const world = () => setScene({ ...scene, fly: 'world', flyKey: `world-${Date.now()}` });
   const labelsHidden = Boolean(scene.hideLabels);
 
-  const onPointerDown = useCallback(
-    (e: ReactPointerEvent<HTMLDivElement>) => {
-      e.preventDefault();
-      dragging.current = true;
-      (e.target as HTMLElement).setPointerCapture(e.pointerId);
-    },
-    [],
-  );
+  const onPointerDown = (e: ReactPointerEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    dragging.current = true;
+    (e.target as HTMLElement).setPointerCapture(e.pointerId);
+  };
   const onPointerMove = (e: ReactPointerEvent<HTMLDivElement>) => {
     if (!dragging.current) return;
     setDragWidth(clampWidth(settings.mapSide === 'right' ? window.innerWidth - e.clientX : e.clientX));
@@ -82,15 +171,16 @@ export default function MapPanel() {
     e.preventDefault();
   };
 
-  const tools = (
+  const commonTools = (
     <>
+      <LayerMenu />
       <ToolButton label="Auf Markierung zentrieren" onClick={recenter}>
         <Crosshair size={18} />
       </ToolButton>
       <ToolButton label="Ganze Welt zeigen" onClick={world}>
         <Globe2 size={18} />
       </ToolButton>
-      {!labelsHidden && (
+      {!labelsHidden && settings.mapStyle !== 'streets' && (
         <ToolButton label={settings.mapLabels ? 'Ortsnamen ausblenden' : 'Ortsnamen einblenden'} pressed={settings.mapLabels} onClick={() => updateSettings({ mapLabels: !settings.mapLabels })}>
           <Tags size={18} />
         </ToolButton>
@@ -109,7 +199,6 @@ export default function MapPanel() {
         </button>
         {open && (
           <div className="flex items-center gap-1">
-            {tools}
             <ToolButton label={settings.mapMobileSize === 'full' ? 'Karte verkleinern' : 'Karte vergrößern'} onClick={() => updateSettings({ mapMobileSize: settings.mapMobileSize === 'full' ? 'half' : 'full' })}>
               {settings.mapMobileSize === 'full' ? <Minimize2 size={18} /> : <Maximize2 size={18} />}
             </ToolButton>
@@ -123,52 +212,67 @@ export default function MapPanel() {
     return (
       <section className={`map-sheet ${open ? `is-open is-${settings.mapMobileSize}` : 'is-closed'}`} data-side={side} aria-label="Karte">
         {side === 'bottom' && bar}
-        <MapBody />
+        <MapBody tools={commonTools} />
         {side === 'top' && bar}
       </section>
     );
   }
 
+  const desktopTools = (
+    <>
+      {commonTools}
+      <span className="map-float-sep" aria-hidden="true" />
+      {!mapMax && (
+        <ToolButton label={settings.mapSide === 'right' ? 'Karte nach links' : 'Karte nach rechts'} onClick={() => updateSettings({ mapSide: settings.mapSide === 'right' ? 'left' : 'right' })}>
+          <ArrowLeftRight size={18} />
+        </ToolButton>
+      )}
+      <ToolButton label={mapMax ? 'Karte verkleinern' : 'Karte maximieren'} pressed={mapMax} onClick={() => setMapMax(!mapMax)}>
+        {mapMax ? <Minimize2 size={18} /> : <Maximize2 size={18} />}
+      </ToolButton>
+      {!mapMax && (
+        <ToolButton label="Karte einklappen" onClick={() => updateSettings({ mapOpen: false })}>
+          {settings.mapSide === 'right' ? <PanelRightClose size={18} /> : <PanelLeftClose size={18} />}
+        </ToolButton>
+      )}
+    </>
+  );
+
   return (
-    <aside className={`map-aside ${open ? 'is-open' : 'is-closed'}`} data-side={settings.mapSide} style={{ width: open ? width : 60 }} aria-label="Karte">
-      {open ? (
-        <>
-          <div
-            className="map-resize"
-            role="separator"
-            aria-orientation="vertical"
-            aria-label="Kartenbreite ändern (Pfeiltasten)"
-            aria-valuenow={width}
-            tabIndex={0}
-            onPointerDown={onPointerDown}
-            onPointerMove={onPointerMove}
-            onPointerUp={onPointerUp}
-            onPointerCancel={onPointerUp}
-            onKeyDown={onResizeKey}
-            onDoubleClick={() => updateSettings({ mapWidth: 0 })}
-          />
-          <div className="map-aside-head">
-            <div className="flex items-center gap-2 font-bold">
-              <MapIcon size={18} className="text-primary" /> Karte
-            </div>
-            <div className="flex items-center gap-1">
-              {tools}
-              <ToolButton label={settings.mapSide === 'right' ? 'Karte nach links' : 'Karte nach rechts'} onClick={() => updateSettings({ mapSide: settings.mapSide === 'right' ? 'left' : 'right' })}>
-                <ArrowLeftRight size={18} />
-              </ToolButton>
-              <ToolButton label="Karte einklappen" onClick={() => updateSettings({ mapOpen: false })}>
-                {settings.mapSide === 'right' ? <PanelRightClose size={18} /> : <PanelLeftClose size={18} />}
-              </ToolButton>
-            </div>
-          </div>
-        </>
-      ) : (
+    <aside
+      className={`map-aside ${open ? 'is-open' : 'is-closed'} ${mapMax ? 'is-max' : ''}`}
+      data-side={settings.mapSide}
+      style={{ width: mapMax ? undefined : open ? width : 64 }}
+      aria-label="Karte"
+    >
+      {open && !mapMax && (
+        <div
+          className="map-resize"
+          role="separator"
+          aria-orientation="vertical"
+          aria-label="Kartenbreite ändern (Pfeiltasten)"
+          aria-valuenow={width}
+          tabIndex={0}
+          onPointerDown={onPointerDown}
+          onPointerMove={onPointerMove}
+          onPointerUp={onPointerUp}
+          onPointerCancel={onPointerUp}
+          onKeyDown={onResizeKey}
+          onDoubleClick={() => updateSettings({ mapWidth: 0 })}
+        />
+      )}
+      {!open && (
         <button type="button" className="map-rail" onClick={() => updateSettings({ mapOpen: true })} aria-label="Karte ausklappen" title="Karte ausklappen">
           <MapIcon size={22} />
           <span>Karte</span>
         </button>
       )}
-      <MapBody />
+      <MapBody tools={desktopTools} />
+      {mapMax && (
+        <button type="button" className="map-max-exit btn btn-primary" onClick={() => setMapMax(false)}>
+          <Check size={18} /> Zurück zum Lernen
+        </button>
+      )}
     </aside>
   );
 }

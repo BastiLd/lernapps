@@ -17,7 +17,7 @@ render(svg, 512, 'public/icons/icon-512.png');
 // Maskable icons need the artwork inside the central 80 % "safe zone" on a full-bleed background.
 const inner = svg.replace(/^<svg[^>]*>/, '').replace(/<\/svg>\s*$/, '');
 const maskable = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" fill="#1e40af"/>
+  <rect width="64" height="64" fill="#0f766e"/>
   <g transform="translate(9.6 9.6) scale(0.7)">${inner}</g>
 </svg>`;
 render(maskable, 512, 'public/icons/maskable-512.png');

@@ -1,8 +1,9 @@
 import { Check, RotateCcw, Shuffle, Sparkles, Undo2 } from 'lucide-react';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { usePersistentState } from '../../../shared/storage';
-import { BY_ISO } from '../lib/data';
+import { BY_ISO, COUNTRIES } from '../lib/data';
 import { QTYPES, shuffle, type QType } from '../lib/questions';
+import { dialogOpen, isTyping } from '../lib/ui';
 import { cardKey, useApp } from '../state';
 import { AnswerVisual, PromptVisual, questionText } from './Prompt';
 
@@ -61,7 +62,7 @@ export default function FlashcardsView() {
 
   useEffect(() => {
     if (!current || !country) {
-      setScene({ set: filtered.map((c) => c.iso2), fly: 'none', flyKey: 'cards-empty', hideLabels: false });
+      setScene({ set: filtered.length < COUNTRIES.length ? filtered.map((c) => c.iso2) : null, fly: 'none', flyKey: 'cards-empty', hideLabels: false });
       return;
     }
     if (flipped) {
@@ -95,9 +96,9 @@ export default function FlashcardsView() {
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLSelectElement || document.querySelector('.sheet-root')) return;
+      if (isTyping(e.target) || dialogOpen() || e.ctrlKey || e.metaKey || e.altKey) return;
       if (e.key === ' ' || e.key === 'Enter') {
-        if ((e.target as HTMLElement).closest('button') && e.key === 'Enter') return;
+        if ((e.target as HTMLElement).closest('button, a') && e.key === 'Enter') return;
         e.preventDefault();
         setFlipped((f) => !f);
       } else if (flipped && (e.key === '1' || e.key === 'ArrowLeft')) answer(false);
@@ -110,9 +111,23 @@ export default function FlashcardsView() {
   const toggleType = (t: QType) => setTypes((cur) => (cur.includes(t) ? (cur.length > 1 ? cur.filter((x) => x !== t) : cur) : [...cur, t]));
   const total = done + queue.length;
 
+  const pct = deck.length ? Math.round((stats.known / deck.length) * 100) : 0;
+
   return (
     <div className="study">
+      <header className="study-head">
+        <div className="min-w-0">
+          <p className="label">Karteikarten</p>
+          <h2 className="study-title">Lernen mit System</h2>
+          <p className="mt-1 text-sm text-muted">Was du nicht weißt, kommt bald wieder – was sitzt, seltener.</p>
+        </div>
+        <div className="mastery" style={{ ['--p' as string]: pct }} title={`${pct} % der Karten sitzen sicher`}>
+          <span>{pct}%</span>
+        </div>
+      </header>
+
       <div className="study-setup">
+        <p className="label mb-2">Kartentypen</p>
         <div className="flex flex-wrap items-center gap-2" role="group" aria-label="Kartentypen">
           {QTYPES.map((q) => (
             <button key={q.id} type="button" className="chip" aria-pressed={types.includes(q.id)} onClick={() => toggleType(q.id)} title={q.hint}>
@@ -120,11 +135,11 @@ export default function FlashcardsView() {
             </button>
           ))}
         </div>
-        <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm font-semibold">
+        <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm font-semibold">
           <span className="stat stat-new">{stats.fresh} neu</span>
           <span className="stat stat-learning">{stats.learning} am Lernen</span>
           <span className="stat stat-known">{stats.known} sicher</span>
-          <button type="button" className="ml-auto inline-flex items-center gap-1.5 text-primary hover:underline" onClick={() => setRound((r) => r + 1)}>
+          <button type="button" className="ml-auto inline-flex items-center gap-1.5 font-bold text-primary hover:underline" onClick={() => setRound((r) => r + 1)}>
             <Shuffle size={16} /> Neu mischen
           </button>
         </div>
@@ -140,25 +155,26 @@ export default function FlashcardsView() {
           </p>
 
           <div className="flipcard-stage">
-            <button
-              type="button"
+            <div
+              role="button"
+              tabIndex={0}
               className={`flipcard ${flipped ? 'is-flipped' : ''}`}
               onClick={() => setFlipped((f) => !f)}
               aria-label={flipped ? 'Karte zurückdrehen' : 'Karte umdrehen und Antwort zeigen'}
             >
-              <span className="flipcard-inner">
-                <span className="flipcard-face flipcard-front">
-                  <span className="label">{QTYPES.find((q) => q.id === current.type)!.label}</span>
+              <div className="flipcard-inner">
+                <div className="flipcard-face flipcard-front">
+                  <span className="flipcard-kind">{QTYPES.find((q) => q.id === current.type)!.label}</span>
                   <span className="flipcard-question">{questionText(current.type, country, lang)}</span>
                   <PromptVisual type={current.type} c={country} lang={lang} />
                   <span className="flipcard-tap">Tippen oder Leertaste zum Umdrehen</span>
-                </span>
-                <span className="flipcard-face flipcard-back" aria-hidden={!flipped}>
-                  <span className="label">Antwort</span>
+                </div>
+                <div className="flipcard-face flipcard-back" aria-hidden={!flipped}>
+                  <span className="flipcard-kind">Antwort</span>
                   <AnswerVisual type={current.type} c={country} lang={lang} />
-                </span>
-              </span>
-            </button>
+                </div>
+              </div>
+            </div>
           </div>
 
           {current.type === 'map' && !flipped && !settings.mapOpen && (
@@ -185,7 +201,7 @@ export default function FlashcardsView() {
           </div>
         </>
       ) : (
-        <div className="study-done">
+        <div className="study-done card">
           <Sparkles size={40} className="mx-auto text-accent" />
           <h2 className="mt-3 text-2xl font-extrabold">{deck.length ? 'Geschafft – alle Karten durch!' : 'Keine Karten'}</h2>
           <p className="mx-auto mt-2 max-w-md text-muted">

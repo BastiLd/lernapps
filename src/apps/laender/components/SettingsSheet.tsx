@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { useTheme, type ThemeChoice } from '../../../shared/theme';
 import { LANG_LABEL } from '../lib/data';
-import type { Lang } from '../lib/types';
+import type { Lang, MapStyle } from '../lib/types';
 import { useApp } from '../state';
 import Sheet from './Sheet';
+import { canSpeak, speak } from './Speak';
 
 function Segmented<T extends string>({ value, options, onChange, label }: { value: T; options: { id: T; label: string }[]; onChange: (v: T) => void; label: string }) {
   return (
@@ -41,10 +42,42 @@ export default function SettingsSheet({ open, onClose }: { open: boolean; onClos
               <span className="block text-sm text-muted">z. B. „Spanien · España“ – praktisch für den Spanischunterricht.</span>
             </span>
           </label>
+          {canSpeak && (
+            <label className="toggle-row">
+              <input type="checkbox" checked={settings.speech} onChange={(e) => updateSettings({ speech: e.target.checked })} />
+              <span>
+                <b>Vorlesen-Knöpfe 🔊 zeigen</b>
+                <span className="block text-sm text-muted">
+                  Spanische Namen werden mit der Stimme deines Geräts vorgelesen.{' '}
+                  <button
+                    type="button"
+                    className="font-bold text-primary underline"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      speak('¡Hola! Bienvenidos a España.', 'es');
+                    }}
+                  >
+                    Probehören
+                  </button>
+                </span>
+              </span>
+            </label>
+          )}
         </section>
 
         <section className="space-y-3">
           <h3 className="label">Karte</h3>
+          <Segmented<MapStyle>
+            label="Kartenansicht"
+            value={settings.mapStyle}
+            options={[
+              { id: 'satellite', label: 'Satellit' },
+              { id: 'terrain', label: 'Relief' },
+              { id: 'streets', label: 'Karte' },
+              { id: 'blank', label: 'Stumm' },
+            ]}
+            onChange={(v) => updateSettings({ mapStyle: v })}
+          />
           {isMobile ? (
             <Segmented
               label="Position der Karte"
@@ -130,7 +163,7 @@ export default function SettingsSheet({ open, onClose }: { open: boolean; onClos
         </section>
 
         <p className="text-xs leading-relaxed text-muted">
-          Satellitenbilder: Esri, Maxar, Earthstar Geographics. Grenzen & Hauptstädte: Natural Earth. Flaggen: flag-icons. Länderdaten: world-countries (mledoze). Texte: KI-erstellt und gegengeprüft – Fehler gern melden.
+          Satellitenbilder und Karten: Esri, Maxar, Earthstar Geographics, USGS, NOAA, HERE, Garmin, OpenStreetMap. Grenzen: geoBoundaries (CC BY 4.0). Hauptstädte: Natural Earth. Einwohnerzahlen: Weltbank (CC BY 4.0). Flaggen: flag-icons. Länderdaten: world-countries (mledoze). Texte: KI-erstellt und gegengeprüft – Fehler gern melden.
         </p>
       </div>
     </Sheet>

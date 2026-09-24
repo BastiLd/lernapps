@@ -2,11 +2,36 @@
 // into the files the app imports: src/apps/laender/data/{countries,languages}.json and flags/*.svg.
 // Usage: node scripts/build-data.mjs [--strict]   (--strict fails if any country has no content)
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, copyFileSync, existsSync, rmSync } from 'node:fs';
+import { createRequire } from 'node:module';
+
+const require = createRequire(import.meta.url);
+const worldCountries = new Map(require('world-countries').map((c) => [c.cca2, c]));
 
 const STRICT = process.argv.includes('--strict');
 const OUT = 'src/apps/laender/data';
 const base = JSON.parse(readFileSync('data-src/base.json', 'utf8'));
 const inApp = new Set(base.map((c) => c.iso2));
+// Newer population figures (World Bank, `npm run data:extra`); countries it doesn't cover keep the base value.
+const extra = existsSync('data-src/extra.json') ? JSON.parse(readFileSync('data-src/extra.json', 'utf8')) : { population: {} };
+
+// world-countries lists some outdated or merely tolerated currencies – these are the ones in use (2026).
+const CURRENCY_OVERRIDES = { BG: ['EUR'], SL: ['SLE'], ZW: ['ZWG', 'USD'], CU: ['CUP'], KI: ['AUD'], TV: ['AUD'], PS: ['ILS', 'JOD'], FM: ['USD'] };
+const currencyDe = new Intl.DisplayNames('de', { type: 'currency' });
+const currencyEs = new Intl.DisplayNames('es', { type: 'currency' });
+
+const symbolOf = (code) => new Intl.NumberFormat('de', { style: 'currency', currency: code, currencyDisplay: 'narrowSymbol' }).formatToParts(0).find((p) => p.type === 'currency')?.value;
+
+function currenciesOf(iso2) {
+  const wc = worldCountries.get(iso2);
+  const codes = CURRENCY_OVERRIDES[iso2] ?? Object.keys(wc?.currencies ?? {}).slice(0, 2);
+  return codes.map((code) => ({ code, de: currencyDe.of(code), es: currencyEs.of(code), symbol: symbolOf(code) ?? code }));
+}
+
+function phoneOf(iso2) {
+  const idd = worldCountries.get(iso2)?.idd;
+  if (!idd?.root) return null;
+  return idd.suffixes?.length === 1 ? idd.root + idd.suffixes[0] : idd.root;
+}
 
 const content = new Map();
 const languages = {};
@@ -76,7 +101,10 @@ const countries = base.map((b) => {
     history: c?.history ?? null,
     culture: c?.culture ?? null,
     funFact: c?.funFact ?? null,
-    population: b.population,
+    population: extra.population[b.iso2] ?? b.population,
+    currencies: currenciesOf(b.iso2),
+    phone: phoneOf(b.iso2),
+    tld: worldCountries.get(b.iso2)?.tld?.[0] ?? null,
     area: b.area,
     landlocked: b.landlocked,
     borders: b.borders.filter((x) => inApp.has(x)),

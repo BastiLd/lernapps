@@ -31,6 +31,9 @@ export interface Country {
   culture: string | null;
   funFact: string | null;
   population: { value: number; year: number } | null;
+  currencies: { code: string; de: string; es: string; symbol: string }[];
+  phone: string | null;
+  tld: string | null;
   area: number;
   landlocked: boolean;
   borders: string[];
@@ -47,6 +50,8 @@ export interface Filters {
   includeSpecial: boolean;
 }
 
+export type MapStyle = 'satellite' | 'terrain' | 'streets' | 'blank';
+
 export interface Settings {
   nameLang: Lang;
   showSecondary: boolean;
@@ -57,4 +62,6 @@ export interface Settings {
   mapWidth: number;
   mapLabels: boolean;
   mapBorders: boolean;
+  mapStyle: MapStyle;
+  speech: boolean;
 }

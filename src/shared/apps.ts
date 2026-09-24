@@ -7,7 +7,9 @@ export interface LernApp {
   description: string;
   tags: string[];
   gradient: string;
+  /** localStorage key of the learning progress (cards) and of the learning days (for the streak). */
   progressKey?: string;
+  daysKey?: string;
 }
 
 export const APPS: LernApp[] = [
@@ -15,9 +17,10 @@ export const APPS: LernApp[] = [
     id: 'laender',
     path: 'laender/',
     title: 'Länder der Welt',
-    description: 'Flaggen, Hauptstädte, Sprachen, Geschichte und Kultur – mit Satellitenkarte, Karteikarten und Quiz. Mit Filter für spanischsprachige Länder.',
+    description: 'Flaggen, Hauptstädte, Umrisse, Sprachen, Geschichte und Kultur – mit genauer Satellitenkarte, Karteikarten, Quiz und Lernliste zum Ausdrucken.',
     tags: ['Geografie', 'Spanisch', '198 Länder'],
-    gradient: 'linear-gradient(135deg, #0ea5e9 0%, #4f46e5 100%)',
+    gradient: 'linear-gradient(135deg, #14b8a6 0%, #0b5f59 100%)',
     progressKey: 'laender:progress',
+    daysKey: 'laender:days',
   },
 ];

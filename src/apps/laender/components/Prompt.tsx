@@ -2,6 +2,8 @@ import { MapPinned, MousePointerClick } from 'lucide-react';
 import { answerText, type QType } from '../lib/questions';
 import type { Country, Lang } from '../lib/types';
 import Flag from './Flag';
+import Silhouette from './Silhouette';
+import SpeakButton from './Speak';
 
 export function questionText(type: QType, c: Country, lang: Lang): string {
   switch (type) {
@@ -13,6 +15,8 @@ export function questionText(type: QType, c: Country, lang: Lang): string {
       return `Wie heißt die Hauptstadt von ${c.name[lang]}?`;
     case 'capital-rev':
       return `${c.capital[lang]} ist die Hauptstadt von …`;
+    case 'shape':
+      return 'Welches Land hat diesen Umriss?';
     case 'map':
       return 'Welches Land ist auf der Karte markiert?';
     case 'click':
@@ -29,6 +33,8 @@ export function PromptVisual({ type, c, lang }: { type: QType; c: Country; lang:
   switch (type) {
     case 'flag':
       return <Flag iso={c.iso2} alt="Flagge – zu welchem Land gehört sie?" className="prompt-flag" eager />;
+    case 'shape':
+      return <Silhouette iso={c.iso2} className="prompt-shape" title="Umriss eines Landes" />;
     case 'map':
       return (
         <div className="prompt-hint">
@@ -69,6 +75,7 @@ export function AnswerVisual({ type, c, lang }: { type: QType; c: Country; lang:
     );
   }
   const main = answerText(type, c, lang);
+  const spanish = type === 'name-es' || type === 'demonym-es' || lang === 'es';
   const extra =
     type === 'capital'
       ? c.name[lang]
@@ -79,8 +86,13 @@ export function AnswerVisual({ type, c, lang }: { type: QType; c: Country; lang:
           : `Hauptstadt: ${c.capital[lang]}`;
   return (
     <div className="flex flex-col items-center gap-3 text-center">
-      {type !== 'flag' && <Flag iso={c.iso2} alt="" className="prompt-flag-small" eager />}
-      <span className="prompt-big">{main}</span>
+      {type === 'shape' ? <Silhouette iso={c.iso2} className="answer-shape" /> : type !== 'flag' && <Flag iso={c.iso2} alt="" className="prompt-flag-small" eager />}
+      <span className="inline-flex items-center gap-2">
+        <span className="prompt-big" lang={spanish ? 'es' : undefined}>
+          {main}
+        </span>
+        {spanish && <SpeakButton text={type === 'demonym-es' && c.demonym ? `${c.demonym.esM}, ${c.demonym.esF}` : main} lang="es" />}
+      </span>
       <span className="font-semibold text-muted">{extra}</span>
       {type === 'capital' && c.capitalNote && <span className="max-w-md text-sm text-muted">{c.capitalNote}</span>}
     </div>

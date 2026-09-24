@@ -54,8 +54,15 @@ const server = createServer(async (req, res) => {
   res.end(body);
 });
 
-server.listen(PORT, '127.0.0.1', () => {
-  const url = `http://localhost:${PORT}${BASE}`;
+// Port 4173 by default (the token dashboard uses 5175); falls back to the next free port.
+let port = PORT;
+server.on('error', (err) => {
+  if (err.code !== 'EADDRINUSE' || port >= PORT + 10) throw err;
+  port++;
+  server.listen(port, '127.0.0.1');
+});
+server.listen(port, '127.0.0.1', () => {
+  const url = `http://localhost:${port}${BASE}`;
   console.log(`\n  Lernapps laufen auf ${url}\n  Beenden mit Strg+C\n`);
   if (process.argv.includes('--open')) exec(process.platform === 'win32' ? `start "" "${url}"` : `open "${url}"`);
 });
