@@ -204,6 +204,15 @@
     border-color: var(--ink);
     color: var(--bg);
   }
+  .install-note {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    font-size: 0.88rem;
+    color: var(--muted);
+  }
   .label {
     font-size: 0.7rem;
     font-weight: 800;

@@ -1105,6 +1105,34 @@ kbd {
   }
 }
 
+.shortcut-list {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+}
+.shortcut-list > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: var(--surface-2);
+}
+.shortcut-list dt {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.shortcut-list dt kbd {
+  opacity: 0.9;
+  font-size: 0.78rem;
+}
+.shortcut-list dd {
+  margin: 0;
+  font-weight: 650;
+}
+
 /* ================================================================ Explore */
 .explore {
   display: grid;
@@ -1209,6 +1237,13 @@ kbd {
 .country-row[aria-current='true'] {
   background: var(--surface);
   box-shadow: inset 3px 0 0 var(--primary), var(--shadow-sm);
+}
+.mastery-dot {
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--surface);
 }
 .country-row-flag {
   width: 46px;
@@ -1846,6 +1881,29 @@ kbd {
   letter-spacing: -0.02em;
   overflow-wrap: anywhere;
 }
+.gender-badge {
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+.gender-f {
+  background: rgba(214, 51, 132, 0.12);
+  color: #c2255c;
+}
+.gender-m {
+  background: rgba(28, 126, 214, 0.12);
+  color: #1971c2;
+}
+[data-theme='dark'] .gender-f {
+  color: #f783ac;
+}
+[data-theme='dark'] .gender-m {
+  color: #74c0fc;
+}
+.prompt-big.prompt-sentence {
+  font-size: clamp(1.3rem, 3.6vw, 1.8rem);
+}
 .prompt-hint {
   display: flex;
   flex-direction: column;
@@ -1886,6 +1944,30 @@ kbd {
 }
 .quiz-setup {
   text-align: left;
+}
+.daily-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  border-radius: 24px;
+  background: linear-gradient(120deg, #0f766e, #164e63);
+  color: #fff;
+  box-shadow: 0 16px 34px -18px #0f766e;
+}
+.daily-card .btn-primary {
+  background: #fff;
+  color: #0b3b36;
+  box-shadow: none;
+}
+.daily-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.16);
 }
 .quiz-setup-icon {
   display: grid;

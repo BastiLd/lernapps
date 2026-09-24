@@ -1,6 +1,7 @@
 import { ChevronRight, Download, List, Printer, Search, Table2, X } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { usePersistentState } from '../../../shared/storage';
+import { heatColor } from '../lib/colors';
 import { BY_ISO, COUNTRIES, CONTINENT_LABEL, formatPopulation, languageName, matchesSearch } from '../lib/data';
 import { describeFilters } from '../lib/filters';
 import type { Country, Lang } from '../lib/types';
@@ -130,7 +131,17 @@ function CountryTable({ list, onSelect }: { list: Country[]; onSelect: (iso: str
 }
 
 export default function ExploreView({ iso, onSelect }: { iso?: string; onSelect: (iso?: string) => void }) {
-  const { filtered, settings, setScene, mapClickRef } = useApp();
+  const { filtered, settings, setScene, mapClickRef, progress } = useApp();
+  // Learning progress per country (0 … 1) for the little dot in the list.
+  const mastery = useMemo(() => {
+    const sum = new Map<string, { boxes: number; n: number }>();
+    for (const [key, p] of Object.entries(progress)) {
+      const iso = key.slice(key.indexOf(':') + 1);
+      const cur = sum.get(iso) ?? { boxes: 0, n: 0 };
+      sum.set(iso, { boxes: cur.boxes + Math.min(5, p.box), n: cur.n + 1 });
+    }
+    return new Map([...sum].map(([iso, v]) => [iso, v.boxes / (v.n * 5)]));
+  }, [progress]);
   const [query, setQuery] = useState('');
   const [sort, setSort] = usePersistentState<SortKey>('laender:sort', 'name');
   const [layout, setLayout] = usePersistentState<Layout>('laender:layout', 'list');
@@ -254,6 +265,9 @@ export default function ExploreView({ iso, onSelect }: { iso?: string; onSelect:
                 <span className="block truncate font-bold">{c.name[lang]}</span>
                 <span className="block truncate text-sm text-muted">{secondaryLine(c, lang, settings.showSecondary)}</span>
               </span>
+              {mastery.has(c.iso2) && (
+                <span className="mastery-dot" style={{ background: heatColor(mastery.get(c.iso2)!) }} title={`Lernstand: ${Math.round(mastery.get(c.iso2)! * 100)} %`} />
+              )}
               <ChevronRight size={18} className="shrink-0 text-muted" />
             </button>
           ))}

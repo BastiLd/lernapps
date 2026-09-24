@@ -11,16 +11,21 @@ Kleine Lern-Apps für die Schule – am Handy und am Computer, lokal und online 
 ## Funktionen
 
 - **Entdecken:** Liste mit Suche (auch nach Hauptstadt oder spanischem Namen), Sortierung, Detailseite pro Land mit Umriss, Einwohnern (Weltbank 2025), Fläche im Vergleich zu Österreich, Währung, Vorwahl, Nachbarländern (auch auf der Karte markiert), vor/zurück blättern. Klick auf die Karte öffnet das Land. **Schnellsuche** von überall mit `Strg+K` oder `/`.
+- **Detailseite extra:** Ortszeit in der Hauptstadt mit Zeitunterschied zu Österreich, **Größenvergleich** in echter Größe (flächentreu, Vergleichsland wählbar), Lernstand-Punkt in der Liste.
 - **Lernliste (Tabelle):** die gefilterten Länder mit Flagge, Namen DE/ES, Hauptstadt DE/ES, Gentilicio und Amtssprachen – zum **Ausdrucken / als PDF** oder als **CSV für Excel**. Praktisch für Hausübungen.
 - **Vorlesen:** spanische Namen, Hauptstädte und Nationalitäten per 🔊 mit der Stimme des Geräts (abschaltbar).
-- **Filter:** nach Sprache in drei Stufen – *Amtssprache*, *einzige Amtssprache*, *wird gesprochen* (inkl. regionaler Amtssprachen und weit verbreiteter Sprachen) – plus Kontinent. Schnellauswahl „Spanischsprachig“ (21 Länder, davon 16 mit Spanisch als einziger Amtssprache).
-- **Karte:** vier Ansichten – **Satellit**, **Relief**, **Karte** (mit Ortsnamen) und **Stumm** (nur Umrisse wie im Atlas, funktioniert auch offline). Frei zoom- und verschiebbar, Maßstab, Legende. **Genaue Grenzen:** beim Hineinzoomen werden automatisch detailliertere Umrisse nachgeladen (~400 m ab Zoom 5, ~100 m ab Zoom 8) – Küsten und Grenzflüsse passen zum Satellitenbild. Das gewählte Land wird **gelb** umrandet, Nachbarn **gestrichelt**, die Hauptstadt als **roter Pin**, der Filter **türkis**, im Quiz richtig = **grün**, falsch = **rot**. Am Computer links oder rechts, einklappbar, in der Breite ziehbar und maximierbar; am Handy oben oder unten, in zwei Größen.
-- **Karteikarten:** Flagge → Land, Land → Flagge, Land → Hauptstadt, Hauptstadt → Land, **Umriss → Land**, Karte → Land, Auf Karte finden, Name auf Spanisch, Nationalität auf Spanisch. „Nochmal“-Karten kommen bald wieder, der Fortschritt wird gespeichert (neu / am Lernen / sicher).
+- **Filter:** nach Sprache in drei Stufen – *Amtssprache*, *einzige Amtssprache*, *wird gesprochen* (inkl. regionaler Amtssprachen und weit verbreiteter Sprachen) – plus Kontinent und Gruppe (*EU*, *Euro*, *Binnenländer*, *Inselstaaten*). Schnellauswahl „Spanischsprachig“ (21 Länder, davon 16 mit Spanisch als einziger Amtssprache).
+- **Karte:** vier Ansichten – **Satellit**, **Relief**, **Karte** (mit Ortsnamen) und **Stumm** (nur Umrisse wie im Atlas, funktioniert auch offline). Frei zoom- und verschiebbar, Maßstab, Legende. **Genaue Grenzen:** beim Hineinzoomen werden automatisch detailliertere Umrisse nachgeladen (~250 m ab Zoom 5, **~50 m** ab Zoom 9, dann in 2°-Kacheln, damit nur das Sichtbare geladen wird) – Küsten und Grenzflüsse passen zum Satellitenbild. Das gewählte Land wird **gelb** umrandet, Nachbarn **gestrichelt**, die Hauptstadt als **roter Pin**, der Filter **türkis**, im Quiz richtig = **grün**, falsch = **rot**. Am Computer links oder rechts, einklappbar, in der Breite ziehbar und maximierbar; am Handy oben oder unten, in zwei Größen.
+- **Karteikarten:** Flagge → Land, Land → Flagge, Land → Hauptstadt, Hauptstadt → Land, **Umriss → Land**, Karte → Land, Auf Karte finden, Name auf Spanisch, **Satz auf Spanisch** („Soy de Perú. Soy peruana.“ – mal männlich, mal weiblich), Nationalität auf Spanisch. „Nochmal“-Karten kommen bald wieder, der Fortschritt wird gespeichert (neu / am Lernen / sicher).
 - **Quiz:** dieselben Fragetypen – zum **Auswählen** oder **Eintippen** (kleine Tippfehler und fehlende Akzente zählen als richtig, die korrekte Schreibweise wird gezeigt; Knöpfe für á é í ó ú ñ ü). 10/20/30/alle Fragen oder **Blitzrunde** (60 bzw. 120 Sekunden) mit Rekord. Punkte, Serie, Auswertung und „Fehler üben“.
+- **Tages-Challenge:** jeden Tag 10 neue Fragen aus aller Welt – für alle gleich, das Ergebnis steht auch auf der Startseite.
+- **Spiele:** *Länder finden* (alle Länder des Filters nacheinander auf der Karte antippen, drei Versuche pro Land, Zeit und Rekord) und *Wo liegt …?* (Hauptstadt auf der Karte antippen, bis zu 5000 Punkte je nach Entfernung – wie GeoGuessr).
 - **Fortschritt:** Lerntage in Folge, Kalender der letzten Wochen, Trefferquote, Stand pro Fragetyp, die schwierigsten Länder – und die Karte färbt jedes Land nach Lernstand (rot → gelb → grün).
 - **Einstellungen:** Namen auf Deutsch / Español / English, Zweitsprache ein/aus, Vorlesen ein/aus, Kartenansicht und -position, Hell/Dunkel, Fortschritt zurücksetzen.
 - Tastatur: überall `Strg+K` suchen · Karteikarten `Leertaste` umdrehen, `1` nochmal, `2` gewusst · Quiz `1–4` antworten, `Enter` weiter.
-- **Direktlinks:** `laender/?filter=es` öffnet die App gleich mit den spanischsprachigen Ländern (auch `en`, `fr`, `de`, `pt`, `ar`).
+- **Direktlinks:** `laender/?filter=es` öffnet die App gleich mit den spanischsprachigen Ländern (auch `en`, `fr`, `de`, `pt`, `ar`, `eu`, `euro`, `landlocked`, `island`).
+- **Web-App:** „Als App installieren“ direkt auf der Startseite und in den Einstellungen (iPhone: Anleitung für „Zum Home-Bildschirm“); App-Kurzbefehle für Quiz, Spiele und Spanisch; „Genaue Grenzen für offline speichern“ in den Einstellungen.
+- **Töne & Konfetti** bei guten Ergebnissen (abschaltbar), Tastenkürzel-Übersicht mit `?`.
 
 ## Starten
 
@@ -57,9 +62,10 @@ Seite im Handy-Browser öffnen → Menü → **„Zum Startbildschirm hinzufüge
 |---|---|---|
 | `data-src/base.json` | Länderliste, Namen, Region, Fläche, Nachbarn, Hauptstadt-Koordinaten, Einwohner | `world-countries` (mledoze, ODbL) + Natural Earth (gemeinfrei), `npm run data:base` |
 | `data-src/content/batch-*.json` | Namen DE/ES/EN, Hauptstadt, Sprachen, Einwohnerbezeichnung, Geschichte, Kultur, Wusstest du? | KI-geschrieben und von einem zweiten, unabhängigen Durchgang faktengeprüft |
-| `data-src/extra.json` | Einwohnerzahlen (neuester Stand) | Weltbank (CC BY 4.0), `npm run data:extra` (braucht Internet) |
+| `data-src/extra.json` | Einwohnerzahlen (neuester Stand), Zeitzone jeder Hauptstadt | Weltbank (CC BY 4.0), IANA-Zeitzonendatenbank (gemeinfrei), `npm run data:extra` (braucht Internet) |
 | `src/apps/laender/data/borders.json` | Ländergrenzen für die Weltansicht (~3 km genau) | geoBoundaries CGAZ (CC BY 4.0), `npm run data:borders` |
-| `public/geo/mid/`, `public/geo/hi/`, `data/detail-index.json` | Genaue Grenzen (~400 m / ~100 m), pro Land und Region eine Datei – werden erst beim Hineinzoomen geladen | wie oben |
+| `public/geo/mid/`, `public/geo/fine/`, `data/detail-index.json` | Genaue Grenzen: ~250 m pro Land und Region, ~50 m in 2°-Kacheln – werden erst beim Hineinzoomen geladen | wie oben |
+| `src/apps/laender/data/shapes-true.json` | Flächentreue Umrisse mit km-Maßstab für den Größenvergleich | wie oben |
 | `src/apps/laender/data/shapes.json` | Länder-Umrisse (Silhouetten) für Detailseite und „Umriss → Land“ | wie oben |
 | `src/apps/laender/data/countries.json`, `languages.json`, `flags/` | Das, was die App lädt | erzeugt mit `npm run data` |
 

@@ -1,7 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type MutableRefObject, type ReactNode } from 'react';
 import { usePersistentState } from '../../shared/storage';
 import { COUNTRIES } from './lib/data';
-import { applyFilters, DEFAULT_FILTERS, PRESETS } from './lib/filters';
+import { applyFilters, DEFAULT_FILTERS, GROUPS, PRESETS } from './lib/filters';
 import type { QType } from './lib/questions';
 import type { Country, Filters, Settings } from './lib/types';
 
@@ -111,8 +111,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const preset = PRESETS.find((p) => p.id === params.get('filter'));
+    const group = GROUPS.find((g) => g.id === params.get('filter'));
     if (!params.has('filter')) return;
     if (preset) setFiltersState({ ...DEFAULT_FILTERS, ...preset.filters });
+    else if (group) setFiltersState({ ...DEFAULT_FILTERS, group: group.id });
     params.delete('filter');
     const rest = params.toString();
     window.history.replaceState(null, '', `${window.location.pathname}${rest ? `?${rest}` : ''}${window.location.hash}`);

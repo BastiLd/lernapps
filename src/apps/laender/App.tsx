@@ -6,6 +6,7 @@ import MapPanel from './components/MapPanel';
 import QuizView from './components/QuizView';
 import SearchPalette from './components/SearchPalette';
 import SettingsSheet from './components/SettingsSheet';
+import ShortcutsSheet from './components/ShortcutsSheet';
 import TopBar, { BottomNav } from './components/TopBar';
 import { useRoute, type View } from './lib/router';
 import { dialogOpen, isTyping } from './lib/ui';
@@ -21,6 +22,7 @@ export default function App() {
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [keysOpen, setKeysOpen] = useState(false);
   const { settings, isMobile, mapMax, setMapMax } = useApp();
 
   const mapFirst = isMobile ? settings.mapMobileSide === 'top' : settings.mapSide === 'left';
@@ -42,6 +44,9 @@ export default function App() {
       if ((e.key === 'k' && (e.ctrlKey || e.metaKey)) || (e.key === '/' && !isTyping(e.target) && !dialogOpen())) {
         e.preventDefault();
         setSearchOpen(true);
+      } else if (e.key === '?' && !isTyping(e.target) && !dialogOpen()) {
+        e.preventDefault();
+        setKeysOpen(true);
       }
     };
     window.addEventListener('keydown', onKey);
@@ -80,6 +85,7 @@ export default function App() {
       <BottomNav view={route.view} onView={goView} />
       <FilterSheet open={filtersOpen} onClose={() => setFiltersOpen(false)} />
       <SettingsSheet open={settingsOpen} onClose={() => setSettingsOpen(false)} />
+      <ShortcutsSheet open={keysOpen} onClose={() => setKeysOpen(false)} />
       <SearchPalette open={searchOpen} onClose={() => setSearchOpen(false)} onPick={(iso) => selectCountry(iso)} />
     </div>
   );

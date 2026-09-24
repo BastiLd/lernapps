@@ -173,6 +173,31 @@ article.hub-card:hover {
   border-color: var(--primary);
   color: var(--primary);
 }
+.hub-quick-link.is-open {
+  border-color: color-mix(in srgb, var(--accent) 50%, transparent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+.hub-quick-link.is-done {
+  color: var(--ok);
+}
+.hub-install {
+  display: flex;
+  gap: 16px;
+  margin-top: 18px;
+  padding: 22px;
+  border-radius: 28px;
+}
+.hub-install-icon {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 18px;
+  background: var(--primary-soft);
+  color: var(--primary);
+}
 .hub-quick-flag {
   width: 20px;
   border-radius: 3px;

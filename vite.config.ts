@@ -33,7 +33,14 @@ export default defineConfig(({ command }) => ({
           { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
           { src: 'icons/maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
         ],
-        shortcuts: [{ name: 'Länder der Welt', short_name: 'Länder', url: 'laender/' }],
+        id: '.',
+        categories: ['education'],
+        shortcuts: [
+          { name: 'Länder der Welt', short_name: 'Länder', url: 'laender/' },
+          { name: 'Spanischsprachige Länder', short_name: 'Spanisch', url: 'laender/?filter=es#/entdecken' },
+          { name: 'Quiz & Tages-Challenge', short_name: 'Quiz', url: 'laender/#/quiz' },
+          { name: 'Spiele', short_name: 'Spiele', url: 'laender/#/spiele' },
+        ],
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,woff2,webmanifest}'],

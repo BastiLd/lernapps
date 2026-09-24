@@ -1,11 +1,13 @@
-import { ArrowRight, Check, Flame, Keyboard, ListChecks, MapPinned, Play, RotateCcw, Target, Timer, Trophy, X, Zap } from 'lucide-react';
+import { ArrowRight, CalendarCheck, Check, Flame, Keyboard, ListChecks, MapPinned, Play, RotateCcw, Target, Timer, Trophy, X, Zap } from 'lucide-react';
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { confetti, playTone } from '../../../shared/fx';
 import { usePersistentState } from '../../../shared/storage';
+import { dailyChallenge, DAILY_KEY, DAILY_QUESTIONS, type DailyLog } from '../lib/daily';
 import { BY_ISO, COUNTRIES } from '../lib/data';
-import { acceptedAnswers, answerText, gradeTyped, pickOptions, QTYPE_BY_ID, QTYPES, shuffle, type Grade, type QType } from '../lib/questions';
+import { acceptedAnswers, answerText, genderOf, gradeTyped, isSpanishType, pickOptions, QTYPE_BY_ID, QTYPES, shuffle, type Gender, type Grade, type QType } from '../lib/questions';
 import type { Country, Lang } from '../lib/types';
 import { dialogOpen } from '../lib/ui';
-import { cardKey, useApp } from '../state';
+import { cardKey, dayKey, useApp } from '../state';
 import Flag from './Flag';
 import { PromptVisual, questionText } from './Prompt';
 import SpeakButton from './Speak';
@@ -55,9 +57,10 @@ function buildQuestions(pool: Country[], cfg: Config, lang: Lang, only?: Questio
   });
 }
 
-function OptionContent({ type, c, lang }: { type: QType; c: Country; lang: Lang }) {
+function OptionContent({ type, c, lang, gender }: { type: QType; c: Country; lang: Lang; gender: Gender }) {
   if (type === 'flag-rev') return <Flag iso={c.iso2} alt="" className="option-flag" eager />;
-  return <span lang={type === 'name-es' || type === 'demonym-es' ? 'es' : undefined}>{answerText(type, c, lang)}</span>;
+  // Sentences: all options in the gender the question asks for, so the ending alone doesn't give it away.
+  return <span lang={isSpanishType(type) ? 'es' : undefined}>{answerText(type, c, lang, gender)}</span>;
 }
 
 function Segmented<T extends string | number>({ value, options, onChange, label }: { value: T; options: { id: T; label: ReactNode }[]; onChange: (v: T) => void; label: string }) {
@@ -76,6 +79,9 @@ export default function QuizView() {
   const { filtered, settings, setScene, mapClickRef, recordAnswer, openMap } = useApp();
   const [cfg, setCfg] = usePersistentState<Config>('laender:quiz', { types: ['flag', 'capital', 'capital-rev', 'map'], count: 10, mode: 'choice', timer: 0 });
   const [records, setRecords] = usePersistentState<Record<string, number>>('laender:blitzBest', {});
+  const [dailyLog, setDailyLog] = usePersistentState<DailyLog>(DAILY_KEY, {});
+  /** Day of the running daily challenge (null: a normal quiz). */
+  const [daily, setDaily] = useState<string | null>(null);
   const [phase, setPhase] = useState<'setup' | 'run' | 'done'>('setup');
   const [questions, setQuestions] = useState<Question[]>([]);
   const [idx, setIdx] = useState(0);
@@ -102,9 +108,14 @@ export default function QuizView() {
   const recordKey = `${phase === 'setup' ? cfg.timer : runTimer}:${[...cfg.types].sort().join(',')}:${cfg.mode}`;
 
   const start = useCallback(
-    (only?: Question[]) => {
-      if (!filtered.length) return;
-      setQuestions(buildQuestions(filtered, only ? { ...cfg, timer: 0 } : cfg, lang, only));
+    (only?: Question[], day?: string) => {
+      if (!filtered.length && !day) return;
+      setDaily(day ?? null);
+      setQuestions(
+        day
+          ? dailyChallenge(day).map(({ iso, type }) => makeQuestion(BY_ISO.get(iso)!, type, COUNTRIES, lang, 'choice'))
+          : buildQuestions(filtered, only ? { ...cfg, timer: 0 } : cfg, lang, only),
+      );
       setIdx(0);
       setAnswers([]);
       setPicked(null);
@@ -113,8 +124,8 @@ export default function QuizView() {
       setStreak(0);
       setBest(0);
       setNewRecord(false);
-      setTimeLeft(only ? 0 : cfg.timer);
-      setRunTimer(only ? 0 : cfg.timer);
+      setTimeLeft(only || day ? 0 : cfg.timer);
+      setRunTimer(only || day ? 0 : cfg.timer);
       setPhase('run');
     },
     [filtered, cfg, lang],
@@ -134,9 +145,10 @@ export default function QuizView() {
         return next;
       });
       recordAnswer(cardKey(q.type, q.iso), correct);
+      if (settings.sound) playTone(correct ? 'ok' : 'bad');
       if (!blitz || !correct) window.setTimeout(() => nextBtn.current?.focus(), 30);
     },
-    [q, picked, recordAnswer, blitz],
+    [q, picked, recordAnswer, blitz, settings.sound],
   );
 
   const submitTyped = () => {
@@ -173,12 +185,19 @@ export default function QuizView() {
     return () => window.clearTimeout(t);
   }, [phase, blitz, timeLeft, finish]);
 
-  // Save a new speed-round record.
+  // Finished: save records and the daily challenge, celebrate a great result.
   useEffect(() => {
-    if (phase !== 'done' || !blitz || !answers.length) return;
-    if (score > (records[recordKey] ?? 0)) {
+    if (phase !== 'done' || !answers.length) return;
+    let party = !blitz && score / answers.length >= 0.9;
+    if (blitz && score > (records[recordKey] ?? 0)) {
       setRecords((r) => ({ ...r, [recordKey]: score }));
       setNewRecord(true);
+      party = true;
+    }
+    if (daily) setDailyLog((l) => ({ ...l, [daily]: { score: Math.max(score, l[daily]?.score ?? 0), total: answers.length } }));
+    if (party) {
+      confetti();
+      if (settings.sound) playTone('win');
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase]);
@@ -242,8 +261,27 @@ export default function QuizView() {
     const lengthValue = cfg.timer ? `t${cfg.timer}` : `n${cfg.count}`;
     const typeableSelected = cfg.types.filter((t) => QTYPE_BY_ID[t].typeable).length;
     const record = records[recordKey];
+    const todayDaily = dailyLog[dayKey()];
     return (
       <div className="study">
+        <div className="daily-card">
+          <div className="daily-icon">
+            <CalendarCheck size={24} />
+          </div>
+          <div className="min-w-0 flex-1">
+            <p className="label !text-current opacity-80">Tages-Challenge · {new Date().toLocaleDateString('de-AT', { day: 'numeric', month: 'long' })}</p>
+            <p className="font-display text-lg font-extrabold leading-tight">{DAILY_QUESTIONS} Fragen aus aller Welt – jeden Tag neue, für alle gleich.</p>
+            {todayDaily && (
+              <p className="mt-1 text-sm font-semibold">
+                ✓ Heute geschafft: {todayDaily.score} von {todayDaily.total} richtig
+              </p>
+            )}
+          </div>
+          <button type="button" className="btn btn-primary shrink-0" onClick={() => start(undefined, dayKey())}>
+            <Play size={17} /> {todayDaily ? 'Nochmal' : 'Los'}
+          </button>
+        </div>
+
         <div className="quiz-setup card contours">
           <div className="quiz-setup-icon">
             <Trophy size={30} />
@@ -331,7 +369,11 @@ export default function QuizView() {
   if (phase === 'done') {
     const pctValue = Math.round((score / Math.max(1, answers.length)) * 100);
     const mistakes = answers.filter((a) => !a.correct);
-    const message = blitz
+    const message = daily
+      ? score === answers.length
+        ? 'Tages-Challenge perfekt gelöst! 🏆'
+        : `Tages-Challenge geschafft – morgen gibt's neue Fragen! 📅`
+      : blitz
       ? newRecord
         ? 'Neuer Rekord! 🏆'
         : score >= 15
@@ -362,7 +404,7 @@ export default function QuizView() {
                 <Target size={18} /> {mistakes.length} Fehler üben
               </button>
             )}
-            <button type="button" className="btn btn-ghost" onClick={() => start()}>
+            <button type="button" className="btn btn-ghost" onClick={() => start(undefined, daily ?? undefined)}>
               <RotateCcw size={18} /> Nochmal
             </button>
             <button type="button" className="btn btn-ghost" onClick={() => setPhase('setup')}>
@@ -382,7 +424,7 @@ export default function QuizView() {
                         <b>{c.name[lang]}</b>
                         <span className="block text-sm text-muted">
                           Hauptstadt: {c.capital[lang]}
-                          {m.q.type === 'name-es' || m.q.type === 'demonym-es' ? ` · ${answerText(m.q.type, c, lang)}` : ''}
+                          {isSpanishType(m.q.type) ? ` · ${answerText(m.q.type, c, lang)}` : ''}
                           {m.typed ? ` · deine Antwort: „${m.typed}“` : ''}
                         </span>
                       </span>
@@ -433,11 +475,9 @@ export default function QuizView() {
           <span className={`inline-flex items-center gap-1 ${streak >= 3 ? 'text-accent' : 'text-muted'}`} title="Serie">
             <Flame size={16} /> {streak}
           </span>
-          {blitz && (
-            <button type="button" className="text-muted hover:text-ink" onClick={finish}>
-              Beenden
-            </button>
-          )}
+          <button type="button" className="text-muted hover:text-ink" onClick={() => (answers.length ? finish() : setPhase('setup'))}>
+            Beenden
+          </button>
         </span>
       </div>
       <div className="study-progress" aria-hidden="true">
@@ -484,12 +524,12 @@ export default function QuizView() {
               value={typed}
               onChange={(e) => setTyped(e.target.value)}
               readOnly={answered}
-              placeholder={q.type === 'name-es' || q.type === 'demonym-es' ? 'Auf Spanisch eintippen …' : 'Antwort eintippen …'}
+              placeholder={isSpanishType(q.type) ? 'Auf Spanisch eintippen …' : 'Antwort eintippen …'}
               aria-label="Deine Antwort"
               autoComplete="off"
               autoCapitalize="off"
               spellCheck={false}
-              lang={q.type === 'name-es' || q.type === 'demonym-es' ? 'es' : undefined}
+              lang={isSpanishType(q.type) ? 'es' : undefined}
             />
             {!answered && (
               <div className="flex gap-2">
@@ -501,7 +541,7 @@ export default function QuizView() {
                 </button>
               </div>
             )}
-            {q.type === 'name-es' || q.type === 'demonym-es' ? (
+            {isSpanishType(q.type) ? (
               <div className="quiz-accents" aria-label="Sonderzeichen">
                 {['á', 'é', 'í', 'ó', 'ú', 'ñ', 'ü'].map((ch) => (
                   <button
@@ -527,7 +567,7 @@ export default function QuizView() {
               return (
                 <button key={iso} type="button" className={`quiz-option ${state}`} onClick={() => answer(iso)} disabled={answered} aria-label={q.type === 'flag-rev' ? `Flagge ${i + 1}` : undefined}>
                   <kbd>{i + 1}</kbd>
-                  <OptionContent type={q.type} c={c} lang={lang} />
+                  <OptionContent type={q.type} c={c} lang={lang} gender={genderOf(target)} />
                   {answered && iso === q.iso && <Check size={18} className="ml-auto shrink-0" />}
                   {answered && iso === picked && iso !== q.iso && <X size={18} className="ml-auto shrink-0" />}
                 </button>
@@ -546,19 +586,19 @@ export default function QuizView() {
                 {!correctNow && q.type === 'click' && pickedCountry ? `Du hast ${pickedCountry.name[lang]} angetippt. ` : ''}
                 {typingNow && (grade !== 'exact' || !correctNow) ? (
                   <>
-                    <b lang={q.type === 'name-es' || q.type === 'demonym-es' ? 'es' : undefined}>{solution}</b>
-                    {q.type === 'capital' ? ` · ${target.name[lang]}` : q.type === 'name-es' || q.type === 'demonym-es' ? (target.name.de !== solution ? ` · ${target.name.de}` : '') : ` · Hauptstadt ${target.capital[lang]}`}
+                    <b lang={isSpanishType(q.type) ? 'es' : undefined}>{solution}</b>
+                    {q.type === 'capital' ? ` · ${target.name[lang]}` : isSpanishType(q.type) ? (target.name.de !== solution ? ` · ${target.name.de}` : '') : ` · Hauptstadt ${target.capital[lang]}`}
                   </>
                 ) : (
                   <>
                     <b>{target.name[lang]}</b> · Hauptstadt {target.capital[lang]}
-                    {q.type === 'name-es' || q.type === 'demonym-es' ? ` · ${solution}` : ''}
+                    {isSpanishType(q.type) ? ` · ${solution}` : ''}
                   </>
                 )}
               </p>
             </div>
             <div className="flex shrink-0 items-center gap-2">
-              {(q.type === 'name-es' || q.type === 'demonym-es') && <SpeakButton text={solution} lang="es" className="speak-btn--lg" />}
+              {(isSpanishType(q.type)) && <SpeakButton text={solution} lang="es" className="speak-btn--lg" />}
               {!blitz || !correctNow ? (
                 <button ref={nextBtn} type="button" className="btn btn-primary" onClick={next}>
                   {idx + 1 >= questions.length ? 'Ergebnis' : 'Weiter'} <ArrowRight size={18} />

@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import InstallApp from '../../../shared/InstallApp';
 import { useTheme, type ThemeChoice } from '../../../shared/theme';
 import { LANG_LABEL } from '../lib/data';
 import type { Lang, MapStyle } from '../lib/types';
 import { useApp } from '../state';
+import OfflinePack from './OfflinePack';
 import Sheet from './Sheet';
 import { canSpeak, speak } from './Speak';
 
@@ -40,6 +42,13 @@ export default function SettingsSheet({ open, onClose }: { open: boolean; onClos
             <span>
               <b>Namen in den anderen Sprachen zusätzlich zeigen</b>
               <span className="block text-sm text-muted">z. B. „Spanien · España“ – praktisch für den Spanischunterricht.</span>
+            </span>
+          </label>
+          <label className="toggle-row">
+            <input type="checkbox" checked={settings.sound} onChange={(e) => updateSettings({ sound: e.target.checked })} />
+            <span>
+              <b>Töne bei richtig / falsch</b>
+              <span className="block text-sm text-muted">Kurze Signaltöne in Quiz und Spielen.</span>
             </span>
           </label>
           {canSpeak && (
@@ -118,6 +127,13 @@ export default function SettingsSheet({ open, onClose }: { open: boolean; onClos
               <span className="block text-sm text-muted">Beim Quiz werden sie automatisch versteckt.</span>
             </span>
           </label>
+        </section>
+
+        <section className="space-y-3">
+          <h3 className="label">App & offline</h3>
+          <InstallApp />
+          <OfflinePack />
+          <p className="text-xs text-muted">Einmal geöffnet funktioniert die App auch ohne Internet – mit der stummen Karte. Satellitenbilder brauchen eine Verbindung.</p>
         </section>
 
         <section className="space-y-3">

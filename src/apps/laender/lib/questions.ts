@@ -1,7 +1,7 @@
 import { BY_ISO, COUNTRIES } from './data';
 import type { Country, Lang } from './types';
 
-export type QType = 'flag' | 'flag-rev' | 'capital' | 'capital-rev' | 'map' | 'click' | 'shape' | 'name-es' | 'demonym-es';
+export type QType = 'flag' | 'flag-rev' | 'capital' | 'capital-rev' | 'map' | 'click' | 'shape' | 'name-es' | 'demonym-es' | 'sentence-es';
 
 export interface QTypeInfo {
   id: QType;
@@ -24,6 +24,7 @@ export const QTYPES: QTypeInfo[] = [
   { id: 'map', label: 'Karte → Land', hint: 'Welches Land ist auf der Karte markiert?', needsMap: true, typeable: true, available: always },
   { id: 'click', label: 'Auf Karte finden', hint: 'Wo liegt das Land? Tippe es auf der Karte an.', needsMap: true, typeable: false, available: always },
   { id: 'name-es', label: 'Name auf Spanisch', hint: 'Wie heißt das Land auf Spanisch?', needsMap: false, typeable: true, available: always },
+  { id: 'sentence-es', label: 'Satz auf Spanisch', hint: 'Stell dich vor: „Soy de … Soy …“', needsMap: false, typeable: true, available: (c) => Boolean(c.demonym) },
   { id: 'demonym-es', label: 'Nationalität (Spanisch)', hint: 'Wie heißen die Einwohner auf Spanisch?', needsMap: false, typeable: true, available: (c) => Boolean(c.demonym) },
 ];
 
@@ -38,9 +39,51 @@ export function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
+/** Questions whose answer is Spanish (typed with Spanish accents, read aloud in Spanish). */
+export const isSpanishType = (type: QType) => type === 'name-es' || type === 'demonym-es' || type === 'sentence-es';
+
+export type Gender = 'm' | 'f';
+
+/** Fixed per country, so a card always asks the same (half the countries are asked in the female form). */
+export const genderOf = (c: Country): Gender => ((c.iso2.charCodeAt(0) + c.iso2.charCodeAt(1)) % 2 ? 'f' : 'm');
+
+// "Soy de …": some country names take an article in Spanish. The first form is the usual one.
+const ES_FROM: Record<string, string[]> = {
+  GB: ['del Reino Unido'],
+  NL: ['de los Países Bajos'],
+  AE: ['de los Emiratos Árabes Unidos'],
+  US: ['de Estados Unidos', 'de los Estados Unidos'],
+  IN: ['de la India', 'de India'],
+  BS: ['de las Bahamas', 'de Bahamas'],
+  MV: ['de las Maldivas', 'de Maldivas'],
+  KM: ['de las Comoras', 'de Comoras'],
+  SC: ['de Seychelles', 'de las Seychelles'],
+  PH: ['de Filipinas', 'de las Filipinas'],
+  VA: ['del Vaticano', 'de la Ciudad del Vaticano'],
+  CZ: ['de Chequia', 'de la República Checa'],
+};
+
+/** "de España", "del Reino Unido", "de la República Dominicana", "de las Islas Salomón" … */
+export function fromEs(c: Country): string[] {
+  if (ES_FROM[c.iso2]) return ES_FROM[c.iso2];
+  const name = c.name.es;
+  if (/^República/.test(name)) return [`de la ${name}`, `de ${name}`];
+  if (/^Islas/.test(name)) return [`de las ${name}`, `de ${name}`];
+  return [`de ${name}`];
+}
+
+/** "Soy de Perú. Soy peruana." – in the given gender (default: the one fixed for the country). */
+export function sentenceEs(c: Country, g: Gender = genderOf(c), from = fromEs(c)[0]): string {
+  const d = c.demonym;
+  const demonym = d ? (g === 'f' ? d.esF : d.esM) : '';
+  return `Soy ${from}. Soy ${demonym}.`;
+}
+
 /** Text of the answer for a question type (what the learner has to know). */
-export function answerText(type: QType, c: Country, lang: Lang): string {
+export function answerText(type: QType, c: Country, lang: Lang, gender?: Gender): string {
   switch (type) {
+    case 'sentence-es':
+      return sentenceEs(c, gender);
     case 'capital':
       return c.capital[lang] + (c.otherCapitals.length ? ` (${c.otherCapitals.map((o) => o[lang]).join(', ')})` : '');
     case 'name-es':
@@ -91,6 +134,8 @@ export function acceptedAnswers(type: QType, c: Country, lang: Lang): string[] {
       return [c.name.es];
     case 'demonym-es':
       return c.demonym ? [c.demonym.esM, c.demonym.esF] : [];
+    case 'sentence-es':
+      return fromEs(c).map((from) => sentenceEs(c, genderOf(c), from));
     default:
       return [c.name[lang], c.name.de, c.name.es, c.name.en, ...c.aliases];
   }

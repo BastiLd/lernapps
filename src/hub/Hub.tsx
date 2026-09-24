@@ -1,4 +1,5 @@
-import { ArrowRight, Flame, Layers, Moon, Plus, Sun, SunMoon, Trophy, WifiOff } from 'lucide-react';
+import { ArrowRight, CalendarCheck, Flame, Gamepad2, Layers, Moon, Plus, Smartphone, Sun, SunMoon, Trophy, WifiOff } from 'lucide-react';
+import InstallApp from '../shared/InstallApp';
 import { APPS } from '../shared/apps';
 import { loadJSON } from '../shared/storage';
 import { useTheme, type ThemeChoice } from '../shared/theme';
@@ -28,6 +29,11 @@ function streakOf(key?: string) {
   }
   return n;
 }
+
+const today = () => {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+};
 
 const NEXT_THEME: Record<ThemeChoice, ThemeChoice> = { system: 'light', light: 'dark', dark: 'system' };
 const THEME_LABEL: Record<ThemeChoice, string> = { system: 'Design: automatisch', light: 'Design: hell', dark: 'Design: dunkel' };
@@ -62,6 +68,7 @@ export default function Hub() {
           {APPS.map((app) => {
             const prog = progressOf(app.progressKey);
             const streak = streakOf(app.daysKey);
+            const daily = app.dailyKey ? loadJSON<Record<string, { score: number; total: number }>>(app.dailyKey, {})[today()] : undefined;
             const href = `${base}${app.path}`;
             return (
               <article key={app.id} className="hub-card">
@@ -97,6 +104,14 @@ export default function Hub() {
                     <a href={`${href}#/quiz`} className="hub-quick-link">
                       <Trophy size={16} /> Quiz
                     </a>
+                    <a href={`${href}#/spiele`} className="hub-quick-link">
+                      <Gamepad2 size={16} /> Spiele
+                    </a>
+                    {app.dailyKey && (
+                      <a href={`${href}#/quiz`} className={`hub-quick-link ${daily ? 'is-done' : 'is-open'}`}>
+                        <CalendarCheck size={16} /> {daily ? `Tages-Challenge ✓ ${daily.score}/${daily.total}` : 'Tages-Challenge offen'}
+                      </a>
+                    )}
                   </div>
 
                   <div className="hub-card-foot">
@@ -126,6 +141,19 @@ export default function Hub() {
             <Plus size={28} />
             <p className="font-bold">Weitere Apps folgen</p>
             <p className="text-sm text-muted">z. B. Vokabeln, Mathe, Biologie …</p>
+          </div>
+        </section>
+
+        <section className="hub-install card">
+          <div className="hub-install-icon">
+            <Smartphone size={26} />
+          </div>
+          <div className="min-w-0 flex-1">
+            <h2 className="text-xl font-extrabold">Als App aufs Handy</h2>
+            <p className="mt-1 text-sm text-muted">Installiert startet Lernapps wie eine normale App – mit eigenem Symbol, im Vollbild und auch ohne Internet.</p>
+            <div className="mt-3">
+              <InstallApp />
+            </div>
           </div>
         </section>
 

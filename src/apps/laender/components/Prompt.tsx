@@ -1,5 +1,5 @@
 import { MapPinned, MousePointerClick } from 'lucide-react';
-import { answerText, type QType } from '../lib/questions';
+import { answerText, genderOf, isSpanishType, type QType } from '../lib/questions';
 import type { Country, Lang } from '../lib/types';
 import Flag from './Flag';
 import Silhouette from './Silhouette';
@@ -25,6 +25,8 @@ export function questionText(type: QType, c: Country, lang: Lang): string {
       return `Wie heißt ${c.name.de} auf Spanisch?`;
     case 'demonym-es':
       return `Wie heißen die Einwohner von ${c.name.de} auf Spanisch?`;
+    case 'sentence-es':
+      return `Stell dich auf Spanisch vor: Du bist ${genderOf(c) === 'f' ? 'eine Frau' : 'ein Mann'} aus diesem Land.`;
   }
 }
 
@@ -51,6 +53,14 @@ export function PromptVisual({ type, c, lang }: { type: QType; c: Country; lang:
       );
     case 'capital-rev':
       return <span className="prompt-big">{c.capital[lang]}</span>;
+    case 'sentence-es':
+      return (
+        <div className="flex flex-col items-center gap-3">
+          <Flag iso={c.iso2} alt="" className="prompt-flag-small" eager />
+          <span className="prompt-big">{c.name.de}</span>
+          <span className={`gender-badge gender-${genderOf(c)}`}>{genderOf(c) === 'f' ? '♀ weiblich' : '♂ männlich'}</span>
+        </div>
+      );
     case 'name-es':
     case 'demonym-es':
       return (
@@ -75,20 +85,22 @@ export function AnswerVisual({ type, c, lang }: { type: QType; c: Country; lang:
     );
   }
   const main = answerText(type, c, lang);
-  const spanish = type === 'name-es' || type === 'demonym-es' || lang === 'es';
+  const spanish = isSpanishType(type) || lang === 'es';
   const extra =
     type === 'capital'
       ? c.name[lang]
       : type === 'name-es'
         ? `Hauptstadt: ${c.capital.es}`
-        : type === 'demonym-es' && c.demonym
+        : type === 'sentence-es' && c.demonym
+          ? `Deutsch: Ich komme aus diesem Land. Ich bin ${genderOf(c) === 'f' ? c.demonym.deF : c.demonym.deM}.`
+          : type === 'demonym-es' && c.demonym
           ? `Deutsch: ${c.demonym.deM} / ${c.demonym.deF}`
           : `Hauptstadt: ${c.capital[lang]}`;
   return (
     <div className="flex flex-col items-center gap-3 text-center">
       {type === 'shape' ? <Silhouette iso={c.iso2} className="answer-shape" /> : type !== 'flag' && <Flag iso={c.iso2} alt="" className="prompt-flag-small" eager />}
       <span className="inline-flex items-center gap-2">
-        <span className="prompt-big" lang={spanish ? 'es' : undefined}>
+        <span className={`prompt-big ${type === 'sentence-es' ? 'prompt-sentence' : ''}`} lang={spanish ? 'es' : undefined}>
           {main}
         </span>
         {spanish && <SpeakButton text={type === 'demonym-es' && c.demonym ? `${c.demonym.esM}, ${c.demonym.esF}` : main} lang="es" />}
