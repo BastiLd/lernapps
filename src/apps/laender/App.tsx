@@ -12,8 +12,9 @@ import { dialogOpen, isTyping } from './lib/ui';
 import { useApp } from './state';
 
 const StatsView = lazy(() => import('./components/StatsView'));
+const GamesView = lazy(() => import('./components/GamesView'));
 
-const TITLES: Record<View, string> = { explore: 'Entdecken', cards: 'Karteikarten', quiz: 'Quiz', stats: 'Fortschritt' };
+const TITLES: Record<View, string> = { explore: 'Entdecken', cards: 'Karteikarten', quiz: 'Quiz', games: 'Spiele', stats: 'Fortschritt' };
 
 export default function App() {
   const [route, navigate] = useRoute();
@@ -63,6 +64,11 @@ export default function App() {
           {route.view === 'explore' && <ExploreView iso={route.iso} onSelect={selectCountry} />}
           {route.view === 'cards' && <FlashcardsView />}
           {route.view === 'quiz' && <QuizView />}
+          {route.view === 'games' && (
+            <Suspense fallback={<div className="p-10 text-center text-muted">Lade …</div>}>
+              <GamesView />
+            </Suspense>
+          )}
           {route.view === 'stats' && (
             <Suspense fallback={<div className="p-10 text-center text-muted">Lade …</div>}>
               <StatsView onSelect={selectCountry} />

@@ -1,14 +1,17 @@
 // Builds the country outlines for the map from geoBoundaries CGAZ ADM0 (CC BY 4.0). Coasts and river
 // borders match the satellite images far better than Natural Earth (which was off by up to 1–2 km).
 //
-//   src/apps/laender/data/borders.json   whole world, ~3 km detail – bundled with the app (world view)
-//   public/geo/mid/<id>.<n>.json          ~400 m detail – loaded when zoomed in (z ≥ 5)
-//   public/geo/hi/<id>.<n>.json           ~100 m detail – loaded when zoomed in further (z ≥ 8)
-//   src/apps/laender/data/detail-index.json   which detail file covers which area (bounding boxes)
-//
-// Detail files are split by region (<n>): Spain's mainland and the Canary Islands, or the US mainland,
-// Alaska and Hawaii are separate files, so zooming into one region never downloads the others.
+//   src/apps/laender/data/borders.json   whole world, ~3 km detail – bundled with the app (world view, zoom < 5)
+//   public/geo/mid/<id>.<n>.json          ~250 m detail per country region – loaded when zoomed in (zoom 5–9)
+//   public/geo/fine/<x>_<y>.json          ~50 m detail in 2° × 2° tiles – loaded when zoomed in further (zoom ≥ 9)
+//   src/apps/laender/data/detail-index.json   which file covers which area
 //   src/apps/laender/data/shapes.json     country silhouettes as SVG paths (detail page, "Umriss" questions)
+//   src/apps/laender/data/shapes-true.json   the same in an equal-area projection with a km scale (size comparison)
+//
+// Mid files are split by region (<n>): Spain's mainland and the Canary Islands are separate files. The 50 m
+// level is cut into tiles, so zooming into Canada never downloads all of Canada: each tile holds the parts of
+// all countries inside it, cut a little beyond the tile edge – the app draws each tile only inside its exact
+// square, so the cut lines are never visible.
 //
 // The download (~100 MB) is cached outside the project (OS temp folder), so OneDrive and Git never see it.
 // Usage: npm run data:borders
@@ -27,10 +30,15 @@ const SHP = join(CACHE, 'geoBoundariesCGAZ_ADM0.shp');
 const ZIP_URL = 'https://github.com/wmgeolab/geoBoundaries/raw/main/releaseData/CGAZ/geoBoundariesCGAZ_ADM0.zip';
 
 const LEVELS = {
-  hi: { interval: 100, precision: 0.0001 },
-  mid: { interval: 400, precision: 0.0005 },
+  fine: { interval: 50, precision: 0.0001 },
+  mid: { interval: 250, precision: 0.0003 },
   overview: { interval: 3000, precision: 0.001 },
 };
+/** Tile size (degrees) and how far beyond its edge each tile's outlines reach (degrees). */
+const TILE = 2;
+const TILE_MARGIN = 0.02;
+/** Coordinates in the tile files are integers in 1/10 000° (≈ 11 m). */
+const Q = 1e4;
 const OVERVIEW_MIN_ISLAND_KM2 = 40;
 /** Parts of a country further apart than this (degrees) go into separate detail files. */
 const REGION_GAP = 3;
@@ -191,27 +199,120 @@ function writeDir(dir, files) {
   return `${n} Dateien, ${(bytes / 1e6).toFixed(1)} MB (größte: ${biggest[0]} ${Math.round(biggest[1] / 1024)} KB)`;
 }
 
-// ---------------------------------------------------------------- 3. detail files per region
+// ---------------------------------------------------------------- 3a. mid detail per region
 const midFixed = fixUp(JSON.parse(simplified['mid.json']));
 const regions = new Map(midFixed.features.map((f) => [f.properties.id, regionsOf(polysOf(f.geometry))]));
-const index = {};
-for (const name of ['hi', 'mid']) {
-  log(`Detailstufe ${name} …`);
-  const fc = splitRegions(name === 'mid' ? midFixed : fixUp(JSON.parse(simplified[`${name}.json`])), regions);
-  if (name === 'hi') {
-    // Bounding box of every region, from the most detailed outlines (rounded outwards).
-    for (const f of fc.features) {
-      const [id, k] = f.properties.key.split('.');
-      const b = bboxOf(polysOf(f.geometry).map((p) => p[0]));
-      (index[id] ??= [])[Number(k)] = [Math.floor(b[0] * 100) / 100, Math.floor(b[1] * 100) / 100, Math.ceil(b[2] * 100) / 100, Math.ceil(b[3] * 100) / 100];
+// fine.tiles: tile -> countries in its file; fine.solid: tiles completely inside one country (no file needed).
+const index = { mid: {}, fine: { size: TILE, tiles: {}, solid: {} } };
+{
+  log('Detailstufe mittel (~250 m) …');
+  const fc = splitRegions(midFixed, regions);
+  for (const f of fc.features) {
+    const [id, k] = f.properties.key.split('.');
+    const b = bboxOf(polysOf(f.geometry).map((p) => p[0]));
+    (index.mid[id] ??= [])[Number(k)] = [Math.floor(b[0] * 100) / 100, Math.floor(b[1] * 100) / 100, Math.ceil(b[2] * 100) / 100, Math.ceil(b[3] * 100) / 100];
+  }
+  const files = await dissolve(fc, `-split key -o format=topojson singles precision=${LEVELS.mid.precision}`, 'key');
+  log(`public/geo/mid: ${writeDir('public/geo/mid', files)}`);
+}
+
+// ---------------------------------------------------------------- 3b. fine detail in tiles
+/** Sutherland–Hodgman against one axis-parallel line; keeps the side where coord >= v (keepAbove) or <= v. */
+function clipHalf(pts, axis, v, keepAbove) {
+  const out = [];
+  if (!pts.length) return out;
+  const inside = (p) => (keepAbove ? p[axis] >= v : p[axis] <= v);
+  let prev = pts[pts.length - 1];
+  let prevIn = inside(prev);
+  for (const cur of pts) {
+    const curIn = inside(cur);
+    if (curIn !== prevIn) {
+      const t = (v - prev[axis]) / (cur[axis] - prev[axis]);
+      out.push(axis === 0 ? [v, prev[1] + t * (cur[1] - prev[1])] : [prev[0] + t * (cur[0] - prev[0]), v]);
+    }
+    if (curIn) out.push(cur);
+    prev = cur;
+    prevIn = curIn;
+  }
+  return out;
+}
+const clipBand = (pts, axis, min, max) => clipHalf(clipHalf(pts, axis, min, true), axis, max, false);
+
+/** Quantized, delta-encoded ring: [x0, y0, dx1, dy1, …] in 1/Q degrees; null if it collapses. */
+function encodeRing(pts) {
+  const out = [];
+  let px = null;
+  let py = null;
+  for (const [x, y] of pts) {
+    const qx = Math.round(x * Q);
+    const qy = Math.round(y * Q);
+    if (qx === px && qy === py) continue;
+    if (px === null) out.push(qx, qy);
+    else out.push(qx - px, qy - py);
+    px = qx;
+    py = qy;
+  }
+  return out.length >= 6 ? out : null;
+}
+
+log('Detailstufe fein (~50 m) …');
+const fineFixed = JSON.parse((await dissolve(fixUp(JSON.parse(simplified['fine.json'])), `-o f.json format=geojson precision=${LEVELS.fine.precision / 10}`))['f.json']);
+delete simplified['fine.json'];
+const tiles = new Map(); // "x_y" -> Map(id -> rings)
+const addToTile = (key, id, ring) => {
+  if (!tiles.has(key)) tiles.set(key, new Map());
+  const t = tiles.get(key);
+  if (!t.has(id)) t.set(id, []);
+  t.get(id).push(ring);
+};
+for (const f of fineFixed.features) {
+  const id = f.properties.id;
+  if (id === 'AQ') continue; // Antarctica: the ~250 m level is plenty
+  for (const poly of polysOf(f.geometry)) {
+    for (const closed of poly) {
+      const ring = closed.slice(0, -1);
+      const [minX, minY, maxX, maxY] = bboxOf([ring]);
+      for (let ty = Math.floor((minY - TILE_MARGIN) / TILE); ty <= Math.floor((maxY + TILE_MARGIN) / TILE); ty++) {
+        const y0 = ty * TILE - TILE_MARGIN;
+        const y1 = (ty + 1) * TILE + TILE_MARGIN;
+        const band = minY >= y0 && maxY <= y1 ? ring : clipBand(ring, 1, y0, y1);
+        if (band.length < 3) continue;
+        const [bx0, , bx1] = bboxOf([band]);
+        for (let tx = Math.floor((bx0 - TILE_MARGIN) / TILE); tx <= Math.floor((bx1 + TILE_MARGIN) / TILE); tx++) {
+          const x0 = tx * TILE - TILE_MARGIN;
+          const x1 = (tx + 1) * TILE + TILE_MARGIN;
+          const cell = bx0 >= x0 && bx1 <= x1 ? band : clipBand(band, 0, x0, x1);
+          if (cell.length < 3 || planarArea(cell) < 1e-10) continue;
+          const enc = encodeRing(cell);
+          if (enc) addToTile(`${tx}_${ty}`, id, enc);
+        }
+      }
     }
   }
-  const files = await dissolve(fc, `-split key -o format=topojson singles precision=${LEVELS[name].precision}`, 'key');
-  log(`public/geo/${name}: ${writeDir(`public/geo/${name}`, files)}`);
 }
+{
+  const files = {};
+  const full = (TILE + 2 * TILE_MARGIN) ** 2 * Q * Q;
+  for (const [key, byId] of tiles) {
+    const [only] = byId.values();
+    const ring = only[0];
+    if (byId.size === 1 && only.length === 1 && ring.length <= 12) {
+      // Decode the few points and check whether the ring is the whole (extended) tile square.
+      const pts = [];
+      for (let k = 0, x = 0, y = 0; k < ring.length; k += 2) pts.push([(x += ring[k]), (y += ring[k + 1])]);
+      if (planarArea(pts) >= full * 0.999) {
+        index.fine.solid[key] = [...byId.keys()][0];
+        continue;
+      }
+    }
+    files[`${key}.json`] = JSON.stringify({ f: [...byId].map(([i, r]) => ({ i, r })) });
+    index.fine.tiles[key] = [...byId.keys()];
+  }
+  log(`public/geo/fine: ${writeDir('public/geo/fine', files)}`);
+}
+if (existsSync('public/geo/hi')) rmSync('public/geo/hi', { recursive: true });
 writeFileSync('src/apps/laender/data/detail-index.json', JSON.stringify(index));
-const multi = Object.entries(index).filter(([, r]) => r.length > 1);
-log(`detail-index.json: ${Object.keys(index).length} Gebiete, ${multi.length} davon in mehreren Regionen (z. B. ${multi.slice(0, 6).map(([id, r]) => `${id}: ${r.length}`).join(', ')})`);
+log(`detail-index.json: ${Object.keys(index.mid).length} Gebiete (mittel), ${Object.keys(index.fine.tiles).length} Kacheln als Datei + ${Object.keys(index.fine.solid).length} ganz ausgefüllte (fein)`);
 
 // ---------------------------------------------------------------- 4. overview (bundled)
 log('Übersicht …');
@@ -276,7 +377,24 @@ function simplifyDP(pts, tol) {
   return pts.filter((_, i) => keep[i]);
 }
 
-function silhouette(id, geometry) {
+/** Lambert azimuthal equal-area projection around (lng0, lat0), in km – areas keep their true size. */
+function equalArea(lng0, lat0) {
+  const R = 6371;
+  const l0 = lng0 * RAD;
+  const p0 = lat0 * RAD;
+  return ([lng, lat]) => {
+    const l = lng * RAD - l0;
+    const p = lat * RAD;
+    const k = Math.sqrt(2 / (1 + Math.sin(p0) * Math.sin(p) + Math.cos(p0) * Math.cos(p) * Math.cos(l)));
+    return [R * k * Math.cos(p) * Math.sin(l), -R * k * (Math.cos(p0) * Math.sin(p) - Math.sin(p0) * Math.cos(p) * Math.cos(l))];
+  };
+}
+
+/**
+ * Silhouette of a country as an SVG path in a 100-unit box. Mercator (as on the map) for recognising the
+ * shape, or equal-area with "km" = kilometres per unit for comparing true sizes.
+ */
+function silhouette(id, geometry, trueSize = false) {
   let polys = polysOf(geometry).map((p) => ({ p, area: areaKm2(p), box: bboxOf([p[0]]) }));
   if (id === 'US') polys = polys.filter((x) => x.box[1] < 50 && x.box[0] > -130); // lower 48 states – as on most maps
   polys.sort((a, b) => b.area - a.area);
@@ -299,26 +417,35 @@ function silhouette(id, geometry) {
   const total = [...used].reduce((a, x) => a + x.area, 0);
   const chosen = [...used].filter((x) => x.area >= total * 0.0008 || total < 2000);
 
-  const rings = chosen.flatMap((x) => x.p.map((ring) => ring.map(([lng, lat]) => [lng, -mercY(lat)])));
+  const project = trueSize ? equalArea((box[0] + box[2]) / 2, (box[1] + box[3]) / 2) : ([lng, lat]) => [lng, -mercY(lat)];
+  const rings = chosen.flatMap((x) => x.p.map((ring) => ring.map(project)));
   const [minX, minY, maxX, maxY] = bboxOf(rings);
   const scale = 100 / Math.max(maxX - minX, maxY - minY);
   const r1 = (v) => Math.round(v * 10) / 10;
-  const projected = rings.map((ring) => simplifyDP(ring.map(([x, y]) => [(x - minX) * scale, (y - minY) * scale]), 0.28)).filter((ring) => ring.length >= 4);
+  const projected = rings.map((ring) => simplifyDP(ring.map(([x, y]) => [(x - minX) * scale, (y - minY) * scale]), trueSize ? 0.45 : 0.28)).filter((ring) => ring.length >= 4);
   // Specks below ~1 unit² (of 100 × 100) are invisible; island states keep their biggest islands anyway.
   let visible = projected.filter((ring) => planarArea(ring) > 0.8);
   if (!visible.length) visible = projected.sort((a, b) => planarArea(b) - planarArea(a)).slice(0, 12);
+  if (!visible.length) visible = rings.map((ring) => ring.map(([x, y]) => [(x - minX) * scale, (y - minY) * scale])).filter((ring) => ring.length >= 4);
   const d = visible.map((ring) => `M${ring.slice(0, -1).map(([x, y]) => `${r1(x)} ${r1(y)}`).join(' ')}Z`).join('');
-  return { w: r1((maxX - minX) * scale), h: r1((maxY - minY) * scale), d };
+  const shape = { w: r1((maxX - minX) * scale), h: r1((maxY - minY) * scale), d };
+  return trueSize ? { ...shape, km: Math.round((1 / scale) * 1000) / 1000 } : shape;
 }
 
 const mid = JSON.parse((await dissolve(midFixed, `-o m.json format=geojson precision=${LEVELS.mid.precision}`))['m.json']);
 const shapes = {};
+const trueShapes = {};
 for (const f of mid.features) {
   const id = f.properties.id;
   if (!inApp.has(id)) continue;
   const s = silhouette(id, f.geometry);
   if (s?.d) shapes[id] = s;
+  const t = silhouette(id, f.geometry, true);
+  if (t?.d) trueShapes[id] = t;
 }
+const trueJson = JSON.stringify(trueShapes);
+writeFileSync('src/apps/laender/data/shapes-true.json', trueJson);
+log(`shapes-true.json: ${Object.keys(trueShapes).length} flächentreue Umrisse, ${Math.round(trueJson.length / 1024)} KB`);
 const noShape = [...inApp].filter((iso) => !shapes[iso]);
 const shapesJson = JSON.stringify(shapes);
 writeFileSync('src/apps/laender/data/shapes.json', shapesJson);

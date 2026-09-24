@@ -1,18 +1,19 @@
 import { useCallback, useEffect, useState } from 'react';
 
-export type View = 'explore' | 'cards' | 'quiz' | 'stats';
+export type View = 'explore' | 'cards' | 'quiz' | 'games' | 'stats';
 export interface Route {
   view: View;
   iso?: string;
 }
 
-const SLUG: Record<View, string> = { explore: 'entdecken', cards: 'karteikarten', quiz: 'quiz', stats: 'fortschritt' };
+const SLUG: Record<View, string> = { explore: 'entdecken', cards: 'karteikarten', quiz: 'quiz', games: 'spiele', stats: 'fortschritt' };
 
 export function parseHash(hash: string): Route {
   const [slug, iso] = hash.replace(/^#\/?/, '').split('/');
   if (slug === SLUG.cards) return { view: 'cards' };
   if (slug === SLUG.quiz) return { view: 'quiz' };
   if (slug === SLUG.stats) return { view: 'stats' };
+  if (slug === SLUG.games) return { view: 'games' };
   return { view: 'explore', iso: iso && /^[A-Z]{2}$/.test(iso) ? iso : undefined };
 }
 

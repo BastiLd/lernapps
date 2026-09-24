@@ -1,7 +1,7 @@
 import { Check } from 'lucide-react';
 import { useMemo, useState } from 'react';
 import { CONTINENTS, COUNTRIES, LANGUAGE_OPTIONS, normalize } from '../lib/data';
-import { applyFilters, DEFAULT_FILTERS, LANG_MODES, PRESETS } from '../lib/filters';
+import { applyFilters, DEFAULT_FILTERS, GROUPS, LANG_MODES, PRESETS } from '../lib/filters';
 import type { ContinentId, Filters } from '../lib/types';
 import { useApp } from '../state';
 import Flag from './Flag';
@@ -22,7 +22,7 @@ export default function FilterSheet({ open, onClose }: { open: boolean; onClose:
     return list.slice(0, q ? 40 : 24);
   }, [langQuery]);
 
-  const activePreset = PRESETS.find((p) => (p.filters.lang ?? '') === filters.lang && (!p.filters.lang || filters.langMode === 'official') && !filters.continents.length)?.id;
+  const activePreset = PRESETS.find((p) => (p.filters.lang ?? '') === filters.lang && (!p.filters.lang || filters.langMode === 'official') && !filters.continents.length && !filters.group)?.id;
 
   return (
     <Sheet
@@ -93,6 +93,20 @@ export default function FilterSheet({ open, onClose }: { open: boolean; onClose:
           {!langs.length && <p className="text-sm text-muted">Keine Sprache gefunden.</p>}
         </div>
         <p className="text-xs text-muted">Die Zahl zeigt, in wie vielen Ländern die Sprache Amtssprache ist.</p>
+      </section>
+
+      <section className="mt-7 space-y-3">
+        <h3 className="label">Gruppe</h3>
+        <div className="flex flex-wrap gap-2">
+          <button type="button" className="chip" aria-pressed={!filters.group} onClick={() => set({ group: '' })}>
+            Alle
+          </button>
+          {GROUPS.map((g) => (
+            <button key={g.id} type="button" className="chip" aria-pressed={filters.group === g.id} onClick={() => set({ group: filters.group === g.id ? '' : g.id })} title={g.hint}>
+              {g.label}
+            </button>
+          ))}
+        </div>
       </section>
 
       <section className="mt-7 space-y-3">

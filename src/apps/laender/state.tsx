@@ -12,15 +12,25 @@ export interface MapScene {
   neighbors?: string[] | null;
   /** 0…1 per country (learning progress) – colours the whole map. */
   heat?: Record<string, number> | null;
+  /** Map games: countries already found (green) and given up (red). */
+  found?: string[] | null;
+  missed?: string[] | null;
+  /** "Wo liegt …?": the player's guess, the right place and a label for the right place. */
+  guess?: [number, number] | null;
+  truth?: [number, number] | null;
+  truthLabel?: string;
   correct?: string | null;
   wrong?: string | null;
   capital?: boolean;
   capitalLabel?: boolean;
   hoverNames?: boolean;
   hideLabels?: boolean;
-  fly?: 'focus' | 'set' | 'world' | 'none';
+  fly?: 'focus' | 'set' | 'world' | 'pins' | 'view' | 'none';
+  /** Area to show with fly: 'view' – [[south, west], [north, east]]. */
+  view?: [[number, number], [number, number]] | null;
   flyKey?: string | number;
-  clickable?: 'select' | 'answer' | null;
+  /** select/answer: click on a country · point: click anywhere (map games) */
+  clickable?: 'select' | 'answer' | 'point' | null;
 }
 
 export interface CardProgress {
@@ -49,6 +59,7 @@ const DEFAULT_SETTINGS: Settings = {
   mapBorders: true,
   mapStyle: 'satellite',
   speech: true,
+  sound: true,
 };
 
 interface AppState {
@@ -64,6 +75,7 @@ interface AppState {
   scene: MapScene;
   setScene: (s: MapScene) => void;
   mapClickRef: MutableRefObject<((iso2: string) => void) | null>;
+  mapPointRef: MutableRefObject<((lat: number, lng: number) => void) | null>;
   isMobile: boolean;
   openMap: () => void;
   /** Desktop: map takes the whole width (content hidden). */
@@ -91,6 +103,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [days, setDays] = usePersistentState<DayLog>('laender:days', {});
   const [scene, setScene] = useState<MapScene>({ fly: 'world', flyKey: 'init' });
   const mapClickRef = useRef<((iso2: string) => void) | null>(null);
+  const mapPointRef = useRef<((lat: number, lng: number) => void) | null>(null);
   const isMobile = useMediaQuery('(max-width: 767px)');
   const [mapMax, setMapMax] = useState(false);
 
@@ -133,7 +146,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const openMap = useCallback(() => updateSettings({ mapOpen: true }), [updateSettings]);
 
   const value = useMemo<AppState>(
-    () => ({ settings, updateSettings, filters, setFilters, filtered, progress, days, recordAnswer, resetProgress, scene, setScene, mapClickRef, isMobile, openMap, mapMax: mapMax && !isMobile, setMapMax }),
+    () => ({ settings, updateSettings, filters, setFilters, filtered, progress, days, recordAnswer, resetProgress, scene, setScene, mapClickRef, mapPointRef, isMobile, openMap, mapMax: mapMax && !isMobile, setMapMax }),
     [settings, updateSettings, filters, setFilters, filtered, progress, days, recordAnswer, resetProgress, scene, isMobile, openMap, mapMax],
   );
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;

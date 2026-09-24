@@ -1,8 +1,9 @@
-import { ArrowLeft, ChevronLeft, ChevronRight, Coins, Landmark, Languages, Lightbulb, MapPinned, Mountain, Music, Phone, Ruler, ScrollText, UserRound, Users } from 'lucide-react';
+import { ArrowLeft, ChevronLeft, ChevronRight, Clock3, Coins, Landmark, Languages, Lightbulb, MapPinned, Mountain, Music, Phone, Ruler, Scale, ScrollText, UserRound, Users } from 'lucide-react';
 import type { ReactNode } from 'react';
 import { BY_ISO, CONTINENT_LABEL, formatArea, formatPopulation, LANG_LABEL, languageName, STATUS_LABEL } from '../lib/data';
 import type { Country, Lang } from '../lib/types';
 import { useApp } from '../state';
+import { LocalTime, SizeCompare } from './Extras';
 import Flag from './Flag';
 import Silhouette from './Silhouette';
 import SpeakButton from './Speak';
@@ -39,7 +40,8 @@ const AUSTRIA_KM2 = 83879;
 const VIENNA_KM2 = 414.9;
 
 /** Makes an area imaginable: compared with Austria, or with Vienna for tiny countries. */
-function compareArea(km2: number): string {
+function compareArea(km2: number, iso: string): string {
+  if (iso === 'AT') return `≈ ${nf.format(km2 / VIENNA_KM2)}× so groß wie Wien`;
   if (km2 >= AUSTRIA_KM2) return `≈ ${nf.format(km2 / AUSTRIA_KM2)}× so groß wie Österreich`;
   if (km2 >= VIENNA_KM2 * 10) return `≈ ${pf.format((km2 / AUSTRIA_KM2) * 100)} % von Österreich`;
   if (km2 >= VIENNA_KM2) return `≈ ${nf.format(km2 / VIENNA_KM2)}× so groß wie Wien`;
@@ -181,7 +183,7 @@ export default function CountryDetail({ country: c, position, onSelect, onPrev, 
 
         <Fact icon={<Ruler size={17} />} title="Fläche">
           <p className="fact-big">{formatArea(c.area)}</p>
-          <p className="mt-0.5 text-sm text-muted">{compareArea(c.area)}</p>
+          <p className="mt-0.5 text-sm text-muted">{compareArea(c.area, c.iso2)}</p>
         </Fact>
 
         {c.currencies.length > 0 && (
@@ -205,6 +207,12 @@ export default function CountryDetail({ country: c, position, onSelect, onPrev, 
           <Fact icon={<Phone size={17} />} title="Vorwahl & Internet">
             {c.phone && <p className="font-bold tabular-nums">{c.phone}</p>}
             {c.tld && <p className="mt-0.5 text-sm text-muted">Internet-Endung {c.tld}</p>}
+          </Fact>
+        )}
+
+        {c.timezone && (
+          <Fact icon={<Clock3 size={17} />} title={`Ortszeit in ${c.capital[lang]}`}>
+            <LocalTime timeZone={c.timezone} />
           </Fact>
         )}
 
@@ -249,6 +257,10 @@ export default function CountryDetail({ country: c, position, onSelect, onPrev, 
           ) : (
             <p className="text-sm text-muted">Keine Landgrenzen zu anderen Ländern.</p>
           )}
+        </Fact>
+
+        <Fact icon={<Scale size={17} />} title="Größenvergleich" wide>
+          <SizeCompare iso={c.iso2} lang={lang} />
         </Fact>
       </div>
 

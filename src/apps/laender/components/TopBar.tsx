@@ -1,4 +1,4 @@
-import { ChartNoAxesColumn, Compass, Layers, LayoutGrid, Search, Settings2, SlidersHorizontal, Trophy, X } from 'lucide-react';
+import { ChartNoAxesColumn, Compass, Gamepad2, Layers, LayoutGrid, Search, Settings2, SlidersHorizontal, Trophy, X } from 'lucide-react';
 import { describeFilters, DEFAULT_FILTERS, isFiltered } from '../lib/filters';
 import type { View } from '../lib/router';
 import { useApp } from '../state';
@@ -7,6 +7,7 @@ export const TABS: { id: View; label: string; short: string; icon: typeof Compas
   { id: 'explore', label: 'Entdecken', short: 'Entdecken', icon: Compass },
   { id: 'cards', label: 'Karteikarten', short: 'Karten', icon: Layers },
   { id: 'quiz', label: 'Quiz', short: 'Quiz', icon: Trophy },
+  { id: 'games', label: 'Spiele', short: 'Spiele', icon: Gamepad2 },
   { id: 'stats', label: 'Fortschritt', short: 'Fortschritt', icon: ChartNoAxesColumn },
 ];
 

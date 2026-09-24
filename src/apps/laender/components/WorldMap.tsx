@@ -4,7 +4,8 @@ import type { Position } from 'geojson';
 import { useEffect, useRef, useState } from 'react';
 import { heatColor, MAP_COLORS } from '../lib/colors';
 import { BY_ISO } from '../lib/data';
-import { detailLevelFor, loadDetail, loadOverview, REGIONS, type DetailLevel, type Geo } from '../lib/geo';
+import { detailLevelFor, loadUnit, UNITS, type Box, type DetailLevel, type DetailUnit, type Piece } from '../lib/detail';
+import { loadOverview, type Geo } from '../lib/geo';
 import type { Country, MapStyle } from '../lib/types';
 import { useApp, type MapScene } from '../state';
 
@@ -26,6 +27,30 @@ const BLANK = {
 
 const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const isDarkTheme = () => document.documentElement.dataset.theme === 'dark';
+
+type DrawCanvas = { _updatePoly(layer: L.Path & { options: { clipBox?: Box } }, closed?: boolean): void };
+const canvasProto = L.Canvas.prototype as unknown as DrawCanvas;
+
+/**
+ * Canvas renderer that draws the 50 m tile pieces only inside their own square. The pieces reach a little
+ * beyond the square (where they were cut), so the cut lines lie outside the drawn area and never show –
+ * neighbouring tiles fit together seamlessly.
+ */
+const ClipCanvas = (L.Canvas as unknown as { extend(props: object): new (options?: L.RendererOptions) => L.Canvas }).extend({
+  _updatePoly(this: L.Canvas & { _map: L.Map; _ctx: CanvasRenderingContext2D; _drawing: boolean }, layer: L.Path & { options: { clipBox?: Box } }, closed?: boolean) {
+    const box = layer.options.clipBox;
+    if (!box || !this._drawing) return canvasProto._updatePoly.call(this, layer, closed);
+    const nw = this._map.latLngToLayerPoint([box[3], box[0]]);
+    const se = this._map.latLngToLayerPoint([box[1], box[2]]);
+    const ctx = this._ctx;
+    ctx.save();
+    ctx.beginPath();
+    ctx.rect(nw.x, nw.y, se.x - nw.x, se.y - nw.y);
+    ctx.clip();
+    canvasProto._updatePoly.call(this, layer, closed);
+    ctx.restore();
+  },
+});
 
 function ringArea(ring: Position[]): number {
   let a = 0;
@@ -53,20 +78,17 @@ function mainBounds(geo: Geo | undefined, country: Country | null): L.LatLngBoun
 }
 
 /** Does the box [w, s, e, n] intersect the view, also counting its copies one world to the left/right? */
-function intersectsWrapped(view: L.LatLngBounds, [w, s, e, n]: [number, number, number, number]): boolean {
+function intersectsWrapped(view: L.LatLngBounds, [w, s, e, n]: Box): boolean {
   for (const dx of [0, -360, 360]) {
     if (w + dx <= view.getEast() && e + dx >= view.getWest() && s <= view.getNorth() && n >= view.getSouth()) return true;
   }
   return false;
 }
 
-/** "ES.1" → "ES" */
-const isoOf = (region: string) => region.slice(0, region.indexOf('.'));
-
-function pinIcon(kind: 'capital' | 'other') {
+function pinIcon(kind: 'capital' | 'other' | 'guess') {
   return L.divIcon({
     className: 'map-pin-wrap',
-    html: `<span class="map-pin ${kind === 'other' ? 'map-pin--other' : ''}"><span></span></span>`,
+    html: `<span class="map-pin map-pin--${kind}"><span></span></span>`,
     iconSize: [28, 28],
     iconAnchor: [14, 14],
   });
@@ -75,8 +97,15 @@ function pinIcon(kind: 'capital' | 'other') {
 const pulseIcon = (color: string) =>
   L.divIcon({ className: 'map-pin-wrap', html: `<span class="map-pulse" style="--c:${color}"></span>`, iconSize: [46, 46], iconAnchor: [23, 23] });
 
+type Styleable = L.Layer & { setStyle(style: L.PathOptions): unknown; bringToFront(): unknown };
+
+interface LoadedUnit {
+  key: string;
+  layers: { iso: string; layer: Styleable }[];
+}
+
 export default function WorldMap() {
-  const { scene, settings, mapClickRef } = useApp();
+  const { scene, settings, mapClickRef, mapPointRef } = useApp();
   const container = useRef<HTMLDivElement>(null);
   const mapRef = useRef<L.Map | null>(null);
   const renderer = useRef<L.Canvas | null>(null);
@@ -85,9 +114,15 @@ export default function WorldMap() {
   const overviewLayers = useRef(new Map<string, L.Path>());
   const geos = useRef(new Map<string, Geo>());
   const detailGroup = useRef<L.LayerGroup | null>(null);
-  const detailLayers = useRef(new Map<string, L.GeoJSON>()); // region key ("ES.0") → layer
+  // Detailed outlines: units (country regions or tiles) of the current level, and those of the previous
+  // level, which stay on the map until the new level is complete (no flicker back to the coarse outline).
+  const units = useRef(new Map<string, LoadedUnit>());
+  const stale = useRef<LoadedUnit[]>([]);
+  const byIso = useRef(new Map<string, Set<Styleable>>());
   const detailLevel = useRef<DetailLevel | null>(null);
+  const pendingIsos = useRef(new Set<string>());
   const wanted = useRef(new Set<string>());
+  const generation = useRef(0);
   const markers = useRef<L.LayerGroup | null>(null);
   const tip = useRef<L.Tooltip | null>(null);
   const sceneRef = useRef<MapScene>(scene);
@@ -125,6 +160,7 @@ export default function WorldMap() {
       fill: true,
       fillColor: blank ? blank.land : '#000',
       fillOpacity: blank ? 1 : 0,
+      dashArray: undefined,
       interactive: true,
     };
     if (s.heat) {
@@ -133,22 +169,20 @@ export default function WorldMap() {
       else if (inApp) style = { ...style, fillColor: blank ? blank.land : '#94a3b8', fillOpacity: blank ? 1 : 0.18 };
     }
     if (s.set && inApp && s.set.includes(iso)) style = { ...style, color: blank ? '#0f766e' : '#99f6e4', weight: 1.4, fillColor: MAP_COLORS.set, fillOpacity: blank ? 0.55 : 0.28 };
+    if (s.found?.includes(iso)) style = { ...style, color: MAP_COLORS.correct, weight: 1.6, fillColor: MAP_COLORS.correct, fillOpacity: blank ? 0.7 : 0.42 };
+    if (s.missed?.includes(iso)) style = { ...style, color: MAP_COLORS.wrong, weight: 1.6, fillColor: MAP_COLORS.wrong, fillOpacity: blank ? 0.7 : 0.42 };
     if (s.neighbors?.includes(iso)) style = { ...style, color: blank ? '#6741d9' : MAP_COLORS.neighbor, weight: 1.8, dashArray: '5 4', fillColor: MAP_COLORS.neighbor, fillOpacity: blank ? 0.35 : 0.1 };
     if (s.focus === iso) style = { ...style, color: MAP_COLORS.focus, weight: 3.2, dashArray: undefined, fillColor: MAP_COLORS.focus, fillOpacity: blank ? 0.75 : 0.2 };
     if (s.wrong === iso) style = { ...style, color: MAP_COLORS.wrong, weight: 3.2, dashArray: undefined, fillColor: MAP_COLORS.wrong, fillOpacity: blank ? 0.75 : 0.38 };
     if (s.correct === iso) style = { ...style, color: MAP_COLORS.correct, weight: 3.2, dashArray: undefined, fillColor: MAP_COLORS.correct, fillOpacity: blank ? 0.75 : 0.38 };
-    if (hovered.current === iso && s.clickable && inApp)
+    if (hovered.current === iso && (s.clickable === 'select' || s.clickable === 'answer') && inApp)
       style = { ...style, weight: (style.weight ?? 1) + 1.6, fillOpacity: Math.min(1, (style.fillOpacity ?? 0) + 0.14), color: style.color === lineColor ? (blank ? '#15181e' : '#fff') : style.color };
     return style;
   }
 
-  const detailOf = (iso: string) => [...detailLayers.current].filter(([key]) => isoOf(key) === iso).map(([, lyr]) => lyr);
-
-  /** The overview polygon is hidden once every region of the country that is in view is shown in detail. */
+  /** The overview polygon is hidden while the country is shown in detail (and nothing of it is still loading). */
   function overviewStyle(iso: string): L.PathOptions {
-    const shown = detailOf(iso).length > 0;
-    const pending = [...wanted.current].some((key) => isoOf(key) === iso && !detailLayers.current.has(key));
-    if (shown && !pending) return { stroke: false, fill: false, interactive: false };
+    if (byIso.current.get(iso)?.size && !pendingIsos.current.has(iso)) return { stroke: false, fill: false, interactive: false };
     return styleFor(iso);
   }
 
@@ -159,28 +193,30 @@ export default function WorldMap() {
 
   function restyle() {
     for (const [iso, lyr] of overviewLayers.current) lyr.setStyle(overviewStyle(iso));
-    for (const [key, lyr] of detailLayers.current) lyr.setStyle(styleFor(isoOf(key)));
+    for (const [iso, set] of byIso.current) for (const lyr of set) lyr.setStyle(styleFor(iso));
     for (const iso of frontIsos()) {
       overviewLayers.current.get(iso)?.bringToFront();
-      for (const lyr of detailOf(iso)) lyr.bringToFront();
+      for (const lyr of byIso.current.get(iso) ?? []) lyr.bringToFront();
     }
     const map = mapRef.current;
     if (map) {
       const blank = effectiveStyle() === 'blank';
       map.getContainer().style.background = blank ? BLANK[isDarkTheme() ? 'dark' : 'light'].water : '';
+      map.getContainer().classList.toggle('is-point-mode', sceneRef.current.clickable === 'point');
     }
   }
 
   /** Re-applies the style of one country (overview and detail). */
   function refresh(iso: string) {
     overviewLayers.current.get(iso)?.setStyle(overviewStyle(iso));
-    for (const lyr of detailOf(iso)) lyr.setStyle(styleFor(iso));
+    for (const lyr of byIso.current.get(iso) ?? []) lyr.setStyle(styleFor(iso));
   }
 
   function bindEvents(iso: string, lyr: L.Layer) {
     const map = mapRef.current!;
     lyr.on('click', () => {
-      if (sceneRef.current.clickable) mapClickRef.current?.(iso);
+      const c = sceneRef.current.clickable;
+      if (c === 'select' || c === 'answer') mapClickRef.current?.(iso);
     });
     lyr.on('mousemove', (e: L.LeafletMouseEvent) => {
       const s = sceneRef.current;
@@ -200,50 +236,87 @@ export default function WorldMap() {
     });
   }
 
-  /** Swaps the coarse overview outlines for detailed ones for every country in view (and back when zooming out). */
+  function addPiece(unit: LoadedUnit, piece: Piece) {
+    const opts = { ...styleFor(piece.iso), renderer: renderer.current ?? undefined };
+    let layer: Styleable;
+    if ('geo' in piece) {
+      layer = L.geoJSON(piece.geo, { ...({ renderer: renderer.current } as L.GeoJSONOptions), style: () => styleFor(piece.iso) });
+      (layer as L.GeoJSON).eachLayer((l) => bindEvents(piece.iso, l));
+    } else {
+      layer = L.polygon(piece.rings, { ...opts, clipBox: piece.clip } as L.PolylineOptions);
+      bindEvents(piece.iso, layer);
+    }
+    detailGroup.current!.addLayer(layer);
+    unit.layers.push({ iso: piece.iso, layer });
+    if (!byIso.current.has(piece.iso)) byIso.current.set(piece.iso, new Set());
+    byIso.current.get(piece.iso)!.add(layer);
+  }
+
+  function removeUnit(unit: LoadedUnit) {
+    for (const { iso, layer } of unit.layers) {
+      detailGroup.current?.removeLayer(layer);
+      byIso.current.get(iso)?.delete(layer);
+    }
+  }
+
+  function clearStale() {
+    for (const u of stale.current) removeUnit(u);
+    stale.current = [];
+  }
+
+  /** Swaps the coarse overview for detailed outlines of everything in view (and back when zooming out). */
   function updateDetail() {
     const map = mapRef.current;
-    const group = detailGroup.current;
-    if (!map || !group || !ready) return;
+    if (!map || !detailGroup.current) return;
     const size = map.getSize();
     if (size.x < 50 || size.y < 50) return;
     const level = detailLevelFor(map.getZoom());
     if (level !== detailLevel.current) {
-      group.clearLayers();
-      detailLayers.current.clear();
+      if (level) stale.current.push(...units.current.values());
+      else {
+        clearStale();
+        for (const u of units.current.values()) removeUnit(u);
+      }
+      units.current.clear();
       detailLevel.current = level;
-      restyle();
     }
+    const gen = ++generation.current;
     if (!level) {
       wanted.current.clear();
+      pendingIsos.current.clear();
       setDetailBusy(false);
+      restyle();
       return;
     }
     const view = map.getBounds().pad(0.25);
-    const want = new Set<string>();
-    for (const r of REGIONS) if (intersectsWrapped(view, r.box)) want.add(r.key);
-    wanted.current = want;
-    for (const [key, lyr] of detailLayers.current) {
+    const want = new Map<string, DetailUnit>();
+    for (const u of UNITS[level]) if (intersectsWrapped(view, u.box)) want.set(u.key, u);
+    wanted.current = new Set(want.keys());
+    for (const [key, u] of units.current) {
       if (want.has(key)) continue;
-      group.removeLayer(lyr);
-      detailLayers.current.delete(key);
-      refresh(isoOf(key));
+      removeUnit(u);
+      units.current.delete(key);
     }
-    const pending = [...want].filter((key) => !detailLayers.current.has(key));
-    if (!pending.length) return;
+    const pending = [...want.values()].filter((u) => !units.current.has(u.key));
+    pendingIsos.current = new Set(pending.flatMap((u) => u.isos));
+    const done = () => {
+      clearStale();
+      pendingIsos.current.clear();
+      setDetailBusy(false);
+      restyle();
+    };
+    if (!pending.length) return done();
     setDetailBusy(true);
     let left = pending.length;
-    for (const key of pending) {
-      const iso = isoOf(key);
-      loadDetail(level, key).then((geo) => {
-        if (--left === 0) setDetailBusy(false);
-        if (!geo || detailLevel.current !== level || !wanted.current.has(key) || detailLayers.current.has(key) || !mapRef.current) return;
-        const lyr = L.geoJSON(geo, { ...({ renderer: renderer.current } as L.GeoJSONOptions), style: () => styleFor(iso) });
-        lyr.eachLayer((l) => bindEvents(iso, l));
-        detailLayers.current.set(key, lyr);
-        group.addLayer(lyr);
-        overviewLayers.current.get(iso)?.setStyle(overviewStyle(iso));
-        if (frontIsos().includes(iso)) lyr.bringToFront();
+    for (const u of pending) {
+      loadUnit(level, u).then((pieces) => {
+        if (pieces && detailLevel.current === level && wanted.current.has(u.key) && !units.current.has(u.key) && mapRef.current) {
+          const unit: LoadedUnit = { key: u.key, layers: [] };
+          for (const piece of pieces) addPiece(unit, piece);
+          units.current.set(u.key, unit);
+        }
+        if (gen !== generation.current) return;
+        if (--left === 0) done();
       });
     }
   }
@@ -264,6 +337,13 @@ export default function WorldMap() {
         if (animate) map.flyToBounds(b, { ...opts, maxZoom });
         else map.fitBounds(b, { padding: pad, maxZoom });
       }
+    } else if (s.fly === 'view' && s.view) {
+      if (animate) map.flyToBounds(s.view, { ...opts, maxZoom: 5 });
+      else map.fitBounds(s.view, { padding: pad, maxZoom: 5 });
+    } else if (s.fly === 'pins' && s.truth) {
+      const b = L.latLngBounds([s.truth, s.guess ?? s.truth]);
+      if (animate) map.flyToBounds(b, { ...opts, maxZoom: 6 });
+      else map.fitBounds(b, { padding: pad, maxZoom: 6 });
     } else if (s.fly === 'set' && s.set && s.set.length && s.set.length < 150) {
       let b: L.LatLngBounds | null = null;
       for (const iso of s.set) {
@@ -296,13 +376,14 @@ export default function WorldMap() {
       const c = BY_ISO.get(iso);
       if (!c?.small || iso === s.focus || iso === s.correct || iso === s.wrong) continue;
       const inSet = Boolean(s.set?.includes(iso));
+      const done = s.found?.includes(iso) ? MAP_COLORS.correct : s.missed?.includes(iso) ? MAP_COLORS.wrong : null;
       L.circleMarker([c.capital.lat, c.capital.lng], {
         radius: inSet ? 5.5 : 4.5,
-        color: inSet ? '#99f6e4' : 'rgba(255,255,255,0.85)',
+        color: done ?? (inSet ? '#99f6e4' : 'rgba(255,255,255,0.85)'),
         weight: 2,
-        fillColor: inSet ? MAP_COLORS.set : '#ffffff',
-        fillOpacity: inSet ? 0.6 : 0.3,
-        interactive: Boolean(s.clickable),
+        fillColor: done ?? (inSet ? MAP_COLORS.set : '#ffffff'),
+        fillOpacity: done ? 0.8 : inSet ? 0.6 : 0.3,
+        interactive: s.clickable === 'select' || s.clickable === 'answer',
         renderer: renderer.current ?? undefined,
       })
         .on('click', () => mapClickRef.current?.(iso))
@@ -321,6 +402,14 @@ export default function WorldMap() {
         const om = L.marker([o.lat, o.lng], { icon: pinIcon('other'), keyboard: false, interactive: false }).addTo(group);
         if (s.capitalLabel) om.bindTooltip(`${o[lang]} · ${o.role}`, { permanent: true, direction: 'bottom', offset: [0, 11], className: 'map-label map-label--small' });
       }
+    }
+
+    // "Wo liegt …?": the guess, the right place and a line between them.
+    if (s.guess) L.marker(s.guess, { icon: pinIcon('guess'), keyboard: false, interactive: false, zIndexOffset: 900 }).addTo(group);
+    if (s.truth) {
+      const t = L.marker(s.truth, { icon: pinIcon('capital'), keyboard: false, interactive: false, zIndexOffset: 1000 }).addTo(group);
+      if (s.truthLabel) t.bindTooltip(s.truthLabel, { permanent: true, direction: 'top', offset: [0, -13], className: 'map-label' });
+      if (s.guess) L.polyline([s.guess, s.truth], { color: '#fff', weight: 2.5, dashArray: '6 6', interactive: false, renderer: renderer.current ?? undefined }).addTo(group);
     }
   }
 
@@ -343,6 +432,8 @@ export default function WorldMap() {
       maxBoundsViscosity: 0.8,
     });
     mapRef.current = map;
+    // Handy for checking outlines in the browser console during development.
+    if (import.meta.env.DEV) (window as unknown as { __map?: L.Map }).__map = map;
     map.setView([22, 12], 2);
     map.attributionControl.setPrefix(false);
     L.control.zoom({ position: 'bottomright', zoomInTitle: 'Hineinzoomen', zoomOutTitle: 'Herauszoomen' }).addTo(map);
@@ -352,10 +443,13 @@ export default function WorldMap() {
     lp.style.zIndex = '450';
     lp.style.pointerEvents = 'none';
     labels.current = L.tileLayer(LABELS, { pane: 'labels', maxZoom: 18 });
-    renderer.current = L.canvas({ padding: 0.5, tolerance: 4 });
+    renderer.current = new ClipCanvas({ padding: 0.5, tolerance: 4 });
     detailGroup.current = L.layerGroup().addTo(map);
     markers.current = L.layerGroup().addTo(map);
     tip.current = L.tooltip({ direction: 'top', offset: [0, -10], className: 'map-label map-label--hover', opacity: 1 });
+    map.on('click', (e: L.LeafletMouseEvent) => {
+      if (sceneRef.current.clickable === 'point') mapPointRef.current?.(e.latlng.lat, L.Util.wrapNum(e.latlng.lng, [-180, 180], true));
+    });
 
     let cancelled = false;
     loadOverview().then((features) => {
@@ -400,6 +494,10 @@ export default function WorldMap() {
       window.removeEventListener('offline', onOffline);
       map.remove();
       mapRef.current = null;
+      units.current.clear();
+      stale.current = [];
+      byIso.current.clear();
+      detailLevel.current = null;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

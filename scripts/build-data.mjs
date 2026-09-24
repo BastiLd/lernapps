@@ -105,6 +105,7 @@ const countries = base.map((b) => {
     currencies: currenciesOf(b.iso2),
     phone: phoneOf(b.iso2),
     tld: worldCountries.get(b.iso2)?.tld?.[0] ?? null,
+    timezone: extra.timezones?.[b.iso2] ?? null,
     area: b.area,
     landlocked: b.landlocked,
     borders: b.borders.filter((x) => inApp.has(x)),

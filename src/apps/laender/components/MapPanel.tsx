@@ -95,6 +95,11 @@ function Legend() {
   const items: { cls: string; label: string }[] = [];
   if (scene.heat) {
     items.push({ cls: 'lg-heat', label: 'Wenig → gut gelernt' });
+  } else if (scene.found || scene.missed) {
+    items.push({ cls: 'lg-ok', label: 'Gefunden' }, { cls: 'lg-bad', label: 'Verpasst / falsch' });
+    if (scene.set?.length) items.push({ cls: 'lg-set', label: 'Im Spiel' });
+  } else if (scene.truth) {
+    items.push({ cls: 'lg-guess', label: 'Dein Tipp' }, { cls: 'lg-pin', label: 'Richtiger Ort' });
   } else {
     if (scene.correct) items.push({ cls: 'lg-ok', label: 'Richtig' });
     if (scene.wrong) items.push({ cls: 'lg-bad', label: 'Deine Antwort' });

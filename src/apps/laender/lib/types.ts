@@ -34,6 +34,8 @@ export interface Country {
   currencies: { code: string; de: string; es: string; symbol: string }[];
   phone: string | null;
   tld: string | null;
+  /** IANA time zone of the capital, e.g. "Europe/Madrid". */
+  timezone: string | null;
   area: number;
   landlocked: boolean;
   borders: string[];
@@ -43,11 +45,14 @@ export interface Country {
 
 export type LangMode = 'official' | 'only' | 'spoken';
 
+export type GroupId = '' | 'eu' | 'euro' | 'landlocked' | 'island';
+
 export interface Filters {
   lang: string;
   langMode: LangMode;
   continents: ContinentId[];
   includeSpecial: boolean;
+  group: GroupId;
 }
 
 export type MapStyle = 'satellite' | 'terrain' | 'streets' | 'blank';
@@ -64,4 +69,5 @@ export interface Settings {
   mapBorders: boolean;
   mapStyle: MapStyle;
   speech: boolean;
+  sound: boolean;
 }
